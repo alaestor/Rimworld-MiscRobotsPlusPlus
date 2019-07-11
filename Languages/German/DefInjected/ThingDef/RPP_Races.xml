@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!--[Duplicate]
+	<AIRobot_Hauler.label>Transportroboter</AIRobot_Hauler.label>
+	<AIRobot_Hauler.description>Ein einfacher Transportroboter.</AIRobot_Hauler.description>
+-->
+	<AIRobot_Hauler_II.label>Transportroboter</AIRobot_Hauler_II.label>
+	<AIRobot_Hauler_II.description>Ein grundlegender Transportroboter.</AIRobot_Hauler_II.description>
+	<AIRobot_Hauler_III.label>Transportroboter</AIRobot_Hauler_III.label>
+	<AIRobot_Hauler_III.description>Ein mittlerer Transportroboter.</AIRobot_Hauler_III.description>
+	<AIRobot_Hauler_IV.label>Transportroboter</AIRobot_Hauler_IV.label>
+	<AIRobot_Hauler_IV.description>Ein erweiterter Transportroboter.</AIRobot_Hauler_IV.description>
+	<AIRobot_Hauler_V.label>Transportroboter</AIRobot_Hauler_V.label>
+	<AIRobot_Hauler_V.description>Ein Anti-Logik Transportroboter.</AIRobot_Hauler_V.description>
+
+<!--[Duplicate]
+	<AIRobot_Cleaner.label>Reinigungsroboter</AIRobot_Cleaner.label>
+	<AIRobot_Cleaner.description>Ein einfacher Reinigungsroboter.</AIRobot_Cleaner.description>
+-->
+	<AIRobot_Cleaner_II.label>Reinigungsroboter</AIRobot_Cleaner_II.label>
+	<AIRobot_Cleaner_II.description>Ein grundlegender Reinigungsroboter.</AIRobot_Cleaner_II.description>
+	<AIRobot_Cleaner_III.label>Reinigungsroboter</AIRobot_Cleaner_III.label>
+	<AIRobot_Cleaner_III.description>Ein mittlerer Reinigungsroboter.</AIRobot_Cleaner_III.description>
+	<AIRobot_Cleaner_IV.label>Reinigungsroboter</AIRobot_Cleaner_IV.label>
+	<AIRobot_Cleaner_IV.description>Ein erweiterter Reinigungsroboter.</AIRobot_Cleaner_IV.description>
+	<AIRobot_Cleaner_V.label>Reinigungsroboter</AIRobot_Cleaner_V.label>
+	<AIRobot_Cleaner_V.description>Ein Anti-Logik Reinigungsroboter.</AIRobot_Cleaner_V.description>
+
+	<RPP_Bot_Builder_I.label>Bauroboter</RPP_Bot_Builder_I.label>
+	<RPP_Bot_Builder_I.description>Ein einfacher Bauroboter f&#252;r Bau- und Abri&#223;arbeiten, Bergbau und Reparaturen.</RPP_Bot_Builder_I.description>
+	<RPP_Bot_Builder_II.label>Bauroboter</RPP_Bot_Builder_II.label>
+	<RPP_Bot_Builder_II.description>Ein grundlegender Bauroboter f&#252;r Bau- und Abri&#223;arbeiten, Bergbau und Reparaturen.</RPP_Bot_Builder_II.description>
+	<RPP_Bot_Builder_III.label>Bauroboter</RPP_Bot_Builder_III.label>
+	<RPP_Bot_Builder_III.description>Ein mittlerer Bauroboter f&#252;r Bau- und Abri&#223;arbeiten, Bergbau und Reparaturen.</RPP_Bot_Builder_III.description>
+	<RPP_Bot_Builder_IV.label>Bauroboter</RPP_Bot_Builder_IV.label>
+	<RPP_Bot_Builder_IV.description>Ein erweiterter Bauroboter f&#252;r Bau- und Abri&#223;arbeiten, Bergbau und Reparaturen.</RPP_Bot_Builder_IV.description>
+	<RPP_Bot_Builder_V.label>Bauroboter</RPP_Bot_Builder_V.label>
+	<RPP_Bot_Builder_V.description>Ein Anti-Logik Bauroboter f&#252;r Bau- und Abri&#223;arbeiten, Bergbau und Reparaturen.</RPP_Bot_Builder_V.description>
+
+	<RPP_Bot_Crafter_I.label>Fertigungsroboter</RPP_Bot_Crafter_I.label>
+	<RPP_Bot_Crafter_I.description>Ein einfacher Fertigungsroboter f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Bot_Crafter_I.description>
+	<RPP_Bot_Crafter_II.label>Fertigungsroboter</RPP_Bot_Crafter_II.label>
+	<RPP_Bot_Crafter_II.description>Ein grundlegender Fertigungsroboter f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Bot_Crafter_II.description>
+	<RPP_Bot_Crafter_III.label>Fertigungsroboter</RPP_Bot_Crafter_III.label>
+	<RPP_Bot_Crafter_III.description>Ein mittlerer Fertigungsroboter f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Bot_Crafter_III.description>
+	<RPP_Bot_Crafter_IV.label>Fertigungsroboter</RPP_Bot_Crafter_IV.label>
+	<RPP_Bot_Crafter_IV.description>Ein erweiterter Fertigungsroboter f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Bot_Crafter_IV.description>
+	<RPP_Bot_Crafter_V.label>Fertigungsroboter</RPP_Bot_Crafter_V.label>
+	<RPP_Bot_Crafter_V.description>Ein Anti-Logik Fertigungsroboter f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Bot_Crafter_V.description>
+
+	<RPP_Bot_ER_I.label>Nottfallroboter</RPP_Bot_ER_I.label>
+	<RPP_Bot_ER_I.description>Ein einfacher Notfallroboter f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Bot_ER_I.description>
+	<RPP_Bot_ER_II.label>Nottfallroboter</RPP_Bot_ER_II.label>
+	<RPP_Bot_ER_II.description>Ein grundlegender Notfallroboter f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Bot_ER_II.description>
+	<RPP_Bot_ER_III.label>Nottfallroboter</RPP_Bot_ER_III.label>
+	<RPP_Bot_ER_III.description>Ein mittlerer Notfallroboter f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Bot_ER_III.description>
+	<RPP_Bot_ER_IV.label>Nottfallroboter</RPP_Bot_ER_IV.label>
+	<RPP_Bot_ER_IV.description>Ein erweiterter Notfallroboter f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Bot_ER_IV.description>
+	<RPP_Bot_ER_V.label>Nottfallroboter</RPP_Bot_ER_V.label>
+	<RPP_Bot_ER_V.description>Ein Anti-Logik Notfallroboter f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Bot_ER_V.description>
+
+	<RPP_Bot_Kitchen_I.label>K&#252;chenroboter</RPP_Bot_Kitchen_I.label>
+	<RPP_Bot_Kitchen_I.description>Ein einfacher K&#252;chenroboter sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Bot_Kitchen_I.description>
+	<RPP_Bot_Kitchen_II.label>K&#252;chenroboter</RPP_Bot_Kitchen_II.label>
+	<RPP_Bot_Kitchen_II.description>Ein grundlegender K&#252;chenroboter sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Bot_Kitchen_II.description>
+	<RPP_Bot_Kitchen_III.label>K&#252;chenroboter</RPP_Bot_Kitchen_III.label>
+	<RPP_Bot_Kitchen_III.description>Ein mittlerer K&#252;chenroboter sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Bot_Kitchen_III.description>
+	<RPP_Bot_Kitchen_IV.label>K&#252;chenroboter</RPP_Bot_Kitchen_IV.label>
+	<RPP_Bot_Kitchen_IV.description>Ein erweiterter K&#252;chenroboter sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Bot_Kitchen_IV.description>
+	<RPP_Bot_Kitchen_V.label>K&#252;chenroboter</RPP_Bot_Kitchen_V.label>
+	<RPP_Bot_Kitchen_V.description>Ein Anti-Logik K&#252;chenroboter sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Bot_Kitchen_V.description>
+
+	<RPP_Bot_Omni_V.label>Universalroboter</RPP_Bot_Omni_V.label>
+	<RPP_Bot_Omni_V.description>Ein Anti-Logik Roboter der alle F&#228;higkeiten beherrscht.</RPP_Bot_Omni_V.description>
+
+</LanguageData>
+
+

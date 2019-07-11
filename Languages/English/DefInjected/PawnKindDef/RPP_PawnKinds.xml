@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<AIRobot_Hauler.label>Hauler Bot (Tier 1)</AIRobot_Hauler.label>
+	<AIRobot_Hauler_II.label>Hauler Bot (Tier 2)</AIRobot_Hauler_II.label>
+	<AIRobot_Hauler_III.label>Hauler Bot (Tier 3)</AIRobot_Hauler_III.label>
+	<AIRobot_Hauler_IV.label>Hauler Bot (Tier 4)</AIRobot_Hauler_IV.label>
+	<AIRobot_Hauler_V.label>Hauler Bot (Tier 5)</AIRobot_Hauler_V.label>
+
+	<AIRobot_Cleaner.label>Cleaner Bot (Tier 1)</AIRobot_Cleaner.label>
+	<AIRobot_Cleaner_II.label>Cleaner Bot (Tier 2)</AIRobot_Cleaner_II.label>
+	<AIRobot_Cleaner_III.label>Cleaner Bot (Tier 3)</AIRobot_Cleaner_III.label>
+	<AIRobot_Cleaner_IV.label>Cleaner Bot (Tier 4)</AIRobot_Cleaner_IV.label>
+	<AIRobot_Cleaner_V.label>Cleaner Bot (Tier 5)</AIRobot_Cleaner_V.label>
+
+	<RPP_Bot_Builder_I.label>Builder Bot (Tier 1)</RPP_Bot_Builder_I.label>
+	<RPP_Bot_Builder_II.label>Builder Bot (Tier 2)</RPP_Bot_Builder_II.label>
+	<RPP_Bot_Builder_III.label>Builder Bot (Tier 3)</RPP_Bot_Builder_III.label>
+	<RPP_Bot_Builder_IV.label>Builder Bot (Tier 4)</RPP_Bot_Builder_IV.label>
+	<RPP_Bot_Builder_V.label>Builder Bot (Tier 5)</RPP_Bot_Builder_V.label>
+
+	<RPP_Bot_Crafter_I.label>Crafter Bot (Tier 1)</RPP_Bot_Crafter_I.label>
+	<RPP_Bot_Crafter_II.label>Crafter Bot (Tier 2)</RPP_Bot_Crafter_II.label>
+	<RPP_Bot_Crafter_III.label>Crafter Bot (Tier 3)</RPP_Bot_Crafter_III.label>
+	<RPP_Bot_Crafter_IV.label>Crafter Bot (Tier 4)</RPP_Bot_Crafter_IV.label>
+	<RPP_Bot_Crafter_V.label>Crafter Bot (Tier 5)</RPP_Bot_Crafter_V.label>
+
+	<RPP_Bot_ER_I.label>Emergency Responce Bot (Tier 1)</RPP_Bot_ER_I.label>
+	<RPP_Bot_ER_II.label>Emergency Responce Bot (Tier 2)</RPP_Bot_ER_II.label>
+	<RPP_Bot_ER_III.label>Emergency Responce Bot (Tier 3)</RPP_Bot_ER_III.label>
+	<RPP_Bot_ER_IV.label>Emergency Responce Bot (Tier 4)</RPP_Bot_ER_IV.label>
+	<RPP_Bot_ER_V.label>Emergency Responce Bot (Tier 5)</RPP_Bot_ER_V.label>
+
+	<RPP_Bot_Kitchen_I.label>Kitchen Bot (Tier 1)</RPP_Bot_Kitchen_I.label>
+	<RPP_Bot_Kitchen_II.label>Kitchen Bot (Tier 2)</RPP_Bot_Kitchen_II.label>
+	<RPP_Bot_Kitchen_III.label>Kitchen Bot (Tier 3)</RPP_Bot_Kitchen_III.label>
+	<RPP_Bot_Kitchen_IV.label>Kitchen Bot (Tier 4)</RPP_Bot_Kitchen_IV.label>
+	<RPP_Bot_Kitchen_V.label>Kitchen Bot (Tier 5)</RPP_Bot_Kitchen_V.label>
+
+	<RPP_Bot_Omni_V.label>Omni Bot (Tier 5)</RPP_Bot_Omni_V.label>
+
+</LanguageData>

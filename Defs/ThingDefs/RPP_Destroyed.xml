@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--******** META - TIERS ********-->
+
+	<ThingDef Abstract="True" Name="RPP_Disabled" ParentName="DisabledBase">
+		<thingClass>AIRobot.X2_AIRobot_disabled</thingClass>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<thingCategories><li>CorpsesMechanoid</li></thingCategories>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="RPP_Disabled_I" ParentName="RPP_Disabled">
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>12</Mass>
+		</statBases>
+		<butcherProducts>
+			<Steel>75</Steel>
+			<Silver>50</Silver>
+		</butcherProducts>
+		<costList>
+			<Steel>15</Steel>
+			<RPP_Component>1</RPP_Component>
+		</costList>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="RPP_Disabled_II" ParentName="RPP_Disabled">
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>12</Mass>
+		</statBases>
+		<butcherProducts>
+			<Steel>75</Steel>
+			<Silver>100</Silver>
+			<RPP_Component>2</RPP_Component>
+		</butcherProducts>
+		<costList>
+			<Steel>15</Steel>
+			<RPP_Component>2</RPP_Component>
+		</costList>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="RPP_Disabled_III" ParentName="RPP_Disabled">
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>12</Mass>
+		</statBases>
+		<butcherProducts>
+			<Plasteel>10</Plasteel>
+			<Silver>300</Silver>
+			<RPP_Component>3</RPP_Component>
+		</butcherProducts>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<RPP_Component>3</RPP_Component>
+		</costList>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="RPP_Disabled_IV" ParentName="RPP_Disabled">
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>12</Mass>
+		</statBases>
+		<butcherProducts>
+			<Plasteel>25</Plasteel>
+			<Silver>400</Silver>
+			<RPP_Component>5</RPP_Component>
+		</butcherProducts>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<RPP_Component>5</RPP_Component>
+		</costList>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="RPP_Disabled_V" ParentName="RPP_Disabled">
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>12</Mass>
+		</statBases>
+		<butcherProducts>
+			<Plasteel>40</Plasteel>
+			<Silver>500</Silver>
+			<Gold>50</Gold>
+			<RPP_Component>10</RPP_Component>
+		</butcherProducts>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<RPP_Component>10</RPP_Component>
+		</costList>
+	</ThingDef>
+
+	<!--******** INHERET ********-->
+
+	<!-- override -->
+	<ThingDef ParentName="RPP_Disabled_I">
+		<defName>AIRobot_Hauler_disabled</defName>
+		<label>Hauling Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/I/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_II">
+		<defName>AIRobot_Hauler_II_disabled</defName>
+		<label>Hauling Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/II/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_III">
+		<defName>AIRobot_Hauler_III_disabled</defName>
+		<label>Hauling Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_IV">
+		<defName>AIRobot_Hauler_IV_disabled</defName>
+		<label>Hauling Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/IV/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_V">
+		<defName>AIRobot_Hauler_V_disabled</defName>
+		<label>Hauling Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/V/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Disabled_I">
+		<defName>AIRobot_Cleaner_disabled</defName>
+		<label>Cleaning Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/I/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+		<ThingDef ParentName="RPP_Disabled_II">
+		<defName>AIRobot_Cleaner_II_disabled</defName>
+		<label>Cleaning Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/II/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_III">
+		<defName>AIRobot_Cleaner_III_disabled</defName>
+		<label>Cleaning Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_IV">
+		<defName>AIRobot_Cleaner_IV_disabled</defName>
+		<label>Cleaning Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/IV/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_V">
+		<defName>AIRobot_Cleaner_V_disabled</defName>
+		<label>Cleaning Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/V/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<!-- RPP -->
+	<ThingDef ParentName="RPP_Disabled_I">
+		<defName>RPP_Bot_Builder_I_disabled</defName>
+		<label>Builder Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/I/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_II">
+		<defName>RPP_Bot_Builder_II_disabled</defName>
+		<label>Builder Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/II/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_III">
+		<defName>RPP_Bot_Builder_III_disabled</defName>
+		<label>Builder Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_IV">
+		<defName>RPP_Bot_Builder_IV_disabled</defName>
+		<label>Builder Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_V">
+		<defName>RPP_Bot_Builder_V_disabled</defName>
+		<label>Builder Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/V/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Disabled_I">
+		<defName>RPP_Bot_Crafter_I_disabled</defName>
+		<label>Crafter Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/I/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_II">
+		<defName>RPP_Bot_Crafter_II_disabled</defName>
+		<label>Crafter Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/II/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_III">
+		<defName>RPP_Bot_Crafter_III_disabled</defName>
+		<label>Crafter Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_IV">
+		<defName>RPP_Bot_Crafter_IV_disabled</defName>
+		<label>Crafter Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_V">
+		<defName>RPP_Bot_Crafter_V_disabled</defName>
+		<label>Crafter Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/V/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Disabled_I">
+		<defName>RPP_Bot_ER_I_disabled</defName>
+		<label>ER Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/I/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_II">
+		<defName>RPP_Bot_ER_II_disabled</defName>
+		<label>ER Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/II/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_III">
+		<defName>RPP_Bot_ER_III_disabled</defName>
+		<label>ER Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_IV">
+		<defName>RPP_Bot_ER_IV_disabled</defName>
+		<label>ER Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_V">
+		<defName>RPP_Bot_ER_V_disabled</defName>
+		<label>ER Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/V/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Disabled_I">
+		<defName>RPP_Bot_Kitchen_I_disabled</defName>
+		<label>Kitchen Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/I/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_II">
+		<defName>RPP_Bot_Kitchen_II_disabled</defName>
+		<label>Kitchen Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/II/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_III">
+		<defName>RPP_Bot_Kitchen_III_disabled</defName>
+		<label>Kitchen Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_IV">
+		<defName>RPP_Bot_Kitchen_IV_disabled</defName>
+		<label>Kitchen Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/III/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Disabled_V">
+		<defName>RPP_Bot_Kitchen_V_disabled</defName>
+		<label>Kitchen Bot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/V/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Disabled_V">
+		<defName>RPP_Bot_Omni_V_disabled</defName>
+		<label>OmniBot (disabled)</label>
+		<description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Omni/V/RPP_Bot_Destroyed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+			<onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+
+</Defs>

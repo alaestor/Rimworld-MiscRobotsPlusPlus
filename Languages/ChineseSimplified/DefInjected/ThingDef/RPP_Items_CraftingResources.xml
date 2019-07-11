@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+
+  <RPP_Component.label>机器人元件</RPP_Component.label>
+  <RPP_Component.description>机器人元件用于在机器人矩阵中组建逻辑电路。</RPP_Component.description>
+
+  <RPP_Matrix_I.label>机器人逻辑矩阵（简易）</RPP_Matrix_I.label>
+  <RPP_Matrix_I.description>用于以初学级技能（一阶）制造机器人的逻辑矩阵。</RPP_Matrix_I.description>
+
+  <RPP_Matrix_II.label>机器人逻辑矩阵（初阶）</RPP_Matrix_II.label>
+  <RPP_Matrix_II.description>用于以专业人员级技能（二阶）制造机器人的逻辑矩阵。</RPP_Matrix_II.description>
+
+  <RPP_Matrix_III.label>机器人逻辑矩阵（进阶）</RPP_Matrix_III.label>
+  <RPP_Matrix_III.description>用于以大师级技能（三阶）制造机器人的逻辑矩阵。</RPP_Matrix_III.description>
+
+  <RPP_Matrix_IV.label>机器人逻辑矩阵（高阶）</RPP_Matrix_IV.label>
+  <RPP_Matrix_IV.description>用于以太阳系级大师技能（四阶）制造机器人的逻辑矩阵。</RPP_Matrix_IV.description>
+
+  <RPP_Matrix_V.label>机器人逻辑矩阵（反逻辑）</RPP_Matrix_V.label>
+  <RPP_Matrix_V.description>用于以神级技能（五阶）制造机器人的反逻辑矩阵（NP=P）。</RPP_Matrix_V.description>
+
+</LanguageData>

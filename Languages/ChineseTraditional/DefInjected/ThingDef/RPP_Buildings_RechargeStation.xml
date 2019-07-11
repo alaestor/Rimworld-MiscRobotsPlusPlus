@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- override -->
+
+  <AIRobot_RechargeStation_Hauler.label>搬運機(I)基站</AIRobot_RechargeStation_Hauler.label>
+  <AIRobot_RechargeStation_Hauler.description>這個基站配置了一個專用的簡易機器人。</AIRobot_RechargeStation_Hauler.description>
+
+  <AIRobot_RechargeStation_Hauler_II.label>搬運機(II)基站</AIRobot_RechargeStation_Hauler_II.label>
+  <AIRobot_RechargeStation_Hauler_II.description>這個基站配置了一個專用的初階機器人。</AIRobot_RechargeStation_Hauler_II.description>
+
+  <AIRobot_RechargeStation_Hauler_III.label>搬運機(III)基站</AIRobot_RechargeStation_Hauler_III.label>
+  <AIRobot_RechargeStation_Hauler_III.description>這個基站配置了一個專用的中階機器人。</AIRobot_RechargeStation_Hauler_III.description>
+
+  <AIRobot_RechargeStation_Hauler_IV.label>搬運機(IV)基站</AIRobot_RechargeStation_Hauler_IV.label>
+  <AIRobot_RechargeStation_Hauler_IV.description>這個基站配置了一個專用的高階機器人。</AIRobot_RechargeStation_Hauler_IV.description>
+
+  <AIRobot_RechargeStation_Hauler_V.label>搬運機(V)基站</AIRobot_RechargeStation_Hauler_V.label>
+  <AIRobot_RechargeStation_Hauler_V.description>這個基站配置了一個專用的反邏輯機器人。</AIRobot_RechargeStation_Hauler_V.description>
+
+  <AIRobot_RechargeStation_Cleaner.label>清潔機(I)基站</AIRobot_RechargeStation_Cleaner.label>
+  <AIRobot_RechargeStation_Cleaner.description>這個基站配置了一個專用的簡易機器人。</AIRobot_RechargeStation_Cleaner.description>
+
+  <AIRobot_RechargeStation_Cleaner_II.label>清潔機(II)基站</AIRobot_RechargeStation_Cleaner_II.label>
+  <AIRobot_RechargeStation_Cleaner_II.description>這個基站配置了一個專用的初階機器人。</AIRobot_RechargeStation_Cleaner_II.description>
+
+  <AIRobot_RechargeStation_Cleaner_III.label>清潔機(III)基站</AIRobot_RechargeStation_Cleaner_III.label>
+  <AIRobot_RechargeStation_Cleaner_III.description>這個基站配置了一個專用的中階機器人。</AIRobot_RechargeStation_Cleaner_III.description>
+
+  <AIRobot_RechargeStation_Cleaner_IV.label>清潔機(IV)基站</AIRobot_RechargeStation_Cleaner_IV.label>
+  <AIRobot_RechargeStation_Cleaner_IV.description>這個基站配置了一個專用的高階機器人。</AIRobot_RechargeStation_Cleaner_IV.description>
+
+  <AIRobot_RechargeStation_Cleaner_V.label>清潔機(V)基站</AIRobot_RechargeStation_Cleaner_V.label>
+  <AIRobot_RechargeStation_Cleaner_V.description>這個基站配置了一個專用的反邏輯機器人。</AIRobot_RechargeStation_Cleaner_V.description>
+
+
+  <!-- RPP -->
+
+  <RPP_RechargeStation_Builder_I.label>工程機(I)基站</RPP_RechargeStation_Builder_I.label>
+  <RPP_RechargeStation_Builder_I.description>這個基站配置了一個專用的簡易機器人。</RPP_RechargeStation_Builder_I.description>
+
+  <RPP_RechargeStation_Builder_II.label>工程機(II)基站</RPP_RechargeStation_Builder_II.label>
+  <RPP_RechargeStation_Builder_II.description>這個基站配置了一個專用的初階機器人。</RPP_RechargeStation_Builder_II.description>
+
+  <RPP_RechargeStation_Builder_III.label>工程機(III)基站</RPP_RechargeStation_Builder_III.label>
+  <RPP_RechargeStation_Builder_III.description>這個基站配置了一個專用的中階機器人。</RPP_RechargeStation_Builder_III.description>
+
+  <RPP_RechargeStation_Builder_IV.label>工程機(IV)基站</RPP_RechargeStation_Builder_IV.label>
+  <RPP_RechargeStation_Builder_IV.description>這個基站配置了一個專用的高階機器人。</RPP_RechargeStation_Builder_IV.description>
+
+  <RPP_RechargeStation_Builder_V.label>工程機(V)基站</RPP_RechargeStation_Builder_V.label>
+  <RPP_RechargeStation_Builder_V.description>這個基站配置了一個專用的反邏輯機器人。</RPP_RechargeStation_Builder_V.description>
+
+  <RPP_RechargeStation_Crafter_I.label>工藝機(I)基站</RPP_RechargeStation_Crafter_I.label>
+  <RPP_RechargeStation_Crafter_I.description>這個基站配置了一個專用的簡易機器人。</RPP_RechargeStation_Crafter_I.description>
+
+  <RPP_RechargeStation_Crafter_II.label>工藝機(II)基站</RPP_RechargeStation_Crafter_II.label>
+  <RPP_RechargeStation_Crafter_II.description>這個基站配置了一個專用的初階機器人。</RPP_RechargeStation_Crafter_II.description>
+
+  <RPP_RechargeStation_Crafter_III.label>工藝機(III)基站</RPP_RechargeStation_Crafter_III.label>
+  <RPP_RechargeStation_Crafter_III.description>這個基站配置了一個專用的中階機器人。</RPP_RechargeStation_Crafter_III.description>
+
+  <RPP_RechargeStation_Crafter_IV.label>工藝機(IV)基站</RPP_RechargeStation_Crafter_IV.label>
+  <RPP_RechargeStation_Crafter_IV.description>這個基站配置了一個專用的高階機器人。</RPP_RechargeStation_Crafter_IV.description>
+
+  <RPP_RechargeStation_Crafter_V.label>工藝機(V)基站</RPP_RechargeStation_Crafter_V.label>
+  <RPP_RechargeStation_Crafter_V.description>這個基站配置了一個專用的反邏輯機器人。</RPP_RechargeStation_Crafter_V.description>
+
+  <RPP_RechargeStation_ER_I.label>救援機(I)基站</RPP_RechargeStation_ER_I.label>
+  <RPP_RechargeStation_ER_I.description>這個基站配置了一個專用的簡易機器人。</RPP_RechargeStation_ER_I.description>
+
+  <RPP_RechargeStation_ER_II.label>救援機(II)基站</RPP_RechargeStation_ER_II.label>
+  <RPP_RechargeStation_ER_II.description>這個基站配置了一個專用的初階機器人。</RPP_RechargeStation_ER_II.description>
+
+  <RPP_RechargeStation_ER_III.label>救援機(III)基站</RPP_RechargeStation_ER_III.label>
+  <RPP_RechargeStation_ER_III.description>這個基站配置了一個專用的中階機器人。</RPP_RechargeStation_ER_III.description>
+
+  <RPP_RechargeStation_ER_IV.label>救援機(IV)基站</RPP_RechargeStation_ER_IV.label>
+  <RPP_RechargeStation_ER_IV.description>這個基站配置了一個專用的高階機器人。</RPP_RechargeStation_ER_IV.description>
+
+  <RPP_RechargeStation_ER_V.label>救援機(V)基站</RPP_RechargeStation_ER_V.label>
+  <RPP_RechargeStation_ER_V.description>這個基站配置了一個專用的反邏輯機器人。</RPP_RechargeStation_ER_V.description>
+
+  <RPP_RechargeStation_Kitchen_I.label>廚藝機(I)基站</RPP_RechargeStation_Kitchen_I.label>
+  <RPP_RechargeStation_Kitchen_I.description>這個基站配置了一個專用的簡易機器人。</RPP_RechargeStation_Kitchen_I.description>
+
+  <RPP_RechargeStation_Kitchen_II.label>廚藝機(II)基站</RPP_RechargeStation_Kitchen_II.label>
+  <RPP_RechargeStation_Kitchen_II.description>這個基站配置了一個專用的初階機器人。</RPP_RechargeStation_Kitchen_II.description>
+
+  <RPP_RechargeStation_Kitchen_III.label>廚藝機(III)基站</RPP_RechargeStation_Kitchen_III.label>
+  <RPP_RechargeStation_Kitchen_III.description>這個基站配置了一個專用的中階機器人。</RPP_RechargeStation_Kitchen_III.description>
+
+  <RPP_RechargeStation_Kitchen_IV.label>廚藝機(IV)基站</RPP_RechargeStation_Kitchen_IV.label>
+  <RPP_RechargeStation_Kitchen_IV.description>這個基站配置了一個專用的高階機器人。</RPP_RechargeStation_Kitchen_IV.description>
+
+  <RPP_RechargeStation_Kitchen_V.label>廚藝機(V)基站</RPP_RechargeStation_Kitchen_V.label>
+  <RPP_RechargeStation_Kitchen_V.description>這個基站配置了一個專用的反邏輯機器人。</RPP_RechargeStation_Kitchen_V.description>
+
+  <RPP_RechargeStation_Omni_V.label>萬能機(V)基站</RPP_RechargeStation_Omni_V.label>
+  <RPP_RechargeStation_Omni_V.description>這個基站配置了一個專用的萬能機器人(NP=P)。\n並有著自由能源的內藏電源供應</RPP_RechargeStation_Omni_V.description>
+
+
+  <!--[Duplicate]
+	<AIRobot_RechargeStation_Hauler.label>搬運機(I)基站</AIRobot_RechargeStation_Hauler.label>
+	<AIRobot_RechargeStation_Hauler.description>這個基站配置了一個專用的簡易機器人。</AIRobot_RechargeStation_Hauler.description>
+-->
+  <!--[Duplicate]
+	<AIRobot_RechargeStation_Cleaner.label>清潔機(I)基站</AIRobot_RechargeStation_Cleaner.label>
+	<AIRobot_RechargeStation_Cleaner.description>這個基站配置了一個專用的簡易機器人。</AIRobot_RechargeStation_Cleaner.description>
+-->
+
+</LanguageData>

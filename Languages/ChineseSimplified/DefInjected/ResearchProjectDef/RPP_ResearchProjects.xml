@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+
+  <RPP_Research_Matrix_I.label>机器人学:\n简易逻辑</RPP_Research_Matrix_I.label>
+  <RPP_Research_Matrix_I.description>一阶: 研究用于执行初学级技能的机器人，解锁制作机器人逻辑矩阵（简易）。</RPP_Research_Matrix_I.description>
+  <RPP_Research_Matrix_II.label>机器人学:\n初阶逻辑</RPP_Research_Matrix_II.label>
+  <RPP_Research_Matrix_II.description>二阶: 研究用于执行专业人员级技能的机器人，解锁制作机器人逻辑矩阵（初阶）这阶的机器人变得更快且不易燃！</RPP_Research_Matrix_II.description>
+  <RPP_Research_Matrix_III.label>机器人学:\n进阶逻辑</RPP_Research_Matrix_III.label>
+  <RPP_Research_Matrix_III.description>三阶: 研究用于执行大师级技能的机器人，解锁制作机器人逻辑矩阵（进阶）。这阶的机器人变得更快且不易燃！</RPP_Research_Matrix_III.description>
+  <RPP_Research_Matrix_IV.label>机器人学:\n高阶逻辑</RPP_Research_Matrix_IV.label>
+  <RPP_Research_Matrix_IV.description>四阶: 研究用于执行太阳系级大师技能的机器人，解锁制作机器人逻辑矩阵（高阶）。这阶的机器人变得更快且不易燃！</RPP_Research_Matrix_IV.description>
+  <RPP_Research_Matrix_V.label>机器人学:\n反逻辑\n（NP=P）</RPP_Research_Matrix_V.label>
+  <RPP_Research_Matrix_V.description>五阶: 突破了现有科技层级、逻辑理解以及各种因果关系概念所立下的界限，我们的科技眼界将变得更加混沌。</RPP_Research_Matrix_V.description>
+
+  <RPP_Research_Fundamentals.label>机器人学:\n基础</RPP_Research_Fundamentals.label>
+  <RPP_Research_Fundamentals.description>零阶: 研究机器人学与自动化技术的原理。</RPP_Research_Fundamentals.description>
+
+	<RPP_Research_Cleaner_All.label>清洁机</RPP_Research_Cleaner_All.label>
+	<RPP_Research_Cleaner_All.description>制作清洁机。</RPP_Research_Cleaner_All.description>
+
+	<RPP_Research_Hauler_All.label>搬运机</RPP_Research_Hauler_All.label>
+	<RPP_Research_Hauler_All.description>制作搬运机。</RPP_Research_Hauler_All.description>
+
+	<RPP_Research_Builder_All.label>工程机</RPP_Research_Builder_All.label>
+	<RPP_Research_Builder_All.description>制作工程机。</RPP_Research_Builder_All.description>
+
+	<RPP_Research_Crafter_All.label>工艺机</RPP_Research_Crafter_All.label>
+	<RPP_Research_Crafter_All.description>制作工艺机。</RPP_Research_Crafter_All.description>
+
+	<RPP_Research_ER_All.label>救援机</RPP_Research_ER_All.label>
+	<RPP_Research_ER_All.description>制作救援机。</RPP_Research_ER_All.description>
+
+	<RPP_Research_Kitchen_All.label>厨艺机</RPP_Research_Kitchen_All.label>
+	<RPP_Research_Kitchen_All.description>制作厨艺机。</RPP_Research_Kitchen_All.description>
+
+	<RPP_Research_Omni_V.label>反逻辑\n万能机</RPP_Research_Omni_V.label>
+	<RPP_Research_Omni_V.description>五阶:\n制作神级的万能机。这台超音速的机器人几乎可执行任何工作。</RPP_Research_Omni_V.description>
+
+</LanguageData>

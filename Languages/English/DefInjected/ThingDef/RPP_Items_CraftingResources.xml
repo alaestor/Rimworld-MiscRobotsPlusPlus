@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+
+	<RPP_Component.label>Robotic Component</RPP_Component.label>
+	<RPP_Component.description>Robotic Components are used as logic circuits within a robotic matrix.</RPP_Component.description>
+
+	<RPP_Matrix_I.label>Robotic Matrix (Simple)</RPP_Matrix_I.label>
+	<RPP_Matrix_I.description>A robotic logical matrix. Engineered with a Simple instruction set allowing it to perform suited tasks at an amateur-class skill level.</RPP_Matrix_I.description>
+
+	<RPP_Matrix_II.label>Robotic Matrix (Basic)</RPP_Matrix_II.label>
+	<RPP_Matrix_II.description>A robotic logical matrix. Engineered with a Simple instruction set allowing it to perform suited tasks at a profesional-class skill level.</RPP_Matrix_II.description>
+
+	<RPP_Matrix_III.label>Robotic Matrix (Intermediate)</RPP_Matrix_III.label>
+	<RPP_Matrix_III.description>A robotic logical matrix. Engineered with a Simple instruction set allowing it to perform suited tasks at a master-class skill level.</RPP_Matrix_III.description>
+
+	<RPP_Matrix_IV.label>Robotic Matrix (Advanced)</RPP_Matrix_IV.label>
+	<RPP_Matrix_IV.description>A robotic logical matrix. Engineered with a Simple instruction set allowing it to perform suited tasks at a system-master-class skill level.</RPP_Matrix_IV.description>
+
+	<RPP_Matrix_V.label>Robotic Matrix (Anti-Logic)</RPP_Matrix_V.label>
+	<RPP_Matrix_V.description>A robotic Anti-Logic matrix. Capable of performing Godlike tasks. (NP=P)</RPP_Matrix_V.description>
+
+</LanguageData>

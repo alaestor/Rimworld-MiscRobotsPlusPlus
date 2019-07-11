@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<RPP_Production_Component.label>Herstellung Roboterkomponente</RPP_Production_Component.label>
+	<RPP_Production_Component.description>Produziere eine Roboterkomponente, die in Logikschaltkreisen einer Robotermatrix Verwendung findet.</RPP_Production_Component.description>
+
+	<RPP_Production_Matrix_I.label>Stelle Logikschaltkreis her (Einfach)</RPP_Production_Matrix_I.label>
+	<RPP_Production_Matrix_I.description>Stelle einen Logikschaltkreis her zur Fertigung eines Roboters mit Amateurf&#228;higkeiten (F&#228;higkeitsstufe 4).</RPP_Production_Matrix_I.description>
+	<RPP_Production_Matrix_II.label>Stelle Logikschaltkreis her (Grundlegend)</RPP_Production_Matrix_II.label>
+	<RPP_Production_Matrix_II.description>Stelle einen Logikschaltkreis her zur Fertigung eines Roboters mit professionellen F&#228;higkeiten (F&#228;higkeitsstufe 8).</RPP_Production_Matrix_II.description>
+	<RPP_Production_Matrix_III.label>Stelle Logikschaltkreis her (Mittel)</RPP_Production_Matrix_III.label>
+	<RPP_Production_Matrix_III.description>Stelle einen Logikschaltkreis her zur Fertigung eines Roboters mit meisterlichen F&#228;higkeiten (F&#228;higkeitsstufe 13).</RPP_Production_Matrix_III.description>
+	<RPP_Production_Matrix_IV.label>Stelle Logikschaltkreis her (Erweitert)</RPP_Production_Matrix_IV.label>
+	<RPP_Production_Matrix_IV.description>Stelle einen Logikschaltkreis her zur Fertigung eines Roboters mit herausragenden F&#228;higkeiten (F&#228;higkeitsstufe 16).</RPP_Production_Matrix_IV.description>
+	<RPP_Production_Matrix_V.label>Stelle Logikschaltkreis her (Anti-Logik)</RPP_Production_Matrix_V.label>
+	<RPP_Production_Matrix_V.description>Stelle einen Anti-Logikschaltkreis her zur Fertigung eines Roboters mit legend&#228;ren F&#228;higkeiten (F&#228;higkeitsstufe 20).\nNP=P</RPP_Production_Matrix_V.description>
+
+	<RPP_Production_Cleaner_I.label>Stelle Reinigungsroboter her (Stufe 1)</RPP_Production_Cleaner_I.label>
+	<RPP_Production_Cleaner_I.description>Produziere eine Einheit f&#252;r Reinigungsarbeiten.</RPP_Production_Cleaner_I.description>
+	<RPP_Production_Cleaner_II.label>Stelle Reinigungsroboter her (Stufe 2)</RPP_Production_Cleaner_II.label>
+	<RPP_Production_Cleaner_II.description>Produziere eine Einheit f&#252;r Reinigungsarbeiten.</RPP_Production_Cleaner_II.description>
+	<RPP_Production_Cleaner_III.label>Stelle Reinigungsroboter her (Stufe 3)</RPP_Production_Cleaner_III.label>
+	<RPP_Production_Cleaner_III.description>Produziere eine Einheit f&#252;r Reinigungsarbeiten.</RPP_Production_Cleaner_III.description>
+	<RPP_Production_Cleaner_IV.label>Stelle Reinigungsroboter her (Stufe 4)</RPP_Production_Cleaner_IV.label>
+	<RPP_Production_Cleaner_IV.description>Produziere eine Einheit f&#252;r Reinigungsarbeiten.</RPP_Production_Cleaner_IV.description>
+	<RPP_Production_Cleaner_V.label>Stelle Reinigungsroboter her (Stufe 5)</RPP_Production_Cleaner_V.label>
+	<RPP_Production_Cleaner_V.description>Produziere eine Einheit f&#252;r Reinigungsarbeiten.</RPP_Production_Cleaner_V.description>
+
+	<RPP_Production_Hauler_I.label>Stelle Transportroboter her (Stufe 1)</RPP_Production_Hauler_I.label>
+	<RPP_Production_Hauler_I.description>Produziere eine Einheit f&#252;r Transportarbeiten.</RPP_Production_Hauler_I.description>
+	<RPP_Production_Hauler_II.label>Stelle Transportroboter her (Stufe 2)</RPP_Production_Hauler_II.label>
+	<RPP_Production_Hauler_II.description>Produziere eine Einheit f&#252;r Transportarbeiten.</RPP_Production_Hauler_II.description>
+	<RPP_Production_Hauler_III.label>Stelle Transportroboter her (Stufe 3)</RPP_Production_Hauler_III.label>
+	<RPP_Production_Hauler_III.description>Produziere eine Einheit f&#252;r Transportarbeiten.</RPP_Production_Hauler_III.description>
+	<RPP_Production_Hauler_IV.label>Stelle Transportroboter her (Stufe 4)</RPP_Production_Hauler_IV.label>
+	<RPP_Production_Hauler_IV.description>Produziere eine Einheit f&#252;r Transportarbeiten.</RPP_Production_Hauler_IV.description>
+	<RPP_Production_Hauler_V.label>Stelle Transportroboter her (Stufe 5)</RPP_Production_Hauler_V.label>
+	<RPP_Production_Hauler_V.description>Produziere eine Einheit f&#252;r Transportarbeiten.</RPP_Production_Hauler_V.description>
+
+	<RPP_Production_Builder_I.label>Stelle Bauroboter her (Stufe 1)</RPP_Production_Builder_I.label>
+	<RPP_Production_Builder_I.description>Produziere eine Einheit f&#252;r Bau- und Abrissarbeiten, Bergbau und Reparaturen.</RPP_Production_Builder_I.description>
+	<RPP_Production_Builder_II.label>Stelle Bauroboter her (Stufe 2)</RPP_Production_Builder_II.label>
+	<RPP_Production_Builder_II.description>Produziere eine Einheit f&#252;r Bau- und Abrissarbeiten, Bergbau und Reparaturen.</RPP_Production_Builder_II.description>
+	<RPP_Production_Builder_III.label>Stelle Bauroboter her (Stufe 3)</RPP_Production_Builder_III.label>
+	<RPP_Production_Builder_III.description>Produziere eine Einheit f&#252;r Bau- und Abrissarbeiten, Bergbau und Reparaturen.</RPP_Production_Builder_III.description>
+	<RPP_Production_Builder_IV.label>Stelle Bauroboter her (Stufe 4)</RPP_Production_Builder_IV.label>
+	<RPP_Production_Builder_IV.description>Produziere eine Einheit f&#252;r Bau- und Abrissarbeiten, Bergbau und Reparaturen.</RPP_Production_Builder_IV.description>
+	<RPP_Production_Builder_V.label>Stelle Bauroboter her (Stufe 5)</RPP_Production_Builder_V.label>
+	<RPP_Production_Builder_V.description>Produziere eine Einheit f&#252;r Bau- und Abrissarbeiten, Bergbau und Reparaturen.</RPP_Production_Builder_V.description>
+
+	<RPP_Production_Crafter_I.label>Stelle Fertigungsroboter her (Stufe 1)</RPP_Production_Crafter_I.label>
+	<RPP_Production_Crafter_I.description>Produziere eine Einheit f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Production_Crafter_I.description>
+	<RPP_Production_Crafter_II.label>Stelle Fertigungsroboter her (Stufe 2)</RPP_Production_Crafter_II.label>
+	<RPP_Production_Crafter_II.description>Produziere eine Einheit f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Production_Crafter_II.description>
+	<RPP_Production_Crafter_III.label>Stelle Fertigungsroboter her (Stufe 3)</RPP_Production_Crafter_III.label>
+	<RPP_Production_Crafter_III.description>Produziere eine Einheit f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Production_Crafter_III.description>
+	<RPP_Production_Crafter_IV.label>Stelle Fertigungsroboter her (Stufe 4)</RPP_Production_Crafter_IV.label>
+	<RPP_Production_Crafter_IV.description>Produziere eine Einheit f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Production_Crafter_IV.description>
+	<RPP_Production_Crafter_V.label>Stelle Fertigungsroboter her (Stufe 5)</RPP_Production_Crafter_V.label>
+	<RPP_Production_Crafter_V.description>Produziere eine Einheit f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Production_Crafter_V.description>
+
+
+	<RPP_Production_ER_I.label>Stelle Notfallroboter her (Stufe 1)</RPP_Production_ER_I.label>
+	<RPP_Production_ER_I.description>Produziere eine Einheit f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Production_ER_I.description>
+	<RPP_Production_ER_II.label>Stelle Notfallroboter her (Stufe 2)</RPP_Production_ER_II.label>
+	<RPP_Production_ER_II.description>Produziere eine Einheit f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Production_ER_II.description>
+	<RPP_Production_ER_III.label>Stelle Notfallroboter her (Stufe 3)</RPP_Production_ER_III.label>
+	<RPP_Production_ER_III.description>Produziere eine Einheit f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Production_ER_III.description>
+	<RPP_Production_ER_IV.label>Stelle Notfallroboter her (Stufe 4)</RPP_Production_ER_IV.label>
+	<RPP_Production_ER_IV.description>Produziere eine Einheit f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Production_ER_IV.description>
+	<RPP_Production_ER_V.label>Stelle Notfallroboter her (Stufe 5)</RPP_Production_ER_V.label>
+	<RPP_Production_ER_V.description>Produziere eine Einheit f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Production_ER_V.description>
+
+	<RPP_Production_Kitchen_I.label>Stelle K&#252;chenroboter her (Stufe 1)</RPP_Production_Kitchen_I.label>
+	<RPP_Production_Kitchen_I.description>Produziere eine Einheit sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Production_Kitchen_I.description>
+	<RPP_Production_Kitchen_II.label>Stelle K&#252;chenroboter her (Stufe 2)</RPP_Production_Kitchen_II.label>
+	<RPP_Production_Kitchen_II.description>Produziere eine Einheit sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Production_Kitchen_II.description>
+	<RPP_Production_Kitchen_III.label>Stelle K&#252;chenroboter her (Stufe 3)</RPP_Production_Kitchen_III.label>
+	<RPP_Production_Kitchen_III.description>Produziere eine Einheit sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Production_Kitchen_III.description>
+	<RPP_Production_Kitchen_IV.label>Stelle K&#252;chenroboter her (Stufe 4)</RPP_Production_Kitchen_IV.label>
+	<RPP_Production_Kitchen_IV.description>Produziere eine Einheit sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Production_Kitchen_IV.description>
+	<RPP_Production_Kitchen_V.label>Stelle K&#252;chenroboter her (Stufe 5)</RPP_Production_Kitchen_V.label>
+	<RPP_Production_Kitchen_V.description>Produziere eine Einheit sowohl f&#252;r K&#252;chenarbeiten, als auch das S&#228;en und Ernten von Pflanzen.</RPP_Production_Kitchen_V.description>
+
+
+	<RPP_Production_Omni_V.label>Stelle Universalroboter her (Stufe 5)</RPP_Production_Omni_V.label>
+	<RPP_Production_Omni_V.description>Produziere eine Einheit die alle anfallenden Arbeiten erledigen kann.</RPP_Production_Omni_V.description>
+
+</LanguageData>

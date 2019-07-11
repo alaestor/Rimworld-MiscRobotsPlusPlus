@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Table_RPP_RoboticsBench.label>機器人工作台</Table_RPP_RoboticsBench.label>
+  <Table_RPP_RoboticsBench.description>一個可用於製作機器人的工作台。</Table_RPP_RoboticsBench.description>
+  <Table_RPP_RoboticsBench_Blueprint.label>機器人工作台(藍圖)</Table_RPP_RoboticsBench_Blueprint.label>
+  <Table_RPP_RoboticsBench_Blueprint_Install.label>機器人工作台(藍圖)</Table_RPP_RoboticsBench_Blueprint_Install.label>
+  <Table_RPP_RoboticsBench_Frame.label>機器人工作台(建築中)</Table_RPP_RoboticsBench_Frame.label>
+  <Table_RPP_RoboticsBench_Frame.description>一個可用於製作機器人的工作台。</Table_RPP_RoboticsBench_Frame.description>
+
+
+</LanguageData>

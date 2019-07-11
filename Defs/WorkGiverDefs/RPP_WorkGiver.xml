@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>DoBills_RPP_Robotics</defName>
+		<label>do bills at robotics table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<!--<priorityInType>130</priorityInType>-->
+		<fixedBillGiverDefs>
+			<li>Table_RPP_RoboticsBench</li>
+		</fixedBillGiverDefs>
+		<verb>produce</verb>
+		<gerund>producing</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>

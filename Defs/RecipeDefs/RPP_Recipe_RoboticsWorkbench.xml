@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--******** META ********-->
+
+	<RecipeDef Abstract="True" Name="RPP_Recipe_FastItem">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workAmount>100</workAmount>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<skillRequirements><Crafting>4</Crafting></skillRequirements>
+		<jobString>Engineering Robotics.</jobString>
+		<recipeUsers><li>Table_RPP_RoboticsBench</li></recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Matrix">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workAmount>5000</workAmount>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<jobString>Engineering Robotics.</jobString>
+		<recipeUsers><li>Table_RPP_RoboticsBench</li></recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Bot" ParentName="RPP_Recipe_Matrix">
+		<!-- empty abstration, maybe for future. for now its just Matrix meta -->
+	</RecipeDef>
+
+	<!--******** TIER META ********-->
+
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Bot_I" ParentName="RPP_Recipe_Bot">
+		<workAmount>6000</workAmount>
+		<skillRequirements><Crafting>4</Crafting></skillRequirements>
+		<ingredients>
+			<li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>RPP_Matrix_I</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Steel</li><li>RPP_Matrix_I</li></thingDefs></fixedIngredientFilter>
+		<researchPrerequisite>RPP_Research_Matrix_I</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Bot_II" ParentName="RPP_Recipe_Bot">
+		<workAmount>8000</workAmount>
+		<skillRequirements><Crafting>8</Crafting></skillRequirements>
+		<ingredients>
+			<li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>75</count></li>
+			<li><filter><thingDefs><li>RPP_Matrix_II</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Steel</li><li>RPP_Matrix_II</li></thingDefs></fixedIngredientFilter>
+		<researchPrerequisite>RPP_Research_Matrix_II</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Bot_III" ParentName="RPP_Recipe_Bot">
+		<workAmount>10000</workAmount>
+		<skillRequirements><Crafting>13</Crafting></skillRequirements>
+		<ingredients>
+			<li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>25</count></li>
+			<li><filter><thingDefs><li>RPP_Matrix_III</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Plasteel</li><li>RPP_Matrix_III</li></thingDefs></fixedIngredientFilter>
+		<researchPrerequisite>RPP_Research_Matrix_III</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Bot_IV" ParentName="RPP_Recipe_Bot">
+		<workAmount>12000</workAmount>
+		<skillRequirements><Crafting>16</Crafting></skillRequirements>
+		<ingredients>
+			<li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>40</count></li>
+			<li><filter><thingDefs><li>RPP_Matrix_IV</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Plasteel</li><li>RPP_Matrix_IV</li></thingDefs></fixedIngredientFilter>
+		<researchPrerequisite>RPP_Research_Matrix_IV</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Bot_V" ParentName="RPP_Recipe_Bot">
+		<workAmount>14000</workAmount>
+		<skillRequirements><Crafting>20</Crafting></skillRequirements>
+		<ingredients>
+			<li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>75</count></li>
+			<li><filter><thingDefs><li>RPP_Matrix_V</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Plasteel</li><li>RPP_Matrix_V</li></thingDefs></fixedIngredientFilter>
+		<researchPrerequisite>RPP_Research_Matrix_V</researchPrerequisite>
+	</RecipeDef>
+
+	<!--******** INHERET ********-->
+
+<!-- resource -->
+
+	<RecipeDef ParentName="RPP_Recipe_FastItem">
+		<defName>RPP_Production_Component</defName>
+		<label>make robotic component</label>
+		<description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</description>
+		<ingredients>
+			<li><filter><thingDefs><li>Silver</li></thingDefs></filter><count>5</count></li>
+			<li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Silver</li><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Component>1</RPP_Component></products>
+		<researchPrerequisite>RPP_Research_Fundamentals</researchPrerequisite>
+	</RecipeDef>
+
+<!-- matricies -->
+
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_I</defName>
+		<label>make robotic matrix (Simple)</label>
+		<description>Produce a robotic logical matrix for crafting a robot with Amateur-class skills (Tier 1).</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_I>1</RPP_Matrix_I></products>
+		<researchPrerequisite>RPP_Research_Matrix_I</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_II</defName>
+		<label>make robotic matrix (Basic)</label>
+		<description>Produce a robotic logical matrix for crafting a robot with Professional-class skills (Tier 2).</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>5</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>3</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_II>1</RPP_Matrix_II></products>
+		<researchPrerequisite>RPP_Research_Matrix_II</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_III</defName>
+		<label>make robotic matrix (Intermediate)</label>
+		<description>Produce a robotic logical matrix for crafting a robot with Master-class skills (Tier 3).</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>10</count></li>
+			<li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentSpacer</li><li>Gold</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_III>1</RPP_Matrix_III></products>
+		<researchPrerequisite>RPP_Research_Matrix_III</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_IV</defName>
+		<label>make robotic matrix (Advanced)</label>
+		<description>Produce a robotic logical matrix for crafting a robot with System-Master-class skills (Tier 4).</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
+			<li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>5</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentSpacer</li><li>Gold</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_IV>1</RPP_Matrix_IV></products>
+		<researchPrerequisite>RPP_Research_Matrix_IV</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_V</defName>
+		<label>make robotic matrix (Anti-Logic)</label>
+		<description>Produce an Anti-Logic Matrix for crafting a robot with Godlike skills (Tier 5).\nNP=P</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>40</count></li>
+			<li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>8</count></li>
+			<li><filter><thingDefs><li>Silver</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>10</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentSpacer</li><li>Silver</li><li>Gold</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_V>1</RPP_Matrix_V></products>
+		<researchPrerequisite>RPP_Research_Matrix_V</researchPrerequisite>
+	</RecipeDef>
+
+<!-- override -->
+
+	<RecipeDef ParentName="RPP_Recipe_Bot_I">
+		<defName>RPP_Production_Cleaner_I</defName>
+		<label>make cleaner bot (Tier 1)</label>
+		<description>Produce a unit capable of Cleaning.</description>
+		<products><AIRobot_RechargeStation_Cleaner>1</AIRobot_RechargeStation_Cleaner></products>
+		<researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_II">
+		<defName>RPP_Production_Cleaner_II</defName>
+		<label>make Cleaner bot (Tier 2)</label>
+		<description>Produce a unit capable of Cleaning.</description>
+		<products><AIRobot_RechargeStation_Cleaner_II>1</AIRobot_RechargeStation_Cleaner_II></products>
+		<researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_III">
+		<defName>RPP_Production_Cleaner_III</defName>
+		<label>make Cleaner bot (Tier 3)</label>
+		<description>Produce a unit capable of Cleaning.</description>
+		<products><AIRobot_RechargeStation_Cleaner_III>1</AIRobot_RechargeStation_Cleaner_III></products>
+		<researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_IV">
+		<defName>RPP_Production_Cleaner_IV</defName>
+		<label>make Cleaner bot (Tier 4)</label>
+		<description>Produce a unit capable of Cleaning.</description>
+		<products><AIRobot_RechargeStation_Cleaner_IV>1</AIRobot_RechargeStation_Cleaner_IV></products>
+		<researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_V">
+		<defName>RPP_Production_Cleaner_V</defName>
+		<label>make Cleaner bot (Tier 5)</label>
+		<description>Produce a unit capable of Cleaning.</description>
+		<products><AIRobot_RechargeStation_Cleaner_V>1</AIRobot_RechargeStation_Cleaner_V></products>
+		<researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RPP_Recipe_Bot_I">
+		<defName>RPP_Production_Hauler_I</defName>
+		<label>make hauler bot (Tier 1)</label>
+		<description>Produce a unit capable of Hauling.</description>
+		<products><AIRobot_RechargeStation_Hauler>1</AIRobot_RechargeStation_Hauler></products>
+		<researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_II">
+		<defName>RPP_Production_Hauler_II</defName>
+		<label>make Hauler bot (Tier 2)</label>
+		<description>Produce a unit capable of Hauling.</description>
+		<products><AIRobot_RechargeStation_Hauler_II>1</AIRobot_RechargeStation_Hauler_II></products>
+		<researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_III">
+		<defName>RPP_Production_Hauler_III</defName>
+		<label>make Hauler bot (Tier 3)</label>
+		<description>Produce a unit capable of Hauling.</description>
+		<products><AIRobot_RechargeStation_Hauler_III>1</AIRobot_RechargeStation_Hauler_III></products>
+		<researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_IV">
+		<defName>RPP_Production_Hauler_IV</defName>
+		<label>make Hauler bot (Tier 4)</label>
+		<description>Produce a unit capable of Hauling.</description>
+		<products><AIRobot_RechargeStation_Hauler_IV>1</AIRobot_RechargeStation_Hauler_IV></products>
+		<researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_V">
+		<defName>RPP_Production_Hauler_V</defName>
+		<label>make Hauler bot (Tier 5)</label>
+		<description>Produce a unit capable of Hauling.</description>
+		<products><AIRobot_RechargeStation_Hauler_V>1</AIRobot_RechargeStation_Hauler_V></products>
+		<researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite>
+	</RecipeDef>
+
+<!-- RPP -->
+
+	<RecipeDef ParentName="RPP_Recipe_Bot_I">
+		<defName>RPP_Production_Builder_I</defName>
+		<label>make builder bot (Tier 1)</label>
+		<description>Produce a unit capable of construction, deconstruction, mining, and repairing with amateur-class ability.</description>
+		<products><RPP_RechargeStation_Builder_I>1</RPP_RechargeStation_Builder_I></products>
+		<researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_II">
+		<defName>RPP_Production_Builder_II</defName>
+		<label>make builder bot (Tier 2)</label>
+		<description>Produce a unit capable of construction, deconstruction, mining, and repairing with professional-class ability.</description>
+		<products><RPP_RechargeStation_Builder_II>1</RPP_RechargeStation_Builder_II></products>
+		<researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_III">
+		<defName>RPP_Production_Builder_III</defName>
+		<label>make builder bot (Tier 3)</label>
+		<description>Produce a unit capable of construction, deconstruction, mining, and repairing with master-class ability.</description>
+		<products><RPP_RechargeStation_Builder_III>1</RPP_RechargeStation_Builder_III></products>
+		<researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_IV">
+		<defName>RPP_Production_Builder_IV</defName>
+		<label>make builder bot (Tier 4)</label>
+		<description>Produce a unit capable of construction, deconstruction, mining, and repairing with system-master-class ability.</description>
+		<products><RPP_RechargeStation_Builder_IV>1</RPP_RechargeStation_Builder_IV></products>
+		<researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_V">
+		<defName>RPP_Production_Builder_V</defName>
+		<label>make builder bot (Tier 5)</label>
+		<description>Produce a unit capable of construction, deconstruction, mining, and repairing with system-master-class ability.</description>
+		<products><RPP_RechargeStation_Builder_V>1</RPP_RechargeStation_Builder_V></products>
+		<researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RPP_Recipe_Bot_I">
+		<defName>RPP_Production_Crafter_I</defName>
+		<label>make crafter bot (Tier 1)</label>
+		<description>Produce a unit capable of crafting, smithing, and tailoring with amateur-class ability.</description>
+		<products><RPP_RechargeStation_Crafter_I>1</RPP_RechargeStation_Crafter_I></products>
+		<researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_II">
+		<defName>RPP_Production_Crafter_II</defName>
+		<label>make crafter bot (Tier 2)</label>
+		<description>Produce a unit capable of crafting, smithing, and tailoring with professional-class ability.</description>
+		<products><RPP_RechargeStation_Crafter_II>1</RPP_RechargeStation_Crafter_II></products>
+		<researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_III">
+		<defName>RPP_Production_Crafter_III</defName>
+		<label>make crafter bot (Tier 3)</label>
+		<description>Produce a unit capable of crafting, smithing, and tailoring with master-class ability.</description>
+		<products><RPP_RechargeStation_Crafter_III>1</RPP_RechargeStation_Crafter_III></products>
+		<researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_IV">
+		<defName>RPP_Production_Crafter_IV</defName>
+		<label>make Crafter bot (Tier 4)</label>
+		<description>Produce a unit capable of crafting, smithing, and tailoring with system-master-class ability.</description>
+		<products><RPP_RechargeStation_Crafter_IV>1</RPP_RechargeStation_Crafter_IV></products>
+		<researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_V">
+		<defName>RPP_Production_Crafter_V</defName>
+		<label>make Crafter bot (Tier 5)</label>
+		<description>Produce a unit capable of crafting, smithing, and tailoring with system-master-class ability.</description>
+		<products><RPP_RechargeStation_Crafter_V>1</RPP_RechargeStation_Crafter_V></products>
+		<researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RPP_Recipe_Bot_I">
+		<defName>RPP_Production_ER_I</defName>
+		<label>make ER bot (Tier 1)</label>
+		<description>Produce a unit capable of treating patients and fighting fires with amateur-class ability.</description>
+		<products><RPP_RechargeStation_ER_I>1</RPP_RechargeStation_ER_I></products>
+		<researchPrerequisite>RPP_Research_ER_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_II">
+		<defName>RPP_Production_ER_II</defName>
+		<label>make ER bot (Tier 2)</label>
+		<description>Produce a unit capable of treating patients and fighting fires with professional-class ability.</description>
+		<products><RPP_RechargeStation_ER_II>1</RPP_RechargeStation_ER_II></products>
+		<researchPrerequisite>RPP_Research_ER_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_III">
+		<defName>RPP_Production_ER_III</defName>
+		<label>make ER bot (Tier 3)</label>
+		<description>Produce a unit capable of treating patients and fighting fires with master-class ability.</description>
+		<products><RPP_RechargeStation_ER_III>1</RPP_RechargeStation_ER_III></products>
+		<researchPrerequisite>RPP_Research_ER_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_IV">
+		<defName>RPP_Production_ER_IV</defName>
+		<label>make ER bot (Tier 4)</label>
+		<description>Produce a unit capable of treating patients and fighting fires with system-master-class ability.</description>
+		<products><RPP_RechargeStation_ER_IV>1</RPP_RechargeStation_ER_IV></products>
+		<researchPrerequisite>RPP_Research_ER_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_V">
+		<defName>RPP_Production_ER_V</defName>
+		<label>make ER bot (Tier 5)</label>
+		<description>Produce a unit capable of treating patients and fighting fires with system-master-class ability.</description>
+		<products><RPP_RechargeStation_ER_V>1</RPP_RechargeStation_ER_V></products>
+		<researchPrerequisite>RPP_Research_ER_All</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RPP_Recipe_Bot_I">
+		<defName>RPP_Production_Kitchen_I</defName>
+		<label>make Kitchen bot (Tier 1)</label>
+		<description>Produce a unit capable of cooking and tending to plants with amateur-class ability.</description>
+		<products><RPP_RechargeStation_Kitchen_I>1</RPP_RechargeStation_Kitchen_I></products>
+		<researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_II">
+		<defName>RPP_Production_Kitchen_II</defName>
+		<label>make Kitchen bot (Tier 2)</label>
+		<description>Produce a unit capable of cooking and tending to plants with professional-class ability.</description>
+		<products><RPP_RechargeStation_Kitchen_II>1</RPP_RechargeStation_Kitchen_II></products>
+		<researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_III">
+		<defName>RPP_Production_Kitchen_III</defName>
+		<label>make Kitchen bot (Tier 3)</label>
+		<description>Produce a unit capable of cooking and tending to plants with master-class ability.</description>
+		<products><RPP_RechargeStation_Kitchen_III>1</RPP_RechargeStation_Kitchen_III></products>
+		<researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_IV">
+		<defName>RPP_Production_Kitchen_IV</defName>
+		<label>make Kitchen bot (Tier 4)</label>
+		<description>Produce a unit capable of cooking and tending to plants with system-master-class ability.</description>
+		<products><RPP_RechargeStation_Kitchen_IV>1</RPP_RechargeStation_Kitchen_IV></products>
+		<researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Bot_V">
+		<defName>RPP_Production_Kitchen_V</defName>
+		<label>make Kitchen bot (Tier 5)</label>
+		<description>Produce a unit capable of cooking and tending to plants with system-master-class ability.</description>
+		<products><RPP_RechargeStation_Kitchen_V>1</RPP_RechargeStation_Kitchen_V></products>
+		<researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RPP_Recipe_Bot_V">
+		<defName>RPP_Production_Omni_V</defName>
+		<label>make Omni-bot (Tier 5)</label>
+		<description>Produce an OmniBot.</description>
+		<products><RPP_RechargeStation_Omni_V>1</RPP_RechargeStation_Omni_V></products>
+		<researchPrerequisite>RPP_Research_Omni_V</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

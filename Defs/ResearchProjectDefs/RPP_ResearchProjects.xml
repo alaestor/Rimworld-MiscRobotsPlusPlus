@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--
+		vertical <researchViewY>1</researchViewY>
+		horizontal <researchViewX>1</researchViewX>
+	-->
+
+	<!--******** META ********-->
+
+	<ResearchProjectDef Abstract="True" Name="RPP_Research">
+		<tab>RPP_Reasearch_Tab</tab>
+	</ResearchProjectDef>
+
+	<!--******** TIER META ********-->
+
+	<ResearchProjectDef Abstract="True" Name="RPP_Research_All" ParentName="RPP_Research">
+		<baseCost>5000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<prerequisites><li>RPP_Research_Fundamentals</li></prerequisites>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<!--******** INHERET ********-->
+
+<!-- Tiers and Matricies -->
+
+	<ResearchProjectDef ParentName="RPP_Research">
+		<defName>RPP_Research_Matrix_I</defName>
+		<label>Robotics:\nSimple Logic</label>
+		<description>Tier 1: Investigation into the production of the Simple Robotic Matrix units used in producing Amateur-class robots. Unlocks Basic robotic research (Tier 2) and the Simple Robotic Matrix.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites><li>RPP_Research_Fundamentals</li></prerequisites>
+		<researchViewX>0.5</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="RPP_Research">
+		<defName>RPP_Research_Matrix_II</defName>
+		<label>Robotics:\nBasic Logic</label>
+		<description>Tier 2: Investigation into the production of the Basic Robotic Matrix units used in producing Professional-class robots. Unlocks Intermediate robotic research (Tier 3) and the Basic Robotic Matrix unit. All robots in this tier are faster and less flammable than the previous.</description>
+		<baseCost>10000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites><li>RPP_Research_Matrix_I</li></prerequisites>
+		<researchViewX>0.5</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="RPP_Research">
+		<defName>RPP_Research_Matrix_III</defName>
+		<label>Robotics:\nIntermediate Logic</label>
+		<description>Tier 3: Investigation into the production of the Intermediate Robotic Matrix units used in producing Master-class robots. Unlocks advanced robotic research (Tier 4) and the Intermediate Robotic Matrix unit. All robots in this tier are faster and less flammable than the previous.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites><li>RPP_Research_Matrix_II</li></prerequisites>
+		<researchViewX>0.5</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="RPP_Research">
+		<defName>RPP_Research_Matrix_IV</defName>
+		<label>Robotics:\nAdvanced Logic</label>
+		<description>Tier 4: Investigation into the production of the Advanced Robotic Matrix units used in producing System-Master-class robots. Unlocks the Advanced Robotic Matrix unit. All robots in this tier are faster and less flammable than the previous.</description>
+		<baseCost>20000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites><li>RPP_Research_Matrix_III</li></prerequisites>
+		<requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
+		<researchViewX>0.5</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="RPP_Research">
+		<defName>RPP_Research_Matrix_V</defName>
+		<label>Robotics:\nAnti-Logic\n(NP=P)</label>
+		<description>Tier 5: Break the boundaries set by existing levels of technology, understandings of logic, and the very concepts of causation. Our scientific horizons are becoming a lot more timey-wimey.</description>
+		<baseCost>30000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites><li>RPP_Research_Matrix_IV</li></prerequisites>
+		<requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
+		<researchViewX>0.5</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+
+
+<!-- Entry Point -->
+
+	<ResearchProjectDef ParentName="RPP_Research">
+		<defName>RPP_Research_Fundamentals</defName>
+		<label>Robotics:\nFundamentals</label>
+		<description>Tier 0:\nInvestigation into the easiest principles of robotics and automation.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites><li>MicroelectronicsBasics</li></prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+<!-- RPP -->
+
+	<ResearchProjectDef ParentName="RPP_Research_All">
+		<defName>RPP_Research_Cleaner_All</defName>
+		<label>Cleaner</label>
+		<description>Production of cleaning robots. The Hauling and Cleaning bots are faster than all other bots of the same tier.</description>
+		<researchViewX>2</researchViewX>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_All">
+		<defName>RPP_Research_Hauler_All</defName>
+		<label>Hauler</label>
+		<description>Production of Hauling robots. The Hauling and Cleaning bots are faster than all other bots of the same tier.</description>
+		<researchViewX>3</researchViewX>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_All">
+		<defName>RPP_Research_Builder_All</defName>
+		<label>Builder</label>
+		<description>Production of Construction + Mining robots.</description>
+		<researchViewX>4</researchViewX>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_All">
+		<defName>RPP_Research_Crafter_All</defName>
+		<label>Crafter</label>
+		<description>Production of Crafting robots.</description>
+		<researchViewX>5</researchViewX>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_All">
+		<defName>RPP_Research_ER_All</defName>
+		<label>ER</label>
+		<description>Production of Emergency Response robots.</description>
+		<researchViewX>6</researchViewX>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research_All">
+		<defName>RPP_Research_Kitchen_All</defName>
+		<label>Kitchen</label>
+		<description>Production of Kitchen robots.</description>
+		<researchViewX>7</researchViewX>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="RPP_Research">
+		<defName>RPP_Research_Omni_V</defName>
+		<label>Anti-Logic\nOmniBot</label>
+		<description>Production of omni-talented robots. These super-sonic robots are capable of almost any task.</description>
+		<prerequisites>
+			<li>RPP_Research_Cleaner_All</li>
+			<li>RPP_Research_Hauler_All</li>
+			<li>RPP_Research_Builder_All</li>
+			<li>RPP_Research_Crafter_All</li>
+			<li>RPP_Research_ER_All</li>
+			<li>RPP_Research_Kitchen_All</li>
+			<li>RPP_Research_Matrix_V</li>
+		</prerequisites>
+		<baseCost>10000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewY>5</researchViewY>
+		<researchViewX>4.5</researchViewX>
+	</ResearchProjectDef>
+
+</Defs>

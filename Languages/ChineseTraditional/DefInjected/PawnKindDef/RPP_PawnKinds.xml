@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- override -->
+
+  <AIRobot_Hauler.label>搬運機（一階）</AIRobot_Hauler.label>
+  <AIRobot_Hauler.labelPlural>搬運機（一階）們</AIRobot_Hauler.labelPlural>
+  <AIRobot_Hauler.labelMale>雄性搬運機（一階）</AIRobot_Hauler.labelMale>
+  <AIRobot_Hauler.labelMalePlural>雄性搬運機（一階）們</AIRobot_Hauler.labelMalePlural>
+  <AIRobot_Hauler.labelFemale>雌性搬運機（一階）</AIRobot_Hauler.labelFemale>
+  <AIRobot_Hauler.labelFemalePlural>雌性搬運機（一階）們</AIRobot_Hauler.labelFemalePlural>
+
+  <AIRobot_Hauler_II.label>搬運機（二階）</AIRobot_Hauler_II.label>
+  <AIRobot_Hauler_II.labelPlural>搬運機（二階）們</AIRobot_Hauler_II.labelPlural>
+  <AIRobot_Hauler_II.labelMale>雄性搬運機（二階）</AIRobot_Hauler_II.labelMale>
+  <AIRobot_Hauler_II.labelMalePlural>雄性搬運機（二階）們</AIRobot_Hauler_II.labelMalePlural>
+  <AIRobot_Hauler_II.labelFemale>雌性搬運機（二階）</AIRobot_Hauler_II.labelFemale>
+  <AIRobot_Hauler_II.labelFemalePlural>雌性搬運機（二階）們</AIRobot_Hauler_II.labelFemalePlural>
+
+  <AIRobot_Hauler_III.label>搬運機（三階）</AIRobot_Hauler_III.label>
+  <AIRobot_Hauler_III.labelPlural>搬運機(Tier 3)s</AIRobot_Hauler_III.labelPlural>
+  <AIRobot_Hauler_III.labelMale>雄性搬運機(Tier 3)</AIRobot_Hauler_III.labelMale>
+  <AIRobot_Hauler_III.labelMalePlural>雄性搬運機(Tier 3)s</AIRobot_Hauler_III.labelMalePlural>
+  <AIRobot_Hauler_III.labelFemale>雌性搬運機(Tier 3)</AIRobot_Hauler_III.labelFemale>
+  <AIRobot_Hauler_III.labelFemalePlural>雌性搬運機(Tier 3)s</AIRobot_Hauler_III.labelFemalePlural>
+
+  <AIRobot_Hauler_IV.label>搬運機（四階）</AIRobot_Hauler_IV.label>
+  <AIRobot_Hauler_IV.labelPlural>搬運機(Tier 4)s</AIRobot_Hauler_IV.labelPlural>
+  <AIRobot_Hauler_IV.labelMale>雄性搬運機(Tier 4)</AIRobot_Hauler_IV.labelMale>
+  <AIRobot_Hauler_IV.labelMalePlural>雄性搬運機(Tier 4)s</AIRobot_Hauler_IV.labelMalePlural>
+  <AIRobot_Hauler_IV.labelFemale>雌性搬運機(Tier 4)</AIRobot_Hauler_IV.labelFemale>
+  <AIRobot_Hauler_IV.labelFemalePlural>雌性搬運機(Tier 4)s</AIRobot_Hauler_IV.labelFemalePlural>
+
+  <AIRobot_Hauler_V.label>搬運機（五階）</AIRobot_Hauler_V.label>
+  <AIRobot_Hauler_V.labelPlural>搬運機(Tier 5)s</AIRobot_Hauler_V.labelPlural>
+  <AIRobot_Hauler_V.labelMale>雄性搬運機(Tier 5)</AIRobot_Hauler_V.labelMale>
+  <AIRobot_Hauler_V.labelMalePlural>雄性搬運機(Tier 5)s</AIRobot_Hauler_V.labelMalePlural>
+  <AIRobot_Hauler_V.labelFemale>雌性搬運機(Tier 5)</AIRobot_Hauler_V.labelFemale>
+  <AIRobot_Hauler_V.labelFemalePlural>雌性搬運機(Tier 5)s</AIRobot_Hauler_V.labelFemalePlural>
+
+  <AIRobot_Cleaner.label>清潔機（一階）</AIRobot_Cleaner.label>
+  <AIRobot_Cleaner.labelPlural>清潔機（一階）們</AIRobot_Cleaner.labelPlural>
+  <AIRobot_Cleaner.labelMale>雄性清潔機（一階）</AIRobot_Cleaner.labelMale>
+  <AIRobot_Cleaner.labelMalePlural>雄性清潔機（一階）們</AIRobot_Cleaner.labelMalePlural>
+  <AIRobot_Cleaner.labelFemale>雌性清潔機（一階）</AIRobot_Cleaner.labelFemale>
+  <AIRobot_Cleaner.labelFemalePlural>雌性清潔機（一階）們</AIRobot_Cleaner.labelFemalePlural>
+
+  <AIRobot_Cleaner_II.label>清潔機（二階）</AIRobot_Cleaner_II.label>
+  <AIRobot_Cleaner_II.labelPlural>清潔機(Tier 2)s</AIRobot_Cleaner_II.labelPlural>
+  <AIRobot_Cleaner_II.labelMale>雄性清潔機(Tier 2)</AIRobot_Cleaner_II.labelMale>
+  <AIRobot_Cleaner_II.labelMalePlural>雄性清潔機(Tier 2)s</AIRobot_Cleaner_II.labelMalePlural>
+  <AIRobot_Cleaner_II.labelFemale>雌性清潔機(Tier 2)</AIRobot_Cleaner_II.labelFemale>
+  <AIRobot_Cleaner_II.labelFemalePlural>雌性清潔機(Tier 2)s</AIRobot_Cleaner_II.labelFemalePlural>
+
+  <AIRobot_Cleaner_III.label>清潔機（三階）</AIRobot_Cleaner_III.label>
+  <AIRobot_Cleaner_III.labelPlural>清潔機(Tier 3)s</AIRobot_Cleaner_III.labelPlural>
+  <AIRobot_Cleaner_III.labelMale>雄性清潔機(Tier 3)</AIRobot_Cleaner_III.labelMale>
+  <AIRobot_Cleaner_III.labelMalePlural>雄性清潔機(Tier 3)s</AIRobot_Cleaner_III.labelMalePlural>
+  <AIRobot_Cleaner_III.labelFemale>雌性清潔機(Tier 3)</AIRobot_Cleaner_III.labelFemale>
+  <AIRobot_Cleaner_III.labelFemalePlural>雌性清潔機(Tier 3)s</AIRobot_Cleaner_III.labelFemalePlural>
+
+  <AIRobot_Cleaner_IV.label>清潔機（四階）</AIRobot_Cleaner_IV.label>
+  <AIRobot_Cleaner_IV.labelPlural>清潔機(Tier 4)s</AIRobot_Cleaner_IV.labelPlural>
+  <AIRobot_Cleaner_IV.labelMale>雄性清潔機(Tier 4)</AIRobot_Cleaner_IV.labelMale>
+  <AIRobot_Cleaner_IV.labelMalePlural>雄性清潔機(Tier 4)s</AIRobot_Cleaner_IV.labelMalePlural>
+  <AIRobot_Cleaner_IV.labelFemale>雌性清潔機(Tier 4)</AIRobot_Cleaner_IV.labelFemale>
+  <AIRobot_Cleaner_IV.labelFemalePlural>雌性清潔機(Tier 4)s</AIRobot_Cleaner_IV.labelFemalePlural>
+
+  <AIRobot_Cleaner_V.label>清潔機（五階）</AIRobot_Cleaner_V.label>
+  <AIRobot_Cleaner_V.labelPlural>清潔機(Tier 5)s</AIRobot_Cleaner_V.labelPlural>
+  <AIRobot_Cleaner_V.labelMale>雄性清潔機(Tier 5)</AIRobot_Cleaner_V.labelMale>
+  <AIRobot_Cleaner_V.labelMalePlural>雄性清潔機(Tier 5)s</AIRobot_Cleaner_V.labelMalePlural>
+  <AIRobot_Cleaner_V.labelFemale>雌性清潔機(Tier 5)</AIRobot_Cleaner_V.labelFemale>
+  <AIRobot_Cleaner_V.labelFemalePlural>雌性清潔機(Tier 5)s</AIRobot_Cleaner_V.labelFemalePlural>
+
+
+  <!-- RPP -->
+
+  <RPP_Bot_Builder_I.label>工程機（一階）</RPP_Bot_Builder_I.label>
+  <RPP_Bot_Builder_I.labelPlural>工程機（一階）們</RPP_Bot_Builder_I.labelPlural>
+  <RPP_Bot_Builder_I.labelMale>雄性工程機（一階）</RPP_Bot_Builder_I.labelMale>
+  <RPP_Bot_Builder_I.labelMalePlural>雄性工程機（一階）們</RPP_Bot_Builder_I.labelMalePlural>
+  <RPP_Bot_Builder_I.labelFemale>雌性工程機（一階）</RPP_Bot_Builder_I.labelFemale>
+  <RPP_Bot_Builder_I.labelFemalePlural>雌性工程機（一階）們</RPP_Bot_Builder_I.labelFemalePlural>
+
+  <RPP_Bot_Builder_II.label>工程機（二階）</RPP_Bot_Builder_II.label>
+  <RPP_Bot_Builder_II.labelPlural>工程機(Tier 2)s</RPP_Bot_Builder_II.labelPlural>
+  <RPP_Bot_Builder_II.labelMale>雄性工程機(Tier 2)</RPP_Bot_Builder_II.labelMale>
+  <RPP_Bot_Builder_II.labelMalePlural>雄性工程機(Tier 2)s</RPP_Bot_Builder_II.labelMalePlural>
+  <RPP_Bot_Builder_II.labelFemale>雌性工程機(Tier 2)</RPP_Bot_Builder_II.labelFemale>
+  <RPP_Bot_Builder_II.labelFemalePlural>雌性工程機(Tier 2)s</RPP_Bot_Builder_II.labelFemalePlural>
+
+  <RPP_Bot_Builder_III.label>工程機（三階）</RPP_Bot_Builder_III.label>
+  <RPP_Bot_Builder_III.labelPlural>工程機(Tier 3)s</RPP_Bot_Builder_III.labelPlural>
+  <RPP_Bot_Builder_III.labelMale>雄性工程機(Tier 3)</RPP_Bot_Builder_III.labelMale>
+  <RPP_Bot_Builder_III.labelMalePlural>雄性工程機(Tier 3)s</RPP_Bot_Builder_III.labelMalePlural>
+  <RPP_Bot_Builder_III.labelFemale>雌性工程機(Tier 3)</RPP_Bot_Builder_III.labelFemale>
+  <RPP_Bot_Builder_III.labelFemalePlural>雌性工程機(Tier 3)s</RPP_Bot_Builder_III.labelFemalePlural>
+
+  <RPP_Bot_Builder_IV.label>工程機（四階）</RPP_Bot_Builder_IV.label>
+  <RPP_Bot_Builder_IV.labelPlural>工程機(Tier 4)s</RPP_Bot_Builder_IV.labelPlural>
+  <RPP_Bot_Builder_IV.labelMale>雄性工程機(Tier 4)</RPP_Bot_Builder_IV.labelMale>
+  <RPP_Bot_Builder_IV.labelMalePlural>雄性工程機(Tier 4)s</RPP_Bot_Builder_IV.labelMalePlural>
+  <RPP_Bot_Builder_IV.labelFemale>雌性工程機(Tier 4)</RPP_Bot_Builder_IV.labelFemale>
+  <RPP_Bot_Builder_IV.labelFemalePlural>雌性工程機(Tier 4)s</RPP_Bot_Builder_IV.labelFemalePlural>
+
+  <RPP_Bot_Builder_V.label>工程機（五階）</RPP_Bot_Builder_V.label>
+  <RPP_Bot_Builder_V.labelPlural>工程機(Tier 5)s</RPP_Bot_Builder_V.labelPlural>
+  <RPP_Bot_Builder_V.labelMale>雄性工程機(Tier 5)</RPP_Bot_Builder_V.labelMale>
+  <RPP_Bot_Builder_V.labelMalePlural>雄性工程機(Tier 5)s</RPP_Bot_Builder_V.labelMalePlural>
+  <RPP_Bot_Builder_V.labelFemale>雌性工程機(Tier 5)</RPP_Bot_Builder_V.labelFemale>
+  <RPP_Bot_Builder_V.labelFemalePlural>雌性工程機(Tier 5)s</RPP_Bot_Builder_V.labelFemalePlural>
+
+  <RPP_Bot_Crafter_I.label>工藝機（一階）</RPP_Bot_Crafter_I.label>
+  <RPP_Bot_Crafter_I.labelPlural>工藝機（一階）們</RPP_Bot_Crafter_I.labelPlural>
+  <RPP_Bot_Crafter_I.labelMale>雄性工藝機（一階）</RPP_Bot_Crafter_I.labelMale>
+  <RPP_Bot_Crafter_I.labelMalePlural>雄性工藝機（一階）們</RPP_Bot_Crafter_I.labelMalePlural>
+  <RPP_Bot_Crafter_I.labelFemale>雌性工藝機（一階）</RPP_Bot_Crafter_I.labelFemale>
+  <RPP_Bot_Crafter_I.labelFemalePlural>雌性工藝機（一階）們</RPP_Bot_Crafter_I.labelFemalePlural>
+
+  <RPP_Bot_Crafter_II.label>工藝機（二階）</RPP_Bot_Crafter_II.label>
+  <RPP_Bot_Crafter_II.labelPlural>工藝機(Tier 2)s</RPP_Bot_Crafter_II.labelPlural>
+  <RPP_Bot_Crafter_II.labelMale>雄性工藝機(Tier 2)</RPP_Bot_Crafter_II.labelMale>
+  <RPP_Bot_Crafter_II.labelMalePlural>雄性工藝機(Tier 2)s</RPP_Bot_Crafter_II.labelMalePlural>
+  <RPP_Bot_Crafter_II.labelFemale>雌性工藝機(Tier 2)</RPP_Bot_Crafter_II.labelFemale>
+  <RPP_Bot_Crafter_II.labelFemalePlural>雌性工藝機(Tier 2)s</RPP_Bot_Crafter_II.labelFemalePlural>
+
+  <RPP_Bot_Crafter_III.label>工藝機（三階）</RPP_Bot_Crafter_III.label>
+  <RPP_Bot_Crafter_III.labelPlural>工藝機(Tier 3)s</RPP_Bot_Crafter_III.labelPlural>
+  <RPP_Bot_Crafter_III.labelMale>雄性工藝機(Tier 3)</RPP_Bot_Crafter_III.labelMale>
+  <RPP_Bot_Crafter_III.labelMalePlural>雄性工藝機(Tier 3)s</RPP_Bot_Crafter_III.labelMalePlural>
+  <RPP_Bot_Crafter_III.labelFemale>雌性工藝機(Tier 3)</RPP_Bot_Crafter_III.labelFemale>
+  <RPP_Bot_Crafter_III.labelFemalePlural>雌性工藝機(Tier 3)s</RPP_Bot_Crafter_III.labelFemalePlural>
+
+  <RPP_Bot_Crafter_IV.label>工藝機（四階）</RPP_Bot_Crafter_IV.label>
+  <RPP_Bot_Crafter_IV.labelPlural>工藝機(Tier 4)s</RPP_Bot_Crafter_IV.labelPlural>
+  <RPP_Bot_Crafter_IV.labelMale>雄性工藝機(Tier 4)</RPP_Bot_Crafter_IV.labelMale>
+  <RPP_Bot_Crafter_IV.labelMalePlural>雄性工藝機(Tier 4)s</RPP_Bot_Crafter_IV.labelMalePlural>
+  <RPP_Bot_Crafter_IV.labelFemale>雌性工藝機(Tier 4)</RPP_Bot_Crafter_IV.labelFemale>
+  <RPP_Bot_Crafter_IV.labelFemalePlural>雌性工藝機(Tier 4)s</RPP_Bot_Crafter_IV.labelFemalePlural>
+
+  <RPP_Bot_Crafter_V.label>工藝機（五階）</RPP_Bot_Crafter_V.label>
+  <RPP_Bot_Crafter_V.labelPlural>工藝機(Tier 5)s</RPP_Bot_Crafter_V.labelPlural>
+  <RPP_Bot_Crafter_V.labelMale>雄性工藝機(Tier 5)</RPP_Bot_Crafter_V.labelMale>
+  <RPP_Bot_Crafter_V.labelMalePlural>雄性工藝機(Tier 5)s</RPP_Bot_Crafter_V.labelMalePlural>
+  <RPP_Bot_Crafter_V.labelFemale>雌性工藝機(Tier 5)</RPP_Bot_Crafter_V.labelFemale>
+  <RPP_Bot_Crafter_V.labelFemalePlural>雌性工藝機(Tier 5)s</RPP_Bot_Crafter_V.labelFemalePlural>
+
+  <RPP_Bot_ER_I.label>救援機（一階）</RPP_Bot_ER_I.label>
+  <RPP_Bot_ER_I.labelPlural>救援機（一階）們</RPP_Bot_ER_I.labelPlural>
+  <RPP_Bot_ER_I.labelMale>雄性救援機（一階）</RPP_Bot_ER_I.labelMale>
+  <RPP_Bot_ER_I.labelMalePlural>雄性救援機（一階）們</RPP_Bot_ER_I.labelMalePlural>
+  <RPP_Bot_ER_I.labelFemale>雌性救援機（一階）</RPP_Bot_ER_I.labelFemale>
+  <RPP_Bot_ER_I.labelFemalePlural>雌性救援機（一階）們</RPP_Bot_ER_I.labelFemalePlural>
+
+  <RPP_Bot_ER_II.label>救援機（二階）</RPP_Bot_ER_II.label>
+  <RPP_Bot_ER_II.labelPlural>救援機(Tier 2)s</RPP_Bot_ER_II.labelPlural>
+  <RPP_Bot_ER_II.labelMale>雄性救援機(Tier 2)</RPP_Bot_ER_II.labelMale>
+  <RPP_Bot_ER_II.labelMalePlural>雄性救援機(Tier 2)s</RPP_Bot_ER_II.labelMalePlural>
+  <RPP_Bot_ER_II.labelFemale>雌性救援機(Tier 2)</RPP_Bot_ER_II.labelFemale>
+  <RPP_Bot_ER_II.labelFemalePlural>雌性救援機(Tier 2)s</RPP_Bot_ER_II.labelFemalePlural>
+
+  <RPP_Bot_ER_III.label>救援機（三階）</RPP_Bot_ER_III.label>
+  <RPP_Bot_ER_III.labelPlural>救援機(Tier 3)s</RPP_Bot_ER_III.labelPlural>
+  <RPP_Bot_ER_III.labelMale>雄性救援機(Tier 3)</RPP_Bot_ER_III.labelMale>
+  <RPP_Bot_ER_III.labelMalePlural>雄性救援機(Tier 3)s</RPP_Bot_ER_III.labelMalePlural>
+  <RPP_Bot_ER_III.labelFemale>雌性救援機(Tier 3)</RPP_Bot_ER_III.labelFemale>
+  <RPP_Bot_ER_III.labelFemalePlural>雌性救援機(Tier 3)s</RPP_Bot_ER_III.labelFemalePlural>
+
+  <RPP_Bot_ER_IV.label>救援機（四階）</RPP_Bot_ER_IV.label>
+  <RPP_Bot_ER_IV.labelPlural>救援機(Tier 4)s</RPP_Bot_ER_IV.labelPlural>
+  <RPP_Bot_ER_IV.labelMale>雄性救援機(Tier 4)</RPP_Bot_ER_IV.labelMale>
+  <RPP_Bot_ER_IV.labelMalePlural>雄性救援機(Tier 4)s</RPP_Bot_ER_IV.labelMalePlural>
+  <RPP_Bot_ER_IV.labelFemale>雌性救援機(Tier 4)</RPP_Bot_ER_IV.labelFemale>
+  <RPP_Bot_ER_IV.labelFemalePlural>雌性救援機(Tier 4)s</RPP_Bot_ER_IV.labelFemalePlural>
+
+  <RPP_Bot_ER_V.label>救援機（五階）</RPP_Bot_ER_V.label>
+  <RPP_Bot_ER_V.labelPlural>救援機(Tier 5)s</RPP_Bot_ER_V.labelPlural>
+  <RPP_Bot_ER_V.labelMale>雄性救援機(Tier 5)</RPP_Bot_ER_V.labelMale>
+  <RPP_Bot_ER_V.labelMalePlural>雄性救援機(Tier 5)s</RPP_Bot_ER_V.labelMalePlural>
+  <RPP_Bot_ER_V.labelFemale>雌性救援機(Tier 5)</RPP_Bot_ER_V.labelFemale>
+  <RPP_Bot_ER_V.labelFemalePlural>雌性救援機(Tier 5)s</RPP_Bot_ER_V.labelFemalePlural>
+
+  <RPP_Bot_Kitchen_I.label>廚藝機（一階）</RPP_Bot_Kitchen_I.label>
+  <RPP_Bot_Kitchen_I.labelPlural>廚藝機 （一階）們</RPP_Bot_Kitchen_I.labelPlural>
+  <RPP_Bot_Kitchen_I.labelMale>雄性廚藝機 （一階）</RPP_Bot_Kitchen_I.labelMale>
+  <RPP_Bot_Kitchen_I.labelMalePlural>雄性廚藝機 （一階）們</RPP_Bot_Kitchen_I.labelMalePlural>
+  <RPP_Bot_Kitchen_I.labelFemale>雌性廚藝機 （一階）</RPP_Bot_Kitchen_I.labelFemale>
+  <RPP_Bot_Kitchen_I.labelFemalePlural>雌性廚藝機 （一階）們</RPP_Bot_Kitchen_I.labelFemalePlural>
+
+  <RPP_Bot_Kitchen_II.label>廚藝機（二階）</RPP_Bot_Kitchen_II.label>
+  <RPP_Bot_Kitchen_II.labelPlural>廚藝機 (Tier 2)s</RPP_Bot_Kitchen_II.labelPlural>
+  <RPP_Bot_Kitchen_II.labelMale>雄性廚藝機 (Tier 2)</RPP_Bot_Kitchen_II.labelMale>
+  <RPP_Bot_Kitchen_II.labelMalePlural>雄性廚藝機 (Tier 2)s</RPP_Bot_Kitchen_II.labelMalePlural>
+  <RPP_Bot_Kitchen_II.labelFemale>雌性廚藝機 (Tier 2)</RPP_Bot_Kitchen_II.labelFemale>
+  <RPP_Bot_Kitchen_II.labelFemalePlural>雌性廚藝機 (Tier 2)s</RPP_Bot_Kitchen_II.labelFemalePlural>
+
+  <RPP_Bot_Kitchen_III.label>廚藝機（三階）</RPP_Bot_Kitchen_III.label>
+  <RPP_Bot_Kitchen_III.labelPlural>廚藝機（三階）們</RPP_Bot_Kitchen_III.labelPlural>
+  <RPP_Bot_Kitchen_III.labelMale>雄性廚藝機（三階）</RPP_Bot_Kitchen_III.labelMale>
+  <RPP_Bot_Kitchen_III.labelMalePlural>雄性廚藝機（三階）們</RPP_Bot_Kitchen_III.labelMalePlural>
+  <RPP_Bot_Kitchen_III.labelFemale>雌性廚藝機（三階）</RPP_Bot_Kitchen_III.labelFemale>
+  <RPP_Bot_Kitchen_III.labelFemalePlural>雌性廚藝機（三階）們</RPP_Bot_Kitchen_III.labelFemalePlural>
+
+  <RPP_Bot_Kitchen_IV.label>廚藝機（四階）</RPP_Bot_Kitchen_IV.label>
+  <RPP_Bot_Kitchen_IV.labelPlural>廚藝機（四階）們</RPP_Bot_Kitchen_IV.labelPlural>
+  <RPP_Bot_Kitchen_IV.labelMale>雄性廚藝機（四階）</RPP_Bot_Kitchen_IV.labelMale>
+  <RPP_Bot_Kitchen_IV.labelMalePlural>雄性廚藝機（四階）們</RPP_Bot_Kitchen_IV.labelMalePlural>
+  <RPP_Bot_Kitchen_IV.labelFemale>雌性廚藝機（四階）</RPP_Bot_Kitchen_IV.labelFemale>
+  <RPP_Bot_Kitchen_IV.labelFemalePlural>雌性廚藝機（四階）們</RPP_Bot_Kitchen_IV.labelFemalePlural>
+
+  <RPP_Bot_Kitchen_V.label>廚藝機（五階）</RPP_Bot_Kitchen_V.label>
+  <RPP_Bot_Kitchen_V.labelPlural>廚藝機（五階）們</RPP_Bot_Kitchen_V.labelPlural>
+  <RPP_Bot_Kitchen_V.labelMale>雄性廚藝機（五階）</RPP_Bot_Kitchen_V.labelMale>
+  <RPP_Bot_Kitchen_V.labelMalePlural>雄性廚藝機（五階）們</RPP_Bot_Kitchen_V.labelMalePlural>
+  <RPP_Bot_Kitchen_V.labelFemale>雌性廚藝機（五階）</RPP_Bot_Kitchen_V.labelFemale>
+  <RPP_Bot_Kitchen_V.labelFemalePlural>雌性廚藝機（五階）們</RPP_Bot_Kitchen_V.labelFemalePlural>
+
+  <RPP_Bot_Omni_V.label>萬能機（五階）</RPP_Bot_Omni_V.label>
+  <RPP_Bot_Omni_V.labelPlural>萬能機（五階）們</RPP_Bot_Omni_V.labelPlural>
+  <RPP_Bot_Omni_V.labelMale>雄性萬能機（五階）</RPP_Bot_Omni_V.labelMale>
+  <RPP_Bot_Omni_V.labelMalePlural>male萬能機（五階）們</RPP_Bot_Omni_V.labelMalePlural>
+  <RPP_Bot_Omni_V.labelFemale>female萬能機（五階）</RPP_Bot_Omni_V.labelFemale>
+  <RPP_Bot_Omni_V.labelFemalePlural>female萬能機（五階）們</RPP_Bot_Omni_V.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!--[Duplicate]
+	<AIRobot_Hauler.label>Hauling Bot</AIRobot_Hauler.label>
+	<AIRobot_Hauler.description>A Simple hauling robot.</AIRobot_Hauler.description>
+-->
+	<AIRobot_Hauler_II.label>Hauling Bot</AIRobot_Hauler_II.label>
+	<AIRobot_Hauler_II.description>A Basic hauling robot.</AIRobot_Hauler_II.description>
+	<AIRobot_Hauler_III.label>Hauling Bot</AIRobot_Hauler_III.label>
+	<AIRobot_Hauler_III.description>An Intermediate hauling robot.</AIRobot_Hauler_III.description>
+	<AIRobot_Hauler_IV.label>Hauling Bot</AIRobot_Hauler_IV.label>
+	<AIRobot_Hauler_IV.description>An Advanced hauling robot.</AIRobot_Hauler_IV.description>
+	<AIRobot_Hauler_V.label>Hauling Bot</AIRobot_Hauler_V.label>
+	<AIRobot_Hauler_V.description>An Anti-Logic hauling robot.</AIRobot_Hauler_V.description>
+
+<!--[Duplicate]
+	<AIRobot_Cleaner.label>Cleaning Bot</AIRobot_Cleaner.label>
+	<AIRobot_Cleaner.description>A Simple cleaning robot.</AIRobot_Cleaner.description>
+-->
+	<AIRobot_Cleaner_II.label>Cleaning Bot</AIRobot_Cleaner_II.label>
+	<AIRobot_Cleaner_II.description>A Basic cleaning robot.</AIRobot_Cleaner_II.description>
+	<AIRobot_Cleaner_III.label>Cleaning Bot</AIRobot_Cleaner_III.label>
+	<AIRobot_Cleaner_III.description>An Intermediate cleaning robot.</AIRobot_Cleaner_III.description>
+	<AIRobot_Cleaner_IV.label>Cleaning Bot</AIRobot_Cleaner_IV.label>
+	<AIRobot_Cleaner_IV.description>An Advanced cleaning robot.</AIRobot_Cleaner_IV.description>
+	<AIRobot_Cleaner_V.label>Cleaning Bot</AIRobot_Cleaner_V.label>
+	<AIRobot_Cleaner_V.description>An Anti-Logic cleaning robot.</AIRobot_Cleaner_V.description>
+
+	<RPP_Bot_Builder_I.label>Builder Bot</RPP_Bot_Builder_I.label>
+	<RPP_Bot_Builder_I.description>A Tier 1 Amateur-class (4) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_I.description>
+	<RPP_Bot_Builder_II.label>Builder Bot</RPP_Bot_Builder_II.label>
+	<RPP_Bot_Builder_II.description>A Tier 2 Professional-class (8) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_II.description>
+	<RPP_Bot_Builder_III.label>Builder Bot</RPP_Bot_Builder_III.label>
+	<RPP_Bot_Builder_III.description>A Tier 3 Master-class (13) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_III.description>
+	<RPP_Bot_Builder_IV.label>Builder Bot</RPP_Bot_Builder_IV.label>
+	<RPP_Bot_Builder_IV.description>A Tier 4 System-Master-class (16) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_IV.description>
+	<RPP_Bot_Builder_V.label>Builder Bot</RPP_Bot_Builder_V.label>
+	<RPP_Bot_Builder_V.description>A Tier 5 Godlike-class (20) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_V.description>
+
+	<RPP_Bot_Crafter_I.label>Crafter Bot</RPP_Bot_Crafter_I.label>
+	<RPP_Bot_Crafter_I.description>A Tier 1 Amateur-class (4) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_I.description>
+	<RPP_Bot_Crafter_II.label>Crafter Bot</RPP_Bot_Crafter_II.label>
+	<RPP_Bot_Crafter_II.description>A Tier 2 Professional-class (8) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_II.description>
+	<RPP_Bot_Crafter_III.label>Crafter Bot</RPP_Bot_Crafter_III.label>
+	<RPP_Bot_Crafter_III.description>A Tier 3 Master-class (13) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_III.description>
+	<RPP_Bot_Crafter_IV.label>Crafter Bot</RPP_Bot_Crafter_IV.label>
+	<RPP_Bot_Crafter_IV.description>A Tier 4 System-Master-class (16) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_IV.description>
+	<RPP_Bot_Crafter_V.label>Crafter Bot</RPP_Bot_Crafter_V.label>
+	<RPP_Bot_Crafter_V.description>A Tier 5 Godlike-class (20) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_V.description>
+
+	<RPP_Bot_ER_I.label>ER Bot</RPP_Bot_ER_I.label>
+	<RPP_Bot_ER_I.description>A Tier 1 Amateur-class (4) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_I.description>
+	<RPP_Bot_ER_II.label>ER Bot</RPP_Bot_ER_II.label>
+	<RPP_Bot_ER_II.description>A Tier 2 Professional-class (8) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_II.description>
+	<RPP_Bot_ER_III.label>ER Bot</RPP_Bot_ER_III.label>
+	<RPP_Bot_ER_III.description>A Tier 3 Master-class (13) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_III.description>
+	<RPP_Bot_ER_IV.label>ER Bot</RPP_Bot_ER_IV.label>
+	<RPP_Bot_ER_IV.description>A Tier 4 System-Master-class (16) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_IV.description>
+	<RPP_Bot_ER_V.label>ER Bot</RPP_Bot_ER_V.label>
+	<RPP_Bot_ER_V.description>A Tier 5 Godlike-class (20) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_V.description>
+
+	<RPP_Bot_Kitchen_I.label>Kitchen Bot</RPP_Bot_Kitchen_I.label>
+	<RPP_Bot_Kitchen_I.description>A Tier 1 Amateur-class (4) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_I.description>
+	<RPP_Bot_Kitchen_II.label>Kitchen Bot</RPP_Bot_Kitchen_II.label>
+	<RPP_Bot_Kitchen_II.description>A Tier 2 Professional-class (8) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_II.description>
+	<RPP_Bot_Kitchen_III.label>Kitchen Bot</RPP_Bot_Kitchen_III.label>
+	<RPP_Bot_Kitchen_III.description>A Tier 3 Master-class (13) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_III.description>
+	<RPP_Bot_Kitchen_IV.label>Kitchen Bot</RPP_Bot_Kitchen_IV.label>
+	<RPP_Bot_Kitchen_IV.description>A Tier 4 System-Master-class (16) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_IV.description>
+	<RPP_Bot_Kitchen_V.label>Kitchen Bot</RPP_Bot_Kitchen_V.label>
+	<RPP_Bot_Kitchen_V.description>A Tier 5 Godlike-class (20) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_V.description>
+
+	<RPP_Bot_Omni_V.label>OmniBot</RPP_Bot_Omni_V.label>
+	<RPP_Bot_Omni_V.description>A Tier 5 Godlike unit capable of almost anything. (NP=P)</RPP_Bot_Omni_V.description>
+
+</LanguageData>
+
+

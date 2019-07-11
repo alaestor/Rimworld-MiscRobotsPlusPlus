@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--******** META ******** -->
+
+	<ThingDef Abstract="True" Name="RPP_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<fillPercent>0.25</fillPercent>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>5</Plasteel>
+			<RPP_Component>1</RPP_Component>
+		</costList>
+		<statBases>
+			<Mass>13</Mass>
+		</statBases>
+		<!-- added abstraction for potential future use -->
+	</ThingDef>>
+
+	<!--******** TIER META ********-->
+
+	<ThingDef Abstract="True" Name="RPP_RechargeStation_I" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>0</Beauty>
+			<MarketValue>501</MarketValue>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<rechargeEfficiency>0.8</rechargeEfficiency>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="RPP_RechargeStation_II" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>1</Beauty>
+			<MarketValue>1236</MarketValue>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<rechargeEfficiency>1.2</rechargeEfficiency>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="RPP_RechargeStation_III" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>2</Beauty>
+			<MarketValue>2720</MarketValue>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<rechargeEfficiency>1.6</rechargeEfficiency>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="RPP_RechargeStation_IV" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<MarketValue>5650</MarketValue>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<rechargeEfficiency>2.0</rechargeEfficiency>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="RPP_RechargeStation_V" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<MarketValue>11455</MarketValue>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<rechargeEfficiency>4.0</rechargeEfficiency>
+	</ThingDef>
+
+	<!--******** INHERET ********-->
+
+<!-- override -->
+
+	<ThingDef ParentName="RPP_RechargeStation_I" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Hauler</defName>
+		<label>Hauler(I) Base Station</label>
+		<description>This station comes equipped with a specialized Simple robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/I/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Hauler</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Hauler_II</defName>
+		<label>Hauler(II) Base Station</label>
+		<description>This station comes equipped with a specialized Basic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/II/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Hauler_II</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Hauler_III</defName>
+		<label>Hauler(III) Base Station</label>
+		<description>This station comes equipped with a specialized Intermediate robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/III/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Hauler_III</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Hauler_IV</defName>
+		<label>Hauler(IV) Base Station</label>
+		<description>This station comes equipped with a specialized Advanced robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/IV/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Hauler_IV</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Hauler_V</defName>
+		<label>Hauler(V) Base Station</label>
+		<description>This station comes equipped with a specialized Anti-Logic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Hauler/V/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/AIRobot/RPP/RPP_RechargeStation_V_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Hauler_V</spawnThingDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_RechargeStation_I" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Cleaner</defName>
+		<label>Cleaner(I) Base Station</label>
+		<description>This station comes equipped with a specialized Simple robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/I/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Cleaner</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Cleaner_II</defName>
+		<label>Cleaner(II) Base Station</label>
+		<description>This station comes equipped with a specialized Basic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/II/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Cleaner_II</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Cleaner_III</defName>
+		<label>Cleaner(III) Base Station</label>
+		<description>This station comes equipped with a specialized Intermediate robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/III/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Cleaner_III</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Cleaner_IV</defName>
+		<label>Cleaner(IV) Base Station</label>
+		<description>This station comes equipped with a specialized Advanced robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/IV/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Cleaner_IV</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>AIRobot_RechargeStation_Cleaner_V</defName>
+		<label>Cleaner(V) Base Station</label>
+		<description>This station comes equipped with a specialized Anti-Logic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Cleaner/V/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/AIRobot/RPP/RPP_RechargeStation_V_Empty1</secondaryGraphicPath>
+		<spawnThingDef>AIRobot_Cleaner_V</spawnThingDef>
+	</ThingDef>
+
+<!-- RPP -->
+
+	<ThingDef ParentName="RPP_RechargeStation_I" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Builder_I</defName>
+		<label>Builder(I) Base Station</label>
+		<description>This station comes equipped with a specialized Simple robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/I/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Builder_I</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Builder_II</defName>
+		<label>Builder(II) Base Station</label>
+		<description>This station comes equipped with a specialized Basic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/II/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Builder_II</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Builder_III</defName>
+		<label>Builder(III) Base Station</label>
+		<description>This station comes equipped with a specialized Intermediate robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/III/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Builder_III</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Builder_IV</defName>
+		<label>Builder(IV) Base Station</label>
+		<description>This station comes equipped with a specialized Advanced robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/IV/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Builder_IV</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Builder_V</defName>
+		<label>Builder(V) Base Station</label>
+		<description>This station comes equipped with a specialized Anti-Logic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Builder/V/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/AIRobot/RPP/RPP_RechargeStation_V_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Builder_V</spawnThingDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_RechargeStation_I" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Crafter_I</defName>
+		<label>Crafter(I) Base Station</label>
+		<description>This station comes equipped with a specialized Simple robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/I/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Crafter_I</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Crafter_II</defName>
+		<label>Crafter(II) Base Station</label>
+		<description>This station comes equipped with a specialized Basic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/II/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Crafter_II</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Crafter_III</defName>
+		<label>Crafter(III) Base Station</label>
+		<description>This station comes equipped with a specialized Intermediate robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/III/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Crafter_III</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Crafter_IV</defName>
+		<label>Crafter(IV) Base Station</label>
+		<description>This station comes equipped with a specialized Advanced robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/IV/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Crafter_IV</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Crafter_V</defName>
+		<label>Crafter(V) Base Station</label>
+		<description>This station comes equipped with a specialized Anti-Logic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Crafter/V/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/AIRobot/RPP/RPP_RechargeStation_V_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Crafter_V</spawnThingDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_RechargeStation_I" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_ER_I</defName>
+		<label>ER(I) Base Station</label>
+		<description>This station comes equipped with a specialized Simple robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/I/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_ER_I</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_ER_II</defName>
+		<label>ER(II) Base Station</label>
+		<description>This station comes equipped with a specialized Basic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/II/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_ER_II</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_ER_III</defName>
+		<label>ER(III) Base Station</label>
+		<description>This station comes equipped with a specialized Intermediate robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/III/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_ER_III</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_ER_IV</defName>
+		<label>ER(IV) Base Station</label>
+		<description>This station comes equipped with a specialized Advanced robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/IV/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_ER_IV</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_ER_V</defName>
+		<label>ER(V) Base Station</label>
+		<description>This station comes equipped with a specialized Anti-Logic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/ER/V/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/AIRobot/RPP/RPP_RechargeStation_V_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_ER_V</spawnThingDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_RechargeStation_I" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Kitchen_I</defName>
+		<label>Kitchen(I) Base Station</label>
+		<description>This station comes equipped with a specialized Simple robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/I/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Kitchen_I</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Kitchen_II</defName>
+		<label>Kitchen(II) Base Station</label>
+		<description>This station comes equipped with a specialized Basic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/II/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Kitchen_II</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Kitchen_III</defName>
+		<label>Kitchen(III) Base Station</label>
+		<description>This station comes equipped with a specialized Intermediate robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/III/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Kitchen_III</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Kitchen_IV</defName>
+		<label>Kitchen(IV) Base Station</label>
+		<description>This station comes equipped with a specialized Advanced robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/IV/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/Building/AIRobot_RechargeStation/AIRobotRechargeStation_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Kitchen_IV</spawnThingDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Kitchen_V</defName>
+		<label>Kitchen(V) Base Station</label>
+		<description>This station comes equipped with a specialized Anti-Logic robot.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Kitchen/V/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/AIRobot/RPP/RPP_RechargeStation_V_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Kitchen_V</spawnThingDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
+		<defName>RPP_RechargeStation_Omni_V</defName>
+		<label>Omni(V) Base Station</label>
+		<description>This station comes equipped an Anti-Logic OmniBot. (NP=P)\nIt also has an over-unity internal powersupply.</description>
+		<graphicData>
+			<texPath>Things/AIRobot/RPP/Omni/V/RPP_Station</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<secondaryGraphicPath>Things/AIRobot/RPP/RPP_RechargeStation_V_Empty1</secondaryGraphicPath>
+		<spawnThingDef>RPP_Bot_Omni_V</spawnThingDef>
+	</ThingDef>
+
+</Defs>

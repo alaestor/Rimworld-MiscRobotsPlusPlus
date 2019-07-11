@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!--[Duplicate]
+	<AIRobot_Hauler.label>搬运机</AIRobot_Hauler.label>
+	<AIRobot_Hauler.description>A Simple hauling robot.</AIRobot_Hauler.description>
+-->
+	<AIRobot_Hauler_II.label>搬运机</AIRobot_Hauler_II.label>
+	<AIRobot_Hauler_II.description>一个初阶搬运机器人。</AIRobot_Hauler_II.description>
+	<AIRobot_Hauler_III.label>搬运机</AIRobot_Hauler_III.label>
+	<AIRobot_Hauler_III.description>一个中阶搬运机器人。</AIRobot_Hauler_III.description>
+	<AIRobot_Hauler_IV.label>搬运机</AIRobot_Hauler_IV.label>
+	<AIRobot_Hauler_IV.description>一个高阶搬运机器人。</AIRobot_Hauler_IV.description>
+	<AIRobot_Hauler_V.label>搬运机</AIRobot_Hauler_V.label>
+	<AIRobot_Hauler_V.description>一个反逻辑搬运机器人。</AIRobot_Hauler_V.description>
+
+<!--[Duplicate]
+	<AIRobot_Cleaner.label>清洁机</AIRobot_Cleaner.label>
+	<AIRobot_Cleaner.description>A Simple cleaning robot.</AIRobot_Cleaner.description>
+-->
+	<AIRobot_Cleaner_II.label>清洁机</AIRobot_Cleaner_II.label>
+	<AIRobot_Cleaner_II.description>一个初阶清洁机器人。</AIRobot_Cleaner_II.description>
+	<AIRobot_Cleaner_III.label>清洁机</AIRobot_Cleaner_III.label>
+	<AIRobot_Cleaner_III.description>一个中阶清洁机器人。</AIRobot_Cleaner_III.description>
+	<AIRobot_Cleaner_IV.label>清洁机</AIRobot_Cleaner_IV.label>
+	<AIRobot_Cleaner_IV.description>一个高阶清洁机器人。</AIRobot_Cleaner_IV.description>
+	<AIRobot_Cleaner_V.label>清洁机</AIRobot_Cleaner_V.label>
+	<AIRobot_Cleaner_V.description>一个反逻辑清洁机器人。</AIRobot_Cleaner_V.description>
+
+	<RPP_Bot_Builder_I.label>工程机</RPP_Bot_Builder_I.label>
+	<RPP_Bot_Builder_I.description>一个以初学级（4级）技能技能执行建造、拆除、修理及采矿工作的一阶机器人。</RPP_Bot_Builder_I.description>
+	<RPP_Bot_Builder_II.label>工程机</RPP_Bot_Builder_II.label>
+	<RPP_Bot_Builder_II.description>一个以专业人员级（8级）技能技能执行建造、拆除、修理及采矿工作的二阶机器人。</RPP_Bot_Builder_II.description>
+	<RPP_Bot_Builder_III.label>工程机</RPP_Bot_Builder_III.label>
+	<RPP_Bot_Builder_III.description>一个以大师级（13级）技能技能执行建造、拆除、修理及采矿工作的三阶机器人。</RPP_Bot_Builder_III.description>
+	<RPP_Bot_Builder_IV.label>工程机</RPP_Bot_Builder_IV.label>
+	<RPP_Bot_Builder_IV.description>一个以太阳系级大师（16级）技能技能执行建造、拆除、修理及采矿工作的四阶机器人。</RPP_Bot_Builder_IV.description>
+	<RPP_Bot_Builder_V.label>工程机</RPP_Bot_Builder_V.label>
+	<RPP_Bot_Builder_V.description>一个以神级（20级）技能技能执行建造、拆除、修理及采矿工作的五阶机器人。</RPP_Bot_Builder_V.description>
+
+	<RPP_Bot_Crafter_I.label>工艺机</RPP_Bot_Crafter_I.label>
+	<RPP_Bot_Crafter_I.description>一个以初学级（4级）技能执行锻冶、手工及裁缝工作的一阶机器人。</RPP_Bot_Crafter_I.description>
+	<RPP_Bot_Crafter_II.label>工艺机</RPP_Bot_Crafter_II.label>
+	<RPP_Bot_Crafter_II.description>一个以专业人员级（8级）技能执行锻冶、手工及裁缝工作的二阶机器人。</RPP_Bot_Crafter_II.description>
+	<RPP_Bot_Crafter_III.label>工艺机</RPP_Bot_Crafter_III.label>
+	<RPP_Bot_Crafter_III.description>一个以大师级（13级）技能执行锻冶、手工及裁缝工作的三阶机器人。</RPP_Bot_Crafter_III.description>
+	<RPP_Bot_Crafter_IV.label>工艺机</RPP_Bot_Crafter_IV.label>
+	<RPP_Bot_Crafter_IV.description>一个以太阳系级大师（16级）技能执行锻冶、手工及裁缝工作的四阶机器人。</RPP_Bot_Crafter_IV.description>
+	<RPP_Bot_Crafter_V.label>工艺机</RPP_Bot_Crafter_V.label>
+	<RPP_Bot_Crafter_V.description>一个以神级（20级）技能执行锻冶、手工及裁缝工作的五阶机器人。</RPP_Bot_Crafter_V.description>
+
+	<RPP_Bot_ER_I.label>救援机</RPP_Bot_ER_I.label>
+	<RPP_Bot_ER_I.description>一个以初学级（4级）技能执行医疗及灭火工作的一阶机器人。</RPP_Bot_ER_I.description>
+	<RPP_Bot_ER_II.label>救援机</RPP_Bot_ER_II.label>
+	<RPP_Bot_ER_II.description>一个以专业人员级（8级）技能执行医疗及灭火工作的二阶机器人。</RPP_Bot_ER_II.description>
+	<RPP_Bot_ER_III.label>救援机</RPP_Bot_ER_III.label>
+	<RPP_Bot_ER_III.description>一个以大师级（13级）技能执行医疗及灭火工作三阶机器人。</RPP_Bot_ER_III.description>
+	<RPP_Bot_ER_IV.label>救援机</RPP_Bot_ER_IV.label>
+	<RPP_Bot_ER_IV.description>一个以太阳系级大师（16级）技能执行医疗及灭火工作的四阶机器人。</RPP_Bot_ER_IV.description>
+	<RPP_Bot_ER_V.label>救援机</RPP_Bot_ER_V.label>
+	<RPP_Bot_ER_V.description>一个以神级（20级）技能执行医疗及灭火工作的五阶机器人。</RPP_Bot_ER_V.description>
+
+	<RPP_Bot_Kitchen_I.label>Kitchen Bot</RPP_Bot_Kitchen_I.label>
+	<RPP_Bot_Kitchen_I.description>一个以初学级（4级）技能执行烹饪、种植与剪裁植物工作的一阶机器人。</RPP_Bot_Kitchen_I.description>
+	<RPP_Bot_Kitchen_II.label>Kitchen Bot</RPP_Bot_Kitchen_II.label>
+	<RPP_Bot_Kitchen_II.description>一个以专业人员级（8级）技能执行烹饪、种植与剪裁植物工作的二阶机器人。</RPP_Bot_Kitchen_II.description>
+	<RPP_Bot_Kitchen_III.label>Kitchen Bot</RPP_Bot_Kitchen_III.label>
+	<RPP_Bot_Kitchen_III.description>一个以大师级（13级）技能执行烹饪、种植与剪裁植物工作的三阶机器人。</RPP_Bot_Kitchen_III.description>
+	<RPP_Bot_Kitchen_IV.label>Kitchen Bot</RPP_Bot_Kitchen_IV.label>
+	<RPP_Bot_Kitchen_IV.description>一个以太阳系级大师（16级）技能执行烹饪、种植与剪裁植物工作的四阶机器人。</RPP_Bot_Kitchen_IV.description>
+	<RPP_Bot_Kitchen_V.label>Kitchen Bot</RPP_Bot_Kitchen_V.label>
+	<RPP_Bot_Kitchen_V.description>一个以神级（20级）技能执行烹饪、种植与剪裁植物工作的五阶机器人。</RPP_Bot_Kitchen_V.description>
+
+	<RPP_Bot_Omni_V.label>万能机</RPP_Bot_Omni_V.label>
+	<RPP_Bot_Omni_V.description>一个以神级技能几乎可执行任何工作的万能机器人。（NP=P）</RPP_Bot_Omni_V.description>
+
+</LanguageData>
+
+

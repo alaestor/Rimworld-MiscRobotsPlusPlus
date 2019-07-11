@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+
+	<RPP_Component.label>Roboterkomponente</RPP_Component.label>
+	<RPP_Component.description>Roboterkomponenten werden f&#252;r Logikschaltkreise einer Robotermatrix verwendet.</RPP_Component.description>
+
+	<RPP_Matrix_I.label>Logikschaltkreis (Einfach)</RPP_Matrix_I.label>
+	<RPP_Matrix_I.description>Ein Logikschaltkreis versehen mit einem einfachen Befehlssatz, der es ihm erm&#246;glicht, geeignete Aufgaben auf dem Niveau der Amateurklasse durchzuf&#252;hren.</RPP_Matrix_I.description>
+
+	<RPP_Matrix_II.label>Logikschaltkreis (Grundlegend)</RPP_Matrix_II.label>
+	<RPP_Matrix_II.description>Ein Logikschaltkreis versehen mit einem grundlegenden Befehlssatz, der es ihm erm&#246;glicht, geeignete Aufgaben auf professionellem Niveau durchzuf&#252;hren.</RPP_Matrix_II.description>
+
+	<RPP_Matrix_III.label>Logikschaltkreis (Mittel)</RPP_Matrix_III.label>
+	<RPP_Matrix_III.description>Ein Logikschaltkreis versehen mit einem mittleren Befehlssatz, der es ihm erm&#246;glicht, geeignete Aufgaben auf meisterlichem Niveau durchzuf&#252;hren.</RPP_Matrix_III.description>
+
+	<RPP_Matrix_IV.label>Logikschaltkreis (Erweitert)</RPP_Matrix_IV.label>
+	<RPP_Matrix_IV.description>Ein Logikschaltkreis versehen mit einem erweiterten Befehlssatz, der es ihm erm&#246;glicht, geeignete Aufgaben auf herausragendem Niveau durchzuf&#252;hren.</RPP_Matrix_IV.description>
+
+	<RPP_Matrix_V.label>Logikschaltkreis (Anti-Logik)</RPP_Matrix_V.label>
+	<RPP_Matrix_V.description>Ein Logikschaltkreis versehen mit einem Anti-Logik Befehlssatz, der es ihm erm&#246;glicht, Aufgaben auf legend&#228;rem Niveau durchzuf&#252;hren.
+
+</RPP_Matrix_V.description>
+
+</LanguageData>

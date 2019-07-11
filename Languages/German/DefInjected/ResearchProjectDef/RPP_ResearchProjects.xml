@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<RPP_Research_Matrix_I.label>Roboter:\nEinfache Logik</RPP_Research_Matrix_I.label>
+	<RPP_Research_Matrix_I.description>Stufe 1: Erforschung der Produktion von einfachen Logikschaltkreisen, die f&#252;r die Fertigung von Robotern mit Amateurf&#228;higkeiten (F&#228;higkeitsstufe 4) benutzt werden. Schaltet die Roboterwerkbank frei.</RPP_Research_Matrix_I.description>
+	<RPP_Research_Matrix_II.label>Roboter:\nGrundlegende Logik</RPP_Research_Matrix_II.label>
+	<RPP_Research_Matrix_II.description>Stufe 2: Erforschung der Produktion von grundlegenden Logikschaltkreisen, die f&#252;r die Fertigung von Robotern mit professionellen F&#228;higkeiten (F&#228;higkeitsstufe 8) benutzt werden.</RPP_Research_Matrix_II.description>
+	<RPP_Research_Matrix_III.label>Roboter:\nMittlere Logik</RPP_Research_Matrix_III.label>
+	<RPP_Research_Matrix_III.description>Stufe 3: Erforschung der Produktion von mittleren Logikschaltkreisen, die f&#252;r die Fertigung von Robotern mit meisterlichen F&#228;higkeiten (F&#228;higkeitsstufe 13) benutzt werden.</RPP_Research_Matrix_III.description>
+	<RPP_Research_Matrix_IV.label>Roboter:\nErweiterte Logik</RPP_Research_Matrix_IV.label>
+	<RPP_Research_Matrix_IV.description>Stufe 4: Erforschung der Produktion von erweiterten Logikschaltkreisen, die f&#252;r die Fertigung von Robotern mit herausragenden F&#228;higkeiten (F&#228;higkeitsstufe 16) benutzt werden.</RPP_Research_Matrix_IV.description>
+	<RPP_Research_Matrix_V.label>Roboter:\nAnti-Logik</RPP_Research_Matrix_V.label>
+	<RPP_Research_Matrix_V.description>Stufe 5: Bricht die Grenzen der bestehenden Technologieebenen, des Logikverst&#228;ndnisses und der Kausalit&#228;t auf. Roboter besitzen legend&#228;re F&#228;higkeiten (F&#228;higkeitsstufe 20).</RPP_Research_Matrix_V.description>
+
+	<RPP_Research_Fundamentals.label>Roboter:\nGrundlagen</RPP_Research_Fundamentals.label>
+	<RPP_Research_Fundamentals.description>Stufe 0:\nErforschung der einfachsten Grundlagen der Robotertechnik und Automatisierung.</RPP_Research_Fundamentals.description>
+
+	<RPP_Research_Cleaner_All.label>Reinigungsroboter</RPP_Research_Cleaner_All.label>
+	<RPP_Research_Cleaner_All.description>Erforschung der Produktion von Reinigungsrobotern.</RPP_Research_Cleaner_All.description>
+
+	<RPP_Research_Hauler_All.label>Transportroboter</RPP_Research_Hauler_All.label>
+	<RPP_Research_Hauler_All.description>Erforschung der Produktion von Transportrobotern.</RPP_Research_Hauler_All.description>
+
+	<RPP_Research_Builder_All.label>Bauroboter</RPP_Research_Builder_All.label>
+	<RPP_Research_Builder_All.description>Erforschung der Produktion von Baurobotern f&#252;r Bau- und Abrissarbeiten, Bergbau und Reparaturen.</RPP_Research_Builder_All.description>
+
+	<RPP_Research_Crafter_All.label>Fertigungsroboter</RPP_Research_Crafter_All.label>
+	<RPP_Research_Crafter_All.description>Erforschung der Produktion von Fertigungsrobotern f&#252;r Fertigungs-, Schmiede- und Schneiderarbeiten.</RPP_Research_Crafter_All.description>
+
+	<RPP_Research_ER_All.label>Notfallroboter</RPP_Research_ER_All.label>
+	<RPP_Research_ER_All.description>Erforschung der Produktion von Notfallrobotern f&#252;r Notfallma&#223;nahmen wie Patientenversorgung und Feuerbek&#228;mpfung.</RPP_Research_ER_All.description>
+
+	<RPP_Research_Kitchen_All.label>K&#252;chenroboter</RPP_Research_Kitchen_All.label>
+	<RPP_Research_Kitchen_All.description>Erforschung der Produktion von K&#252;chenrobotern f&#252;r K&#252;chenarbeiten sowie S&#228;en und Ernten von Pflanzen.</RPP_Research_Kitchen_All.description>
+
+	<RPP_Research_Omni_V.label>Anti-Logik\nUniversalroboter</RPP_Research_Omni_V.label>
+	<RPP_Research_Omni_V.description>Erforschung der Produktion von universell einsetzbaren Robotern.</RPP_Research_Omni_V.description>
+</LanguageData>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- resource -->
+
+  <RPP_Production_Component.label>製作機器人元件</RPP_Production_Component.label>
+  <RPP_Production_Component.description>製作機器人元件，用於在機器人矩陣中組建邏輯電路。</RPP_Production_Component.description>
+  <RPP_Production_Component.jobString>正在製作機器人。</RPP_Production_Component.jobString>
+
+
+  <!-- matricies -->
+
+  <RPP_Production_Matrix_I.label>製作機器人邏輯矩陣（簡易）</RPP_Production_Matrix_I.label>
+  <RPP_Production_Matrix_I.description>製作邏輯矩陣，用於以初學級技能（一階）製造機器人。</RPP_Production_Matrix_I.description>
+  <RPP_Production_Matrix_I.jobString>正在製作機器人。</RPP_Production_Matrix_I.jobString>
+
+  <RPP_Production_Matrix_II.label>製作機器人邏輯矩陣（初階）</RPP_Production_Matrix_II.label>
+  <RPP_Production_Matrix_II.description>製作邏輯矩陣，用於以專業人員級技能（二階）製造機器人。</RPP_Production_Matrix_II.description>
+  <RPP_Production_Matrix_II.jobString>正在製作機器人。</RPP_Production_Matrix_II.jobString>
+
+  <RPP_Production_Matrix_III.label>製作機器人邏輯矩陣（進階）</RPP_Production_Matrix_III.label>
+  <RPP_Production_Matrix_III.description>製作邏輯矩陣，用於以大師級技能（三階）製造機器人。</RPP_Production_Matrix_III.description>
+  <RPP_Production_Matrix_III.jobString>正在製作機器人。</RPP_Production_Matrix_III.jobString>
+
+  <RPP_Production_Matrix_IV.label>製作機器人邏輯矩陣（高階）</RPP_Production_Matrix_IV.label>
+  <RPP_Production_Matrix_IV.description>製作邏輯矩陣，用於以太陽系級大師技能（四階）製造機器人。</RPP_Production_Matrix_IV.description>
+  <RPP_Production_Matrix_IV.jobString>正在製作機器人。</RPP_Production_Matrix_IV.jobString>
+
+  <RPP_Production_Matrix_V.label>製作機器人萬能核心（NP=P）</RPP_Production_Matrix_V.label>
+  <RPP_Production_Matrix_V.description>製作反邏輯矩陣，用於以神級技能（五階）製造機器人。</RPP_Production_Matrix_V.description>
+  <RPP_Production_Matrix_V.jobString>正在製作機器人。</RPP_Production_Matrix_V.jobString>
+
+
+  <!-- override -->
+
+  <RPP_Production_Cleaner_I.label>製作清潔機（一階）</RPP_Production_Cleaner_I.label>
+  <RPP_Production_Cleaner_I.description>製作一台執行清潔工作的機器。</RPP_Production_Cleaner_I.description>
+  <RPP_Production_Cleaner_I.jobString>正在製作機器人。</RPP_Production_Cleaner_I.jobString>
+
+  <RPP_Production_Cleaner_II.label>製作清潔機（二階）</RPP_Production_Cleaner_II.label>
+  <RPP_Production_Cleaner_II.description>製作一台執行清潔工作的機器。</RPP_Production_Cleaner_II.description>
+  <RPP_Production_Cleaner_II.jobString>正在製作機器人。</RPP_Production_Cleaner_II.jobString>
+
+  <RPP_Production_Cleaner_III.label>製作清潔機（三階）</RPP_Production_Cleaner_III.label>
+  <RPP_Production_Cleaner_III.description>製作一台執行清潔工作的機器。</RPP_Production_Cleaner_III.description>
+  <RPP_Production_Cleaner_III.jobString>正在製作機器人。</RPP_Production_Cleaner_III.jobString>
+
+  <RPP_Production_Cleaner_IV.label>製作清潔機（四階）</RPP_Production_Cleaner_IV.label>
+  <RPP_Production_Cleaner_IV.description>製作一台執行清潔工作的機器。</RPP_Production_Cleaner_IV.description>
+  <RPP_Production_Cleaner_IV.jobString>正在製作機器人。</RPP_Production_Cleaner_IV.jobString>
+
+  <RPP_Production_Cleaner_V.label>製作清潔機（五階）</RPP_Production_Cleaner_V.label>
+  <RPP_Production_Cleaner_V.description>製作一台執行清潔工作的機器。</RPP_Production_Cleaner_V.description>
+  <RPP_Production_Cleaner_V.jobString>正在製作機器人。</RPP_Production_Cleaner_V.jobString>
+
+  <RPP_Production_Hauler_I.label>製作搬運機（一階）</RPP_Production_Hauler_I.label>
+  <RPP_Production_Hauler_I.description>製作一台執行搬運工作的機器。</RPP_Production_Hauler_I.description>
+  <RPP_Production_Hauler_I.jobString>正在製作機器人。</RPP_Production_Hauler_I.jobString>
+
+  <RPP_Production_Hauler_II.label>製作搬運機（二階）</RPP_Production_Hauler_II.label>
+  <RPP_Production_Hauler_II.description>製作一台執行搬運工作的機器。</RPP_Production_Hauler_II.description>
+  <RPP_Production_Hauler_II.jobString>正在製作機器人。</RPP_Production_Hauler_II.jobString>
+
+  <RPP_Production_Hauler_III.label>製作搬運機（三階）</RPP_Production_Hauler_III.label>
+  <RPP_Production_Hauler_III.description>製作一台執行搬運工作的機器。</RPP_Production_Hauler_III.description>
+  <RPP_Production_Hauler_III.jobString>正在製作機器人。</RPP_Production_Hauler_III.jobString>
+
+  <RPP_Production_Hauler_IV.label>製作搬運機（四階）</RPP_Production_Hauler_IV.label>
+  <RPP_Production_Hauler_IV.description>製作一台執行搬運工作的機器。</RPP_Production_Hauler_IV.description>
+  <RPP_Production_Hauler_IV.jobString>正在製作機器人。</RPP_Production_Hauler_IV.jobString>
+
+  <RPP_Production_Hauler_V.label>製作搬運機（五階）</RPP_Production_Hauler_V.label>
+  <RPP_Production_Hauler_V.description>製作一台執行搬運工作的機器。</RPP_Production_Hauler_V.description>
+  <RPP_Production_Hauler_V.jobString>正在製作機器人。</RPP_Production_Hauler_V.jobString>
+
+
+  <!-- RPP -->
+
+  <RPP_Production_Builder_I.label>製作工程機（一階）</RPP_Production_Builder_I.label>
+  <RPP_Production_Builder_I.description>製作一台以初學級技能執行建造、拆除、修理及採礦工作的機器。</RPP_Production_Builder_I.description>
+  <RPP_Production_Builder_I.jobString>正在製作機器人。</RPP_Production_Builder_I.jobString>
+
+  <RPP_Production_Builder_II.label>製作工程機（二階）</RPP_Production_Builder_II.label>
+  <RPP_Production_Builder_II.description>製作一台以專業人員級技能執行建造、拆除、修理及採礦工作的機器。</RPP_Production_Builder_II.description>
+  <RPP_Production_Builder_II.jobString>正在製作機器人。</RPP_Production_Builder_II.jobString>
+
+  <RPP_Production_Builder_III.label>製作工程機（三階）</RPP_Production_Builder_III.label>
+  <RPP_Production_Builder_III.description>製作一台以大師級技能執行建造、拆除、修理及採礦工作的機器。</RPP_Production_Builder_III.description>
+  <RPP_Production_Builder_III.jobString>正在製作機器人。</RPP_Production_Builder_III.jobString>
+
+  <RPP_Production_Builder_IV.label>製作工程機（四階）</RPP_Production_Builder_IV.label>
+  <RPP_Production_Builder_IV.description>製作一台以太陽系級大師技能執行建造、拆除、修理及採礦工作的機器。</RPP_Production_Builder_IV.description>
+  <RPP_Production_Builder_IV.jobString>正在製作機器人。</RPP_Production_Builder_IV.jobString>
+
+  <RPP_Production_Builder_V.label>製作工程機（五階）</RPP_Production_Builder_V.label>
+  <RPP_Production_Builder_V.description>製作一台以太陽系級大師技能執行建造、拆除、修理及採礦工作的機器。</RPP_Production_Builder_V.description>
+  <RPP_Production_Builder_V.jobString>正在製作機器人。</RPP_Production_Builder_V.jobString>
+
+  <RPP_Production_Crafter_I.label>製作工藝機（一階）</RPP_Production_Crafter_I.label>
+  <RPP_Production_Crafter_I.description>製作一台以初學級技能執行鍛冶、手工及裁縫工作的機器。</RPP_Production_Crafter_I.description>
+  <RPP_Production_Crafter_I.jobString>正在製作機器人。</RPP_Production_Crafter_I.jobString>
+
+  <RPP_Production_Crafter_II.label>製作工藝機（二階）</RPP_Production_Crafter_II.label>
+  <RPP_Production_Crafter_II.description>製作一台以專業人員級技能執行鍛冶、手工及裁縫工作的機器。</RPP_Production_Crafter_II.description>
+  <RPP_Production_Crafter_II.jobString>正在製作機器人。</RPP_Production_Crafter_II.jobString>
+
+  <RPP_Production_Crafter_III.label>製作工藝機（三階）</RPP_Production_Crafter_III.label>
+  <RPP_Production_Crafter_III.description>製作一台以大師級技能執行鍛冶、手工及裁縫工作的機器。</RPP_Production_Crafter_III.description>
+  <RPP_Production_Crafter_III.jobString>正在製作機器人。</RPP_Production_Crafter_III.jobString>
+
+  <RPP_Production_Crafter_IV.label>製作工藝機（四階）</RPP_Production_Crafter_IV.label>
+  <RPP_Production_Crafter_IV.description>製作一台以太陽系級大師技能執行鍛冶、手工及裁縫工作的機器。</RPP_Production_Crafter_IV.description>
+  <RPP_Production_Crafter_IV.jobString>正在製作機器人。</RPP_Production_Crafter_IV.jobString>
+
+  <RPP_Production_Crafter_V.label>製作工藝機（五階）</RPP_Production_Crafter_V.label>
+  <RPP_Production_Crafter_V.description>製作一台以太陽系級大師技能執行鍛冶、手工及裁縫工作的機器。</RPP_Production_Crafter_V.description>
+  <RPP_Production_Crafter_V.jobString>正在製作機器人。</RPP_Production_Crafter_V.jobString>
+
+  <RPP_Production_ER_I.label>製作救援機（一階）</RPP_Production_ER_I.label>
+  <RPP_Production_ER_I.description>製作一台以初學級技能執行醫療及滅火工作的機器。</RPP_Production_ER_I.description>
+  <RPP_Production_ER_I.jobString>正在製作機器人。</RPP_Production_ER_I.jobString>
+
+  <RPP_Production_ER_II.label>製作救援機（二階）</RPP_Production_ER_II.label>
+  <RPP_Production_ER_II.description>製作一台以專業人員級技能執行醫療及滅火工作的機器。</RPP_Production_ER_II.description>
+  <RPP_Production_ER_II.jobString>正在製作機器人。</RPP_Production_ER_II.jobString>
+
+  <RPP_Production_ER_III.label>製作救援機（三階）</RPP_Production_ER_III.label>
+  <RPP_Production_ER_III.description>製作一台以大師級技能執行醫療及滅火工作的機器。</RPP_Production_ER_III.description>
+  <RPP_Production_ER_III.jobString>正在製作機器人。</RPP_Production_ER_III.jobString>
+
+  <RPP_Production_ER_IV.label>製作救援機（四階）</RPP_Production_ER_IV.label>
+  <RPP_Production_ER_IV.description>製作一台以太陽系級大師技能執行醫療及滅火工作的機器。</RPP_Production_ER_IV.description>
+  <RPP_Production_ER_IV.jobString>正在製作機器人。</RPP_Production_ER_IV.jobString>
+
+  <RPP_Production_ER_V.label>製作救援機（五階）</RPP_Production_ER_V.label>
+  <RPP_Production_ER_V.description>製作一台以太陽系級大師技能執行醫療及滅火工作的機器。</RPP_Production_ER_V.description>
+  <RPP_Production_ER_V.jobString>正在製作機器人。</RPP_Production_ER_V.jobString>
+
+  <RPP_Production_Kitchen_I.label>製作廚藝機（一階）</RPP_Production_Kitchen_I.label>
+  <RPP_Production_Kitchen_I.description>製作一台以初學級技能執行烹飪、種植與剪裁植物工作的機器。</RPP_Production_Kitchen_I.description>
+  <RPP_Production_Kitchen_I.jobString>正在製作機器人。</RPP_Production_Kitchen_I.jobString>
+
+  <RPP_Production_Kitchen_II.label>製作廚藝機（二階）</RPP_Production_Kitchen_II.label>
+  <RPP_Production_Kitchen_II.description>製作一台以專業人員級技能執行烹飪、種植與剪裁植物工作的機器。</RPP_Production_Kitchen_II.description>
+  <RPP_Production_Kitchen_II.jobString>正在製作機器人。</RPP_Production_Kitchen_II.jobString>
+
+  <RPP_Production_Kitchen_III.label>製作廚藝機（三階）</RPP_Production_Kitchen_III.label>
+  <RPP_Production_Kitchen_III.description>製作一台以大師級技能執行烹飪、種植與剪裁植物工作的機器。</RPP_Production_Kitchen_III.description>
+  <RPP_Production_Kitchen_III.jobString>正在製作機器人。</RPP_Production_Kitchen_III.jobString>
+
+  <RPP_Production_Kitchen_IV.label>製作廚藝機（四階）</RPP_Production_Kitchen_IV.label>
+  <RPP_Production_Kitchen_IV.description>製作一台以太陽系級大師技能執行烹飪、種植與剪裁植物工作的機器。</RPP_Production_Kitchen_IV.description>
+  <RPP_Production_Kitchen_IV.jobString>正在製作機器人。</RPP_Production_Kitchen_IV.jobString>
+
+  <RPP_Production_Kitchen_V.label>製作廚藝機（五階）</RPP_Production_Kitchen_V.label>
+  <RPP_Production_Kitchen_V.description>製作一台以太陽系級大師技能執行烹飪、種植與剪裁植物工作的機器。</RPP_Production_Kitchen_V.description>
+  <RPP_Production_Kitchen_V.jobString>正在製作機器人。</RPP_Production_Kitchen_V.jobString>
+
+  <RPP_Production_Omni_V.label>製作萬能機（五階）</RPP_Production_Omni_V.label>
+  <RPP_Production_Omni_V.description>製作一台全能的神級機器。</RPP_Production_Omni_V.description>
+  <RPP_Production_Omni_V.jobString>正在製作機器人。</RPP_Production_Omni_V.jobString>
+
+
+</LanguageData>

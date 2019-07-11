@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!--[Duplicate]
+	<AIRobot_RechargeStation_Hauler.label>Transportroboter(I) Basisstation</AIRobot_RechargeStation_Hauler.label>
+	<AIRobot_RechargeStation_Hauler.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 1 Roboter.</AIRobot_RechargeStation_Hauler.description>
+-->
+	<AIRobot_RechargeStation_Hauler_II.label>Transportroboter(II) Basisstation</AIRobot_RechargeStation_Hauler_II.label>
+	<AIRobot_RechargeStation_Hauler_II.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 2 Roboter.</AIRobot_RechargeStation_Hauler_II.description>
+	<AIRobot_RechargeStation_Hauler_III.label>Transportroboter(III) Basisstation</AIRobot_RechargeStation_Hauler_III.label>
+	<AIRobot_RechargeStation_Hauler_III.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 3 Roboter.</AIRobot_RechargeStation_Hauler_III.description>
+	<AIRobot_RechargeStation_Hauler_IV.label>Transportroboter(IV) Basisstation</AIRobot_RechargeStation_Hauler_IV.label>
+	<AIRobot_RechargeStation_Hauler_IV.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 4 Roboter.</AIRobot_RechargeStation_Hauler_IV.description>
+	<AIRobot_RechargeStation_Hauler_V.label>Transportroboter(V) Basisstation</AIRobot_RechargeStation_Hauler_V.label>
+	<AIRobot_RechargeStation_Hauler_V.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 5 Anti-Logikroboter.</AIRobot_RechargeStation_Hauler_V.description>
+
+<!--[Duplicate]
+	<AIRobot_RechargeStation_Cleaner.label>Reinigungsroboter(I) Basisstation</AIRobot_RechargeStation_Cleaner.label>
+	<AIRobot_RechargeStation_Cleaner.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 1 Roboter.</AIRobot_RechargeStation_Cleaner.description>
+-->
+	<AIRobot_RechargeStation_Cleaner_II.label>Reinigungsroboter(II) Basisstation</AIRobot_RechargeStation_Cleaner_II.label>
+	<AIRobot_RechargeStation_Cleaner_II.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 2 Roboter.</AIRobot_RechargeStation_Cleaner_II.description>
+	<AIRobot_RechargeStation_Cleaner_III.label>Reinigungsroboter(III) Basisstation</AIRobot_RechargeStation_Cleaner_III.label>
+	<AIRobot_RechargeStation_Cleaner_III.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 3 Roboter.</AIRobot_RechargeStation_Cleaner_III.description>
+	<AIRobot_RechargeStation_Cleaner_IV.label>Reinigungsroboter(IV) Basisstation</AIRobot_RechargeStation_Cleaner_IV.label>
+	<AIRobot_RechargeStation_Cleaner_IV.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 4 Roboter.</AIRobot_RechargeStation_Cleaner_IV.description>
+	<AIRobot_RechargeStation_Cleaner_V.label>Reinigungsroboter(V) Basisstation</AIRobot_RechargeStation_Cleaner_V.label>
+	<AIRobot_RechargeStation_Cleaner_V.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 5 Anti-Logikroboter.</AIRobot_RechargeStation_Cleaner_V.description>
+
+	<RPP_RechargeStation_Builder_I.label>Bauroboter(I) Basisstation</RPP_RechargeStation_Builder_I.label>
+	<RPP_RechargeStation_Builder_I.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 1 Roboter.</RPP_RechargeStation_Builder_I.description>
+	<RPP_RechargeStation_Builder_II.label>Bauroboter(II) Basisstation</RPP_RechargeStation_Builder_II.label>
+	<RPP_RechargeStation_Builder_II.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 2 Roboter.</RPP_RechargeStation_Builder_II.description>
+	<RPP_RechargeStation_Builder_III.label>Bauroboter(III) Basisstation</RPP_RechargeStation_Builder_III.label>
+	<RPP_RechargeStation_Builder_III.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 3 Roboter.</RPP_RechargeStation_Builder_III.description>
+	<RPP_RechargeStation_Builder_IV.label>Bauroboter(IV) Basisstation</RPP_RechargeStation_Builder_IV.label>
+	<RPP_RechargeStation_Builder_IV.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 4 Roboter.</RPP_RechargeStation_Builder_IV.description>
+	<RPP_RechargeStation_Builder_V.label>Bauroboter(V) Basisstation</RPP_RechargeStation_Builder_V.label>
+	<RPP_RechargeStation_Builder_V.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 5 Anti-Logikroboter.</RPP_RechargeStation_Builder_V.description>
+
+	<RPP_RechargeStation_Crafter_I.label>Fertigungsroboter(I) Basisstation</RPP_RechargeStation_Crafter_I.label>
+	<RPP_RechargeStation_Crafter_I.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 1 Roboter.</RPP_RechargeStation_Crafter_I.description>
+	<RPP_RechargeStation_Crafter_II.label>Fertigungsroboter(II) Basisstation</RPP_RechargeStation_Crafter_II.label>
+	<RPP_RechargeStation_Crafter_II.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 2 Roboter.</RPP_RechargeStation_Crafter_II.description>
+	<RPP_RechargeStation_Crafter_III.label>Fertigungsroboter(III) Basisstation</RPP_RechargeStation_Crafter_III.label>
+	<RPP_RechargeStation_Crafter_III.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 3 Roboter.</RPP_RechargeStation_Crafter_III.description>
+	<RPP_RechargeStation_Crafter_IV.label>Fertigungsroboter(IV) Basisstation</RPP_RechargeStation_Crafter_IV.label>
+	<RPP_RechargeStation_Crafter_IV.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 4 Roboter.</RPP_RechargeStation_Crafter_IV.description>
+	<RPP_RechargeStation_Crafter_V.label>Fertigungsroboter(V) Basisstation</RPP_RechargeStation_Crafter_V.label>
+	<RPP_RechargeStation_Crafter_V.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 5 Anti-Logikroboter.</RPP_RechargeStation_Crafter_V.description>
+
+	<RPP_RechargeStation_ER_I.label>Notfallroboter(I) Basisstation</RPP_RechargeStation_ER_I.label>
+	<RPP_RechargeStation_ER_I.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 1 Roboter.</RPP_RechargeStation_ER_I.description>
+	<RPP_RechargeStation_ER_II.label>Notfallroboter(II) Basisstation</RPP_RechargeStation_ER_II.label>
+	<RPP_RechargeStation_ER_II.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 2 Roboter.</RPP_RechargeStation_ER_II.description>
+	<RPP_RechargeStation_ER_III.label>Notfallroboter(III) Basisstation</RPP_RechargeStation_ER_III.label>
+	<RPP_RechargeStation_ER_III.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 3 Roboter.</RPP_RechargeStation_ER_III.description>
+	<RPP_RechargeStation_ER_IV.label>Notfallroboter(IV) Basisstation</RPP_RechargeStation_ER_IV.label>
+	<RPP_RechargeStation_ER_IV.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 4 Roboter.</RPP_RechargeStation_ER_IV.description>
+	<RPP_RechargeStation_ER_V.label>Notfallroboter(V) Basisstation</RPP_RechargeStation_ER_V.label>
+	<RPP_RechargeStation_ER_V.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 5 Anti-Logikroboter.</RPP_RechargeStation_ER_V.description>
+
+	<RPP_RechargeStation_Kitchen_I.label>K&#252;chenroboter(I) Basisstation</RPP_RechargeStation_Kitchen_I.label>
+	<RPP_RechargeStation_Kitchen_I.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 1 Roboter.</RPP_RechargeStation_Kitchen_I.description>
+	<RPP_RechargeStation_Kitchen_II.label>K&#252;chenroboter(II) Basisstation</RPP_RechargeStation_Kitchen_II.label>
+	<RPP_RechargeStation_Kitchen_II.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 2 Roboter.</RPP_RechargeStation_Kitchen_II.description>
+	<RPP_RechargeStation_Kitchen_III.label>K&#252;chenroboter(III) Basisstation</RPP_RechargeStation_Kitchen_III.label>
+	<RPP_RechargeStation_Kitchen_III.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 3 Roboter.</RPP_RechargeStation_Kitchen_III.description>
+	<RPP_RechargeStation_Kitchen_IV.label>K&#252;chenroboter(IV) Basisstation</RPP_RechargeStation_Kitchen_IV.label>
+	<RPP_RechargeStation_Kitchen_IV.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 4 Roboter.</RPP_RechargeStation_Kitchen_IV.description>
+	<RPP_RechargeStation_Kitchen_V.label>K&#252;chenroboter(V) Basisstation</RPP_RechargeStation_Kitchen_V.label>
+	<RPP_RechargeStation_Kitchen_V.description>Diese Station kommt ausgestattet mit einem spezialisierten Stufe 5 Anti-Logikroboter.</RPP_RechargeStation_Kitchen_V.description>
+
+	<RPP_RechargeStation_Omni_V.label>Universalroboter(V) Basisstation</RPP_RechargeStation_Omni_V.label>
+	<RPP_RechargeStation_Omni_V.description>Diese Station kommt ausgestattet mit einem Stufe 5 Anti-Logik Universalroboter und einem &#252;bergreifenden internen Netzteil.</RPP_RechargeStation_Omni_V.description>
+
+</LanguageData>

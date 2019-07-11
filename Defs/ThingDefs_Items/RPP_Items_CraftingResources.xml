@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<ThingDef Abstract="True" ParentName="ResourceBase" Name="RPP_Resource">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<tradeTags>
+			<li>Robots</li>
+			<li>Exotic</li>
+		</tradeTags>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Resource">
+		<defName>RPP_Component</defName>
+		<label>Robotic Component</label>
+		<description>Robotic Components are used as logic circuits within a robotic matrix.</description>
+		<graphicData>
+			<texPath>Things/Item/RPP/RPP_Component</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<!-- Matricies -->
+	<ThingDef ParentName="RPP_Resource">
+		<defName>RPP_Matrix_I</defName>
+		<label>Robotic Matrix (Simple)</label>
+		<description>A robotic logical matrix. Engineered with a Simple instruction set allowing it to perform suited tasks at an amateur-class skill level.</description>
+		<graphicData>
+			<texPath>Things/Item/RPP/RPP_Matrix_I</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>463</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Resource">
+		<defName>RPP_Matrix_II</defName>
+		<label>Robotic Matrix (Basic)</label>
+		<description>A robotic logical matrix. Engineered with a Simple instruction set allowing it to perform suited tasks at a profesional-class skill level.</description>
+		<graphicData>
+			<texPath>Things/Item/RPP/RPP_Matrix_II</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>1094</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Resource">
+		<defName>RPP_Matrix_III</defName>
+		<label>Robotic Matrix (Intermediate)</label>
+		<description>A robotic logical matrix. Engineered with a Simple instruction set allowing it to perform suited tasks at a master-class skill level.</description>
+		<graphicData>
+			<texPath>Things/Item/RPP/RPP_Matrix_III</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>2495</MarketValue>
+			<MaxHitPoints>300</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Resource">
+		<defName>RPP_Matrix_IV</defName>
+		<label>Robotic Matrix (Advanced)</label>
+		<description>A robotic logical matrix. Engineered with a Simple instruction set allowing it to perform suited tasks at a system-master-class skill level.</description>
+		<graphicData>
+			<texPath>Things/Item/RPP/RPP_Matrix_IV</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>5290</MarketValue>
+			<MaxHitPoints>400</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Resource">
+		<defName>RPP_Matrix_V</defName>
+		<label>Robotic Matrix (Anti-Logic)</label>
+		<description>A robotic Anti-Logic Matrix. Capable of performing Godlike tasks. (NP=P)</description>
+		<graphicData>
+			<texPath>Things/Item/RPP/RPP_Matrix_V</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>10780</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+</Defs>

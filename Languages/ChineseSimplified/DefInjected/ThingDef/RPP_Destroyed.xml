@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!--[Duplicate]
+	<AIRobot_Hauler_disabled.label>搬运机（无法运转）</AIRobot_Hauler_disabled.label>
+	<AIRobot_Hauler_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Hauler_disabled.description>
+-->
+	<AIRobot_Hauler_II_disabled.label>搬运机（无法运转）</AIRobot_Hauler_II_disabled.label>
+	<AIRobot_Hauler_II_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Hauler_II_disabled.description>
+	<AIRobot_Hauler_III_disabled.label>搬运机（无法运转）</AIRobot_Hauler_III_disabled.label>
+	<AIRobot_Hauler_III_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Hauler_III_disabled.description>
+	<AIRobot_Hauler_IV_disabled.label>搬运机（无法运转）</AIRobot_Hauler_IV_disabled.label>
+	<AIRobot_Hauler_IV_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Hauler_IV_disabled.description>
+	<AIRobot_Hauler_V_disabled.label>搬运机（无法运转）</AIRobot_Hauler_V_disabled.label>
+	<AIRobot_Hauler_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Hauler_V_disabled.description>
+
+<!--[Duplicate]
+	<AIRobot_Cleaner_disabled.label>清洁机（无法运转）</AIRobot_Cleaner_disabled.label>
+	<AIRobot_Cleaner_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Cleaner_disabled.description>
+-->
+	<AIRobot_Cleaner_II_disabled.label>清洁机（无法运转）</AIRobot_Cleaner_II_disabled.label>
+	<AIRobot_Cleaner_II_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Cleaner_II_disabled.description>
+	<AIRobot_Cleaner_III_disabled.label>清洁机（无法运转）</AIRobot_Cleaner_III_disabled.label>
+	<AIRobot_Cleaner_III_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Cleaner_III_disabled.description>
+	<AIRobot_Cleaner_IV_disabled.label>清洁机（无法运转）</AIRobot_Cleaner_IV_disabled.label>
+	<AIRobot_Cleaner_IV_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Cleaner_IV_disabled.description>
+	<AIRobot_Cleaner_V_disabled.label>清洁机（无法运转）</AIRobot_Cleaner_V_disabled.label>
+	<AIRobot_Cleaner_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</AIRobot_Cleaner_V_disabled.description>
+
+
+	<RPP_Bot_Builder_I_disabled.label>工程机（无法运转）</RPP_Bot_Builder_I_disabled.label>
+	<RPP_Bot_Builder_I_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Builder_I_disabled.description>
+	<RPP_Bot_Builder_II_disabled.label>工程机（无法运转）</RPP_Bot_Builder_II_disabled.label>
+	<RPP_Bot_Builder_II_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Builder_II_disabled.description>
+	<RPP_Bot_Builder_III_disabled.label>工程机（无法运转）</RPP_Bot_Builder_III_disabled.label>
+	<RPP_Bot_Builder_III_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Builder_III_disabled.description>
+	<RPP_Bot_Builder_IV_disabled.label>工程机（无法运转）</RPP_Bot_Builder_IV_disabled.label>
+	<RPP_Bot_Builder_IV_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Builder_IV_disabled.description>
+	<RPP_Bot_Builder_V_disabled.label>工程机（无法运转）</RPP_Bot_Builder_V_disabled.label>
+	<RPP_Bot_Builder_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Builder_V_disabled.description>
+
+	<RPP_Bot_Crafter_I_disabled.label>工艺机（无法运转）</RPP_Bot_Crafter_I_disabled.label>
+	<RPP_Bot_Crafter_I_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Crafter_I_disabled.description>
+	<RPP_Bot_Crafter_II_disabled.label>工艺机（无法运转）</RPP_Bot_Crafter_II_disabled.label>
+	<RPP_Bot_Crafter_II_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Crafter_II_disabled.description>
+	<RPP_Bot_Crafter_III_disabled.label>工艺机（无法运转）</RPP_Bot_Crafter_III_disabled.label>
+	<RPP_Bot_Crafter_III_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Crafter_III_disabled.description>
+	<RPP_Bot_Crafter_IV_disabled.label>工艺机（无法运转）</RPP_Bot_Crafter_IV_disabled.label>
+	<RPP_Bot_Crafter_IV_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Crafter_IV_disabled.description>
+	<RPP_Bot_Crafter_V_disabled.label>工艺机（无法运转）</RPP_Bot_Crafter_V_disabled.label>
+	<RPP_Bot_Crafter_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Crafter_V_disabled.description>
+
+	<RPP_Bot_ER_I_disabled.label>救援机（无法运转）</RPP_Bot_ER_I_disabled.label>
+	<RPP_Bot_ER_I_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_ER_I_disabled.description>
+	<RPP_Bot_ER_II_disabled.label>救援机（无法运转）</RPP_Bot_ER_II_disabled.label>
+	<RPP_Bot_ER_II_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_ER_II_disabled.description>
+	<RPP_Bot_ER_III_disabled.label>救援机（无法运转）</RPP_Bot_ER_III_disabled.label>
+	<RPP_Bot_ER_III_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_ER_III_disabled.description>
+	<RPP_Bot_ER_IV_disabled.label>救援机（无法运转）</RPP_Bot_ER_IV_disabled.label>
+	<RPP_Bot_ER_IV_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_ER_IV_disabled.description>
+	<RPP_Bot_ER_V_disabled.label>救援机（无法运转）</RPP_Bot_ER_V_disabled.label>
+	<RPP_Bot_ER_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_ER_V_disabled.description>
+
+	<RPP_Bot_Kitchen_I_disabled.label>厨艺机（无法运转）</RPP_Bot_Kitchen_I_disabled.label>
+	<RPP_Bot_Kitchen_I_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Kitchen_I_disabled.description>
+	<RPP_Bot_Kitchen_II_disabled.label>厨艺机（无法运转）</RPP_Bot_Kitchen_II_disabled.label>
+	<RPP_Bot_Kitchen_II_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Kitchen_II_disabled.description>
+	<RPP_Bot_Kitchen_III_disabled.label>厨艺机（无法运转）</RPP_Bot_Kitchen_III_disabled.label>
+	<RPP_Bot_Kitchen_III_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Kitchen_III_disabled.description>
+	<RPP_Bot_Kitchen_IV_disabled.label>厨艺机（无法运转）</RPP_Bot_Kitchen_IV_disabled.label>
+	<RPP_Bot_Kitchen_IV_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Kitchen_IV_disabled.description>
+	<RPP_Bot_Kitchen_V_disabled.label>厨艺机（无法运转）</RPP_Bot_Kitchen_V_disabled.label>
+	<RPP_Bot_Kitchen_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Kitchen_V_disabled.description>
+
+	<RPP_Bot_Omni_V_disabled.label>万能机（无法运转）</RPP_Bot_Omni_V_disabled.label>
+	<RPP_Bot_Omni_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Omni_V_disabled.description>
+
+</LanguageData>

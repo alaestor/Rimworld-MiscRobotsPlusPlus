@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!--[Duplicate]
+	<AIRobot_Hauler_disabled.label>Hauling Bot (disabled)</AIRobot_Hauler_disabled.label>
+	<AIRobot_Hauler_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Hauler_disabled.description>
+-->
+	<AIRobot_Hauler_II_disabled.label>Hauling Bot (disabled)</AIRobot_Hauler_II_disabled.label>
+	<AIRobot_Hauler_II_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Hauler_II_disabled.description>
+	<AIRobot_Hauler_III_disabled.label>Hauling Bot (disabled)</AIRobot_Hauler_III_disabled.label>
+	<AIRobot_Hauler_III_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Hauler_III_disabled.description>
+	<AIRobot_Hauler_IV_disabled.label>Hauling Bot (disabled)</AIRobot_Hauler_IV_disabled.label>
+	<AIRobot_Hauler_IV_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Hauler_IV_disabled.description>
+	<AIRobot_Hauler_V_disabled.label>Hauling Bot (disabled)</AIRobot_Hauler_V_disabled.label>
+	<AIRobot_Hauler_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Hauler_V_disabled.description>
+
+<!--[Duplicate]
+	<AIRobot_Cleaner_disabled.label>Cleaning Bot (disabled)</AIRobot_Cleaner_disabled.label>
+	<AIRobot_Cleaner_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Cleaner_disabled.description>
+-->
+	<AIRobot_Cleaner_II_disabled.label>Cleaning Bot (disabled)</AIRobot_Cleaner_II_disabled.label>
+	<AIRobot_Cleaner_II_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Cleaner_II_disabled.description>
+	<AIRobot_Cleaner_III_disabled.label>Cleaning Bot (disabled)</AIRobot_Cleaner_III_disabled.label>
+	<AIRobot_Cleaner_III_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Cleaner_III_disabled.description>
+	<AIRobot_Cleaner_IV_disabled.label>Cleaning Bot (disabled)</AIRobot_Cleaner_IV_disabled.label>
+	<AIRobot_Cleaner_IV_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Cleaner_IV_disabled.description>
+	<AIRobot_Cleaner_V_disabled.label>Cleaning Bot (disabled)</AIRobot_Cleaner_V_disabled.label>
+	<AIRobot_Cleaner_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</AIRobot_Cleaner_V_disabled.description>
+
+
+	<RPP_Bot_Builder_I_disabled.label>Builder Bot (disabled)</RPP_Bot_Builder_I_disabled.label>
+	<RPP_Bot_Builder_I_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Builder_I_disabled.description>
+	<RPP_Bot_Builder_II_disabled.label>Builder Bot (disabled)</RPP_Bot_Builder_II_disabled.label>
+	<RPP_Bot_Builder_II_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Builder_II_disabled.description>
+	<RPP_Bot_Builder_III_disabled.label>Builder Bot (disabled)</RPP_Bot_Builder_III_disabled.label>
+	<RPP_Bot_Builder_III_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Builder_III_disabled.description>
+	<RPP_Bot_Builder_IV_disabled.label>Builder Bot (disabled)</RPP_Bot_Builder_IV_disabled.label>
+	<RPP_Bot_Builder_IV_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Builder_IV_disabled.description>
+	<RPP_Bot_Builder_V_disabled.label>Builder Bot (disabled)</RPP_Bot_Builder_V_disabled.label>
+	<RPP_Bot_Builder_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Builder_V_disabled.description>
+
+	<RPP_Bot_Crafter_I_disabled.label>Crafter Bot (disabled)</RPP_Bot_Crafter_I_disabled.label>
+	<RPP_Bot_Crafter_I_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Crafter_I_disabled.description>
+	<RPP_Bot_Crafter_II_disabled.label>Crafter Bot (disabled)</RPP_Bot_Crafter_II_disabled.label>
+	<RPP_Bot_Crafter_II_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Crafter_II_disabled.description>
+	<RPP_Bot_Crafter_III_disabled.label>Crafter Bot (disabled)</RPP_Bot_Crafter_III_disabled.label>
+	<RPP_Bot_Crafter_III_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Crafter_III_disabled.description>
+	<RPP_Bot_Crafter_IV_disabled.label>Crafter Bot (disabled)</RPP_Bot_Crafter_IV_disabled.label>
+	<RPP_Bot_Crafter_IV_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Crafter_IV_disabled.description>
+	<RPP_Bot_Crafter_V_disabled.label>Crafter Bot (disabled)</RPP_Bot_Crafter_V_disabled.label>
+	<RPP_Bot_Crafter_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Crafter_V_disabled.description>
+
+	<RPP_Bot_ER_I_disabled.label>ER Bot (disabled)</RPP_Bot_ER_I_disabled.label>
+	<RPP_Bot_ER_I_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_ER_I_disabled.description>
+	<RPP_Bot_ER_II_disabled.label>ER Bot (disabled)</RPP_Bot_ER_II_disabled.label>
+	<RPP_Bot_ER_II_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_ER_II_disabled.description>
+	<RPP_Bot_ER_III_disabled.label>ER Bot (disabled)</RPP_Bot_ER_III_disabled.label>
+	<RPP_Bot_ER_III_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_ER_III_disabled.description>
+	<RPP_Bot_ER_IV_disabled.label>ER Bot (disabled)</RPP_Bot_ER_IV_disabled.label>
+	<RPP_Bot_ER_IV_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_ER_IV_disabled.description>
+	<RPP_Bot_ER_V_disabled.label>ER Bot (disabled)</RPP_Bot_ER_V_disabled.label>
+	<RPP_Bot_ER_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_ER_V_disabled.description>
+
+	<RPP_Bot_Kitchen_I_disabled.label>Kitchen Bot (disabled)</RPP_Bot_Kitchen_I_disabled.label>
+	<RPP_Bot_Kitchen_I_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Kitchen_I_disabled.description>
+	<RPP_Bot_Kitchen_II_disabled.label>Kitchen Bot (disabled)</RPP_Bot_Kitchen_II_disabled.label>
+	<RPP_Bot_Kitchen_II_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Kitchen_II_disabled.description>
+	<RPP_Bot_Kitchen_III_disabled.label>Kitchen Bot (disabled)</RPP_Bot_Kitchen_III_disabled.label>
+	<RPP_Bot_Kitchen_III_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Kitchen_III_disabled.description>
+	<RPP_Bot_Kitchen_IV_disabled.label>Kitchen Bot (disabled)</RPP_Bot_Kitchen_IV_disabled.label>
+	<RPP_Bot_Kitchen_IV_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Kitchen_IV_disabled.description>
+	<RPP_Bot_Kitchen_V_disabled.label>Kitchen Bot (disabled)</RPP_Bot_Kitchen_V_disabled.label>
+	<RPP_Bot_Kitchen_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Kitchen_V_disabled.description>
+
+	<RPP_Bot_Omni_V_disabled.label>OmniBot (disabled)</RPP_Bot_Omni_V_disabled.label>
+	<RPP_Bot_Omni_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Omni_V_disabled.description>
+
+</LanguageData>

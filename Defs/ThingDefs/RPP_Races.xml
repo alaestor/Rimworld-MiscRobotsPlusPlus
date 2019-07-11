@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--******** META ********-->
+
+	<ThingDef Abstract="True" Name="RPP_Bot" ParentName="Base_X2_AIRobot" Class="AIRobot.X2_ThingDef_AIRobot">
+		<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
+		<race>
+			<body>AIRobot</body>
+			<baseBodySize>0.6</baseBodySize>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseHealthScale>0.6</baseHealthScale>
+			<intelligence>ToolUser</intelligence>
+		</race>
+		<statBases>
+			<ComfyTemperatureMin>-110</ComfyTemperatureMin>
+			<ComfyTemperatureMax>110</ComfyTemperatureMax>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<verbs><li><verbClass>Verb_BeatFire</verbClass></li></verbs>
+		<recipes></recipes>
+		<allowLearning>false</allowLearning>
+	</ThingDef>
+
+	<!--******** TIER META ********-->
+
+	<ThingDef Abstract="True" Name="RPP_Bot_I" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<MoveSpeed>4.00</MoveSpeed>
+			<Flammability>1.0</Flammability>
+			<CarryingCapacity>100</CarryingCapacity>
+			<!--RestRateMultiplier>0.6</RestRateMultiplier-->
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+		</statBases>
+		<robotSkills>
+			<li><skillDef>Medicine</skillDef><level>4</level><passion>Minor</passion></li>
+			<li><skillDef>Cooking</skillDef><level>4</level><passion>Minor</passion></li>
+			<li><skillDef>Plants</skillDef><level>4</level><passion>Minor</passion></li>
+			<li><skillDef>Construction</skillDef><level>4</level><passion>Minor</passion></li>
+			<li><skillDef>Mining</skillDef><level>4</level><passion>Minor</passion></li>
+			<li><skillDef>Crafting</skillDef><level>4</level><passion>Minor</passion></li>
+			<li><skillDef>Social</skillDef><level>4</level><passion>Minor</passion></li>
+			<li><skillDef>Intellectual</skillDef><level>4</level><passion>Minor</passion></li>
+			<li><skillDef>Animals</skillDef><level>4</level><passion>Minor</passion></li>
+		</robotSkills>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="RPP_Bot_II" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<MoveSpeed>5.00</MoveSpeed>
+			<Flammability>0.7</Flammability>
+			<CarryingCapacity>200</CarryingCapacity>
+			<!--RestRateMultiplier>1</RestRateMultiplier-->
+			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+		</statBases>
+		<robotSkills>
+			<li><skillDef>Medicine</skillDef><level>8</level><passion>Minor</passion></li>
+			<li><skillDef>Cooking</skillDef><level>8</level><passion>Minor</passion></li>
+			<li><skillDef>Plants</skillDef><level>8</level><passion>Minor</passion></li>
+			<li><skillDef>Construction</skillDef><level>8</level><passion>Minor</passion></li>
+			<li><skillDef>Mining</skillDef><level>8</level><passion>Minor</passion></li>
+			<li><skillDef>Crafting</skillDef><level>8</level><passion>Minor</passion></li>
+			<li><skillDef>Social</skillDef><level>8</level><passion>Minor</passion></li>
+			<li><skillDef>Intellectual</skillDef><level>8</level><passion>Minor</passion></li>
+			<li><skillDef>Animals</skillDef><level>8</level><passion>Minor</passion></li>
+		</robotSkills>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="RPP_Bot_III" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<MoveSpeed>7.00</MoveSpeed>
+			<CarryingCapacity>300</CarryingCapacity>
+			<Flammability>0.3</Flammability>
+			<!--RestRateMultiplier>1.5</RestRateMultiplier-->
+			<WorkSpeedGlobal>2</WorkSpeedGlobal>
+		</statBases>
+		<robotSkills>
+			<li><skillDef>Medicine</skillDef><level>13</level><passion>Minor</passion></li>
+			<li><skillDef>Cooking</skillDef><level>13</level><passion>Minor</passion></li>
+			<li><skillDef>Plants</skillDef><level>13</level><passion>Minor</passion></li>
+			<li><skillDef>Construction</skillDef><level>13</level><passion>Minor</passion></li>
+			<li><skillDef>Mining</skillDef><level>13</level><passion>Minor</passion></li>
+			<li><skillDef>Crafting</skillDef><level>13</level><passion>Minor</passion></li>
+			<li><skillDef>Social</skillDef><level>13</level><passion>Minor</passion></li>
+			<li><skillDef>Intellectual</skillDef><level>13</level><passion>Minor</passion></li>
+			<li><skillDef>Animals</skillDef><level>13</level><passion>Minor</passion></li>
+		</robotSkills>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="RPP_Bot_IV" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<MoveSpeed>10.0</MoveSpeed>
+			<CarryingCapacity>400</CarryingCapacity>
+			<Flammability>0.0</Flammability>
+			<!--RestRateMultiplier>2.5</RestRateMultiplier-->
+			<WorkSpeedGlobal>3</WorkSpeedGlobal>
+		</statBases>
+		<robotSkills>
+			<li><skillDef>Medicine</skillDef><level>16</level><passion>Minor</passion></li>
+			<li><skillDef>Cooking</skillDef><level>16</level><passion>Minor</passion></li>
+			<li><skillDef>Plants</skillDef><level>16</level><passion>Minor</passion></li>
+			<li><skillDef>Construction</skillDef><level>16</level><passion>Minor</passion></li>
+			<li><skillDef>Mining</skillDef><level>16</level><passion>Minor</passion></li>
+			<li><skillDef>Crafting</skillDef><level>16</level><passion>Minor</passion></li>
+			<li><skillDef>Social</skillDef><level>16</level><passion>Minor</passion></li>
+			<li><skillDef>Intellectual</skillDef><level>16</level><passion>Minor</passion></li>
+			<li><skillDef>Animals</skillDef><level>16</level><passion>Minor</passion></li>
+		</robotSkills>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="RPP_Bot_V" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<MoveSpeed>15.0</MoveSpeed>
+			<CarryingCapacity>500</CarryingCapacity>
+			<Flammability>0.0</Flammability>
+			<!--RestRateMultiplier>4</RestRateMultiplier-->
+			<WorkSpeedGlobal>4</WorkSpeedGlobal>
+		</statBases>
+		<robotSkills>
+			<li><skillDef>Medicine</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Cooking</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Plants</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Construction</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Mining</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Crafting</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Social</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Intellectual</skillDef><level>20</level><passion>Minor</passion></li>
+			<li><skillDef>Animals</skillDef><level>20</level><passion>Minor</passion></li>
+		</robotSkills>
+	</ThingDef>
+
+	<!--******** INHERET ********-->
+
+<!-- override -->
+
+	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Hauler</defName>
+		<label>Hauling Bot</label>
+		<description>A Simple hauling robot.</description>
+		<statBases><MoveSpeed>6.0</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Hauler_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Hauler_II</defName>
+		<label>Hauling Bot</label>
+		<description>A Basic hauling robot.</description>
+		<statBases><MoveSpeed>8.0</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Hauler_II_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Hauler_III</defName>
+		<label>Hauling Bot</label>
+		<description>An Intermediate hauling robot.</description>
+		<statBases><MoveSpeed>10.0</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Hauler_III_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Hauler_IV</defName>
+		<label>Hauling Bot</label>
+		<description>An Advanced hauling robot.</description>
+		<statBases><MoveSpeed>13.5</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Hauler_IV_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Hauler_V</defName>
+		<label>Hauling Bot</label>
+		<description>An Anti-Logic hauling robot.</description>
+		<statBases><MoveSpeed>18.5</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Hauler_V_disabled</destroyedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Cleaner</defName>
+		<label>Cleaning Bot</label>
+		<description>A Simple cleaning robot.</description>
+		<statBases><MoveSpeed>6.0</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Cleaner_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Cleaner_II</defName>
+		<label>Cleaning Bot</label>
+		<description>A Basic cleaning robot.</description>
+		<statBases>
+			<MoveSpeed>8.0</MoveSpeed>
+		</statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Cleaner_II_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Cleaner_III</defName>
+		<label>Cleaning Bot</label>
+		<description>An Intermediate cleaning robot.</description>
+		<statBases><MoveSpeed>10.0</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Cleaner_III_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Cleaner_IV</defName>
+		<label>Cleaning Bot</label>
+		<description>An Advanced cleaning robot.</description>
+		<statBases><MoveSpeed>13.5</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Cleaner_IV_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>AIRobot_Cleaner_V</defName>
+		<label>Cleaning Bot</label>
+		<description>An Anti-Logic cleaning robot.</description>
+		<statBases><MoveSpeed>18.5</MoveSpeed></statBases>
+		<robotWorkTypes>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>AIRobot_Cleaner_V_disabled</destroyedDef>
+	</ThingDef>
+
+<!-- RPP -->
+
+	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Builder_I</defName>
+		<label>Builder Bot</label>
+		<description>A Tier 1 amateur-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Builder_I_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Builder_II</defName>
+		<label>Builder Bot</label>
+		<description>A Tier 2 professional-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Builder_II_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Builder_III</defName>
+		<label>Builder Bot</label>
+		<description>A Tier 3 Master-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Builder_III_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Builder_IV</defName>
+		<label>Builder Bot</label>
+		<description>A Tier 4 System-Master-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Builder_IV_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Builder_V</defName>
+		<label>Builder Bot</label>
+		<description>A Tier 5 Godlike-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Builder_V_disabled</destroyedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Crafter_I</defName>
+		<label>Crafter Bot</label>
+		<description>A Tier 1 amateur-class unit capable of smithing, tailoring, and crafting.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Crafter_I_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Crafter_II</defName>
+		<label>Crafter Bot</label>
+		<description>A Tier 2 professional-class unit capable of smithing, tailoring, and crafting.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Crafter_II_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Crafter_III</defName>
+		<label>Crafter Bot</label>
+		<description>A Tier 3 Master-class unit capable of smithing, tailoring, and crafting.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Crafter_III_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Crafter_IV</defName>
+		<label>Crafter Bot</label>
+		<description>A Tier 4 System-Master-class unit capable of smithing, tailoring, and crafting.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Crafter_IV_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Crafter_V</defName>
+		<label>Crafter Bot</label>
+		<description>A Tier 5 Godlike-class unit capable of smithing, tailoring, and crafting.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Crafter_V_disabled</destroyedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_ER_I</defName>
+		<label>ER Bot</label>
+		<description>A Tier 1 amateur-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_ER_I_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_ER_II</defName>
+		<label>ER Bot</label>
+		<description>A Tier 2 professional-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_ER_II_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_ER_III</defName>
+		<label>ER Bot</label>
+		<description>A Tier 3 Master-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_ER_III_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_ER_IV</defName>
+		<label>ER Bot</label>
+		<description>A Tier 4 System-Master-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_ER_IV_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_ER_V</defName>
+		<label>ER Bot</label>
+		<description>A Tier 5 Godlike-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_ER_V_disabled</destroyedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Kitchen_I</defName>
+		<label>Kitchen Bot</label>
+		<description>A Tier 1 amateur-class unit capable of cooking, and tending to plants.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Kitchen_I_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Kitchen_II</defName>
+		<label>Kitchen Bot</label>
+		<description>A Tier 2 professional-class unit capable of cooking, and tending to plants.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Kitchen_II_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Kitchen_III</defName>
+		<label>Kitchen Bot</label>
+		<description>A Tier 3 Master-class unit capable of cooking, and tending to plants.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Kitchen_III_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Kitchen_IV</defName>
+		<label>Kitchen Bot</label>
+		<description>A Tier 4 System-Master-class unit capable of cooking, and tending to plants.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Kitchen_IV_disabled</destroyedDef>
+	</ThingDef>
+	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Kitchen_V</defName>
+		<label>Kitchen Bot</label>
+		<description>A Tier 5 Godlike-class unit capable of cooking, and tending to plants.</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Kitchen_V_disabled</destroyedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
+		<defName>RPP_Bot_Omni_V</defName>
+		<label>OmniBot</label>
+		<description>A Tier 5 Godlike unit capable of almost anything. (NP=P)</description>
+		<robotWorkTypes>
+			<li><workTypeDef>Hauling</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Cooking</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>PlantCutting</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>1</priority></li>
+			<li><workTypeDef>Smithing</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Tailoring</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Construction</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Mining</workTypeDef><priority>2</priority></li>
+		</robotWorkTypes>
+		<destroyedDef>RPP_Bot_Omni_V_disabled</destroyedDef>
+	</ThingDef>
+
+</Defs>

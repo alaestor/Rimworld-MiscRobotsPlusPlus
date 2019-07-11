@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--******** META ********-->
+
+	<PawnKindDef Name="RPP_PawnKind" Abstract="True">
+		<combatPower>999999</combatPower>
+		<chemicalAddictionChance>0.0</chemicalAddictionChance>
+		<baseRecruitDifficulty>1</baseRecruitDifficulty>
+		<backstoryCategories><li>Civil</li></backstoryCategories>
+		<isFighter>false</isFighter>
+		<wildGroupSize>0</wildGroupSize>
+		<weaponMoney><min>0</min><max>0</max></weaponMoney>
+		<weaponTags><li>Gun</li></weaponTags>
+		<apparelTags><li>Spacer</li></apparelTags>
+		<apparelMoney><min>0</min><max>0</max></apparelMoney>
+		<gearHealthRange><min>0.2</min><max>2.0</max></gearHealthRange>
+		<invNutrition>0.05</invNutrition>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelAllowHeadgearChance>0.04</apparelAllowHeadgearChance>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<!--******** INHERET ********-->
+
+	<!-- override -->
+
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Hauler</defName>
+		<label>Hauler Bot (Tier 1)</label>
+		<race>AIRobot_Hauler</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Hauler/I/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Hauler_II</defName>
+		<label>Hauler Bot (Tier 2)</label>
+		<race>AIRobot_Hauler_II</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Hauler/II/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Hauler_III</defName>
+		<label>Hauler Bot (Tier 3)</label>
+		<race>AIRobot_Hauler_III</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Hauler/III/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Hauler_IV</defName>
+		<label>Hauler Bot (Tier 4)</label>
+		<race>AIRobot_Hauler_IV</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Hauler/IV/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Hauler_V</defName>
+		<label>Hauler Bot (Tier 5)</label>
+		<race>AIRobot_Hauler_V</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Hauler/V/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Cleaner</defName>
+		<label>Cleaner Bot (Tier 1)</label>
+		<race>AIRobot_Cleaner</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Cleaner/I/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Cleaner_II</defName>
+		<label>Cleaner Bot (Tier 2)</label>
+		<race>AIRobot_Cleaner_II</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Cleaner/II/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Cleaner_III</defName>
+		<label>Cleaner Bot (Tier 3)</label>
+		<race>AIRobot_Cleaner_III</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Cleaner/III/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Cleaner_IV</defName>
+		<label>Cleaner Bot (Tier 4)</label>
+		<race>AIRobot_Cleaner_IV</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Cleaner/IV/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>AIRobot_Cleaner_V</defName>
+		<label>Cleaner Bot (Tier 5)</label>
+		<race>AIRobot_Cleaner_V</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Cleaner/V/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- RPP -->
+
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Builder_I</defName>
+		<label>Builder Bot (Tier 1)</label>
+		<race>RPP_Bot_Builder_I</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Builder/I/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Builder_II</defName>
+		<label>Builder Bot (Tier 2)</label>
+		<race>RPP_Bot_Builder_II</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Builder/II/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Builder_III</defName>
+		<label>Builder Bot (Tier 3)</label>
+		<race>RPP_Bot_Builder_III</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Builder/III/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Builder_IV</defName>
+		<label>Builder Bot (Tier 4)</label>
+		<race>RPP_Bot_Builder_IV</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Builder/IV/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Builder_V</defName>
+		<label>Builder Bot (Tier 5)</label>
+		<race>RPP_Bot_Builder_V</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Builder/V/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Crafter_I</defName>
+		<label>Crafter Bot (Tier 1)</label>
+		<race>RPP_Bot_Crafter_I</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Crafter/I/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Crafter_II</defName>
+		<label>Crafter Bot (Tier 2)</label>
+		<race>RPP_Bot_Crafter_II</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Crafter/II/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Crafter_III</defName>
+		<label>Crafter Bot (Tier 3)</label>
+		<race>RPP_Bot_Crafter_III</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Crafter/III/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Crafter_IV</defName>
+		<label>Crafter Bot (Tier 4)</label>
+		<race>RPP_Bot_Crafter_IV</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Crafter/IV/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Crafter_V</defName>
+		<label>Crafter Bot (Tier 5)</label>
+		<race>RPP_Bot_Crafter_V</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Crafter/V/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_ER_I</defName>
+		<label>Emergency Responce Bot (Tier 1)</label>
+		<race>RPP_Bot_ER_I</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/ER/I/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_ER_II</defName>
+		<label>Emergency Responce Bot (Tier 2)</label>
+		<race>RPP_Bot_ER_II</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/ER/II/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_ER_III</defName>
+		<label>Emergency Responce Bot (Tier 3)</label>
+		<race>RPP_Bot_ER_III</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/ER/III/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_ER_IV</defName>
+		<label>ER Bot (Tier 4)</label>
+		<race>RPP_Bot_ER_IV</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/ER/IV/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_ER_V</defName>
+		<label>ER Bot (Tier 5)</label>
+		<race>RPP_Bot_ER_V</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/ER/V/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Kitchen_I</defName>
+		<label>Kitchen Bot (Tier 1)</label>
+		<race>RPP_Bot_Kitchen_I</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Kitchen/I/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Kitchen_II</defName>
+		<label>Kitchen Bot (Tier 2)</label>
+		<race>RPP_Bot_Kitchen_II</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Kitchen/II/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Kitchen_III</defName>
+		<label>Kitchen Bot (Tier 3)</label>
+		<race>RPP_Bot_Kitchen_III</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Kitchen/III/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Kitchen_IV</defName>
+		<label>Kitchen Bot (Tier 4)</label>
+		<race>RPP_Bot_Kitchen_IV</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Kitchen/IV/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Kitchen_V</defName>
+		<label>Kitchen Bot (Tier 5)</label>
+		<race>RPP_Bot_Kitchen_V</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/AIRobot/RPP/Kitchen/V/RPP_Bot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.7,1.7)</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.1, 0.2)</volume>
+						<offset>(0,0.5,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Omni_V</defName>
+		<label>Omni Bot (Tier 5)</label>
+		<race>RPP_Bot_Omni_V</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+						<texPath>Things/AIRobot/RPP/Omni/V/RPP_Bot</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(1.7,1.7)</drawSize>
+						<shadowData>
+							<volume>(0.2, 0.1, 0.2)</volume>
+							<offset>(0,0.5,0)</offset>
+						</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

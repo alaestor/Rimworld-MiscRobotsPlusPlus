@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<AIRobot_Hauler.label>搬运机（一阶）</AIRobot_Hauler.label>
+	<AIRobot_Hauler_II.label>搬运机（二阶）</AIRobot_Hauler_II.label>
+	<AIRobot_Hauler_III.label>搬运机（三阶）</AIRobot_Hauler_III.label>
+	<AIRobot_Hauler_IV.label>搬运机（四阶）</AIRobot_Hauler_IV.label>
+	<AIRobot_Hauler_V.label>搬运机（五阶）</AIRobot_Hauler_V.label>
+
+	<AIRobot_Cleaner.label>清洁机（一阶）</AIRobot_Cleaner.label>
+	<AIRobot_Cleaner_II.label>清洁机（二阶）</AIRobot_Cleaner_II.label>
+	<AIRobot_Cleaner_III.label>清洁机（三阶）</AIRobot_Cleaner_III.label>
+	<AIRobot_Cleaner_IV.label>清洁机（四阶）</AIRobot_Cleaner_IV.label>
+	<AIRobot_Cleaner_V.label>清洁机（五阶）</AIRobot_Cleaner_V.label>
+
+	<RPP_Bot_Builder_I.label>工程机（一阶）</RPP_Bot_Builder_I.label>
+	<RPP_Bot_Builder_II.label>工程机（二阶）</RPP_Bot_Builder_II.label>
+	<RPP_Bot_Builder_III.label>工程机（三阶）</RPP_Bot_Builder_III.label>
+	<RPP_Bot_Builder_IV.label>工程机（四阶）</RPP_Bot_Builder_IV.label>
+	<RPP_Bot_Builder_V.label>工程机（五阶）</RPP_Bot_Builder_V.label>
+
+	<RPP_Bot_Crafter_I.label>工艺机（一阶）</RPP_Bot_Crafter_I.label>
+	<RPP_Bot_Crafter_II.label>工艺机（二阶）</RPP_Bot_Crafter_II.label>
+	<RPP_Bot_Crafter_III.label>工艺机（三阶）</RPP_Bot_Crafter_III.label>
+	<RPP_Bot_Crafter_IV.label>工艺机（四阶）</RPP_Bot_Crafter_IV.label>
+	<RPP_Bot_Crafter_V.label>工艺机（五阶）</RPP_Bot_Crafter_V.label>
+
+	<RPP_Bot_ER_I.label>救援机（一阶）</RPP_Bot_ER_I.label>
+	<RPP_Bot_ER_II.label>救援机（二阶）</RPP_Bot_ER_II.label>
+	<RPP_Bot_ER_III.label>救援机（三阶）</RPP_Bot_ER_III.label>
+	<RPP_Bot_ER_IV.label>救援机（四阶）</RPP_Bot_ER_IV.label>
+	<RPP_Bot_ER_V.label>救援机（五阶）</RPP_Bot_ER_V.label>
+
+	<RPP_Bot_Kitchen_I.label>厨艺机（一阶）</RPP_Bot_Kitchen_I.label>
+	<RPP_Bot_Kitchen_II.label>厨艺机（二阶）</RPP_Bot_Kitchen_II.label>
+	<RPP_Bot_Kitchen_III.label>厨艺机（三阶）</RPP_Bot_Kitchen_III.label>
+	<RPP_Bot_Kitchen_IV.label>厨艺机（四阶）</RPP_Bot_Kitchen_IV.label>
+	<RPP_Bot_Kitchen_V.label>厨艺机（五阶）</RPP_Bot_Kitchen_V.label>
+
+	<RPP_Bot_Omni_V.label>万能机（五阶）</RPP_Bot_Omni_V.label>
+
+</LanguageData>

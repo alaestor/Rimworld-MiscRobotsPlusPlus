@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<RPP_Research_Matrix_I.label>Robotics:\nSimple Logic</RPP_Research_Matrix_I.label>
+	<RPP_Research_Matrix_I.description>Tier 1: Investigation into the production of the Simple Robotic Matrix units used in producing Amateur-class robots. Unlocks Basic robotic research (Tier 2) and the Simple Robotic Matrix.</RPP_Research_Matrix_I.description>
+	<RPP_Research_Matrix_II.label>Robotics:\nBasic Logic</RPP_Research_Matrix_II.label>
+	<RPP_Research_Matrix_II.description>Tier 2: Investigation into the production of the Basic Robotic Matrix units used in producing Professional-class robots. Unlocks Intermediate robotic research (Tier 3) and the Basic Robotic Matrix unit. All robots in this tier are faster and less flammable than the previous.</RPP_Research_Matrix_II.description>
+	<RPP_Research_Matrix_III.label>Robotics:\nIntermediate Logic</RPP_Research_Matrix_III.label>
+	<RPP_Research_Matrix_III.description>Tier 3: Investigation into the production of the Intermediate Robotic Matrix units used in producing Master-class robots. Unlocks advanced robotic research (Tier 4) and the Intermediate Robotic Matrix unit. All robots in this tier are faster and less flammable than the previous.</RPP_Research_Matrix_III.description>
+	<RPP_Research_Matrix_IV.label>Robotics:\nAdvanced Logic</RPP_Research_Matrix_IV.label>
+	<RPP_Research_Matrix_IV.description>Tier 4: Investigation into the production of the Advanced Robotic Matrix units used in producing System-Master-class robots. Unlocks the Advanced Robotic Matrix unit. All robots in this tier are faster and less flammable than the previous.</RPP_Research_Matrix_IV.description>
+	<RPP_Research_Matrix_V.label>Robotics:\nAnti-Logic\n(NP=P)</RPP_Research_Matrix_V.label>
+	<RPP_Research_Matrix_V.description>Tier 5: Break the boundaries set by existing levels of technology, understandings of logic, and the very concepts of causation. Our scientific horizons are becoming a lot more timey-wimey.</RPP_Research_Matrix_V.description>
+
+	<RPP_Research_Fundamentals.label>Robotics:\nFundamentals</RPP_Research_Fundamentals.label>
+	<RPP_Research_Fundamentals.description>Tier 0:\nInvestigation into the easiest principles of robotics and automation.</RPP_Research_Fundamentals.description>
+
+	<RPP_Research_Cleaner_All.label>Cleaner</RPP_Research_Cleaner_All.label>
+	<RPP_Research_Cleaner_All.description>Production of cleaning robots. The Hauling and Cleaning bots are faster than all other bots of the same tier.</RPP_Research_Cleaner_All.description>
+
+	<RPP_Research_Hauler_All.label>Hauler</RPP_Research_Hauler_All.label>
+	<RPP_Research_Hauler_All.description>Production of Hauling robots. The Hauling and Cleaning bots are faster than all other bots of the same tier.</RPP_Research_Hauler_All.description>
+
+	<RPP_Research_Builder_All.label>Builder</RPP_Research_Builder_All.label>
+	<RPP_Research_Builder_All.description>Production of Construction + Mining robots.</RPP_Research_Builder_All.description>
+
+	<RPP_Research_Crafter_All.label>Crafter</RPP_Research_Crafter_All.label>
+	<RPP_Research_Crafter_All.description>Production of Crafting robots.</RPP_Research_Crafter_All.description>
+
+	<RPP_Research_ER_All.label>ER</RPP_Research_ER_All.label>
+	<RPP_Research_ER_All.description>Production of Emergency Response robots.</RPP_Research_ER_All.description>
+
+	<RPP_Research_Kitchen_All.label>Kitchen</RPP_Research_Kitchen_All.label>
+	<RPP_Research_Kitchen_All.description>Production of a Simple Chef and Gardening robot.</RPP_Research_Kitchen_All.description>
+
+	<RPP_Research_Omni_V.label>Anti-Logic\nOmniBot</RPP_Research_Omni_V.label>
+	<RPP_Research_Omni_V.description>Production of omni-talented robots. These super-sonic robots are capable of almost any task.</RPP_Research_Omni_V.description>
+
+</LanguageData>

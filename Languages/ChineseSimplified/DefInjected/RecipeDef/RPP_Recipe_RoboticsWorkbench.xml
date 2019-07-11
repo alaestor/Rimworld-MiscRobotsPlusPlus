@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+ <RPP_Production_Component.label>制作机器人元件</RPP_Production_Component.label>
+  <RPP_Production_Component.description>制作机器人元件，用于在机器人矩阵中组建逻辑电路。</RPP_Production_Component.description>
+
+  <RPP_Production_Matrix_I.label>制作机器人逻辑矩阵（简易）</RPP_Production_Matrix_I.label>
+  <RPP_Production_Matrix_I.description>制作逻辑矩阵，用于以初学级技能（一阶）制造机器人。</RPP_Production_Matrix_I.description>
+  <RPP_Production_Matrix_II.label>制作机器人逻辑矩阵（初阶）</RPP_Production_Matrix_II.label>
+  <RPP_Production_Matrix_II.description>制作逻辑矩阵，用于以专业人员级技能（二阶）制造机器人。</RPP_Production_Matrix_II.description>
+  <RPP_Production_Matrix_III.label>制作机器人逻辑矩阵（进阶）</RPP_Production_Matrix_III.label>
+  <RPP_Production_Matrix_III.description>制作逻辑矩阵，用于以大师级技能（三阶）制造机器人。</RPP_Production_Matrix_III.description>
+  <RPP_Production_Matrix_IV.label>制作机器人逻辑矩阵（高阶）</RPP_Production_Matrix_IV.label>
+  <RPP_Production_Matrix_IV.description>制作逻辑矩阵，用于以太阳系级大师技能（四阶）制造机器人。</RPP_Production_Matrix_IV.description>
+  <RPP_Production_Matrix_V.label>制作机器人万能核心（NP=P）</RPP_Production_Matrix_V.label>
+  <RPP_Production_Matrix_V.description>制作反逻辑矩阵，用于以神级技能（五阶）制造机器人。</RPP_Production_Matrix_V.description>
+ 
+	<RPP_Production_Cleaner_I.label>制作清洁机（一阶）</RPP_Production_Cleaner_I.label>
+	<RPP_Production_Cleaner_I.description>制作一台执行清洁工作的机器。</RPP_Production_Cleaner_I.description>
+	<RPP_Production_Cleaner_II.label>制作清洁机（二阶）</RPP_Production_Cleaner_II.label>
+	<RPP_Production_Cleaner_II.description>制作一台执行清洁工作的机器。</RPP_Production_Cleaner_II.description>
+	<RPP_Production_Cleaner_III.label>制作清洁机（三阶）</RPP_Production_Cleaner_III.label>
+	<RPP_Production_Cleaner_III.description>制作一台执行清洁工作的机器。</RPP_Production_Cleaner_III.description>
+	<RPP_Production_Cleaner_IV.label>制作清洁机（四阶）</RPP_Production_Cleaner_IV.label>
+	<RPP_Production_Cleaner_IV.description>制作一台执行清洁工作的机器。</RPP_Production_Cleaner_IV.description>
+	<RPP_Production_Cleaner_V.label>制作清洁机（五阶）</RPP_Production_Cleaner_V.label>
+	<RPP_Production_Cleaner_V.description>制作一台执行清洁工作的机器。</RPP_Production_Cleaner_V.description>
+
+	<RPP_Production_Hauler_I.label>制作搬运机（一阶）</RPP_Production_Hauler_I.label>
+	<RPP_Production_Hauler_I.description>制作一台执行搬运工作的机器。</RPP_Production_Hauler_I.description>
+	<RPP_Production_Hauler_II.label>制作搬运机（二阶）</RPP_Production_Hauler_II.label>
+	<RPP_Production_Hauler_II.description>制作一台执行搬运工作的机器。</RPP_Production_Hauler_II.description>
+	<RPP_Production_Hauler_III.label>制作搬运机（三阶）</RPP_Production_Hauler_III.label>
+	<RPP_Production_Hauler_III.description>制作一台执行搬运工作的机器。</RPP_Production_Hauler_III.description>
+	<RPP_Production_Hauler_IV.label>制作搬运机（四阶）</RPP_Production_Hauler_IV.label>
+	<RPP_Production_Hauler_IV.description>制作一台执行搬运工作的机器。</RPP_Production_Hauler_IV.description>
+	<RPP_Production_Hauler_V.label>制作搬运机（五阶）</RPP_Production_Hauler_V.label>
+	<RPP_Production_Hauler_V.description>制作一台执行搬运工作的机器。</RPP_Production_Hauler_V.description>
+
+	<RPP_Production_Builder_I.label>制作工程机（一阶）</RPP_Production_Builder_I.label>
+	<RPP_Production_Builder_I.description>制作一台以初学级技能执行建造、拆除、修理及采矿工作的机器。</RPP_Production_Builder_I.description>
+	<RPP_Production_Builder_II.label>制作工程机（二阶）</RPP_Production_Builder_II.label>
+	<RPP_Production_Builder_II.description>制作一台以专业人员级技能执行建造、拆除、修理及采矿工作的机器。</RPP_Production_Builder_II.description>
+	<RPP_Production_Builder_III.label>制作工程机（三阶）</RPP_Production_Builder_III.label>
+	<RPP_Production_Builder_III.description>制作一台以大师级技能执行建造、拆除、修理及采矿工作的机器。</RPP_Production_Builder_III.description>
+	<RPP_Production_Builder_IV.label>制作工程机（四阶）</RPP_Production_Builder_IV.label>
+	<RPP_Production_Builder_IV.description>制作一台以太阳系级大师技能执行建造、拆除、修理及采矿工作的机器。</RPP_Production_Builder_IV.description>
+	<RPP_Production_Builder_V.label>制作工程机（五阶）</RPP_Production_Builder_V.label>
+	<RPP_Production_Builder_V.description>制作一台以太阳系级大师技能执行建造、拆除、修理及采矿工作的机器。</RPP_Production_Builder_V.description>
+
+	<RPP_Production_Crafter_I.label>制作工艺机（一阶）</RPP_Production_Crafter_I.label>
+	<RPP_Production_Crafter_I.description>制作一台以初学级技能执行锻冶、手工及裁缝工作的机器。</RPP_Production_Crafter_I.description>
+	<RPP_Production_Crafter_II.label>制作工艺机（二阶）</RPP_Production_Crafter_II.label>
+	<RPP_Production_Crafter_II.description>制作一台以专业人员级技能执行锻冶、手工及裁缝工作的机器。</RPP_Production_Crafter_II.description>
+	<RPP_Production_Crafter_III.label>制作工艺机（三阶）</RPP_Production_Crafter_III.label>
+	<RPP_Production_Crafter_III.description>制作一台以大师级技能执行锻冶、手工及裁缝工作的机器。</RPP_Production_Crafter_III.description>
+	<RPP_Production_Crafter_IV.label>制作工艺机（四阶）</RPP_Production_Crafter_IV.label>
+	<RPP_Production_Crafter_IV.description>制作一台以太阳系级大师技能执行锻冶、手工及裁缝工作的机器。</RPP_Production_Crafter_IV.description>
+	<RPP_Production_Crafter_V.label>制作工艺机（五阶）</RPP_Production_Crafter_V.label>
+	<RPP_Production_Crafter_V.description>制作一台以太阳系级大师技能执行锻冶、手工及裁缝工作的机器。</RPP_Production_Crafter_V.description>
+
+
+	<RPP_Production_ER_I.label>制作救援机（一阶）</RPP_Production_ER_I.label>
+	<RPP_Production_ER_I.description>制作一台以初学级技能执行医疗及灭火工作的机器。</RPP_Production_ER_I.description>
+	<RPP_Production_ER_II.label>制作救援机（二阶）</RPP_Production_ER_II.label>
+	<RPP_Production_ER_II.description>制作一台以专业人员级技能执行医疗及灭火工作的机器。</RPP_Production_ER_II.description>
+	<RPP_Production_ER_III.label>制作救援机（三阶）</RPP_Production_ER_III.label>
+	<RPP_Production_ER_III.description>制作一台以大师级技能执行医疗及灭火工作的机器。</RPP_Production_ER_III.description>
+	<RPP_Production_ER_IV.label>制作救援机（四阶）</RPP_Production_ER_IV.label>
+	<RPP_Production_ER_IV.description>制作一台以太阳系级大师技能执行医疗及灭火工作的机器。</RPP_Production_ER_IV.description>
+	<RPP_Production_ER_V.label>制作救援机（五阶）</RPP_Production_ER_V.label>
+	<RPP_Production_ER_V.description>制作一台以太阳系级大师技能执行医疗及灭火工作的机器。</RPP_Production_ER_V.description>
+
+	<RPP_Production_Kitchen_I.label>制作厨艺机（一阶）</RPP_Production_Kitchen_I.label>
+	<RPP_Production_Kitchen_I.description>制作一台以初学级技能执行烹饪、种植与剪裁植物工作的机器。</RPP_Production_Kitchen_I.description>
+	<RPP_Production_Kitchen_II.label>制作厨艺机（二阶）</RPP_Production_Kitchen_II.label>
+	<RPP_Production_Kitchen_II.description>制作一台以专业人员级技能执行烹饪、种植与剪裁植物工作的机器。</RPP_Production_Kitchen_II.description>
+	<RPP_Production_Kitchen_III.label>制作厨艺机（三阶）</RPP_Production_Kitchen_III.label>
+	<RPP_Production_Kitchen_III.description>制作一台以大师级技能执行烹饪、种植与剪裁植物工作的机器。</RPP_Production_Kitchen_III.description>
+	<RPP_Production_Kitchen_IV.label>制作厨艺机（四阶）</RPP_Production_Kitchen_IV.label>
+	<RPP_Production_Kitchen_IV.description>制作一台以太阳系级大师技能执行烹饪、种植与剪裁植物工作的机器。</RPP_Production_Kitchen_IV.description>
+	<RPP_Production_Kitchen_V.label>制作厨艺机（五阶）</RPP_Production_Kitchen_V.label>
+	<RPP_Production_Kitchen_V.description>制作一台以太阳系级大师技能执行烹饪、种植与剪裁植物工作的机器。</RPP_Production_Kitchen_V.description>
+
+
+	<RPP_Production_Omni_V.label>制作万能机（五阶）</RPP_Production_Omni_V.label>
+	<RPP_Production_Omni_V.description>制作一台全能的神级机器。</RPP_Production_Omni_V.description>
+
+</LanguageData>

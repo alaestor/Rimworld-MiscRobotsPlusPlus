@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<AIRobot_Hauler.label>Transportroboter (Stufe 1)</AIRobot_Hauler.label>
+	<AIRobot_Hauler_II.label>Transportroboter (Stufe 2)</AIRobot_Hauler_II.label>
+	<AIRobot_Hauler_III.label>Transportroboter (Stufe 3)</AIRobot_Hauler_III.label>
+	<AIRobot_Hauler_IV.label>Transportroboter (Stufe 4)</AIRobot_Hauler_IV.label>
+	<AIRobot_Hauler_V.label>Transportroboter (Stufe 5)</AIRobot_Hauler_V.label>
+
+	<AIRobot_Cleaner.label>Reinigungsroboter (Stufe 1)</AIRobot_Cleaner.label>
+	<AIRobot_Cleaner_II.label>Reinigungsroboter (Stufe 2)</AIRobot_Cleaner_II.label>
+	<AIRobot_Cleaner_III.label>Reinigungsroboter (Stufe 3)</AIRobot_Cleaner_III.label>
+	<AIRobot_Cleaner_IV.label>Reinigungsroboter (Stufe 4)</AIRobot_Cleaner_IV.label>
+	<AIRobot_Cleaner_V.label>Reinigungsroboter (Stufe 5)</AIRobot_Cleaner_V.label>
+
+	<RPP_Bot_Builder_I.label>Bauroboter (Stufe 1)</RPP_Bot_Builder_I.label>
+	<RPP_Bot_Builder_II.label>Bauroboter (Stufe 2)</RPP_Bot_Builder_II.label>
+	<RPP_Bot_Builder_III.label>Bauroboter (Stufe 3)</RPP_Bot_Builder_III.label>
+	<RPP_Bot_Builder_IV.label>Bauroboter (Stufe 4)</RPP_Bot_Builder_IV.label>
+	<RPP_Bot_Builder_V.label>Bauroboter (Stufe 5)</RPP_Bot_Builder_V.label>
+
+	<RPP_Bot_Crafter_I.label>Fertigungsroboter (Stufe 1)</RPP_Bot_Crafter_I.label>
+	<RPP_Bot_Crafter_II.label>Fertigungsroboter (Stufe 2)</RPP_Bot_Crafter_II.label>
+	<RPP_Bot_Crafter_III.label>Fertigungsroboter (Stufe 3)</RPP_Bot_Crafter_III.label>
+	<RPP_Bot_Crafter_IV.label>Fertigungsroboter (Stufe 4)</RPP_Bot_Crafter_IV.label>
+	<RPP_Bot_Crafter_V.label>Fertigungsroboter (Stufe 5)</RPP_Bot_Crafter_V.label>
+
+	<RPP_Bot_ER_I.label>Notfallroboter (Stufe 1)</RPP_Bot_ER_I.label>
+	<RPP_Bot_ER_II.label>Notfallroboter (Stufe 2)</RPP_Bot_ER_II.label>
+	<RPP_Bot_ER_III.label>Notfallroboter (Stufe 3)</RPP_Bot_ER_III.label>
+	<RPP_Bot_ER_IV.label>Notfallroboter (Stufe 4)</RPP_Bot_ER_IV.label>
+	<RPP_Bot_ER_V.label>Notfallroboter (Stufe 5)</RPP_Bot_ER_V.label>
+
+	<RPP_Bot_Kitchen_I.label>K&#252;chenroboter (Stufe 1)</RPP_Bot_Kitchen_I.label>
+	<RPP_Bot_Kitchen_II.label>K&#252;chenroboter (Stufe 2)</RPP_Bot_Kitchen_II.label>
+	<RPP_Bot_Kitchen_III.label>K&#252;chenroboter (Stufe 3)</RPP_Bot_Kitchen_III.label>
+	<RPP_Bot_Kitchen_IV.label>K&#252;chenroboter (Stufe 4)</RPP_Bot_Kitchen_IV.label>
+	<RPP_Bot_Kitchen_V.label>K&#252;chenroboter (Stufe 5)</RPP_Bot_Kitchen_V.label>
+
+	<RPP_Bot_Omni_V.label>Universalroboter (Tier 5)</RPP_Bot_Omni_V.label>
+
+</LanguageData>

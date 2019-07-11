@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tiers and Matricies -->
+
+  <RPP_Research_Matrix_I.label>機器人學:\n簡易邏輯</RPP_Research_Matrix_I.label>
+  <RPP_Research_Matrix_I.description>一階: 研究用於執行初學級技能的機器人，解鎖製作機器人邏輯矩陣（簡易）。</RPP_Research_Matrix_I.description>
+
+  <RPP_Research_Matrix_II.label>機器人學:\n初階邏輯</RPP_Research_Matrix_II.label>
+  <RPP_Research_Matrix_II.description>二階: 研究用於執行專業人員級技能的機器人，解鎖製作機器人邏輯矩陣（初階）這階的機器人變得更快且不易燃！</RPP_Research_Matrix_II.description>
+
+  <RPP_Research_Matrix_III.label>機器人學:\n進階邏輯</RPP_Research_Matrix_III.label>
+  <RPP_Research_Matrix_III.description>三階: 研究用於執行大師級技能的機器人，解鎖製作機器人邏輯矩陣（進階）。這階的機器人變得更快且不易燃！</RPP_Research_Matrix_III.description>
+
+  <RPP_Research_Matrix_IV.label>機器人學:\n高階邏輯</RPP_Research_Matrix_IV.label>
+  <RPP_Research_Matrix_IV.description>四階: 研究用於執行太陽系級大師技能的機器人，解鎖製作機器人邏輯矩陣（高階）。這階的機器人變得更快且不易燃！</RPP_Research_Matrix_IV.description>
+
+  <RPP_Research_Matrix_V.label>機器人學:\n反邏輯\n（NP=P）</RPP_Research_Matrix_V.label>
+  <RPP_Research_Matrix_V.description>五階: 突破了現有科技層級、邏輯理解以及各種因果關係概念所立下的界限，我們的科技眼界將變得更加混沌。</RPP_Research_Matrix_V.description>
+
+
+  <!-- Entry Point -->
+
+  <RPP_Research_Fundamentals.label>機器人學:\n基礎</RPP_Research_Fundamentals.label>
+  <RPP_Research_Fundamentals.description>零階: 研究機器人學與自動化技術的原理。</RPP_Research_Fundamentals.description>
+
+
+  <!-- RPP -->
+
+  <RPP_Research_Cleaner_All.label>清潔機</RPP_Research_Cleaner_All.label>
+  <RPP_Research_Cleaner_All.description>製作清潔機。</RPP_Research_Cleaner_All.description>
+
+  <RPP_Research_Hauler_All.label>搬運機</RPP_Research_Hauler_All.label>
+  <RPP_Research_Hauler_All.description>製作搬運機。</RPP_Research_Hauler_All.description>
+
+  <RPP_Research_Builder_All.label>工程機</RPP_Research_Builder_All.label>
+  <RPP_Research_Builder_All.description>製作工程機。</RPP_Research_Builder_All.description>
+
+  <RPP_Research_Crafter_All.label>工藝機</RPP_Research_Crafter_All.label>
+  <RPP_Research_Crafter_All.description>製作工藝機。</RPP_Research_Crafter_All.description>
+
+  <RPP_Research_ER_All.label>救援機</RPP_Research_ER_All.label>
+  <RPP_Research_ER_All.description>製作救援機。</RPP_Research_ER_All.description>
+
+  <RPP_Research_Kitchen_All.label>廚藝機</RPP_Research_Kitchen_All.label>
+  <RPP_Research_Kitchen_All.description>製作廚藝機。</RPP_Research_Kitchen_All.description>
+
+  <RPP_Research_Omni_V.label>反邏輯\n萬能機</RPP_Research_Omni_V.label>
+  <RPP_Research_Omni_V.description>五階:\n製作神級的萬能機。這台超音速的機器人幾乎可執行任何工作。</RPP_Research_Omni_V.description>
+
+
+</LanguageData>

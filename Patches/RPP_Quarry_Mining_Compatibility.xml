@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!-- QUARRY https://steamcommunity.com/workshop/filedetails/?id=1543177113 -->
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest"><xpath>Defs/ThingDef[defName = "QRY_Quarry"]</xpath></li>
+			<!-- if the "QRY_Quarry" ThingDef Exists, we're using the quarry mod and need to support it-->
+			<li Class="PatchOperationAdd">
+				<xpath>
+					Defs/ThingDef
+					[
+						defName="RPP_Bot_Builder_I" or
+						defName="RPP_Bot_Builder_II" or
+						defName="RPP_Bot_Builder_III" or
+						defName="RPP_Bot_Builder_IV" or
+						defName="RPP_Bot_Builder_V" or
+						defName="RPP_Bot_Omni_V"
+					]
+					/robotWorkTypes
+				</xpath> <!-- select all the things and add the value -->
+				<value><li><workTypeDef>QuarryMining</workTypeDef><priority>3</priority></li></value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
+
+
