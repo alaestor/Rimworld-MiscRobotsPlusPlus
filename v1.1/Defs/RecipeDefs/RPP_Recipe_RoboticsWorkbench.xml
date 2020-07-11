@@ -6,7 +6,7 @@
 	<RecipeDef Abstract="True" Name="RPP_Recipe_FastItem">
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
-		<workAmount>100</workAmount>
+		<workAmount>300</workAmount>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<skillRequirements><Crafting>4</Crafting></skillRequirements>
@@ -50,7 +50,7 @@
 	<RecipeDef ParentName="RPP_Recipe_FastItem">
 		<defName>RPP_Production_Component_Bulk</defName>
 		<label>make robotic component x4</label>
-		<workAmount>400</workAmount>
+		<workAmount>1200</workAmount>
 		<description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</description>
 		<ingredients>
 			<li><filter><thingDefs><li>Silver</li></thingDefs></filter><count>20</count></li>
