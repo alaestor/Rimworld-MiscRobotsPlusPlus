@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-
 <name>Misc. Robots++</name>
 <author>Alaestor</author>
+<packageId>Alaestor.MiscRobots.PlusPlus</packageId>
 <url>https://ludeon.com/forums/index.php?topic=26151.0</url>
-<supportedVersions><li>1.0</li></supportedVersions>
-<description>	Mod Version: 3.0.6
+<supportedVersions><li>1.0</li><li>1.1</li></supportedVersions>
+<modDependencies>
+	<li>
+		<packageId>Haplo.Miscellaneous.Robots</packageId>
+		<displayName>Misc. Robots</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=724602224</steamWorkshopUrl>
+	</li>
+</modDependencies>
+<description>	Mod Version: 3.1.1
 
 *** Example Load Order ***
 - Core
@@ -44,5 +51,4 @@ To contact me (Alaestor) please use Discord
 
 Misc. Robots++ was made using the "Misc. Robots Xtension" provided by Haplo.
 </description>
-
 </ModMetaData>
