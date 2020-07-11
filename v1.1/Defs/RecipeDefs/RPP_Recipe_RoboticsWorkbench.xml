@@ -47,6 +47,21 @@
 		<researchPrerequisite>RPP_Research_Fundamentals</researchPrerequisite>
 	</RecipeDef>
 
+	<RecipeDef ParentName="RPP_Recipe_FastItem">
+		<defName>RPP_Production_Component_Bulk</defName>
+		<label>make robotic component x4</label>
+		<workAmount>400</workAmount>
+		<description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</description>
+		<ingredients>
+			<li><filter><thingDefs><li>Silver</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>80</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>8</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Silver</li><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Component>4</RPP_Component></products>
+		<researchPrerequisite>RPP_Research_Fundamentals</researchPrerequisite>
+	</RecipeDef>
+
 <!-- matricies -->
 
 	<RecipeDef ParentName="RPP_Recipe_Matrix">
