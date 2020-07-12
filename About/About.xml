@@ -11,8 +11,14 @@
 		<displayName>Misc. Robots</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=724602224</steamWorkshopUrl>
 	</li>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
 </modDependencies>
-<description>	Mod Version: 3.1.1
+<description>	Mod Version: 3.1.2
 
 *** Example Load Order ***
 - Core
