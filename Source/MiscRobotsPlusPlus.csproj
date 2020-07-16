@@ -35,6 +35,10 @@
       <HintPath>..\..\..\libs\Harmony\v1.1\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="AIRobot">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\SteamApps\workshop\content\294100\724602224\Assemblies\AIRobot.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -56,11 +60,27 @@
       <HintPath>C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\WorkSettings.cs" />
+    <Compile Include="Patches\PatchGeneratePawnRestrictionOptions.cs" />
     <Compile Include="Patches\PatchJobDriver.cs" />
     <Compile Include="MiscRobotsPlusPlus.cs" />
+    <Compile Include="Patches\PatchPawn_GetDisabledWorkTypes.cs" />
+    <Compile Include="Patches\PatchSetWorkSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tweaks\ClassInjector.cs" />
+    <Compile Include="Tweaks\MainTabWindow_Dual.cs" />
+    <Compile Include="Tweaks\MainTabWindow_Work_Tweak.cs" />
+    <Compile Include="Tweaks\RobotsPlusPlusWidgets.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

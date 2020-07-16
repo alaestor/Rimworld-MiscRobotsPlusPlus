@@ -5,6 +5,19 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscRobotsPlusPlus", "Source\MiscRobotsPlusPlus.csproj", "{78B7ACD3-4886-4E3C-A4E5-7867F7B540FC}"
 EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "RimWorldWin64", "..\..\..\..\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64.exe", "{2719E461-16BF-4BE5-BEB4-404A6B7FE728}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64.exe
+		RemoteMachine = HULTIS-PC
+		StartingDirectory = C:\Program Files (x86)\Steam\SteamApps\common\RimWorld
+		Environment = dnspy_unity_dbg2=--debugger-agent=transport=dt_socket,server=y,address=127.0.0.1:56000,suspend=y,no-hide-debugger	
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +34,10 @@ Global
 		{78B7ACD3-4886-4E3C-A4E5-7867F7B540FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78B7ACD3-4886-4E3C-A4E5-7867F7B540FC}.Release|x64.ActiveCfg = Release|Any CPU
 		{78B7ACD3-4886-4E3C-A4E5-7867F7B540FC}.Release|x64.Build.0 = Release|Any CPU
+		{2719E461-16BF-4BE5-BEB4-404A6B7FE728}.Debug|Any CPU.ActiveCfg = Release|x64
+		{2719E461-16BF-4BE5-BEB4-404A6B7FE728}.Debug|x64.ActiveCfg = Release|x64
+		{2719E461-16BF-4BE5-BEB4-404A6B7FE728}.Release|Any CPU.ActiveCfg = Release|x64
+		{2719E461-16BF-4BE5-BEB4-404A6B7FE728}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
