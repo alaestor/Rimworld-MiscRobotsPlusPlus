@@ -111,9 +111,10 @@ namespace MiscRobotsPlusPlus.Core
             pawn.playerSettings.AreaRestriction = null;
         }
 
-        private static bool WorkDisabled(Pawn pawn, WorkTypeDef def)
+        public static bool WorkDisabled(Pawn pawn, WorkTypeDef def)
         {
             var robot = pawn as AIRobot.X2_AIRobot;
+            if (robot?.def2?.robotWorkTypes == null) return false;
             return !robot.def2.robotWorkTypes.Any(rwt => rwt.workTypeDef == def);
         }
 

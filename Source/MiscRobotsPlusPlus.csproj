@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\WorkSettings.cs" />
+    <Compile Include="Patches\PatchDrawWorkBoxFor.cs" />
     <Compile Include="Patches\PatchGeneratePawnRestrictionOptions.cs" />
     <Compile Include="Patches\PatchJobDriver.cs" />
     <Compile Include="MiscRobotsPlusPlus.cs" />

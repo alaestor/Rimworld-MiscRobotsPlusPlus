@@ -10,83 +10,80 @@ using Verse;
 
 namespace MiscRobotsPlusPlus.Tweaks
 {
-    public abstract class MainTabWindow_Dual : MainTabWindow
+    public class WorkWindow_Tab
     {
-        private const int TopMargin = 12;
+        public Func<IEnumerable<Pawn>> Pawns;
+        public string Text { get; set; }
+    }
 
-        private MainTabWindow_PawnTable colonistTab;
-        private MainTabWindow_PawnTable prisonerTab;
-
-        protected IEnumerable<Pawn> colonists => Find.CurrentMap.mapPawns.FreeColonists;
-        protected IEnumerable<Pawn> prisoners
+    public abstract class MainTabWindow_Multiple : MainTabWindow
+    {
+        class WorkWindow_Table
         {
-            get
-            {
-                foreach (var pawn in Find.CurrentMap.mapPawns.AllPawnsSpawned)
-                {
-                    if (pawn is AIRobot.X2_AIRobot)
-                    {
-                        WorkSettings.InitWorkSettings(pawn);
-                        yield return pawn;
-                    }
-                }
-            }
+            public MainTabWindow_PawnTable Table { get; set; }
+            public Func<IEnumerable<Pawn>> Pawns;
+            public string Text { get; set; }
+            public bool Initialized { get; set; }
         }
 
+        private const int TopMargin = 12;
         protected abstract Type InnerTabType { get; }
-
-        public const int ColonistsTabIndex = 0;
-        public const int PrisonersTabIndex = 1;
+        private List<WorkWindow_Table> Tables { get; set; } = new List<WorkWindow_Table>();
         private int currentTabIndex = 0;
 
-        public MainTabWindow_Dual()
+        public MainTabWindow_Multiple()
         {
-            colonistTab = Activator.CreateInstance(InnerTabType) as MainTabWindow_PawnTable;
+            AddTab(new WorkWindow_Tab
+            {
+                Text = "Colonists",
+                Pawns = new Func<IEnumerable<Pawn>>(() => Find.CurrentMap.mapPawns.FreeColonists)
+            });
+            /*colonistTab = Activator.CreateInstance(InnerTabType) as MainTabWindow_PawnTable;
             prisonerTab = Activator.CreateInstance(InnerTabType) as MainTabWindow_PawnTable;
             if (colonistTab == null || prisonerTab == null)
-                throw new Exception("PrisonLabor exception: wrong MainTabWindow_PawnTable type");
+                throw new Exception("PrisonLabor exception: wrong MainTabWindow_PawnTable type");*/
+        }
+
+        public void AddTab(WorkWindow_Tab tab)
+        {
+            Tables.Add(new WorkWindow_Table()
+            {
+                Pawns = tab.Pawns,
+                Text = tab.Text,
+                Table = Activator.CreateInstance(InnerTabType) as MainTabWindow_PawnTable
+            });
         }
 
         public override void DoWindowContents(Rect rect)
         {
             base.DoWindowContents(rect);
-
-            string[] tabs;
-            if (prisoners.Count() > 0)
+            var tabs = Tables
+                .Where(t => t.Pawns().Any() || Tables[0] == t)
+                .Select(t => t.Text)
+                .ToArray();
+            /*if (prisoners.Count() > 0)
                 tabs = new string[] { "PrisonLabor_ColonistsOnlyShort".Translate(), "PrisonLabor_PrisonersOnlyShort".Translate() };
             else
-                tabs = new string[] { "PrisonLabor_ColonistsOnlyShort".Translate() };
+                tabs = new string[] { "PrisonLabor_ColonistsOnlyShort".Translate() };*/
 
             Text.Font = GameFont.Small;
             RobotsPlusPlusWidgets.BeginTabbedView(rect, tabs, ref currentTabIndex);
             rect.height -= RobotsPlusPlusWidgets.HorizontalSpacing - TopMargin;
             GUI.BeginGroup(new Rect(0, TopMargin, rect.width, rect.height));
-            if (currentTabIndex == ColonistsTabIndex)
-            {
-                colonistTab.DoWindowContents(rect);
-            }
-            else if (currentTabIndex == PrisonersTabIndex)
-            {
-                prisonerTab.DoWindowContents(rect);
-            }
+            Tables[currentTabIndex].Table.DoWindowContents(rect);
             GUI.EndGroup();
             RobotsPlusPlusWidgets.EndTabbedView();
         }
 
-        private bool IsTablesNull()
-        {
-            var tableField = typeof(MainTabWindow_PawnTable).GetField("table", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
-            var colonistTable = tableField.GetValue(colonistTab);
-            var prisonerTable = tableField.GetValue(prisonerTab);
-            return colonistTable == null || prisonerTable == null;
-        }
-
-        private void CreateBothTables()
+        private void InitializeTablesIfNeeded()
         {
             var tableField = typeof(MainTabWindow_PawnTable).GetField("table", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
 
-            tableField.SetValue(colonistTab, CreateTable(colonistTab, new Func<IEnumerable<Pawn>>(() => colonists)));
-            tableField.SetValue(prisonerTab, CreateTable(prisonerTab, new Func<IEnumerable<Pawn>>(() => prisoners)));
+            foreach (var tab in Tables.Where(t => !t.Initialized))
+            {
+                tableField.SetValue(tab.Table, CreateTable(tab.Table, tab.Pawns));
+                tab.Initialized = true;
+            }
         }
 
         private PawnTable CreateTable(MainTabWindow_PawnTable pawnTable, Func<IEnumerable<Pawn>> pawnsFunc)
@@ -100,19 +97,18 @@ namespace MiscRobotsPlusPlus.Tweaks
 
         public override void Notify_ResolutionChanged()
         {
-            CreateBothTables();
+            InitializeTablesIfNeeded();
             base.Notify_ResolutionChanged();
         }
 
         public override void PostOpen()
         {
-            if (IsTablesNull())
-            {
-                CreateBothTables();
-            }
+            InitializeTablesIfNeeded();
             var setDirtyMethod = typeof(MainTabWindow_PawnTable).GetMethod("SetDirty", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
-            setDirtyMethod.Invoke(colonistTab, new object[] { });
-            setDirtyMethod.Invoke(prisonerTab, new object[] { });
+            foreach (var tab in Tables)
+            {
+                setDirtyMethod.Invoke(tab.Table, new object[] { });
+            }
             Find.World.renderer.wantedMode = WorldRenderMode.None;
         }
 
@@ -120,9 +116,7 @@ namespace MiscRobotsPlusPlus.Tweaks
         {
             get
             {
-                var cSize = colonistTab.RequestedTabSize;
-                var pSize = prisonerTab.RequestedTabSize;
-                return new Vector2(Math.Max(cSize.x, pSize.x), Math.Max(cSize.y, pSize.y) + TopMargin + RobotsPlusPlusWidgets.TabHeight);
+                return new Vector2(Tables.Max(t => t.Table.RequestedTabSize.x), Tables.Max(t => t.Table.RequestedTabSize.y) + TopMargin + RobotsPlusPlusWidgets.TabHeight);
             }
         }
 
