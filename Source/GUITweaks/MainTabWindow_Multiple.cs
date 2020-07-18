@@ -1,21 +1,14 @@
-﻿using MiscRobotsPlusPlus.Core;
+﻿using AIRobot;
 using RimWorld;
 using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using UnityEngine;
 using Verse;
 
-namespace MiscRobotsPlusPlus.Tweaks
+namespace MiscRobotsPlusPlus.GUITweaks
 {
-    public class WorkWindow_Tab
-    {
-        public Func<IEnumerable<Pawn>> Pawns;
-        public string Text { get; set; }
-    }
-
     public abstract class MainTabWindow_Multiple : MainTabWindow
     {
         class WorkWindow_Table
@@ -27,30 +20,39 @@ namespace MiscRobotsPlusPlus.Tweaks
         }
 
         private const int TopMargin = 12;
-        protected abstract Type InnerTabType { get; }
         private List<WorkWindow_Table> Tables { get; set; } = new List<WorkWindow_Table>();
         private int currentTabIndex = 0;
+        private HashSet<Pawn> initializedPawns = new HashSet<Pawn>();
 
         public MainTabWindow_Multiple()
         {
-            AddTab(new WorkWindow_Tab
+            var originalTab = Activator.CreateInstance(typeof(X2_MainTabWindow_Robots)) as MainTabWindow_PawnTable;
+            var originalPawnsFunc = typeof(X2_MainTabWindow_Robots).GetProperty("Pawns", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+            var pawnsFunc = new Func<IEnumerable<Pawn>>(() =>
             {
-                Text = "Colonists",
-                Pawns = new Func<IEnumerable<Pawn>>(() => Find.CurrentMap.mapPawns.FreeColonists)
+                var pawns = originalPawnsFunc.GetValue(originalTab) as IEnumerable<Pawn>;
+                foreach (var p in pawns.Where(p => p is X2_AIRobot && !initializedPawns.Contains(p)))
+                {
+                    InitWorkSettings(p);
+                    initializedPawns.Add(p);
+                }
+                return pawns;
             });
-            /*colonistTab = Activator.CreateInstance(InnerTabType) as MainTabWindow_PawnTable;
-            prisonerTab = Activator.CreateInstance(InnerTabType) as MainTabWindow_PawnTable;
-            if (colonistTab == null || prisonerTab == null)
-                throw new Exception("PrisonLabor exception: wrong MainTabWindow_PawnTable type");*/
+
+            
+            AddTab(pawnsFunc, "MiscRobotsPlusPlus_Schedule".Translate(), originalTab);
+
+            var workTag = DefDatabase<MainButtonDef>.GetNamed("Work");
+            AddTab(pawnsFunc, "MiscRobotsPlusPlus_Work".Translate(), Activator.CreateInstance(workTag.tabWindowClass) as MainTabWindow_PawnTable);
         }
 
-        public void AddTab(WorkWindow_Tab tab)
+        public void AddTab(Func<IEnumerable<Pawn>> pawnsFunc, string text, MainTabWindow_PawnTable table)
         {
             Tables.Add(new WorkWindow_Table()
             {
-                Pawns = tab.Pawns,
-                Text = tab.Text,
-                Table = Activator.CreateInstance(InnerTabType) as MainTabWindow_PawnTable
+                Pawns = pawnsFunc,
+                Text = text,
+                Table = table
             });
         }
 
@@ -61,10 +63,6 @@ namespace MiscRobotsPlusPlus.Tweaks
                 .Where(t => t.Pawns().Any() || Tables[0] == t)
                 .Select(t => t.Text)
                 .ToArray();
-            /*if (prisoners.Count() > 0)
-                tabs = new string[] { "PrisonLabor_ColonistsOnlyShort".Translate(), "PrisonLabor_PrisonersOnlyShort".Translate() };
-            else
-                tabs = new string[] { "PrisonLabor_ColonistsOnlyShort".Translate() };*/
 
             Text.Font = GameFont.Small;
             RobotsPlusPlusWidgets.BeginTabbedView(rect, tabs, ref currentTabIndex);
@@ -95,6 +93,18 @@ namespace MiscRobotsPlusPlus.Tweaks
             return new PawnTable(tableDef, pawnsFunc, UI.screenWidth - (int)(this.Margin * 2f), (int)((float)(UI.screenHeight - 35) - bottomSpace - topSpace - this.Margin * 2f));
         }
 
+        private static void InitWorkSettings(Pawn pawn)
+        {
+            Messages.Message("Init for " + pawn.ToString(), MessageTypeDefOf.NeutralEvent);
+            // Reflect robot priorities to work priorities
+            foreach (var def in DefDatabase<WorkTypeDef>.AllDefs)
+            {
+                var robotWorkType = (pawn as AIRobot.X2_AIRobot)?.def2?.robotWorkTypes
+                    ?.FirstOrDefault(rwt => rwt.workTypeDef == def);
+                pawn.workSettings.SetPriority(def, robotWorkType?.priority ?? 0);
+            }
+        }
+
         public override void Notify_ResolutionChanged()
         {
             InitializeTablesIfNeeded();
@@ -116,7 +126,7 @@ namespace MiscRobotsPlusPlus.Tweaks
         {
             get
             {
-                return new Vector2(Tables.Max(t => t.Table.RequestedTabSize.x), Tables.Max(t => t.Table.RequestedTabSize.y) + TopMargin + RobotsPlusPlusWidgets.TabHeight);
+                return new Vector2(Tables.Max(t => t.Table.RequestedTabSize.x) + Margin, Tables.Max(t => t.Table.RequestedTabSize.y) + TopMargin + RobotsPlusPlusWidgets.TabHeight);
             }
         }
 

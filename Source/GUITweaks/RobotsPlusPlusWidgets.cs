@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
-namespace MiscRobotsPlusPlus.Tweaks
+namespace MiscRobotsPlusPlus.GUITweaks
 {
     public static class RobotsPlusPlusWidgets
     {
@@ -54,12 +51,6 @@ namespace MiscRobotsPlusPlus.Tweaks
             TabbedViewStackIndex.Pop();
             GUI.EndGroup();
             GUI.EndGroup();
-        }
-
-        public static bool IsTabActive(int tabIndex)
-        {
-            int active = TabbedViewStackIndex.Peek();
-            return active == tabIndex;
         }
     }
 }

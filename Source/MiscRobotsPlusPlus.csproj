@@ -70,18 +70,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\WorkSettings.cs" />
-    <Compile Include="Patches\PatchDrawWorkBoxFor.cs" />
+    <Compile Include="Compatibility\Setup.cs" />
+    <Compile Include="Compatibility\WorkTab.cs" />
+    <Compile Include="Patches\WidgetsWork_DrawWorkBoxFor.cs" />
     <Compile Include="Patches\PatchGeneratePawnRestrictionOptions.cs" />
     <Compile Include="Patches\PatchJobDriver.cs" />
     <Compile Include="MiscRobotsPlusPlus.cs" />
     <Compile Include="Patches\PatchPawn_GetDisabledWorkTypes.cs" />
-    <Compile Include="Patches\PatchSetWorkSettings.cs" />
+    <Compile Include="Patches\PatchSetPriority.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tweaks\ClassInjector.cs" />
-    <Compile Include="Tweaks\MainTabWindow_Dual.cs" />
-    <Compile Include="Tweaks\MainTabWindow_Work_Tweak.cs" />
-    <Compile Include="Tweaks\RobotsPlusPlusWidgets.cs" />
+    <Compile Include="GUITweaks\ClassInjector.cs" />
+    <Compile Include="GUITweaks\MainTabWindow_Multiple.cs" />
+    <Compile Include="GUITweaks\MainTabWindow_MiscRobotsPlusPlus_Tweak.cs" />
+    <Compile Include="GUITweaks\RobotsPlusPlusWidgets.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

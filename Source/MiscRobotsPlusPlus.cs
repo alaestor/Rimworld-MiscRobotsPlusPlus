@@ -1,5 +1,5 @@
 ﻿using HarmonyLib;
-using MiscRobotsPlusPlus.Tweaks;
+using MiscRobotsPlusPlus.GUITweaks;
 using System.Reflection;
 using Verse;
 
@@ -10,9 +10,11 @@ namespace MiscRobotsPlusPlus
     {
         static MiscRobotsPlusPlus()
         {
-            new Harmony("MiscRobotsPlusPlus").PatchAll(Assembly.GetExecutingAssembly());
+            var harmony = new Harmony("MiscRobotsPlusPlus");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
 
             ClassInjector.Init();
+            Compatibility.Setup.Initialize(harmony);
         }
     }
 }
