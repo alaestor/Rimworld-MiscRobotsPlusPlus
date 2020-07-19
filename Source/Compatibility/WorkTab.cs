@@ -28,10 +28,6 @@ namespace MiscRobotsPlusPlus.Compatibility
 
         public static void Prefix_SetPriority(object __instance, WorkTypeDef worktype, int priority)
         {
-            /*var t = __instance.GetType();
-            var prop = t.GetProperty("Pawn");
-            var pawn = prop.GetValue(__instance, null) as Pawn;*/
-
             var pawn = __instance?.GetType()?.GetProperty("Pawn")?.GetValue(__instance, null) as Pawn;
             if (pawn == null)
             {

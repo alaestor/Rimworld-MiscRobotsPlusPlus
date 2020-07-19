@@ -15,19 +15,6 @@ namespace MiscRobotsPlusPlus.Patches
         }
     }
 
-    /*// Doesn't work
-    [HarmonyPatch(typeof(PriorityTracker), "SetPriority")]
-    [HarmonyPatch(new[] { typeof(WorkGiverDef), typeof(int), typeof(List<int>) })]
-    [HarmonyPatch(new[] { typeof(WorkGiverDef), typeof(int), typeof(int) })]
-    [HarmonyPatch(new[] { typeof(WorkGiverDef), typeof(int), typeof(int), typeof(bool) })]
-    class PatchWorkTabSetPrioritySubTasks
-    {
-        public static void Prefix(PriorityTracker __instance, WorkGiverDef workgiver, int priority)
-        {
-            SetPriorityImplementation.Impl(__instance?.Pawn, workgiver?.workType, priority, "fluffy workgiver");
-        }
-    }*/
-
     class SetPriorityImplementation
     {
         public static void Impl(Pawn pawn, WorkTypeDef worktype, int priority, string debugType)
@@ -38,7 +25,7 @@ namespace MiscRobotsPlusPlus.Patches
             if (workSetting == null || workSetting.priority == priority) return;
 
             workSetting.priority = priority;
-            Messages.Message("Set " + debugType + " prio for " + pawn + " to " + priority, MessageTypeDefOf.NeutralEvent);
+            //Messages.Message("Set " + debugType + " prio for " + pawn + " to " + priority, MessageTypeDefOf.NeutralEvent);
             ClearWorkGiverCache(robot);
         }
 

@@ -9,6 +9,7 @@ namespace ChangeCaravanLoadout.Patches
     [HarmonyPatch(typeof(JobDriver), "ReadyForNextToil")]
     public class PatchJobDriver_ReadyForNextToil
     {
+        // Unforbid resources that were mined outside of home area
         static void Prefix(JobDriver __instance)
         {
             var pos = __instance?.job?.targetA.Cell;

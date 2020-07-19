@@ -95,7 +95,6 @@ namespace MiscRobotsPlusPlus.GUITweaks
 
         private static void InitWorkSettings(Pawn pawn)
         {
-            Messages.Message("Init for " + pawn.ToString(), MessageTypeDefOf.NeutralEvent);
             // Reflect robot priorities to work priorities
             foreach (var def in DefDatabase<WorkTypeDef>.AllDefs)
             {
