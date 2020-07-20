@@ -4,6 +4,9 @@
 	<RPP_Production_Component.label>make robotic component</RPP_Production_Component.label>
 	<RPP_Production_Component.description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</RPP_Production_Component.description>
 
+	<RPP_Production_Component_Bulk.label>make robotic component x4</RPP_Production_Component_Bulk.label>
+	<RPP_Production_Component_Bulk.description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</RPP_Production_Component_Bulk.description>
+
 	<RPP_Production_Matrix_I.label>make robotic matrix (Simple)</RPP_Production_Matrix_I.label>
 	<RPP_Production_Matrix_I.description>Produce a robotic logical matrix for crafting a robot with Amateur-class skills (Tier 1).</RPP_Production_Matrix_I.description>
 	<RPP_Production_Matrix_II.label>make robotic matrix (Basic)</RPP_Production_Matrix_II.label>
