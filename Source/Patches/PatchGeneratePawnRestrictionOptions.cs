@@ -10,6 +10,7 @@ using Verse;
 
 namespace MiscRobotsPlusPlus.Patches
 {
+    // Add robots to bill target list
     public class PatchGeneratePawnRestrictionOptions
     {
         public static void Patch(Harmony harmony)
@@ -47,21 +48,28 @@ namespace MiscRobotsPlusPlus.Patches
         {
             var originalTab = Activator.CreateInstance(typeof(X2_MainTabWindow_Robots)) as MainTabWindow_PawnTable;
             var originalPawnsFunc = typeof(X2_MainTabWindow_Robots).GetProperty("Pawns", BindingFlags.Instance | BindingFlags.NonPublic);
-            var robots = originalPawnsFunc.GetValue(originalTab) as IEnumerable<Pawn>;
+            var robots = (originalPawnsFunc.GetValue(originalTab) as IEnumerable<Pawn>)
+                ?.Select(r => r as X2_AIRobot)
+                ?.ToList();
+            var ret = PawnsFinder.AllMaps_FreeColonists;
+            if (robots == null) return ret;
 
             var workGiver = bill?.billStack?.billGiver?.GetWorkgiver();
             if (workGiver != null)
             {
-                robots = robots.Where(r => !r.WorkTypeIsDisabled(workGiver.workType));
+                // Check directly against source def since Misc. Robots doesn't initialize def2 until the robot is activated
+                robots = robots
+                    .Where(r => r.def is X2_ThingDef_AIRobot def2
+                        && (def2.robotWorkTypes?.Any(rwt => rwt.workTypeDef == workGiver.workType) ?? false))
+                    .ToList();
             }
             else
             {
                 Log.Message("Misc. Robots++: Couldn't find workGiver in GeneratePawnRestrictionOptions, skipping filtering of robots");
             }
 
-            var colonists = PawnsFinder.AllMaps_FreeColonists;
-            colonists.AddRange(robots);
-            return colonists;
+            ret.AddRange(robots);
+            return ret;
         }
     }
 }
