@@ -4,7 +4,7 @@ using System.Linq;
 using Verse;
 using Verse.AI;
 
-namespace ChangeCaravanLoadout.Patches
+namespace MiscRobotsPlusPlus.Patches
 {
     [HarmonyPatch(typeof(JobDriver), "ReadyForNextToil")]
     public class PatchJobDriver_ReadyForNextToil

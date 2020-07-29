@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>C:\Program Files %28x86%29\Steam\SteamApps\common\RimWorld\Mods\MiscRobotsPlusPlus\Assemblies\</OutputPath>
+    <OutputPath>C:\Program Files %28x86%29\Steam\SteamApps\common\RimWorld\Mods\MiscRobotsPlusPlus\v1.1\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -80,13 +80,13 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y /e "$(SolutionDir)\About\*" "$(TargetDir)\..\About\"
-xcopy /y /e "$(SolutionDir)\Defs\*" "$(TargetDir)\..\Defs\"
-xcopy /y /e "$(SolutionDir)\Languages\*" "$(TargetDir)\..\Languages\"
-xcopy /y /e "$(SolutionDir)\Patches\*" "$(TargetDir)\..\Patches\"
-xcopy /y /e "$(SolutionDir)\Textures\*" "$(TargetDir)\..\Textures\"
-xcopy /y /e "$(SolutionDir)\v1.1\*" "$(TargetDir)\..\v1.1\"
-copy /y "$(SolutionDir)\LoadFolders.xml" "$(TargetDir)\..\"
-copy /y "$(SolutionDir)\README.md" "$(TargetDir)\..\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y /e "$(SolutionDir)\About\*" "$(TargetDir)\..\..\About\"
+xcopy /y /e "$(SolutionDir)\Defs\*" "$(TargetDir)\..\..\Defs\"
+xcopy /y /e "$(SolutionDir)\Languages\*" "$(TargetDir)\..\..\Languages\"
+xcopy /y /e "$(SolutionDir)\Patches\*" "$(TargetDir)\..\..\Patches\"
+xcopy /y /e "$(SolutionDir)\Textures\*" "$(TargetDir)\..\..\Textures\"
+xcopy /y /e "$(SolutionDir)\v1.1\*" "$(TargetDir)\..\..\v1.1\"
+copy /y "$(SolutionDir)\LoadFolders.xml" "$(TargetDir)\..\..\"
+copy /y "$(SolutionDir)\README.md" "$(TargetDir)\..\..\"</PostBuildEvent>
   </PropertyGroup>
 </Project>
