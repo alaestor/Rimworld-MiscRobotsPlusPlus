@@ -145,7 +145,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Hauler_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Hauler_II</defName>
@@ -155,7 +154,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Hauler_II_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Hauler_III</defName>
@@ -165,7 +163,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Hauler_III_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Hauler_IV</defName>
@@ -175,7 +172,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Hauler_IV_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Hauler_V</defName>
@@ -185,7 +181,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Hauler_V_disabled</destroyedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -196,7 +191,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Cleaner_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Cleaner_II</defName>
@@ -208,7 +202,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Cleaner_II_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Cleaner_III</defName>
@@ -218,7 +211,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Cleaner_III_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Cleaner_IV</defName>
@@ -228,7 +220,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Cleaner_IV_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Cleaner_V</defName>
@@ -238,7 +229,6 @@
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>AIRobot_Cleaner_V_disabled</destroyedDef>
 	</ThingDef>
 
 <!-- RPP -->
@@ -251,7 +241,6 @@
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Builder_I_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_II</defName>
@@ -261,7 +250,6 @@
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Builder_II_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_III</defName>
@@ -271,7 +259,6 @@
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Builder_III_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_IV</defName>
@@ -281,7 +268,6 @@
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Builder_IV_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_V</defName>
@@ -291,7 +277,6 @@
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Builder_V_disabled</destroyedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -303,7 +288,6 @@
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Crafter_I_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_II</defName>
@@ -314,7 +298,6 @@
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Crafter_II_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_III</defName>
@@ -325,7 +308,6 @@
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Crafter_III_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_IV</defName>
@@ -336,7 +318,6 @@
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Crafter_IV_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_V</defName>
@@ -347,7 +328,6 @@
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Crafter_V_disabled</destroyedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -358,7 +338,6 @@
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_ER_I_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_II</defName>
@@ -368,7 +347,6 @@
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_ER_II_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_III</defName>
@@ -378,7 +356,6 @@
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_ER_III_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_IV</defName>
@@ -388,7 +365,6 @@
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_ER_IV_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_V</defName>
@@ -398,7 +374,6 @@
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_ER_V_disabled</destroyedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -410,7 +385,6 @@
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Kitchen_I_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Kitchen_II</defName>
@@ -421,7 +395,6 @@
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Kitchen_II_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Kitchen_III</defName>
@@ -432,7 +405,6 @@
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Kitchen_III_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Kitchen_IV</defName>
@@ -443,7 +415,6 @@
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Kitchen_IV_disabled</destroyedDef>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Kitchen_V</defName>
@@ -454,7 +425,6 @@
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Kitchen_V_disabled</destroyedDef>
 	</ThingDef>
 
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -475,7 +445,6 @@
 			<li><workTypeDef>Construction</workTypeDef><priority>2</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<destroyedDef>RPP_Bot_Omni_V_disabled</destroyedDef>
 	</ThingDef>
 
 </Defs>
