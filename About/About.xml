@@ -4,7 +4,7 @@
 <author>Alaestor</author>
 <packageId>Alaestor.MiscRobots.PlusPlus</packageId>
 <url>https://ludeon.com/forums/index.php?topic=26151.0</url>
-<supportedVersions><li>1.0</li><li>1.1</li></supportedVersions>
+<supportedVersions><li>1.0</li><li>1.1</li><li>1.2</li></supportedVersions>
 <modDependencies>
 	<li>
 		<packageId>Haplo.Miscellaneous.Robots</packageId>
@@ -18,7 +18,7 @@
         <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
 </modDependencies>
-<description>	Mod Version: 3.2.0
+<description>	Mod Version: 3.3.0
 
 *** Example Load Order ***
 - Core
@@ -33,7 +33,7 @@ Robots++ Contains The Following Bots:
   A unit capable of smithing, tailoring, and crafting.
 
 --- Builder Bot
-  A unit capable of build and destroying structures.
+  A unit capable of building and destroying structures.
 
 --- ER Bot
   An Emergency Response unit capable of treating patients and fighting fires.
