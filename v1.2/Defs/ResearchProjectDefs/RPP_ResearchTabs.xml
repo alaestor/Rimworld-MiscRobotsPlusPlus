@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchTabDef>
+		<defName>RPP_Reasearch_Tab</defName>
+		<label>Robotics ++</label>
+	</ResearchTabDef>
+</Defs>

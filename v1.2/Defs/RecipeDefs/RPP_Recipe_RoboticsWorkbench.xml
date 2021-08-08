@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--******** META ********-->
+
+	<RecipeDef Abstract="True" Name="RPP_Recipe_FastItem">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workAmount>300</workAmount>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<skillRequirements><Crafting>4</Crafting></skillRequirements>
+		<jobString>Engineering Robotics.</jobString>
+		<recipeUsers><li>FabricationBench</li></recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Matrix">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workAmount>5000</workAmount>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<jobString>Engineering Robotics.</jobString>
+		<recipeUsers><li>FabricationBench</li></recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef Abstract="True" Name="RPP_Recipe_Bot" ParentName="RPP_Recipe_Matrix">
+		<!-- empty abstration, maybe for future. for now its just Matrix meta -->
+	</RecipeDef>
+
+
+	<!--******** INHERET ********-->
+
+<!-- resource -->
+
+	<RecipeDef ParentName="RPP_Recipe_FastItem">
+		<defName>RPP_Production_Component</defName>
+		<label>make robotic component</label>
+		<description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</description>
+		<ingredients>
+			<li><filter><thingDefs><li>Silver</li></thingDefs></filter><count>5</count></li>
+			<li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Silver</li><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Component>1</RPP_Component></products>
+		<researchPrerequisite>RPP_Research_Fundamentals</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RPP_Recipe_FastItem">
+		<defName>RPP_Production_Component_Bulk</defName>
+		<label>make robotic component x4</label>
+		<workAmount>1200</workAmount>
+		<description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</description>
+		<ingredients>
+			<li><filter><thingDefs><li>Silver</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>80</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>8</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>Silver</li><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Component>4</RPP_Component></products>
+		<researchPrerequisite>RPP_Research_Fundamentals</researchPrerequisite>
+	</RecipeDef>
+
+<!-- matricies -->
+
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_I</defName>
+		<label>make robotic matrix (Simple)</label>
+		<description>Produce a robotic logical matrix for crafting a robot with Amateur-class skills (Tier 1).</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_I>1</RPP_Matrix_I></products>
+		<researchPrerequisite>RPP_Research_Matrix_I</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_II</defName>
+		<label>make robotic matrix (Basic)</label>
+		<description>Produce a robotic logical matrix for crafting a robot with Professional-class skills (Tier 2).</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>5</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>3</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_II>1</RPP_Matrix_II></products>
+		<researchPrerequisite>RPP_Research_Matrix_II</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_III</defName>
+		<label>make robotic matrix (Intermediate)</label>
+		<description>Produce a robotic logical matrix for crafting a robot with Master-class skills (Tier 3).</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>10</count></li>
+			<li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentSpacer</li><li>Gold</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_III>1</RPP_Matrix_III></products>
+		<researchPrerequisite>RPP_Research_Matrix_III</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_IV</defName>
+		<label>make robotic matrix (Advanced)</label>
+		<description>Produce a robotic logical matrix for crafting a robot with System-Master-class skills (Tier 4).</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
+			<li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>5</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentSpacer</li><li>Gold</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_IV>1</RPP_Matrix_IV></products>
+		<researchPrerequisite>RPP_Research_Matrix_IV</researchPrerequisite>
+	</RecipeDef>
+	<RecipeDef ParentName="RPP_Recipe_Matrix">
+		<defName>RPP_Production_Matrix_V</defName>
+		<label>make robotic matrix (Anti-Logic)</label>
+		<description>Produce an Anti-Logic Matrix for crafting a robot with Godlike skills (Tier 5).\nNP=P</description>
+		<ingredients>
+			<li><filter><thingDefs><li>RPP_Component</li></thingDefs></filter><count>40</count></li>
+			<li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>8</count></li>
+			<li><filter><thingDefs><li>Silver</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>10</count></li>
+		</ingredients>
+		<fixedIngredientFilter><thingDefs><li>RPP_Component</li><li>ComponentSpacer</li><li>Silver</li><li>Gold</li></thingDefs></fixedIngredientFilter>
+		<products><RPP_Matrix_V>1</RPP_Matrix_V></products>
+		<researchPrerequisite>RPP_Research_Matrix_V</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>
