@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Fishing Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef
+                        [
+                            defName="RPP_Bot_Kitchen_I" or
+                            defName="RPP_Bot_Kitchen_II" or
+                            defName="RPP_Bot_Kitchen_III" or
+                            defName="RPP_Bot_Kitchen_IV" or
+                            defName="RPP_Bot_Kitchen_V"
+                        ]
+                        /robotWorkTypes
+                    </xpath>
+					<value>
+                        <li><workTypeDef>VCEF_Fishing</workTypeDef><priority>4</priority></li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="RPP_Bot_Omni_V"]/robotWorkTypes</xpath>
+					<value>
+                        <li><workTypeDef>VCEF_Fishing</workTypeDef><priority>2</priority></li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
