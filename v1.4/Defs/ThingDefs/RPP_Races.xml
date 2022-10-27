@@ -143,6 +143,11 @@
 		<label>Hauling Bot</label>
 		<description>A Simple hauling robot.</description>
 		<statBases><MoveSpeed>6.0</MoveSpeed></statBases>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
@@ -151,6 +156,11 @@
 		<defName>AIRobot_Hauler_II</defName>
 		<label>Hauling Bot</label>
 		<description>A Basic hauling robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases><MoveSpeed>8.0</MoveSpeed></statBases>
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
@@ -160,6 +170,11 @@
 		<defName>AIRobot_Hauler_III</defName>
 		<label>Hauling Bot</label>
 		<description>An Intermediate hauling robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases><MoveSpeed>10.0</MoveSpeed></statBases>
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
@@ -169,6 +184,11 @@
 		<defName>AIRobot_Hauler_IV</defName>
 		<label>Hauling Bot</label>
 		<description>An Advanced hauling robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases><MoveSpeed>13.5</MoveSpeed></statBases>
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
@@ -178,6 +198,11 @@
 		<defName>AIRobot_Hauler_V</defName>
 		<label>Hauling Bot</label>
 		<description>An Anti-Logic hauling robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases><MoveSpeed>18.5</MoveSpeed></statBases>
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
@@ -188,6 +213,11 @@
 		<defName>AIRobot_Cleaner</defName>
 		<label>Cleaning Bot</label>
 		<description>A Simple cleaning robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cleaning</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases><MoveSpeed>6.0</MoveSpeed></statBases>
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
@@ -197,6 +227,11 @@
 		<defName>AIRobot_Cleaner_II</defName>
 		<label>Cleaning Bot</label>
 		<description>A Basic cleaning robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cleaning</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases>
 			<MoveSpeed>8.0</MoveSpeed>
 		</statBases>
@@ -208,6 +243,11 @@
 		<defName>AIRobot_Cleaner_III</defName>
 		<label>Cleaning Bot</label>
 		<description>An Intermediate cleaning robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cleaning</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases><MoveSpeed>10.0</MoveSpeed></statBases>
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
@@ -217,6 +257,11 @@
 		<defName>AIRobot_Cleaner_IV</defName>
 		<label>Cleaning Bot</label>
 		<description>An Advanced cleaning robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cleaning</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases><MoveSpeed>13.5</MoveSpeed></statBases>
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
@@ -226,6 +271,11 @@
 		<defName>AIRobot_Cleaner_V</defName>
 		<label>Cleaning Bot</label>
 		<description>An Anti-Logic cleaning robot.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cleaning</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<statBases><MoveSpeed>18.5</MoveSpeed></statBases>
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
@@ -238,6 +288,12 @@
 		<defName>RPP_Bot_Builder_I</defName>
 		<label>Builder Bot</label>
 		<description>A Tier 1 amateur-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Construction</li>
+				<li>Mining</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -247,6 +303,12 @@
 		<defName>RPP_Bot_Builder_II</defName>
 		<label>Builder Bot</label>
 		<description>A Tier 2 professional-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Construction</li>
+				<li>Mining</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -256,6 +318,12 @@
 		<defName>RPP_Bot_Builder_III</defName>
 		<label>Builder Bot</label>
 		<description>A Tier 3 Master-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Construction</li>
+				<li>Mining</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -265,6 +333,12 @@
 		<defName>RPP_Bot_Builder_IV</defName>
 		<label>Builder Bot</label>
 		<description>A Tier 4 System-Master-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Construction</li>
+				<li>Mining</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -274,6 +348,12 @@
 		<defName>RPP_Bot_Builder_V</defName>
 		<label>Builder Bot</label>
 		<description>A Tier 5 Godlike-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Construction</li>
+				<li>Mining</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -284,6 +364,13 @@
 		<defName>RPP_Bot_Crafter_I</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 1 amateur-class unit capable of smithing, tailoring, and crafting.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Smithing</li>
+				<li>Tailoring</li>
+				<li>Crafting</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -294,6 +381,13 @@
 		<defName>RPP_Bot_Crafter_II</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 2 professional-class unit capable of smithing, tailoring, and crafting.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Smithing</li>
+				<li>Tailoring</li>
+				<li>Crafting</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -304,6 +398,13 @@
 		<defName>RPP_Bot_Crafter_III</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 3 Master-class unit capable of smithing, tailoring, and crafting.</description>
+			<race>
+			<mechEnabledWorkTypes>
+				<li>Smithing</li>
+				<li>Tailoring</li>
+				<li>Crafting</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -314,6 +415,13 @@
 		<defName>RPP_Bot_Crafter_IV</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 4 System-Master-class unit capable of smithing, tailoring, and crafting.</description>
+			<race>
+			<mechEnabledWorkTypes>
+				<li>Smithing</li>
+				<li>Tailoring</li>
+				<li>Crafting</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -324,6 +432,13 @@
 		<defName>RPP_Bot_Crafter_V</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 5 Godlike-class unit capable of smithing, tailoring, and crafting.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Smithing</li>
+				<li>Tailoring</li>
+				<li>Crafting</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -335,6 +450,12 @@
 		<defName>RPP_Bot_ER_I</defName>
 		<label>ER Bot</label>
 		<description>A Tier 1 amateur-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Firefighter</li>
+				<li>Doctor</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -344,6 +465,12 @@
 		<defName>RPP_Bot_ER_II</defName>
 		<label>ER Bot</label>
 		<description>A Tier 2 professional-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Firefighter</li>
+				<li>Doctor</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -353,6 +480,12 @@
 		<defName>RPP_Bot_ER_III</defName>
 		<label>ER Bot</label>
 		<description>A Tier 3 Master-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Firefighter</li>
+				<li>Doctor</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -362,6 +495,12 @@
 		<defName>RPP_Bot_ER_IV</defName>
 		<label>ER Bot</label>
 		<description>A Tier 4 System-Master-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Firefighter</li>
+				<li>Doctor</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -371,6 +510,13 @@
 		<defName>RPP_Bot_ER_V</defName>
 		<label>ER Bot</label>
 		<description>A Tier 5 Godlike-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Firefighter</li>
+				<li>Doctor</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -381,6 +527,13 @@
 		<defName>RPP_Bot_Kitchen_I</defName>
 		<label>Kitchen Bot</label>
 		<description>A Tier 1 amateur-class unit capable of cooking, and tending to plants.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cooking</li>
+				<li>PlantCutting</li>
+				<li>Growing</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -391,6 +544,13 @@
 		<defName>RPP_Bot_Kitchen_II</defName>
 		<label>Kitchen Bot</label>
 		<description>A Tier 2 professional-class unit capable of cooking, and tending to plants.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cooking</li>
+				<li>PlantCutting</li>
+				<li>Growing</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -401,6 +561,13 @@
 		<defName>RPP_Bot_Kitchen_III</defName>
 		<label>Kitchen Bot</label>
 		<description>A Tier 3 Master-class unit capable of cooking, and tending to plants.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cooking</li>
+				<li>PlantCutting</li>
+				<li>Growing</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -411,6 +578,13 @@
 		<defName>RPP_Bot_Kitchen_IV</defName>
 		<label>Kitchen Bot</label>
 		<description>A Tier 4 System-Master-class unit capable of cooking, and tending to plants.</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Cooking</li>
+				<li>PlantCutting</li>
+				<li>Growing</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -421,6 +595,13 @@
 		<defName>RPP_Bot_Kitchen_V</defName>
 		<label>Kitchen Bot</label>
 		<description>A Tier 5 Godlike-class unit capable of cooking, and tending to plants.</description>
+			<race>
+			<mechEnabledWorkTypes>
+				<li>Cooking</li>
+				<li>PlantCutting</li>
+				<li>Growing</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -432,6 +613,22 @@
 		<defName>RPP_Bot_Omni_V</defName>
 		<label>OmniBot</label>
 		<description>A Tier 5 Godlike unit capable of almost anything. (NP=P)</description>
+		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+				<li>Cleaning</li>
+				<li>Cooking</li>
+				<li>PlantCutting</li>
+				<li>Growing</li>
+				<li>Doctor</li>
+				<li>Smithing</li>
+				<li>Tailoring</li>
+				<li>Crafting</li>
+				<li>Construction</li>
+				<li>Mining</li>
+				<li>Firefighter</li>
+			</mechEnabledWorkTypes>
+		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>2</priority></li>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>3</priority></li>
@@ -446,6 +643,13 @@
 			<li><workTypeDef>Construction</workTypeDef><priority>2</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
+		<robotSkills>
+			<li>
+				<skillDef>Mining</skillDef>
+				<level>20</level>
+				<passion>Minor</passion>
+			</li>
+		</robotSkills>
 	</ThingDef>
 
 </Defs>
