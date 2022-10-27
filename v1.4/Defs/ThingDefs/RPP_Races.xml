@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--Push was made for 1.4 and i commented for 1.3-->
 <Defs>
 
 	<!--******** META ********-->
@@ -644,13 +643,6 @@
 			<li><workTypeDef>Construction</workTypeDef><priority>2</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
-		<robotSkills>
-			<li>
-				<skillDef>Mining</skillDef>
-				<level>20</level>
-				<passion>Minor</passion>
-			</li>
-		</robotSkills>
 	</ThingDef>
 
 </Defs>
