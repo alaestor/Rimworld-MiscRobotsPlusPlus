@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Rimatomics</li>
+			<li>Dubs Rimatomics</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -14,7 +14,8 @@
                             defName="AIRobot_Hauler_II" or
                             defName="AIRobot_Hauler_III" or
                             defName="AIRobot_Hauler_IV" or
-                            defName="AIRobot_Hauler_V"
+                            defName="AIRobot_Hauler_V" or 
+							defName="RPP_Bot_Omni_V"
                         ]
                         /robotWorkTypes
                     </xpath>
@@ -23,9 +24,18 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="RPP_Bot_Omni_V"]/robotWorkTypes</xpath>
+					<xpath>Defs/ThingDef
+                        [
+                            defName="AIRobot_Hauler" or
+                            defName="AIRobot_Hauler_II" or
+                            defName="AIRobot_Hauler_III" or
+                            defName="AIRobot_Hauler_IV" or
+                            defName="AIRobot_Hauler_V" or 
+							defName="RPP_Bot_Omni_V"
+                        ]
+                        /race/mechEnabledWorkTypes</xpath>
 					<value>
-                        <li><workTypeDef>NuclearWork</workTypeDef><priority>2</priority></li>
+                        <li>NuclearWork</li>
 					</value>
 				</li>
 			</operations>

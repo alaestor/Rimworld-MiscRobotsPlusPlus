@@ -627,6 +627,7 @@
 				<li>Construction</li>
 				<li>Mining</li>
 				<li>Firefighter</li>
+				<li>Research</li>
 			</mechEnabledWorkTypes>
 		</race>
 		<robotWorkTypes>
@@ -642,6 +643,7 @@
 			<li><workTypeDef>Crafting</workTypeDef><priority>2</priority></li>
 			<li><workTypeDef>Construction</workTypeDef><priority>2</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Research</workTypeDef><priority>0</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 

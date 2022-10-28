@@ -23,6 +23,22 @@
                         <li><workTypeDef>HaulingUrgent</workTypeDef><priority>1</priority></li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef
+					[
+						defName="RPP_Bot_Builder_I" or
+						defName="RPP_Bot_Builder_II" or
+						defName="RPP_Bot_Builder_III" or
+						defName="RPP_Bot_Builder_IV" or
+						defName="RPP_Bot_Builder_V" or
+						defName="RPP_Bot_Omni_V"
+					]
+					/race/mechEnabledWorkTypes
+				</xpath> <!-- select all the things and add the value -->
+				<value>
+					<li>HaulingUrgent</li>
+				</value>
+			</li>
 			</operations>
 		</match>
 	</Operation>
