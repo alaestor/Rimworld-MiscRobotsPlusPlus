@@ -149,6 +149,7 @@
 	
 	
 	
+	
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Hauler_II</defName>
 		<label>Hauling Bot</label>
