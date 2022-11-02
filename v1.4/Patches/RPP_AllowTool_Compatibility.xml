@@ -26,11 +26,11 @@
 				<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef
 					[
-						defName="RPP_Bot_Builder_I" or
-						defName="RPP_Bot_Builder_II" or
-						defName="RPP_Bot_Builder_III" or
-						defName="RPP_Bot_Builder_IV" or
-						defName="RPP_Bot_Builder_V" or
+						defName="AIRobot_Hauler" or
+						defName="RPP_Bot_Hauler_II" or
+						defName="RPP_Bot_Hauler_III" or
+						defName="RPP_Bot_Hauler_IV" or
+						defName="RPP_Bot_Hauler_V" or
 						defName="RPP_Bot_Omni_V"
 					]
 					/race/mechEnabledWorkTypes
