@@ -37,17 +37,9 @@
 			<!--RestRateMultiplier>0.6</RestRateMultiplier-->
 			<WorkSpeedGlobal>1</WorkSpeedGlobal>
 		</statBases>
-		<robotSkills>
-			<li><skillDef>Medicine</skillDef><level>4</level><passion>Minor</passion></li>
-			<li><skillDef>Cooking</skillDef><level>4</level><passion>Minor</passion></li>
-			<li><skillDef>Plants</skillDef><level>4</level><passion>Minor</passion></li>
-			<li><skillDef>Construction</skillDef><level>4</level><passion>Minor</passion></li>
-			<li><skillDef>Mining</skillDef><level>4</level><passion>Minor</passion></li>
-			<li><skillDef>Crafting</skillDef><level>4</level><passion>Minor</passion></li>
-			<li><skillDef>Social</skillDef><level>4</level><passion>Minor</passion></li>
-			<li><skillDef>Intellectual</skillDef><level>4</level><passion>Minor</passion></li>
-			<li><skillDef>Animals</skillDef><level>4</level><passion>Minor</passion></li>
-		</robotSkills>
+		<race>
+			<mechFixedSkillLevel>4</mechFixedSkillLevel>
+		</race>
 	</ThingDef>
 	<ThingDef Abstract="True" Name="RPP_Bot_II" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
@@ -58,17 +50,9 @@
 			<!--RestRateMultiplier>1</RestRateMultiplier-->
 			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
 		</statBases>
-		<robotSkills>
-			<li><skillDef>Medicine</skillDef><level>8</level><passion>Minor</passion></li>
-			<li><skillDef>Cooking</skillDef><level>8</level><passion>Minor</passion></li>
-			<li><skillDef>Plants</skillDef><level>8</level><passion>Minor</passion></li>
-			<li><skillDef>Construction</skillDef><level>8</level><passion>Minor</passion></li>
-			<li><skillDef>Mining</skillDef><level>8</level><passion>Minor</passion></li>
-			<li><skillDef>Crafting</skillDef><level>8</level><passion>Minor</passion></li>
-			<li><skillDef>Social</skillDef><level>8</level><passion>Minor</passion></li>
-			<li><skillDef>Intellectual</skillDef><level>8</level><passion>Minor</passion></li>
-			<li><skillDef>Animals</skillDef><level>8</level><passion>Minor</passion></li>
-		</robotSkills>
+		<race>
+			<mechFixedSkillLevel>8</mechFixedSkillLevel>
+		</race>
 	</ThingDef>
 	<ThingDef Abstract="True" Name="RPP_Bot_III" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
@@ -79,17 +63,9 @@
 			<!--RestRateMultiplier>1.5</RestRateMultiplier-->
 			<WorkSpeedGlobal>2</WorkSpeedGlobal>
 		</statBases>
-		<robotSkills>
-			<li><skillDef>Medicine</skillDef><level>13</level><passion>Minor</passion></li>
-			<li><skillDef>Cooking</skillDef><level>13</level><passion>Minor</passion></li>
-			<li><skillDef>Plants</skillDef><level>13</level><passion>Minor</passion></li>
-			<li><skillDef>Construction</skillDef><level>13</level><passion>Minor</passion></li>
-			<li><skillDef>Mining</skillDef><level>13</level><passion>Minor</passion></li>
-			<li><skillDef>Crafting</skillDef><level>13</level><passion>Minor</passion></li>
-			<li><skillDef>Social</skillDef><level>13</level><passion>Minor</passion></li>
-			<li><skillDef>Intellectual</skillDef><level>13</level><passion>Minor</passion></li>
-			<li><skillDef>Animals</skillDef><level>13</level><passion>Minor</passion></li>
-		</robotSkills>
+		<race>
+			<mechFixedSkillLevel>13</mechFixedSkillLevel>
+		</race>
 	</ThingDef>
 	<ThingDef Abstract="True" Name="RPP_Bot_IV" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
@@ -100,17 +76,9 @@
 			<!--RestRateMultiplier>2.5</RestRateMultiplier-->
 			<WorkSpeedGlobal>3</WorkSpeedGlobal>
 		</statBases>
-		<robotSkills>
-			<li><skillDef>Medicine</skillDef><level>16</level><passion>Minor</passion></li>
-			<li><skillDef>Cooking</skillDef><level>16</level><passion>Minor</passion></li>
-			<li><skillDef>Plants</skillDef><level>16</level><passion>Minor</passion></li>
-			<li><skillDef>Construction</skillDef><level>16</level><passion>Minor</passion></li>
-			<li><skillDef>Mining</skillDef><level>16</level><passion>Minor</passion></li>
-			<li><skillDef>Crafting</skillDef><level>16</level><passion>Minor</passion></li>
-			<li><skillDef>Social</skillDef><level>16</level><passion>Minor</passion></li>
-			<li><skillDef>Intellectual</skillDef><level>16</level><passion>Minor</passion></li>
-			<li><skillDef>Animals</skillDef><level>16</level><passion>Minor</passion></li>
-		</robotSkills>
+		<race>
+			<mechFixedSkillLevel>16</mechFixedSkillLevel>
+		</race>
 	</ThingDef>
 	<ThingDef Abstract="True" Name="RPP_Bot_V" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
@@ -121,17 +89,9 @@
 			<!--RestRateMultiplier>4</RestRateMultiplier-->
 			<WorkSpeedGlobal>4</WorkSpeedGlobal>
 		</statBases>
-		<robotSkills>
-			<li><skillDef>Medicine</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Cooking</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Plants</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Construction</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Mining</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Crafting</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Social</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Intellectual</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Animals</skillDef><level>20</level><passion>Minor</passion></li>
-		</robotSkills>
+		<race>
+			<mechFixedSkillLevel>20</mechFixedSkillLevel>
+		</race>
 	</ThingDef>
 
 	<!--******** INHERET ********-->
