@@ -161,7 +161,7 @@
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
-				<li>Basic</li>
+				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
 			<mechWorkTypePriorities>
 				<Hauling>1</Hauling>
