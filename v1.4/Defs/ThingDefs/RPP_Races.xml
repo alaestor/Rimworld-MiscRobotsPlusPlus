@@ -773,7 +773,7 @@
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
-				<li>Basic</li>
+				<li>BasicWorker</li>
 				<li>Cleaning</li>
 				<li>Cooking</li>
 				<li>PlantCutting</li>
@@ -789,7 +789,7 @@
 		</mechEnabledWorkTypes>
 		<mechWorkTypePriorities>
 			<Hauling>2</Hauling>
-			<Basic>2</Basic>
+			<BasicWorker>2</BasicWorker>
 			<Cleaning>3</Cleaning>
 			<PlantCutting>2</PlantCutting>
 			<Growing>2</Growing>
