@@ -597,7 +597,7 @@
 			<mechEnabledWorkTypes>
 				<li>Firefighter</li>
 				<li>Doctor</li>
-			</mechEnabledWorkTypes><mechWorkTypePriorities>
+			</mechEnabledWorkTypes>
 				<Doctor>1</Doctor>
 				<Firefighter>3</Firefighter>
 			</mechWorkTypePriorities>
