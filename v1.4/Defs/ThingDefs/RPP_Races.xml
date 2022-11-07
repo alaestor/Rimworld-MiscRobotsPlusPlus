@@ -163,10 +163,11 @@
 				<li>Hauling</li>
 				<li>Basic</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Hauling>1</Hauling>
-        </mechWorkTypePriorities>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
@@ -179,11 +180,12 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases><MoveSpeed>8.0</MoveSpeed></statBases>
-		<mechWorkTypePriorities>
-			<Hauling>1</Hauling>
-        </mechWorkTypePriorities>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
@@ -196,11 +198,12 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases><MoveSpeed>10.0</MoveSpeed></statBases>
-		<mechWorkTypePriorities>
-			<Hauling>1</Hauling>
-        </mechWorkTypePriorities>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
@@ -213,11 +216,12 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases><MoveSpeed>13.5</MoveSpeed></statBases>
-		<mechWorkTypePriorities>
-			<Hauling>1</Hauling>
-        </mechWorkTypePriorities>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
@@ -230,11 +234,12 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases><MoveSpeed>18.5</MoveSpeed></statBases>
-		<mechWorkTypePriorities>
-			<Hauling>1</Hauling>
-        </mechWorkTypePriorities>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
@@ -248,6 +253,9 @@
 			<mechEnabledWorkTypes>
 				<li>Cleaning</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases><MoveSpeed>6.0</MoveSpeed></statBases>
 		<robotWorkTypes>
@@ -262,6 +270,9 @@
 			<mechEnabledWorkTypes>
 				<li>Cleaning</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases>
 			<MoveSpeed>8.0</MoveSpeed>
@@ -278,6 +289,9 @@
 			<mechEnabledWorkTypes>
 				<li>Cleaning</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases><MoveSpeed>10.0</MoveSpeed></statBases>
 		<robotWorkTypes>
@@ -292,6 +306,9 @@
 			<mechEnabledWorkTypes>
 				<li>Cleaning</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases><MoveSpeed>13.5</MoveSpeed></statBases>
 		<robotWorkTypes>
@@ -306,6 +323,9 @@
 			<mechEnabledWorkTypes>
 				<li>Cleaning</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+			</mechWorkTypePriorities>
 		</race>
 		<statBases><MoveSpeed>18.5</MoveSpeed></statBases>
 		<robotWorkTypes>
@@ -324,11 +344,12 @@
 				<li>Construction</li>
 				<li>Mining</li>
 			</mechEnabledWorkTypes>
-		</race>
-		<mechWorkTypePriorities>
-			<Construction>1</Construction>
-			<Mining>3</Mining>
+			<mechWorkTypePriorities>
+				<Construction>1</Construction>
+				<Mining>3</Mining>
         </mechWorkTypePriorities>
+		</race>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -343,11 +364,12 @@
 				<li>Construction</li>
 				<li>Mining</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Construction>1</Construction>
+				<Mining>3</Mining>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Construction>1</Construction>
-			<Mining>3</Mining>
-        </mechWorkTypePriorities>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -362,11 +384,12 @@
 				<li>Construction</li>
 				<li>Mining</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Construction>1</Construction>
+				<Mining>3</Mining>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Construction>1</Construction>
-			<Mining>3</Mining>
-        </mechWorkTypePriorities>
+
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -381,11 +404,12 @@
 				<li>Construction</li>
 				<li>Mining</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Construction>1</Construction>
+				<Mining>3</Mining>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Construction>1</Construction>
-			<Mining>3</Mining>
-        </mechWorkTypePriorities>
+
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -400,11 +424,11 @@
 				<li>Construction</li>
 				<li>Mining</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Construction>1</Construction>
+				<Mining>3</Mining>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Construction>1</Construction>
-			<Mining>3</Mining>
-        </mechWorkTypePriorities>
 		<robotWorkTypes>
 			<li><workTypeDef>Construction</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Mining</workTypeDef><priority>3</priority></li>
@@ -421,12 +445,13 @@
 				<li>Tailoring</li>
 				<li>Crafting</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Smithing>1</Smithing>
+				<Tailoring>3</Tailoring>
+				<Crafting>2</Crafting>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Smithing>1</Smithing>
-			<Tailoring>3</Tailoring>
-			<Crafting>2</Crafting>
-        </mechWorkTypePriorities>
+	
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -443,12 +468,13 @@
 				<li>Tailoring</li>
 				<li>Crafting</li>
 			</mechEnabledWorkTypes>
-		</race>
 			<mechWorkTypePriorities>
-			<Smithing>1</Smithing>
-			<Tailoring>3</Tailoring>
-			<Crafting>2</Crafting>
-        </mechWorkTypePriorities>
+				<Smithing>1</Smithing>
+				<Tailoring>3</Tailoring>
+				<Crafting>2</Crafting>
+			</mechWorkTypePriorities>
+		</race>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -465,12 +491,13 @@
 				<li>Tailoring</li>
 				<li>Crafting</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Smithing>1</Smithing>
+				<Tailoring>3</Tailoring>
+				<Crafting>2</Crafting>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Smithing>1</Smithing>
-			<Tailoring>3</Tailoring>
-			<Crafting>2</Crafting>
-        </mechWorkTypePriorities>
+
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -487,12 +514,12 @@
 				<li>Tailoring</li>
 				<li>Crafting</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Smithing>1</Smithing>
+				<Tailoring>3</Tailoring>
+				<Crafting>2</Crafting>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Smithing>1</Smithing>
-			<Tailoring>3</Tailoring>
-			<Crafting>2</Crafting>
-        </mechWorkTypePriorities>
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -509,12 +536,12 @@
 				<li>Tailoring</li>
 				<li>Crafting</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Smithing>1</Smithing>
+				<Tailoring>3</Tailoring>
+				<Crafting>2</Crafting>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Smithing>1</Smithing>
-			<Tailoring>3</Tailoring>
-			<Crafting>2</Crafting>
-        </mechWorkTypePriorities>
 		<robotWorkTypes>
 			<li><workTypeDef>Smithing</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Tailoring</workTypeDef><priority>3</priority></li>
@@ -531,11 +558,12 @@
 				<li>Firefighter</li>
 				<li>Doctor</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Doctor>1</Doctor>
+				<Firefighter>3</Firefighter>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Doctor>1</Doctor>
-			<Firefighter>3</Firefighter>
-        </mechWorkTypePriorities>
+
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -550,11 +578,12 @@
 				<li>Firefighter</li>
 				<li>Doctor</li>
 			</mechEnabledWorkTypes>
-		</race>
-		<mechWorkTypePriorities>
-			<Doctor>1</Doctor>
-			<Firefighter>3</Firefighter>
+			<mechWorkTypePriorities>
+				<Doctor>1</Doctor>
+				<Firefighter>3</Firefighter>
         </mechWorkTypePriorities>
+		</race>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -568,12 +597,12 @@
 			<mechEnabledWorkTypes>
 				<li>Firefighter</li>
 				<li>Doctor</li>
-			</mechEnabledWorkTypes>
+			</mechEnabledWorkTypes><mechWorkTypePriorities>
+				<Doctor>1</Doctor>
+				<Firefighter>3</Firefighter>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Doctor>1</Doctor>
-			<Firefighter>3</Firefighter>
-        </mechWorkTypePriorities>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -588,11 +617,12 @@
 				<li>Firefighter</li>
 				<li>Doctor</li>
 			</mechEnabledWorkTypes>
-		</race>
-		<mechWorkTypePriorities>
-			<Doctor>1</Doctor>
+				<mechWorkTypePriorities>
+				<Doctor>1</Doctor>
 			<Firefighter>3</Firefighter>
         </mechWorkTypePriorities>
+		</race>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -608,11 +638,12 @@
 				<li>Firefighter</li>
 				<li>Doctor</li>
 			</mechEnabledWorkTypes>
-		</race>
-		<mechWorkTypePriorities>
-			<Doctor>1</Doctor>
-			<Firefighter>3</Firefighter>
+			<mechWorkTypePriorities>
+				<Doctor>1</Doctor>
+				<Firefighter>3</Firefighter>
         </mechWorkTypePriorities>
+		</race>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
@@ -629,12 +660,13 @@
 				<li>PlantCutting</li>
 				<li>Growing</li>
 			</mechEnabledWorkTypes>
-		</race>
-		<mechWorkTypePriorities>
-			<Cooking>1</Cooking>
-			<PlantCutting>3</PlantCutting>
-			<Growing>3</Growing>
+			<mechWorkTypePriorities>
+				<Cooking>1</Cooking>
+				<PlantCutting>3</PlantCutting>
+				<Growing>3</Growing>
         </mechWorkTypePriorities>
+		</race>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -651,12 +683,13 @@
 				<li>PlantCutting</li>
 				<li>Growing</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cooking>1</Cooking>
+				<PlantCutting>3</PlantCutting>
+				<Growing>3</Growing>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Cooking>1</Cooking>
-			<PlantCutting>3</PlantCutting>
-			<Growing>3</Growing>
-        </mechWorkTypePriorities>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -673,6 +706,11 @@
 				<li>PlantCutting</li>
 				<li>Growing</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cooking>1</Cooking>
+				<PlantCutting>3</PlantCutting>
+				<Growing>3</Growing>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
@@ -690,12 +728,13 @@
 				<li>PlantCutting</li>
 				<li>Growing</li>
 			</mechEnabledWorkTypes>
-		</race>
-		<mechWorkTypePriorities>
+			<mechWorkTypePriorities>
 			<Cooking>1</Cooking>
 			<PlantCutting>3</PlantCutting>
 			<Growing>3</Growing>
-        </mechWorkTypePriorities>
+			</mechWorkTypePriorities>
+		</race>
+		
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -712,12 +751,13 @@
 				<li>PlantCutting</li>
 				<li>Growing</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cooking>1</Cooking>
+				<PlantCutting>3</PlantCutting>
+				<Growing>3</Growing>
+			</mechWorkTypePriorities>
 		</race>
-		<mechWorkTypePriorities>
-			<Cooking>1</Cooking>
-			<PlantCutting>3</PlantCutting>
-			<Growing>3</Growing>
-        </mechWorkTypePriorities>
+
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
