@@ -59,7 +59,7 @@
 			<Flammability>0.7</Flammability>
 			<CarryingCapacity>200</CarryingCapacity>
 			<!--RestRateMultiplier>1</RestRateMultiplier-->
-			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
 		</statBases>
 			<robotSkills>
 			<li><skillDef>Medicine</skillDef><level>8</level><passion>Minor</passion></li>
@@ -83,7 +83,7 @@
 			<CarryingCapacity>300</CarryingCapacity>
 			<Flammability>0.3</Flammability>
 			<!--RestRateMultiplier>1.5</RestRateMultiplier-->
-			<WorkSpeedGlobal>2</WorkSpeedGlobal>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
 		</statBases>
 			<robotSkills>
 			<li><skillDef>Medicine</skillDef><level>13</level><passion>Minor</passion></li>
@@ -107,7 +107,7 @@
 			<CarryingCapacity>400</CarryingCapacity>
 			<Flammability>0.0</Flammability>
 			<!--RestRateMultiplier>2.5</RestRateMultiplier-->
-			<WorkSpeedGlobal>3</WorkSpeedGlobal>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
 		</statBases>
 			<robotSkills>
 			<li><skillDef>Medicine</skillDef><level>16</level><passion>Minor</passion></li>
@@ -131,19 +131,19 @@
 			<CarryingCapacity>500</CarryingCapacity>
 			<Flammability>0.0</Flammability>
 			<!--RestRateMultiplier>4</RestRateMultiplier-->
-			<WorkSpeedGlobal>4</WorkSpeedGlobal>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
 		</statBases>
 			<robotSkills>
-			<li><skillDef>Medicine</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Cooking</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Plants</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Construction</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Mining</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Crafting</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Social</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Intellectual</skillDef><level>20</level><passion>Minor</passion></li>
-			<li><skillDef>Animals</skillDef><level>20</level><passion>Minor</passion></li>
-		</robotSkills>
+				<li><skillDef>Medicine</skillDef><level>20</level><passion>Minor</passion></li>
+				<li><skillDef>Cooking</skillDef><level>20</level><passion>Minor</passion></li>
+				<li><skillDef>Plants</skillDef><level>20</level><passion>Minor</passion></li>
+				<li><skillDef>Construction</skillDef><level>20</level><passion>Minor</passion></li>
+				<li><skillDef>Mining</skillDef><level>20</level><passion>Minor</passion></li>
+				<li><skillDef>Crafting</skillDef><level>20</level><passion>Minor</passion></li>
+				<li><skillDef>Social</skillDef><level>20</level><passion>Minor</passion></li>
+				<li><skillDef>Intellectual</skillDef><level>20</level><passion>Minor</passion></li>
+				<li><skillDef>Animals</skillDef><level>20</level><passion>Minor</passion></li>
+			</robotSkills>
 		<race>
 			<mechFixedSkillLevel>20</mechFixedSkillLevel>
 		</race>
@@ -163,7 +163,6 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 				<li>BasicWorker</li>
-				<li>Firefighter</li>
 			</mechEnabledWorkTypes>
 		</race>
 		<robotWorkTypes>
@@ -181,7 +180,6 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 				<li>BasicWorker</li>
-				<li>Firefighter</li>
 			</mechEnabledWorkTypes>
 		</race>
 
@@ -201,7 +199,6 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 				<li>BasicWorker</li>
-				<li>Firefighter</li>
 			</mechEnabledWorkTypes>
 		</race>
 	
@@ -221,7 +218,6 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 				<li>BasicWorker</li>
-				<li>Firefighter</li>
 			</mechEnabledWorkTypes>
 		</race>
 	
@@ -241,7 +237,6 @@
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
 				<li>BasicWorker</li>
-				<li>Firefighter</li>
 			</mechEnabledWorkTypes>
 		</race>
 	
@@ -263,6 +258,10 @@
 				<li>Cleaning</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+				<BasicWorker>2</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
@@ -377,7 +376,7 @@
 			<GeneralLaborSpeed>1.5</GeneralLaborSpeed>
 			<SmoothingSpeed>1.5</SmoothingSpeed>
 			<ConstructSuccessChance>1.25</ConstructSuccessChance>
-			<MiningYield>1.5</MiningYield>
+			<MiningYield>1.2</MiningYield>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -405,7 +404,7 @@
 			<GeneralLaborSpeed>2</GeneralLaborSpeed>
 			<SmoothingSpeed>2</SmoothingSpeed>
 			<ConstructSuccessChance>1.5</ConstructSuccessChance>
-			<MiningYield>2</MiningYield>
+			<MiningYield>1.4</MiningYield>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -433,7 +432,7 @@
 			<GeneralLaborSpeed>3</GeneralLaborSpeed>
 			<SmoothingSpeed>3</SmoothingSpeed>
 			<ConstructSuccessChance>1.75</ConstructSuccessChance>
-			<MiningYield>2.5</MiningYield>
+			<MiningYield>1.6</MiningYield>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -461,7 +460,7 @@
 			<GeneralLaborSpeed>4</GeneralLaborSpeed>
 			<SmoothingSpeed>4</SmoothingSpeed>
 			<ConstructSuccessChance>2</ConstructSuccessChance>
-			<MiningYield>3</MiningYield>
+			<MiningYield>1</MiningYield>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -916,22 +915,22 @@
 				<li>Mining</li>
 				<li>Firefighter</li>
 				<li>Research</li>
-		</mechEnabledWorkTypes>
-		<mechWorkTypePriorities>
-			<Hauling>2</Hauling>
-			<BasicWorker>2</BasicWorker>
-			<Cleaning>3</Cleaning>
-			<PlantCutting>2</PlantCutting>
-			<Growing>2</Growing>
-			<Doctor>1</Doctor>
-			<Firefighter>1</Firefighter>
-			<Smithing>2</Smithing>
-			<Tailoring>2</Tailoring>
-			<Crafting>2</Crafting>
-			<Construction>2</Construction>
-			<Mining>2</Mining>
-			<Research>2</Research>
-        </mechWorkTypePriorities>
+			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>2</Hauling>
+				<BasicWorker>2</BasicWorker>
+				<Cleaning>3</Cleaning>
+				<PlantCutting>2</PlantCutting>
+				<Growing>2</Growing>
+				<Doctor>1</Doctor>
+				<Firefighter>1</Firefighter>
+				<Smithing>2</Smithing>
+				<Tailoring>2</Tailoring>
+				<Crafting>2</Crafting>
+				<Construction>2</Construction>
+				<Mining>2</Mining>
+				<Research>2</Research>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>2</priority></li>
@@ -954,8 +953,8 @@
 		<label>OmniBot</label>
 		<description>>A Tier 2 professional-class unit capable of almost anything. (NP=P)</description>
 		<statBases>
-			<WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
-			<GeneralLaborSpeed>1.1</GeneralLaborSpeed>
+			<WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
+			<GeneralLaborSpeed>2</GeneralLaborSpeed>
 			
 			<CleaningSpeed>2</CleaningSpeed>
 				
@@ -976,6 +975,7 @@
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Hauling</li>
+				<li>Hunting</li>
 				<li>BasicWorker</li>
 				<li>Cleaning</li>
 				<li>Cooking</li>
@@ -1003,10 +1003,12 @@
 			<Crafting>2</Crafting>
 			<Construction>2</Construction>
 			<Mining>2</Mining>
+			<Hunting>3</Hunting>
 			<Research>2</Research>
         </mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
+			<li><workTypeDef>Hunting</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Hauling</workTypeDef><priority>2</priority></li>
 			<li><workTypeDef>Cleaning</workTypeDef><priority>3</priority></li>
 			<li><workTypeDef>Cooking</workTypeDef><priority>2</priority></li>
@@ -1030,11 +1032,11 @@
 			<WorkTableWorkSpeedFactor>1.25</WorkTableWorkSpeedFactor>
 			<GeneralLaborSpeed>1.25</GeneralLaborSpeed>
 			
-			<CleaningSpeed>3</CleaningSpeed>
+			<CleaningSpeed>2.5</CleaningSpeed>
 				
-			<ConstructionSpeed>3</ConstructionSpeed>
-			<DeepDrillingSpeed>3</DeepDrillingSpeed>
-			<SmoothingSpeed>3</SmoothingSpeed>
+			<ConstructionSpeed>2.5</ConstructionSpeed>
+			<DeepDrillingSpeed>2.5</DeepDrillingSpeed>
+			<SmoothingSpeed>2.5</SmoothingSpeed>
 			
 			<ConstructSuccessChance>1.75</ConstructSuccessChance>
 			<MiningYield>1.60</MiningYield>
@@ -1100,14 +1102,14 @@
 		<label>OmniBot</label>
 		<description>A Tier 4 System-Master-class unit capable of almost anything. (NP=P)</description>
 		<statBases>
-			<WorkTableWorkSpeedFactor>1.35</WorkTableWorkSpeedFactor>
-			<GeneralLaborSpeed>1.35</GeneralLaborSpeed>
+			<WorkTableWorkSpeedFactor>3</WorkTableWorkSpeedFactor>
+			<GeneralLaborSpeed>3</GeneralLaborSpeed>
 			
-			<CleaningSpeed>4</CleaningSpeed>
+			<CleaningSpeed>3</CleaningSpeed>
 				
-			<ConstructionSpeed>4</ConstructionSpeed>
-			<DeepDrillingSpeed>4</DeepDrillingSpeed>
-			<SmoothingSpeed>4</SmoothingSpeed>
+			<ConstructionSpeed>3</ConstructionSpeed>
+			<DeepDrillingSpeed>3</DeepDrillingSpeed>
+			<SmoothingSpeed>3</SmoothingSpeed>
 			
 			<ConstructSuccessChance>2</ConstructSuccessChance>
 			<MiningYield>1.90</MiningYield>
@@ -1173,14 +1175,12 @@
 		<label>OmniBot</label>
 		<description>A Tier 5 Godlike unit capable of almost anything. (NP=P)</description>
 		<statBases>
-			<WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
-			<GeneralLaborSpeed>1.5</GeneralLaborSpeed>
-			
-			<CleaningSpeed>5</CleaningSpeed>
-				
-			<ConstructionSpeed>5</ConstructionSpeed>
-			<DeepDrillingSpeed>5</DeepDrillingSpeed>
-			<SmoothingSpeed>5</SmoothingSpeed>
+			<WorkTableWorkSpeedFactor>4</WorkTableWorkSpeedFactor>
+			<GeneralLaborSpeed>4</GeneralLaborSpeed>
+			<CleaningSpeed>4</CleaningSpeed>
+			<ConstructionSpeed>4</ConstructionSpeed>
+			<DeepDrillingSpeed>4</DeepDrillingSpeed>
+			<SmoothingSpeed>4</SmoothingSpeed>
 			
 			<ConstructSuccessChance>2.5</ConstructSuccessChance>
 			<MiningYield>2.25</MiningYield>

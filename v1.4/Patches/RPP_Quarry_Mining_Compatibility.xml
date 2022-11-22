@@ -32,10 +32,10 @@
 						defName="RPP_Bot_Builder_V" or
 						defName="RPP_Bot_Omni_V"
 					]
-					//race/mechEnabledWorkTypes
+					/race/mechEnabledWorkTypes
 				</xpath> <!-- select all the things and add the value -->
 				<value>
-				<li>QuarryMining</li>
+					<li>QuarryMining</li>
 				</value>
 			</li>
 		</operations>
