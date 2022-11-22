@@ -485,7 +485,6 @@
 		<description>A Tier 1 amateur-class unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>1</GeneralLaborSpeed>
-			<WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -512,7 +511,6 @@
 		<description>A Tier 2 professional-class unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>2</GeneralLaborSpeed>
-			<WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -539,7 +537,6 @@
 		<description>A Tier 3 Master-class unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>2.5</GeneralLaborSpeed>
-			<WorkTableWorkSpeedFactor>2.5</WorkTableWorkSpeedFactor>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -566,7 +563,6 @@
 		<description>A Tier 4 System-Master-class unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>3</GeneralLaborSpeed>
-			<WorkTableWorkSpeedFactor>3</WorkTableWorkSpeedFactor>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -592,7 +588,6 @@
 		<description>A Tier 5 Godlike-class unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>4</GeneralLaborSpeed>
-			<WorkTableWorkSpeedFactor>4</WorkTableWorkSpeedFactor>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>

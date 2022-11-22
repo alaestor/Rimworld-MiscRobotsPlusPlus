@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<MISC_Robots_Category>Misc Robots Plus Plus Settings</MISC_Robots_Category>
+	<MISC_WIP>Work In Progress</MISC_WIP>
+	
+	
+	<MISC_Cleaning_Settings>Cleaner Bots settings for bots I-V</MISC_Cleaning_Settings> 
+	<MISC_CleaningTeir_I_Speed>Cleaner I speed {0} %, recomended 100%</MISC_CleaningTeir_I_Speed> 
+	<MISC_CleaningTeir_II_Speed>Cleaner II speed {0} %, recomended 150%</MISC_CleaningTeir_II_Speed> 
+	<MISC_CleaningTeir_III_Speed>Cleaner III speed {0} %, recomended 200%</MISC_CleaningTeir_III_Speed> 
+	<MISC_CleaningTeir_VI_Speed>Cleaner VI speed {0} %, recomended 300%</MISC_CleaningTeir_VI_Speed> 
+	<MISC_CleaningTeir_V_Speed>Cleaner V speed {0} %, recomended 400%</MISC_CleaningTeir_V_Speed> 
+	
+	<MISC_Crafters_Settings>Crafter Bots settings for bots I-V</MISC_Crafters_Settings> 
+</LanguageData>
+
