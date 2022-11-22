@@ -573,6 +573,78 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Omni_I</defName>
+		<label>Omni Bot (Tier 1)</label>
+		<race>RPP_Bot_Omni_I</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+						<texPath>Things/AIRobot/RPP/Omni/V/RPP_Bot</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(1.7,1.7)</drawSize>
+						<shadowData>
+							<volume>(0.2, 0.1, 0.2)</volume>
+							<offset>(0,0.5,0)</offset>
+						</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Omni_II</defName>
+		<label>Omni Bot (Tier 2)</label>
+		<race>RPP_Bot_Omni_II</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+						<texPath>Things/AIRobot/RPP/Omni/V/RPP_Bot</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(1.7,1.7)</drawSize>
+						<shadowData>
+							<volume>(0.2, 0.1, 0.2)</volume>
+							<offset>(0,0.5,0)</offset>
+						</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Omni_III</defName>
+		<label>Omni Bot (Tier 5)</label>
+		<race>RPP_Bot_Omni_III</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+						<texPath>Things/AIRobot/RPP/Omni/V/RPP_Bot</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(1.7,1.7)</drawSize>
+						<shadowData>
+							<volume>(0.2, 0.1, 0.2)</volume>
+							<offset>(0,0.5,0)</offset>
+						</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
+		<defName>RPP_Bot_Omni_IV</defName>
+		<label>Omni Bot (Tier 4)</label>
+		<race>RPP_Bot_Omni_IV</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+						<texPath>Things/AIRobot/RPP/Omni/V/RPP_Bot</texPath>
+						<graphicClass>Graphic_Multi</graphicClass>
+						<drawSize>(1.7,1.7)</drawSize>
+						<shadowData>
+							<volume>(0.2, 0.1, 0.2)</volume>
+							<offset>(0,0.5,0)</offset>
+						</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="RPP_PawnKind">
 		<defName>RPP_Bot_Omni_V</defName>
 		<label>Omni Bot (Tier 5)</label>
 		<race>RPP_Bot_Omni_V</race>
