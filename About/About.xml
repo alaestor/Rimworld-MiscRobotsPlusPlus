@@ -18,7 +18,7 @@
         <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
 </modDependencies>
-<description>	Mod Version: 3.3.12
+<description>	Mod Version: 3.4.0
 
 *** Example Load Order ***
 - Core
@@ -39,7 +39,7 @@ Robots++ Contains The Following Bots:
   An Emergency Response unit capable of treating patients and fighting fires.
 
 --- Omni Bot
-  The OmniBot is at the end of the techtree
+  The OmniBots is at the end of the techtree
   and requires you to research all of the other robots first.
   The OmniBot can do the jobs of all the other robots.
 
