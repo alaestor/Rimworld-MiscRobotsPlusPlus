@@ -72,11 +72,11 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_CrafterLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_CrafterLaborSpeed);
             //ER
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_ERMedicalTendSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_ERMedicalTendSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_ERMedicalTendSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_ERMedicalTendSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_ERMedicalTendSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_ERTendingLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.ER_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_ERTendingLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.ER_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_ERTendingLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_ERTendingLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_ERTendingLaborSpeed);
             //Kitchen
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenGeneralLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantHarvestYield);
