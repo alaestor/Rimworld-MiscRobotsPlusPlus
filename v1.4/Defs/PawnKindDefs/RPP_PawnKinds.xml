@@ -4,7 +4,7 @@
 	<!--******** META ********-->
 
 	<PawnKindDef Name="RPP_PawnKind" Abstract="True">
-		<combatPower>999999</combatPower>
+		<combatPower>10000</combatPower>
 		<backstoryCategories><li>Civil</li></backstoryCategories>
 		<isFighter>false</isFighter>
 		<wildGroupSize>0</wildGroupSize>

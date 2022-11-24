@@ -1,13 +1,11 @@
 ﻿using HarmonyLib;
-using MiscRobotsPlusPlus.Patches;
-using System;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Runtime;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
+using static UnityEngine.GUILayout;
 using Verse;
-using Verse.Noise;
 
 namespace MiscRobotsPlusPlus
 {
@@ -91,7 +89,7 @@ namespace MiscRobotsPlusPlus
         internal static float tier_2_Builder_GeneralLaborSpeed = 2f;
         internal static float tier_3_Builder_GeneralLaborSpeed = 3f;
         internal static float tier_4_Builder_GeneralLaborSpeed = 4f;
-      
+
 
         internal static float tier_1_Builder_SmoothingSpeed = 1f;
         internal static float tier_2_Builder_SmoothingSpeed = 1.5f;
@@ -110,7 +108,7 @@ namespace MiscRobotsPlusPlus
 
         internal static float tier_1_Omni_WorkTableWorkSpeedFactor = 1f;
         internal static float tier_1_Omni_GeneralLaborSpeed = 1f;
-        internal static float tier_1_Omni_CleaningSpeed =  1f;
+        internal static float tier_1_Omni_CleaningSpeed = 1f;
         internal static float tier_1_Omni_ConstructionSpeed = 1f;
         internal static float tier_1_Omni_DeepDrillingSpeed = 1f;
         internal static float tier_1_Omni_SmoothingSpeed = 1f;
@@ -126,7 +124,7 @@ namespace MiscRobotsPlusPlus
         internal static float tier_2_Omni_GeneralLaborSpeed = 2f;
         internal static float tier_2_Omni_CleaningSpeed = 2f;
         internal static float tier_2_Omni_ConstructionSpeed = 2f;
-        internal static float tier_2_Omni_DeepDrillingSpeed =2f;
+        internal static float tier_2_Omni_DeepDrillingSpeed = 2f;
         internal static float tier_2_Omni_SmoothingSpeed = 2f;
         internal static float tier_2_Omni_PlantWorkSpeed = 2f;
         internal static float tier_2_Omni_MiningYield = 1.3f;
@@ -178,6 +176,7 @@ namespace MiscRobotsPlusPlus
         #endregion
         #endregion
         internal static List<ThingDef> database;
+        #region Expose Data
         public override void ExposeData()
         {
             base.ExposeData();
@@ -323,95 +322,16 @@ namespace MiscRobotsPlusPlus
             Scribe_Values.Look(ref tier_5_Omni_MedicalSurgerySuccessChance, "MISC_Omni_V_SurgerySuccess", 1.9f);
 
         }
+
+        #endregion
+
+
         private static bool eRSettings = false;
-
         private static bool cleanerSettings = false;
-      
         private static bool craftersSettings = false;
-        internal static void DrawSetting(Listing_Standard guiStandard,Rect inRect)
-        {
-            guiStandard.Label("MISC_WIP".Translate());
-            guiStandard.Begin(inRect);
-            guiStandard.GapLine(24);
-            guiStandard.CheckboxLabeled("MISC_Crafters_Settings".Translate(), ref craftersSettings);
-            if (craftersSettings)
-            {
-                guiStandard.Label("MISC_CrafterLaborTeir_I_Speed".Translate(MiscModsSettings.tier_1_CrafterLaborSpeed * 100));
-                MiscModsSettings.tier_1_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_CrafterLaborSpeed, 0.1f, 15f);
-                guiStandard.GapLine();
-                guiStandard.Label("MISC_CrafterLaborTeir_II_Speed".Translate(MiscModsSettings.tier_2_CrafterLaborSpeed * 100));
-                MiscModsSettings.tier_2_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_2_CrafterLaborSpeed, 0.1f, 15);
-                guiStandard.GapLine();
-                guiStandard.Label("MISC_CrafterLaborTeir_III_Speed".Translate(MiscModsSettings.tier_3_CrafterLaborSpeed * 100));
-                MiscModsSettings.tier_3_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_3_CrafterLaborSpeed, 0.1f, 15f);
-                guiStandard.GapLine();
-                guiStandard.Label("MISC_CrafterLaborTeir_IV_Speed".Translate(MiscModsSettings.tier_4_CrafterLaborSpeed * 100));
-                MiscModsSettings.tier_4_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_4_CrafterLaborSpeed, 0.1f, 15f);
-                guiStandard.GapLine();
-                guiStandard.Label("MISC_CrafterLaborTeir_V_Speed".Translate(MiscModsSettings.tier_5_CrafterLaborSpeed * 100));
-                MiscModsSettings.tier_5_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_5_CrafterLaborSpeed, 0.1f, 15f);
-            }
-            guiStandard.GapLine(24);
-            guiStandard.CheckboxLabeled("MISC_Cleaning_Settings".Translate(), ref cleanerSettings);
-            if (cleanerSettings)
-            {
-                guiStandard.Label("MISC_CleaningTeir_I_Speed".Translate(MiscModsSettings.tier_1_CleaningSpeed * 100));
-                MiscModsSettings.tier_1_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_1_CleaningSpeed, 0.1f, 15f);
-                guiStandard.GapLine();
-                guiStandard.Label("MISC_CleaningTeir_II_Speed".Translate(MiscModsSettings.tier_2_CleaningSpeed * 100));
-                MiscModsSettings.tier_2_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_2_CleaningSpeed, 0.1f, 15f);
-                guiStandard.GapLine();
-                guiStandard.Label("MISC_CleaningTeir_III_Speed".Translate(MiscModsSettings.tier_3_CleaningSpeed * 100));
-                MiscModsSettings.tier_3_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_3_CleaningSpeed, 0.1f, 15f);
-                guiStandard.GapLine();
-                guiStandard.Label("MISC_CleaningTeir_IV_Speed".Translate(MiscModsSettings.tier_4_CleaningSpeed * 100));
-                MiscModsSettings.tier_4_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_4_CleaningSpeed, 0.1f, 15f);
-                guiStandard.GapLine();
-                guiStandard.Label("MISC_CleaningTeir_V_Speed".Translate(MiscModsSettings.tier_5_CleaningSpeed * 100));
-                MiscModsSettings.tier_5_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_5_CleaningSpeed, 0.1f, 15f);
-            }
-            guiStandard.GapLine(24);
-            guiStandard.CheckboxLabeled("MISC_ER_Settings".Translate(), ref eRSettings);
-            if (eRSettings)
-            {
-                guiStandard.Label("MISC_ER_TendSpeed_I".Translate(tier_1_ERTendingLaborSpeed * 100));
-                tier_1_ERTendingLaborSpeed = guiStandard.Slider(tier_1_ERTendingLaborSpeed, 0.1f, 15f);
-                guiStandard.Label("MISC_ER_SurgerySucces_I".Translate(tier_2_ERMedicalSurgerySuccessChance * 100));
-                tier_1_ERMedicalSurgerySuccessChance = guiStandard.Slider(tier_1_ERMedicalSurgerySuccessChance, 0.1f, 15f);
-
-                guiStandard.GapLine();
-
-                guiStandard.Label("MISC_ER_TendSpeed_II".Translate(tier_2_ERTendingLaborSpeed * 100));
-                tier_2_ERTendingLaborSpeed = guiStandard.Slider(tier_2_ERTendingLaborSpeed, 0.1f, 15f);
-                guiStandard.Label("MISC_ER_SurgerySucces_II".Translate(tier_2_ERMedicalSurgerySuccessChance * 100));
-                tier_2_ERMedicalSurgerySuccessChance = guiStandard.Slider(tier_2_ERMedicalSurgerySuccessChance, 0.1f, 15f);
-
-                guiStandard.GapLine();
-
-                guiStandard.Label("MISC_ER_TendSpeed_III".Translate(tier_3_ERTendingLaborSpeed * 100));
-                tier_3_ERTendingLaborSpeed = guiStandard.Slider(tier_3_ERTendingLaborSpeed, 0.1f, 15f);
-                guiStandard.Label("MISC_ER_SurgerySucces_III".Translate(tier_3_ERMedicalSurgerySuccessChance * 100));
-                tier_3_ERMedicalSurgerySuccessChance = guiStandard.Slider(tier_3_ERMedicalSurgerySuccessChance, 0.1f, 15f);
-
-                guiStandard.GapLine();
-
-                guiStandard.Label("MISC_ER_TendSpeed_IV".Translate(tier_4_ERTendingLaborSpeed * 100));
-                tier_4_ERTendingLaborSpeed = guiStandard.Slider(tier_4_ERTendingLaborSpeed, 0.1f, 15f);
-                guiStandard.Label("MISC_ER_SurgerySucces_IV".Translate(tier_4_ERMedicalSurgerySuccessChance * 100));
-                tier_4_ERMedicalSurgerySuccessChance = guiStandard.Slider(tier_4_ERMedicalSurgerySuccessChance, 0.1f, 15f);
-
-                guiStandard.GapLine();
-
-                guiStandard.Label("MISC_ER_TendSpeed_V".Translate(tier_5_ERTendingLaborSpeed * 100));
-                tier_5_ERTendingLaborSpeed = guiStandard.Slider(tier_5_ERTendingLaborSpeed, 0.1f, 15f);
-                guiStandard.Label("MISC_ER_SurgerySucces_V".Translate(tier_5_ERMedicalSurgerySuccessChance * 100));
-                tier_5_ERMedicalSurgerySuccessChance = guiStandard.Slider(tier_5_ERMedicalSurgerySuccessChance, 0.1f, 15f);
-
-            }
-            guiStandard.End();
-
-
-        }
+        private static bool kitchenSettings = false;
+        private static bool BuilderSettings = false;
+        private static bool OmniSettings = false;
     }
 }
     

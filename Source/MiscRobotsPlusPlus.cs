@@ -3,6 +3,7 @@ using MiscRobotsPlusPlus.Patches;
 using RimWorld;
 using System.Linq;
 using System.Reflection;
+using System.Runtime;
 using UnityEngine;
 using Verse;
 
@@ -180,16 +181,230 @@ namespace MiscRobotsPlusPlus
         {
             return "MISC_Robots_Category".Translate();
         }
+        private bool eRSettings = false;
+        private bool cleanerSettings = false;
+        private bool craftersSettings = false;
+        private bool kitchenSettings = false;
+        private bool BuilderSettings = false;
+        private Vector2 crafterPos;
+        float RemainingHeight;
         public override void DoSettingsWindowContents(Rect inRect)
         {
-          
-            Listing_Standard guiStandard = new Listing_Standard();
-            MiscModsSettings.DrawSetting(guiStandard, inRect);
-
             base.DoSettingsWindowContents(inRect);
+            Rect outRect;
+            Listing_Standard guiStandard = new Listing_Standard();
+            guiStandard.Begin(inRect);
+            {
+                guiStandard.Label("MISC_WIP".Translate());
+                guiStandard.GapLine();
+                guiStandard.CheckboxLabeled("MISC_Crafters_Settings".Translate(), ref craftersSettings);
+
+                RemainingHeight = inRect.height - guiStandard.CurHeight;
+                outRect = guiStandard.GetRect(RemainingHeight);
+                Rect viewRect = new Rect(outRect)
+                {
+                    width = inRect.width - 16,
+                    height = guiStandard.CurHeight * 6
+                };
+               
+                Widgets.BeginScrollView(outRect, ref crafterPos, viewRect);
+                {
+                    guiStandard.Begin(viewRect);
+                    {
+                        guiStandard.BeginSection(35);
+                        if (craftersSettings)
+                        {
+                            guiStandard.Label("MISC_CrafterLaborTeir_I_Speed".Translate(MiscModsSettings.tier_1_CrafterLaborSpeed * 100));
+                            MiscModsSettings.tier_1_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_CrafterLaborSpeed, 0.1f, 15f);
+                            guiStandard.GapLine();
+                            guiStandard.Label("MISC_CrafterLaborTeir_II_Speed".Translate(MiscModsSettings.tier_2_CrafterLaborSpeed * 100));
+                            MiscModsSettings.tier_2_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_2_CrafterLaborSpeed, 0.1f, 15);
+                            guiStandard.GapLine();
+                            guiStandard.Label("MISC_CrafterLaborTeir_III_Speed".Translate(MiscModsSettings.tier_3_CrafterLaborSpeed * 100));
+                            MiscModsSettings.tier_3_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_3_CrafterLaborSpeed, 0.1f, 15f);
+                            guiStandard.GapLine();
+                            guiStandard.Label("MISC_CrafterLaborTeir_IV_Speed".Translate(MiscModsSettings.tier_4_CrafterLaborSpeed * 100));
+                            MiscModsSettings.tier_4_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_4_CrafterLaborSpeed, 0.1f, 15f);
+                            guiStandard.GapLine();
+                            guiStandard.Label("MISC_CrafterLaborTeir_V_Speed".Translate(MiscModsSettings.tier_5_CrafterLaborSpeed * 100));
+                            MiscModsSettings.tier_5_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_5_CrafterLaborSpeed, 0.1f, 15f);
+                        }
+                        guiStandard.EndSection(guiStandard);
+                    }
+                    guiStandard.End();
+                }
+                Widgets.EndScrollView();
+                Rect out2 = guiStandard.GetRect(outRect.height);
+                Vector2 view2Pos = craftersSettings ? Vector2.zero : new Vector2(outRect.x, outRect.y - out2.y);
+                Rect view2 = new Rect(out2.x, out2.y - outRect.y, viewRect.width - 16, out2.width);
+                guiStandard.CheckboxLabeled("MISC_Cleaning_Settings".Translate(), ref cleanerSettings);
+                Widgets.BeginScrollView(out2, ref view2Pos, view2);
+                {
+                    guiStandard.Begin(viewRect);
+                    {
+                        if (cleanerSettings)
+                        {
+                            guiStandard.Label("MISC_CleaningTeir_I_Speed".Translate(MiscModsSettings.tier_1_CleaningSpeed * 100));
+                            MiscModsSettings.tier_1_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_1_CleaningSpeed, 0.1f, 15f);
+                            guiStandard.GapLine();
+                            guiStandard.Label("MISC_CleaningTeir_II_Speed".Translate(MiscModsSettings.tier_2_CleaningSpeed * 100));
+                            MiscModsSettings.tier_2_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_2_CleaningSpeed, 0.1f, 15f);
+                            guiStandard.GapLine();
+                            guiStandard.Label("MISC_CleaningTeir_III_Speed".Translate(MiscModsSettings.tier_3_CleaningSpeed * 100));
+                            MiscModsSettings.tier_3_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_3_CleaningSpeed, 0.1f, 15f);
+                            guiStandard.GapLine();
+                            guiStandard.Label("MISC_CleaningTeir_IV_Speed".Translate(MiscModsSettings.tier_4_CleaningSpeed * 100));
+                            MiscModsSettings.tier_4_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_4_CleaningSpeed, 0.1f, 15f);
+                            guiStandard.GapLine();
+                            guiStandard.Label("MISC_CleaningTeir_V_Speed".Translate(MiscModsSettings.tier_5_CleaningSpeed * 100));
+                            MiscModsSettings.tier_5_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_5_CleaningSpeed, 0.1f, 15f);
+                        }
+                    }
+                    guiStandard.End();
+                    Widgets.EndScrollView();
+                };
+                guiStandard.End();
+
+            }
         }
 
-        void GetSettings()
+            //guiStandard.CheckboxLabeled("MISC_Cleaning_Settings".Translate(), ref cleanerSettings);
+            //if (cleanerSettings)
+            //{
+            //    guiStandard.Label("MISC_CleaningTeir_I_Speed".Translate(MiscModsSettings.tier_1_CleaningSpeed * 100));
+            //    MiscModsSettings.tier_1_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_1_CleaningSpeed, 0.1f, 15f);
+            //    guiStandard.GapLine();
+            //    guiStandard.Label("MISC_CleaningTeir_II_Speed".Translate(MiscModsSettings.tier_2_CleaningSpeed * 100));
+            //    MiscModsSettings.tier_2_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_2_CleaningSpeed, 0.1f, 15f);
+            //    guiStandard.GapLine();
+            //    guiStandard.Label("MISC_CleaningTeir_III_Speed".Translate(MiscModsSettings.tier_3_CleaningSpeed * 100));
+            //    MiscModsSettings.tier_3_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_3_CleaningSpeed, 0.1f, 15f);
+            //    guiStandard.GapLine();
+            //    guiStandard.Label("MISC_CleaningTeir_IV_Speed".Translate(MiscModsSettings.tier_4_CleaningSpeed * 100));
+            //    MiscModsSettings.tier_4_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_4_CleaningSpeed, 0.1f, 15f);
+            //    guiStandard.GapLine();
+            //    guiStandard.Label("MISC_CleaningTeir_V_Speed".Translate(MiscModsSettings.tier_5_CleaningSpeed * 100));
+            //    MiscModsSettings.tier_5_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_5_CleaningSpeed, 0.1f, 15f);
+            //}
+            //guiStandard.CheckboxLabeled("MISC_ER_Settings".Translate(), ref eRSettings);
+            //if (eRSettings)
+            //{
+            //    guiStandard.Label("MISC_ER_TendSpeed_I".Translate(MiscModsSettings.tier_1_ERTendingLaborSpeed * 100));
+            //    MiscModsSettings.tier_1_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_ERTendingLaborSpeed, 0.1f, 15f);
+            //    guiStandard.Label("MISC_ER_SurgerySucces_I".Translate(MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance * 100));
+            //    MiscModsSettings.tier_1_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_1_ERMedicalSurgerySuccessChance, 0.1f, 15f);
+
+            //    guiStandard.GapLine();
+
+            //    guiStandard.Label("MISC_ER_TendSpeed_II".Translate(MiscModsSettings.tier_2_ERTendingLaborSpeed * 100));
+            //    MiscModsSettings.tier_2_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_2_ERTendingLaborSpeed, 0.1f, 15f);
+            //    guiStandard.Label("MISC_ER_SurgerySucces_II".Translate(MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance * 100));
+            //    MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance, 0.1f, 15f);
+
+            //    guiStandard.GapLine();
+
+            //    guiStandard.Label("MISC_ER_TendSpeed_III".Translate(MiscModsSettings.tier_3_ERTendingLaborSpeed * 100));
+            //    MiscModsSettings.tier_3_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_3_ERTendingLaborSpeed, 0.1f, 15f);
+            //    guiStandard.Label("MISC_ER_SurgerySucces_III".Translate(MiscModsSettings.tier_3_ERMedicalSurgerySuccessChance * 100));
+            //    MiscModsSettings.tier_3_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_3_ERMedicalSurgerySuccessChance, 0.1f, 15f);
+
+            //    guiStandard.GapLine();
+
+            //    guiStandard.Label("MISC_ER_TendSpeed_IV".Translate(MiscModsSettings.tier_4_ERTendingLaborSpeed * 100));
+            //    MiscModsSettings.tier_4_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_4_ERTendingLaborSpeed, 0.1f, 15f);
+            //    guiStandard.Label("MISC_ER_SurgerySucces_IV".Translate(MiscModsSettings.tier_4_ERMedicalSurgerySuccessChance * 100));
+            //    MiscModsSettings.tier_4_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_4_ERMedicalSurgerySuccessChance, 0.1f, 15f);
+
+            //    guiStandard.GapLine();
+
+            //    guiStandard.Label("MISC_ER_TendSpeed_V".Translate(MiscModsSettings.tier_5_ERTendingLaborSpeed * 100));
+            //    MiscModsSettings.tier_5_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_5_ERTendingLaborSpeed, 0.1f, 15f);
+            //    guiStandard.Label("MISC_ER_SurgerySucces_V".Translate(MiscModsSettings.tier_5_ERMedicalSurgerySuccessChance * 100));
+            //    MiscModsSettings.tier_5_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_5_ERMedicalSurgerySuccessChance, 0.1f, 15f);
+
+            //}
+            //guiStandard.CheckboxLabeled("MISC_Kitchen_Settings".Translate(), ref kitchenSettings);
+            //if (kitchenSettings)
+            //{
+            //    Widgets.BeginScrollView(outRect, ref crafterPos, viewRect);
+            //    guiStandard.Label("MISC_Kitchen_GeneralLabor_I".Translate(MiscModsSettings.tier_1_KitchenGeneralLaborSpeed * 100));
+            //     MiscModsSettings.tier_1_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_KitchenGeneralLaborSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantWorkSpeed_I".Translate(MiscModsSettings.tier_1_KitchenPlantWorkSpeed * 100));
+            //    MiscModsSettings.tier_1_KitchenPlantWorkSpeed = guiStandard.Slider(MiscModsSettings.tier_1_KitchenPlantWorkSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantHarvestYield_I".Translate(MiscModsSettings.tier_1_KitchenPlantHarvestYield * 100));
+            //    MiscModsSettings.tier_1_KitchenPlantHarvestYield = guiStandard.Slider(MiscModsSettings.tier_1_KitchenPlantHarvestYield, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_DrugHarvestYield_I".Translate(MiscModsSettings.tier_1_KitchenDrugHarvestYield * 100));
+            //    MiscModsSettings.tier_1_KitchenDrugHarvestYield = guiStandard.Slider(MiscModsSettings.tier_1_KitchenDrugHarvestYield, 0.1f, 15f);
+
+            //    guiStandard.GapLine();
+
+            //    guiStandard.Label("MISC_Kitchen_GeneralLabor_II".Translate(MiscModsSettings.tier_2_KitchenGeneralLaborSpeed * 100));
+            //    MiscModsSettings.tier_2_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_2_KitchenGeneralLaborSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantWorkSpeed_II".Translate(MiscModsSettings.tier_2_KitchenPlantWorkSpeed * 100));
+            //    MiscModsSettings.tier_2_KitchenPlantWorkSpeed = guiStandard.Slider(MiscModsSettings.tier_2_KitchenPlantWorkSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantHarvestYield_II".Translate(MiscModsSettings.tier_2_KitchenPlantHarvestYield * 100));
+            //    MiscModsSettings.tier_2_KitchenPlantHarvestYield = guiStandard.Slider(MiscModsSettings.tier_1_KitchenPlantHarvestYield, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_DrugHarvestYield_II".Translate(MiscModsSettings.tier_2_KitchenDrugHarvestYield * 100));
+            //    MiscModsSettings.tier_2_KitchenDrugHarvestYield = guiStandard.Slider(MiscModsSettings.tier_2_KitchenDrugHarvestYield, 0.1f, 15f);
+
+
+            //    guiStandard.GapLine();
+
+            //    guiStandard.Label("MISC_Kitchen_GeneralLabor_III".Translate(MiscModsSettings.tier_3_KitchenGeneralLaborSpeed * 100));
+            //    MiscModsSettings.tier_3_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_3_KitchenGeneralLaborSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantWorkSpeed_III".Translate(MiscModsSettings.tier_3_KitchenPlantWorkSpeed * 100));
+            //    MiscModsSettings.tier_3_KitchenPlantWorkSpeed = guiStandard.Slider(MiscModsSettings.tier_3_KitchenPlantWorkSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantHarvestYield_III".Translate(MiscModsSettings.tier_3_KitchenPlantHarvestYield * 100));
+            //    MiscModsSettings.tier_3_KitchenPlantHarvestYield = guiStandard.Slider(MiscModsSettings.tier_1_KitchenPlantHarvestYield, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_DrugHarvestYield_III".Translate(MiscModsSettings.tier_3_KitchenDrugHarvestYield * 100));
+            //    MiscModsSettings.tier_3_KitchenDrugHarvestYield = guiStandard.Slider(MiscModsSettings.tier_2_KitchenDrugHarvestYield, 0.1f, 15f);
+
+            //    guiStandard.GapLine();
+
+            //    guiStandard.Label("MISC_Kitchen_GeneralLabor_IV".Translate(MiscModsSettings.tier_4_KitchenGeneralLaborSpeed * 100));
+            //    MiscModsSettings.tier_4_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_4_KitchenGeneralLaborSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantWorkSpeed_IV".Translate(MiscModsSettings.tier_4_KitchenPlantWorkSpeed * 100));
+            //    MiscModsSettings.tier_4_KitchenPlantWorkSpeed = guiStandard.Slider(MiscModsSettings.tier_4_KitchenPlantWorkSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantHarvestYield_IV".Translate(MiscModsSettings.tier_4_KitchenPlantHarvestYield * 100));
+            //    MiscModsSettings.tier_4_KitchenPlantHarvestYield = guiStandard.Slider(MiscModsSettings.tier_1_KitchenPlantHarvestYield, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_DrugHarvestYield_IV".Translate(MiscModsSettings.tier_4_KitchenDrugHarvestYield * 100));
+            //    MiscModsSettings.tier_4_KitchenDrugHarvestYield = guiStandard.Slider(MiscModsSettings.tier_2_KitchenDrugHarvestYield, 0.1f, 15f);
+
+            //    guiStandard.GapLine();
+
+            //    guiStandard.Label("MISC_Kitchen_GeneralLabor_V".Translate(MiscModsSettings.tier_5_KitchenGeneralLaborSpeed * 100));
+            //    MiscModsSettings.tier_5_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_5_KitchenGeneralLaborSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantWorkSpeed_V".Translate(MiscModsSettings.tier_5_KitchenPlantWorkSpeed * 100));
+            //    MiscModsSettings.tier_5_KitchenPlantWorkSpeed = guiStandard.Slider(MiscModsSettings.tier_5_KitchenPlantWorkSpeed, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_PlantHarvestYield_V".Translate(MiscModsSettings.tier_5_KitchenPlantHarvestYield * 100));
+            //    MiscModsSettings.tier_5_KitchenPlantHarvestYield = guiStandard.Slider(MiscModsSettings.tier_1_KitchenPlantHarvestYield, 0.1f, 15f);
+
+            //    guiStandard.Label("MISC_Kitchen_DrugHarvestYield_V".Translate(MiscModsSettings.tier_5_KitchenDrugHarvestYield * 100));
+            //    MiscModsSettings.tier_5_KitchenDrugHarvestYield = guiStandard.Slider(MiscModsSettings.tier_2_KitchenDrugHarvestYield, 0.1f, 15f);
+
+            //    Widgets.EndScrollView();
+            //}
+
+
+
+
+
+
+            void GetSettings()
         {
             GetSettings<MiscModsSettings>();
         }
