@@ -349,6 +349,7 @@
 			<SmoothingSpeed>1</SmoothingSpeed>
 			<ConstructSuccessChance>1.25</ConstructSuccessChance>
 			<MiningYield>1</MiningYield>
+			<MiningSpeed>1</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -377,6 +378,7 @@
 			<SmoothingSpeed>1.5</SmoothingSpeed>
 			<ConstructSuccessChance>1.25</ConstructSuccessChance>
 			<MiningYield>1.2</MiningYield>
+			<MiningSpeed>2</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -405,6 +407,7 @@
 			<SmoothingSpeed>2</SmoothingSpeed>
 			<ConstructSuccessChance>1.5</ConstructSuccessChance>
 			<MiningYield>1.4</MiningYield>
+			<MiningSpeed>2.5</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -433,6 +436,7 @@
 			<SmoothingSpeed>3</SmoothingSpeed>
 			<ConstructSuccessChance>1.75</ConstructSuccessChance>
 			<MiningYield>1.6</MiningYield>
+			<MiningSpeed>3</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -461,6 +465,7 @@
 			<SmoothingSpeed>4</SmoothingSpeed>
 			<ConstructSuccessChance>2</ConstructSuccessChance>
 			<MiningYield>1</MiningYield>
+			<MiningSpeed>4</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -891,7 +896,7 @@
 			
 			<ConstructSuccessChance>1.25</ConstructSuccessChance>
 			<MiningYield>1</MiningYield>
-
+			<MiningSpeed>1</MiningSpeed>
 			<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
 			<MedicalTendSpeed>1</MedicalTendSpeed>
 			
@@ -964,7 +969,7 @@
 			
 			<ConstructSuccessChance>1.5</ConstructSuccessChance>
 			<MiningYield>1.30</MiningYield>
-
+			<MiningSpeed>2</MiningSpeed>
 			<MedicalSurgerySuccessChance>1.30</MedicalSurgerySuccessChance>
 			<MedicalTendSpeed>2</MedicalTendSpeed>
 			
@@ -1040,7 +1045,7 @@
 			
 			<ConstructSuccessChance>1.75</ConstructSuccessChance>
 			<MiningYield>1.60</MiningYield>
-
+			<MiningSpeed>2.5</MiningSpeed>
 			<MedicalSurgerySuccessChance>1.60</MedicalSurgerySuccessChance>
 			<MedicalTendSpeed>3</MedicalTendSpeed>
 			
@@ -1113,7 +1118,7 @@
 			
 			<ConstructSuccessChance>2</ConstructSuccessChance>
 			<MiningYield>1.90</MiningYield>
-
+			<MiningSpeed>3</MiningSpeed>
 			<MedicalSurgerySuccessChance>1.90</MedicalSurgerySuccessChance>
 			<MedicalTendSpeed>3</MedicalTendSpeed>
 			
@@ -1184,7 +1189,7 @@
 			
 			<ConstructSuccessChance>2.5</ConstructSuccessChance>
 			<MiningYield>2.25</MiningYield>
-
+			<MiningSpeed>4</MiningSpeed>
 			<MedicalSurgerySuccessChance>2.25</MedicalSurgerySuccessChance>
 			<MedicalTendSpeed>3</MedicalTendSpeed>
 			
