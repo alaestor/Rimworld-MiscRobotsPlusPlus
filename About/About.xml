@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>Misc. Robots++ (Forked)</name>
+<name>Misc. Robots++ (Adopted)</name>
 <author>Alaestor,VeteranXT)</author>
 <packageId>Alaestor.MiscRobots.PlusPlus</packageId>
 <url>https://ludeon.com/forums/index.php?topic=26151.0</url>
@@ -18,7 +18,7 @@
         <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
 </modDependencies>
-<description>	Mod Version: 3.4.1
+<description>	Mod Version: 3.4.5
 
 *** Example Load Order ***
 - Core

@@ -14,7 +14,9 @@ namespace MiscRobotsPlusPlus
         #region Robots Settings
 
         #region Cleaner Settings
+
         internal static float tier_1_CleaningSpeed = 1f;
+        internal static float Tier_1_CleanerMarket = 1000;
         internal static float tier_2_CleaningSpeed = 1.5f;
         internal static float tier_3_CleaningSpeed = 2f;
         internal static float tier_4_CleaningSpeed = 3f;
@@ -23,10 +25,15 @@ namespace MiscRobotsPlusPlus
 
         #region Crafter
         internal static float tier_1_CrafterLaborSpeed = 1f;
-        internal static float tier_2_CrafterLaborSpeed = 1.5f;
-        internal static float tier_3_CrafterLaborSpeed = 2f;
+        internal static float Tier_1_Crafter_WorkTableWorkSpeed = 1f;
+        internal static float tier_2_CrafterLaborSpeed = 2f;
+        internal static float Tier_2_Crafter_WorkTableWorkSpeed = 2f;
+        internal static float tier_3_CrafterLaborSpeed = 2.5f;
+        internal static float Tier_3_Crafter_WorkTableWorkSpeed = 2.5f;
         internal static float tier_4_CrafterLaborSpeed = 3f;
+        internal static float Tier_4_Crafter_WorkTableWorkSpeed = 3f;
         internal static float tier_5_CrafterLaborSpeed = 4f;
+        internal static float Tier_5_Crafter_WorkTableWorkSpeed = 4f;
         #endregion
 
         #region ER
@@ -71,25 +78,26 @@ namespace MiscRobotsPlusPlus
         #endregion
 
         #region Builder
-        internal static float tier_1_Builder_ConstructionSpeed = 1f;
-        internal static float tier_2_Builder_ConstructionSpeed = 1.5f;
-        internal static float tier_3_Builder_ConstructionSpeed = 2f;
-        internal static float tier_4_Builder_ConstructionSpeed = 3f;
-        internal static float tier_5_Builder_ConstructionSpeed = 4f;
-
-        internal static float tier_1_Builder_DeepDrillingSpeed = 1f;
-        internal static float tier_2_Builder_DeepDrillingSpeed = 1.5f;
-        internal static float tier_3_Builder_DeepDrillingSpeed = 2f;
-        internal static float tier_4_Builder_DeepDrillingSpeed = 3f;
-        internal static float tier_5_Builder_DeepDrillingSpeed = 4f;
-
-
+        //Used in Builder anywhere?
         internal static float tier_5_Builder_GeneralLaborSpeed = 1f;
         internal static float tier_1_Builder_GeneralLaborSpeed = 1.5f;
         internal static float tier_2_Builder_GeneralLaborSpeed = 2f;
         internal static float tier_3_Builder_GeneralLaborSpeed = 3f;
         internal static float tier_4_Builder_GeneralLaborSpeed = 4f;
 
+
+
+        internal static float tier_1_Builder_ConstructionSpeed = 1f;
+        internal static float tier_2_Builder_ConstructionSpeed = 1.5f;
+        internal static float tier_3_Builder_ConstructionSpeed = 2f;
+        internal static float tier_4_Builder_ConstructionSpeed = 3f;
+        internal static float tier_5_Builder_ConstructionSpeed = 4f;
+        
+        internal static float tier_1_Builder_DeepDrillingSpeed = 1f;
+        internal static float tier_2_Builder_DeepDrillingSpeed = 1.5f;
+        internal static float tier_3_Builder_DeepDrillingSpeed = 2f;
+        internal static float tier_4_Builder_DeepDrillingSpeed = 3f;
+        internal static float tier_5_Builder_DeepDrillingSpeed = 4f;
 
         internal static float tier_1_Builder_SmoothingSpeed = 1f;
         internal static float tier_2_Builder_SmoothingSpeed = 1.5f;
@@ -98,10 +106,10 @@ namespace MiscRobotsPlusPlus
         internal static float tier_5_Builder_SmoothingSpeed = 4f;
 
         internal static float tier_1_Builder_MiningYield = 1f;
-        internal static float tier_2_Builder_MiningYield = 1.3f;
-        internal static float tier_3_Builder_MiningYield = 1.6f;
-        internal static float tier_4_Builder_MiningYield = 1.9f;
-        internal static float tier_5_Builder_MiningYield = 2.25f;
+        internal static float tier_2_Builder_MiningYield = 1.25f;
+        internal static float tier_3_Builder_MiningYield = 1.5f;
+        internal static float tier_4_Builder_MiningYield = 1.75f;
+        internal static float tier_5_Builder_MiningYield = 2.00f;
         #endregion
 
         #region Omni
@@ -325,13 +333,6 @@ namespace MiscRobotsPlusPlus
 
         #endregion
 
-
-        private static bool eRSettings = false;
-        private static bool cleanerSettings = false;
-        private static bool craftersSettings = false;
-        private static bool kitchenSettings = false;
-        private static bool BuilderSettings = false;
-        private static bool OmniSettings = false;
     }
 }
     
