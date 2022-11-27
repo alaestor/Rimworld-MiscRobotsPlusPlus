@@ -164,6 +164,10 @@
 				<li>Hauling</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+				<BasicWorker>3</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Hauling</workTypeDef><priority>1</priority></li>
@@ -181,6 +185,10 @@
 				<li>Hauling</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+				<BasicWorker>3</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 
 		<robotWorkTypes>
@@ -200,6 +208,10 @@
 				<li>Hauling</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+				<BasicWorker>3</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 	
 		<robotWorkTypes>
@@ -219,6 +231,10 @@
 				<li>Hauling</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+				<BasicWorker>3</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 	
 		<robotWorkTypes>
@@ -238,6 +254,10 @@
 				<li>Hauling</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>1</Hauling>
+				<BasicWorker>3</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 	
 		<robotWorkTypes>
@@ -264,7 +284,8 @@
 			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
-			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>BasicWorker</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -279,9 +300,14 @@
 				<li>Cleaning</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+				<BasicWorker>2</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
-			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>BasicWorker</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -296,9 +322,14 @@
 				<li>Cleaning</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+				<BasicWorker>2</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
-			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>BasicWorker</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -313,9 +344,14 @@
 				<li>Cleaning</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+				<BasicWorker>2</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
-			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>BasicWorker</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -330,9 +366,14 @@
 				<li>Cleaning</li>
 				<li>BasicWorker</li>
 			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Cleaning>1</Cleaning>
+				<BasicWorker>2</BasicWorker>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
-			<li><workTypeDef>Cleaning</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>BasicWorker</workTypeDef><priority>2</priority></li>
+			<li><workTypeDef>Cleaning</workTypeDef><priority>1</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 

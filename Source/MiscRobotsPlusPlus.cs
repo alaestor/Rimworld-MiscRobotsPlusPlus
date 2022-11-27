@@ -82,7 +82,7 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_ERTendingLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_ERTendingLaborSpeed);
             //Kitchen
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenGeneralLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Kitchen_GeneralLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantHarvestYield);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantWorkSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenDrugHarvestYield);
@@ -192,6 +192,45 @@ namespace MiscRobotsPlusPlus
         private bool kitchenSettings = false;
         private bool builderSettings = false;
         private bool omniSettings = false;
+
+        #region  Int Buffers
+        string CleanMarket_1_buffer = "1000";
+        string CleanMarket_2_buffer = "5000";
+        string CleanMarket_3_buffer = "15000";
+        string CleanMarket_4_buffer = "35000";
+        string CleanMarket_5_buffer = "50000";
+
+        string BuilderMarket_1_buffer = "1000";
+        string BuilderMarket_2_buffer = "5000";
+        string BuilderMarket_3_buffer = "15000";
+        string BuilderMarket_4_buffer = "35000";
+        string BuilderMarket_5_buffer = "50000";
+
+        string CrafterMarket_1_buffer = "1000";
+        string CrafterMarket_2_buffer = "5000";
+        string CrafterMarket_3_buffer = "15000";
+        string CrafterMarket_4_buffer = "35000";
+        string CrafterMarket_5_buffer = "50000";
+
+        string ERMarket_1_buffer = "1000";
+        string ERMarket_2_buffer = "5000";
+        string ERMarket_3_buffer = "15000";
+        string ERMarket_4_buffer = "35000";
+        string ERMarket_5_buffer = "50000";
+
+
+        string KitchenMarket_1_buffer = "1000";
+        string KitchenMarket_2_buffer = "5000";
+        string KitchenMarket_3_buffer = "15000";
+        string KitchenMarket_4_buffer = "35000";
+        string KitchenMarket_5_buffer = "50000";
+
+        string OmniMarket_1_buffer = "4000";
+        string OmniMarket_2_buffer = "8000";
+        string OmniMarket_3_buffer = "24000";
+        string OmniMarket_4_buffer = "36000";
+        string OmniMarket_5_buffer = "92000";
+        #endregion
         Vector2 scrollPos;
         public override void DoSettingsWindowContents(Rect inRect)
         {
@@ -208,7 +247,7 @@ namespace MiscRobotsPlusPlus
                     width = outRect.width - 16,
                     height = remainingHeight * 12
                 };
-
+             
                 Widgets.BeginScrollView(outRect, ref scrollPos, viewRect);
                 {
 
@@ -217,22 +256,38 @@ namespace MiscRobotsPlusPlus
                         guiStandard.CheckboxLabeled("MISC_Cleaning_Settings".Translate(), ref cleanerSettings);
                         if (cleanerSettings)
                         {
-
-                            guiStandard.Label("MISC_CleaningTeir_I_MarketValue.".Translate(MiscModsSettings.Tier_1_CleanerMarket));
-                            MiscModsSettings.Tier_1_CleanerMarket = guiStandard.Slider(MiscModsSettings.Tier_1_CleanerMarket, 0, 9999999);
+                           
+                            guiStandard.Label("MISC_CleaningTeir_I_MarketValue".Translate(MiscModsSettings.Tier_1_CleanerMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_1_CleanerMarket, ref CleanMarket_1_buffer);
 
                             guiStandard.Label("MISC_CleaningTeir_I_Speed".Translate(MiscModsSettings.tier_1_CleaningSpeed * 100));
                             MiscModsSettings.tier_1_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_1_CleaningSpeed, 0.1f, 15f);
                             guiStandard.Gap();
-                            guiStandard.Label("MISC_CleaningTeir_III_Speed".Translate(MiscModsSettings.tier_2_CleaningSpeed * 100));
+
+                            guiStandard.Label("MISC_CleaningTeir_II_MarketValue".Translate(MiscModsSettings.Tier_2_CleanerMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_2_CleanerMarket, ref CleanMarket_2_buffer);
+
+                            guiStandard.Label("MISC_CleaningTeir_II_Speed".Translate(MiscModsSettings.tier_2_CleaningSpeed * 100));
                             MiscModsSettings.tier_2_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_2_CleaningSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+
+                            guiStandard.Label("MISC_CleaningTeir_III_MarketValue".Translate(MiscModsSettings.Tier_3_CleanerMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_3_CleanerMarket, ref CleanMarket_3_buffer);
+
                             guiStandard.Label("MISC_CleaningTeir_III_Speed".Translate(MiscModsSettings.tier_3_CleaningSpeed * 100));
                             MiscModsSettings.tier_3_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_3_CleaningSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+
+                            guiStandard.Label("MISC_CleaningTeir_IV_MarketValue".Translate(MiscModsSettings.Tier_4_CleanerMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_4_CleanerMarket, ref CleanMarket_4_buffer);
+
                             guiStandard.Label("MISC_CleaningTeir_IV_Speed".Translate(MiscModsSettings.tier_4_CleaningSpeed * 100));
                             MiscModsSettings.tier_4_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_4_CleaningSpeed, 0.1f, 15f);
-                            guiStandard.Gap();
+
+                            guiStandard.Gap(); 
+                            guiStandard.Label("MISC_CleaningTeir_V_MarketValue".Translate(MiscModsSettings.Tier_5_CleanerMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_5_CleanerMarket, ref CleanMarket_5_buffer);
+
                             guiStandard.Label("MISC_CleaningTeir_V_Speed".Translate(MiscModsSettings.tier_5_CleaningSpeed * 100));
                             MiscModsSettings.tier_5_CleaningSpeed = guiStandard.Slider(MiscModsSettings.tier_5_CleaningSpeed, 0.1f, 15f);
                         }
@@ -242,18 +297,29 @@ namespace MiscRobotsPlusPlus
                         if (craftersSettings)
                         {
                             guiStandard.Gap();
+                            guiStandard.Label("MISC_Crafter_I_MarketValue".Translate(MiscModsSettings.Tier_1_CrafterMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_1_CrafterMarket, ref CrafterMarket_1_buffer);
                             guiStandard.Label("MISC_CrafterLaborTeir_I_Speed".Translate(MiscModsSettings.tier_1_CrafterLaborSpeed * 100));
                             MiscModsSettings.tier_1_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_CrafterLaborSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+                            guiStandard.Label("MISC_Crafter_II_MarketValue".Translate(MiscModsSettings.Tier_2_CrafterMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_2_CrafterMarket, ref CrafterMarket_2_buffer);
+
                             guiStandard.Label("MISC_CrafterLaborTeir_II_Speed".Translate(MiscModsSettings.tier_2_CrafterLaborSpeed * 100));
                             MiscModsSettings.tier_2_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_2_CrafterLaborSpeed, 0.1f, 15);
                             guiStandard.Gap();
+                            guiStandard.Label("MISC_Crafter_III_MarketValue".Translate(MiscModsSettings.Tier_3_CrafterMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_3_CrafterMarket, ref CrafterMarket_3_buffer);
                             guiStandard.Label("MISC_CrafterLaborTeir_III_Speed".Translate(MiscModsSettings.tier_3_CrafterLaborSpeed * 100));
                             MiscModsSettings.tier_3_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_3_CrafterLaborSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+                            guiStandard.Label("MISC_Crafter_IV_MarketValue".Translate(MiscModsSettings.Tier_4_CrafterMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_4_CrafterMarket, ref CrafterMarket_4_buffer);
                             guiStandard.Label("MISC_CrafterLaborTeir_IV_Speed".Translate(MiscModsSettings.tier_4_CrafterLaborSpeed * 100));
                             MiscModsSettings.tier_4_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_4_CrafterLaborSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+                            guiStandard.Label("MISC_Crafter_V_MarketValue".Translate(MiscModsSettings.Tier_5_CrafterMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_5_CrafterMarket, ref CrafterMarket_5_buffer);
                             guiStandard.Label("MISC_CrafterLaborTeir_V_Speed".Translate(MiscModsSettings.tier_5_CrafterLaborSpeed * 100));
                             MiscModsSettings.tier_5_CrafterLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_5_CrafterLaborSpeed, 0.1f, 15f);
                             guiStandard.Gap();
@@ -263,33 +329,40 @@ namespace MiscRobotsPlusPlus
                         guiStandard.CheckboxLabeled("MISC_ER_Settings".Translate(), ref eRSettings);
                         if (eRSettings)
                         {
+                            guiStandard.Label("MISC_ER_I_MarketValue".Translate(MiscModsSettings.Tier_1_ERMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_1_ERMarket, ref ERMarket_1_buffer);
                             guiStandard.Label("MISC_ER_TendSpeed_I".Translate(MiscModsSettings.tier_1_ERTendingLaborSpeed * 100));
                             MiscModsSettings.tier_1_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_ERTendingLaborSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_ER_SurgerySucces_I".Translate(MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance * 100));
                             MiscModsSettings.tier_1_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_1_ERMedicalSurgerySuccessChance, 0.1f, 15f);
 
-
+                            guiStandard.Gap();
+                            guiStandard.Label("MISC_ER_II_MarketValue".Translate(MiscModsSettings.Tier_2_ERMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_2_ERMarket, ref ERMarket_2_buffer);
                             guiStandard.Label("MISC_ER_TendSpeed_II".Translate(MiscModsSettings.tier_2_ERTendingLaborSpeed * 100));
                             MiscModsSettings.tier_2_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_2_ERTendingLaborSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_ER_SurgerySucces_II".Translate(MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance * 100));
                             MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance, 0.1f, 15f);
 
                             guiStandard.Gap();
-
+                            guiStandard.Label("MISC_ER_III_MarketValue".Translate(MiscModsSettings.Tier_3_ERMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_3_ERMarket, ref ERMarket_3_buffer);
                             guiStandard.Label("MISC_ER_TendSpeed_III".Translate(MiscModsSettings.tier_3_ERTendingLaborSpeed * 100));
                             MiscModsSettings.tier_3_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_3_ERTendingLaborSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_ER_SurgerySucces_III".Translate(MiscModsSettings.tier_3_ERMedicalSurgerySuccessChance * 100));
                             MiscModsSettings.tier_3_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_3_ERMedicalSurgerySuccessChance, 0.1f, 15f);
 
                             guiStandard.Gap();
-
+                            guiStandard.Label("MISC_ER_IV_MarketValue".Translate(MiscModsSettings.Tier_4_ERMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_4_ERMarket, ref ERMarket_4_buffer);
                             guiStandard.Label("MISC_ER_TendSpeed_IV".Translate(MiscModsSettings.tier_4_ERTendingLaborSpeed * 100));
                             MiscModsSettings.tier_4_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_4_ERTendingLaborSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_ER_SurgerySucces_IV".Translate(MiscModsSettings.tier_4_ERMedicalSurgerySuccessChance * 100));
                             MiscModsSettings.tier_4_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_4_ERMedicalSurgerySuccessChance, 0.1f, 15f);
 
                             guiStandard.Gap();
-
+                            guiStandard.Label("MISC_ER_V_MarketValue".Translate(MiscModsSettings.Tier_5_ERMarket));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_5_ERMarket, ref ERMarket_5_buffer);
                             guiStandard.Label("MISC_ER_TendSpeed_V".Translate(MiscModsSettings.tier_5_ERTendingLaborSpeed * 100));
                             MiscModsSettings.tier_5_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_5_ERTendingLaborSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_ER_SurgerySucces_V".Translate(MiscModsSettings.tier_5_ERMedicalSurgerySuccessChance * 100));
@@ -301,8 +374,11 @@ namespace MiscRobotsPlusPlus
                         guiStandard.CheckboxLabeled("MISC_Kitchen_Settings".Translate(), ref kitchenSettings);
                         if (kitchenSettings)
                         {
-                            guiStandard.Label("MISC_Kitchen_GeneralLabor_I".Translate(MiscModsSettings.tier_1_KitchenGeneralLaborSpeed * 100));
-                            MiscModsSettings.tier_1_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_KitchenGeneralLaborSpeed, 0.1f, 15f);
+                            guiStandard.Label("MISC_Kitchen_I_MarketValue".Translate(MiscModsSettings.tier_1_Kitcen_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_1_Kitcen_MarketValue, ref KitchenMarket_1_buffer);
+
+                            guiStandard.Label("MISC_Kitchen_GeneralLabor_I".Translate(MiscModsSettings.tier_1_Kitchen_GeneralLaborSpeed * 100));
+                            MiscModsSettings.tier_1_Kitchen_GeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_Kitchen_GeneralLaborSpeed, 0.1f, 15f);
 
                             guiStandard.Label("MISC_Kitchen_PlantWorkSpeed_I".Translate(MiscModsSettings.tier_1_KitchenPlantWorkSpeed * 100));
                             MiscModsSettings.tier_1_KitchenPlantWorkSpeed = guiStandard.Slider(MiscModsSettings.tier_1_KitchenPlantWorkSpeed, 0.1f, 15f);
@@ -315,6 +391,9 @@ namespace MiscRobotsPlusPlus
 
                             guiStandard.GapLine();
 
+                            guiStandard.Label("MISC_Kitchen_II_MarketValue".Translate(MiscModsSettings.tier_2_Kitcen_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_2_Kitcen_MarketValue, ref KitchenMarket_2_buffer);
+
                             guiStandard.Label("MISC_Kitchen_GeneralLabor_II".Translate(MiscModsSettings.tier_2_KitchenGeneralLaborSpeed * 100));
                             MiscModsSettings.tier_2_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_2_KitchenGeneralLaborSpeed, 0.1f, 15f);
 
@@ -326,7 +405,11 @@ namespace MiscRobotsPlusPlus
 
                             guiStandard.Label("MISC_Kitchen_DrugHarvestYield_II".Translate(MiscModsSettings.tier_2_KitchenDrugHarvestYield * 100));
                             MiscModsSettings.tier_2_KitchenDrugHarvestYield = guiStandard.Slider(MiscModsSettings.tier_2_KitchenDrugHarvestYield, 0.1f, 15f);
+
                             guiStandard.GapLine();
+
+                            guiStandard.Label("MISC_Kitchen_III_MarketValue".Translate(MiscModsSettings.tier_3_Kitcen_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_3_Kitcen_MarketValue, ref KitchenMarket_3_buffer);
 
                             guiStandard.Label("MISC_Kitchen_GeneralLabor_III".Translate(MiscModsSettings.tier_3_KitchenGeneralLaborSpeed * 100));
                             MiscModsSettings.tier_3_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_3_KitchenGeneralLaborSpeed, 0.1f, 15f);
@@ -339,7 +422,11 @@ namespace MiscRobotsPlusPlus
 
                             guiStandard.Label("MISC_Kitchen_DrugHarvestYield_III".Translate(MiscModsSettings.tier_3_KitchenDrugHarvestYield * 100));
                             MiscModsSettings.tier_3_KitchenDrugHarvestYield = guiStandard.Slider(MiscModsSettings.tier_3_KitchenDrugHarvestYield, 0.1f, 15f);
+
                             guiStandard.GapLine();
+
+                            guiStandard.Label("MISC_Kitchen_IV_MarketValue".Translate(MiscModsSettings.tier_4_Kitcen_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_4_Kitcen_MarketValue, ref KitchenMarket_4_buffer);
 
                             guiStandard.Label("MISC_Kitchen_GeneralLabor_IV".Translate(MiscModsSettings.tier_4_KitchenGeneralLaborSpeed * 100));
                             MiscModsSettings.tier_4_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_4_KitchenGeneralLaborSpeed, 0.1f, 15f);
@@ -352,7 +439,11 @@ namespace MiscRobotsPlusPlus
 
                             guiStandard.Label("MISC_Kitchen_DrugHarvestYield_IV".Translate(MiscModsSettings.tier_4_KitchenDrugHarvestYield * 100));
                             MiscModsSettings.tier_4_KitchenDrugHarvestYield = guiStandard.Slider(MiscModsSettings.tier_4_KitchenDrugHarvestYield, 0.1f, 15f);
+
                             guiStandard.GapLine();
+
+                            guiStandard.Label("MISC_Kitchen_V_MarketValue".Translate(MiscModsSettings.tier_5_Kitcen_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_5_Kitcen_MarketValue, ref KitchenMarket_5_buffer);
 
                             guiStandard.Label("MISC_Kitchen_GeneralLabor_V".Translate(MiscModsSettings.tier_5_KitchenGeneralLaborSpeed * 100));
                             MiscModsSettings.tier_5_KitchenGeneralLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_5_KitchenGeneralLaborSpeed, 0.1f, 15f);
@@ -371,6 +462,9 @@ namespace MiscRobotsPlusPlus
                         guiStandard.CheckboxLabeled("MISC_Builder_Settings".Translate(), ref builderSettings);
                         if (builderSettings)
                         {
+
+                            guiStandard.Label("MISC_Builder_I_MarketValue".Translate(MiscModsSettings.tier_1_Builder_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_1_Builder_MarketValue, ref BuilderMarket_1_buffer);
                             guiStandard.Label("MISC_BuilderTeir_I_ConstructionSpeed".Translate(MiscModsSettings.tier_1_Builder_ConstructionSpeed * 100));
                             MiscModsSettings.tier_1_Builder_ConstructionSpeed = guiStandard.Slider(MiscModsSettings.tier_1_Builder_ConstructionSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_BuilderTeir_I_DeepDrillingSpeed".Translate(MiscModsSettings.tier_1_Builder_DeepDrillingSpeed * 100));
@@ -380,6 +474,9 @@ namespace MiscRobotsPlusPlus
                             guiStandard.Label("MISC_BuilderTeir_I_SmoothingSpeed".Translate(MiscModsSettings.tier_1_Builder_SmoothingSpeed * 100));
                             MiscModsSettings.tier_1_Builder_SmoothingSpeed = guiStandard.Slider(MiscModsSettings.tier_1_Builder_SmoothingSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+
+                            guiStandard.Label("MISC_Builder_II_MarketValue".Translate(MiscModsSettings.tier_2_Builder_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_2_Builder_MarketValue, ref BuilderMarket_2_buffer);
                             guiStandard.Label("MISC_BuilderTeir_II_ConstructionSpeed".Translate(MiscModsSettings.tier_2_Builder_ConstructionSpeed * 100));
                             MiscModsSettings.tier_2_Builder_ConstructionSpeed = guiStandard.Slider(MiscModsSettings.tier_2_Builder_ConstructionSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_BuilderTeir_II_DeepDrillingSpeed".Translate(MiscModsSettings.tier_2_Builder_DeepDrillingSpeed * 100));
@@ -389,6 +486,8 @@ namespace MiscRobotsPlusPlus
                             guiStandard.Label("MISC_BuilderTeir_II_SmoothingSpeed".Translate(MiscModsSettings.tier_2_Builder_SmoothingSpeed * 100));
                             MiscModsSettings.tier_2_Builder_SmoothingSpeed = guiStandard.Slider(MiscModsSettings.tier_2_Builder_SmoothingSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+                            guiStandard.Label("MISC_Builder_III_MarketValue".Translate(MiscModsSettings.tier_3_Builder_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_3_Builder_MarketValue, ref BuilderMarket_3_buffer);
                             guiStandard.Label("MISC_BuilderTeir_III_ConstructionSpeed".Translate(MiscModsSettings.tier_3_Builder_ConstructionSpeed * 100));
                             MiscModsSettings.tier_3_Builder_ConstructionSpeed = guiStandard.Slider(MiscModsSettings.tier_3_Builder_ConstructionSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_BuilderTeir_III_DeepDrillingSpeed".Translate(MiscModsSettings.tier_3_Builder_DeepDrillingSpeed * 100));
@@ -398,6 +497,8 @@ namespace MiscRobotsPlusPlus
                             guiStandard.Label("MISC_BuilderTeir_III_SmoothingSpeed".Translate(MiscModsSettings.tier_3_Builder_SmoothingSpeed * 100));
                             MiscModsSettings.tier_3_Builder_SmoothingSpeed = guiStandard.Slider(MiscModsSettings.tier_3_Builder_SmoothingSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+                            guiStandard.Label("MISC_Builder_IV_MarketValue".Translate(MiscModsSettings.tier_4_Builder_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_4_Builder_MarketValue, ref BuilderMarket_4_buffer);
                             guiStandard.Label("MISC_BuilderTeir_IV_ConstructionSpeed".Translate(MiscModsSettings.tier_4_Builder_ConstructionSpeed * 100));
                             MiscModsSettings.tier_4_Builder_ConstructionSpeed = guiStandard.Slider(MiscModsSettings.tier_4_Builder_ConstructionSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_BuilderTeir_IV_DeepDrillingSpeed".Translate(MiscModsSettings.tier_4_Builder_DeepDrillingSpeed * 100));
@@ -407,6 +508,9 @@ namespace MiscRobotsPlusPlus
                             guiStandard.Label("MISC_BuilderTeir_IV_SmoothingSpeed".Translate(MiscModsSettings.tier_4_Builder_SmoothingSpeed * 100));
                             MiscModsSettings.tier_4_Builder_SmoothingSpeed = guiStandard.Slider(MiscModsSettings.tier_4_Builder_SmoothingSpeed, 0.1f, 15f);
                             guiStandard.Gap();
+
+                            guiStandard.Label("MISC_Builder_V_MarketValue".Translate(MiscModsSettings.tier_5_Builder_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_5_Builder_MarketValue, ref BuilderMarket_5_buffer);
                             guiStandard.Label("MISC_BuilderTeir_V_ConstructionSpeed".Translate(MiscModsSettings.tier_5_Builder_ConstructionSpeed * 100));
                             MiscModsSettings.tier_5_Builder_ConstructionSpeed = guiStandard.Slider(MiscModsSettings.tier_5_Builder_ConstructionSpeed, 0.1f, 15f);
                             guiStandard.Label("MISC_BuilderTeir_V_DeepDrillingSpeed".Translate(MiscModsSettings.tier_5_Builder_DeepDrillingSpeed * 100));
@@ -421,6 +525,10 @@ namespace MiscRobotsPlusPlus
                         guiStandard.CheckboxLabeled("MISC_Omni_Settings".Translate(), ref omniSettings);
                         if (omniSettings)
                         {
+
+                            guiStandard.Label("MISC_Omni_I_MarketValue".Translate(MiscModsSettings.tier_1_Omni_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_1_Omni_MarketValue, ref OmniMarket_1_buffer); 
+
                             guiStandard.Label("MISC_OmniTeir_I_WorkTableSpeed".Translate(), MiscModsSettings.tier_1_Omni_WorkTableWorkSpeedFactor * 100);
                             MiscModsSettings.tier_1_Omni_WorkTableWorkSpeedFactor = guiStandard.Slider(MiscModsSettings.tier_1_Omni_WorkTableWorkSpeedFactor, 0.1f, 15f);
 
@@ -458,6 +566,9 @@ namespace MiscRobotsPlusPlus
                             MiscModsSettings.tier_1_Omni_MedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_1_Omni_MedicalSurgerySuccessChance, 0.1f, 15f);
 
                             guiStandard.Gap();
+                            guiStandard.Label("MISC_Omni_II_MarketValue".Translate(MiscModsSettings.tier_2_Omni_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_2_Omni_MarketValue, ref OmniMarket_2_buffer);
+
                             guiStandard.Label("MISC_OmniTeir_II_WorkTableSpeed".Translate(), MiscModsSettings.tier_2_Omni_WorkTableWorkSpeedFactor * 100);
                             MiscModsSettings.tier_2_Omni_WorkTableWorkSpeedFactor = guiStandard.Slider(MiscModsSettings.tier_2_Omni_WorkTableWorkSpeedFactor, 0.1f, 15f);
 
@@ -495,6 +606,10 @@ namespace MiscRobotsPlusPlus
                             MiscModsSettings.tier_2_Omni_MedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_2_Omni_MedicalSurgerySuccessChance, 0.1f, 15f);
 
                             guiStandard.Gap();
+
+                            guiStandard.Label("MISC_Omni_III_MarketValue".Translate(MiscModsSettings.tier_3_Omni_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_3_Omni_MarketValue, ref OmniMarket_3_buffer);
+
                             guiStandard.Label("MISC_OmniTeir_III_WorkTableSpeed".Translate(), MiscModsSettings.tier_3_Omni_WorkTableWorkSpeedFactor * 100);
                             MiscModsSettings.tier_3_Omni_WorkTableWorkSpeedFactor = guiStandard.Slider(MiscModsSettings.tier_3_Omni_WorkTableWorkSpeedFactor, 0.1f, 15f);
 
@@ -533,6 +648,10 @@ namespace MiscRobotsPlusPlus
 
                             guiStandard.Gap();
 
+
+                            guiStandard.Label("MISC_Omni_IV_MarketValue".Translate(MiscModsSettings.tier_4_Omni_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_4_Omni_MarketValue, ref OmniMarket_4_buffer);
+
                             guiStandard.Label("MISC_OmniTeir_IV_WorkTableSpeed".Translate(), MiscModsSettings.tier_4_Omni_WorkTableWorkSpeedFactor * 100);
                             MiscModsSettings.tier_4_Omni_WorkTableWorkSpeedFactor = guiStandard.Slider(MiscModsSettings.tier_4_Omni_WorkTableWorkSpeedFactor, 0.1f, 15f);
 
@@ -569,6 +688,10 @@ namespace MiscRobotsPlusPlus
                             guiStandard.Label("MISC_OmniTeir_IV_SurgeryChance".Translate(), MiscModsSettings.tier_4_Omni_MedicalSurgerySuccessChance * 100);
                             MiscModsSettings.tier_4_Omni_MedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_4_Omni_MedicalSurgerySuccessChance, 0.1f, 15f);
                             guiStandard.Gap();
+
+
+                            guiStandard.Label("MISC_Omni_V_MarketValue".Translate(MiscModsSettings.tier_5_Omni_MarketValue));
+                            guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.tier_5_Omni_MarketValue, ref OmniMarket_5_buffer);
 
                             guiStandard.Label("MISC_OmniTeir_V_WorkTableSpeed".Translate(), MiscModsSettings.tier_5_Omni_WorkTableWorkSpeedFactor * 100);
                             MiscModsSettings.tier_5_Omni_WorkTableWorkSpeedFactor = guiStandard.Slider(MiscModsSettings.tier_5_Omni_WorkTableWorkSpeedFactor, 0.1f, 15f);

@@ -3,9 +3,16 @@
 
 	<MISC_Robots_Category>MiscRobots++ Settings</MISC_Robots_Category>
 	<MISC_WIP>Work In Progress</MISC_WIP>
+
 	
-	<MISC_CleaningTeir_I_MarketValue>Cleaner I speed {0}. Recomended 1000</MISC_CleaningTeir_I_MarketValue>
 	<MISC_Cleaning_Settings>Cleaner I-V Settngs</MISC_Cleaning_Settings> 
+	
+	<MISC_CleaningTeir_I_MarketValue>Cleaner I Market Value {0}. Recomended 1000$</MISC_CleaningTeir_I_MarketValue>
+	<MISC_CleaningTeir_II_MarketValue>Cleaner II Market Value {0}. Recomended 1000$</MISC_CleaningTeir_II_MarketValue>
+	<MISC_CleaningTeir_III_MarketValue>Cleaner III Market Value {0}. Recomended 1000$</MISC_CleaningTeir_III_MarketValue>
+	<MISC_CleaningTeir_IV_MarketValue>Cleaner IV Market Value {0}. Recomended 1000$</MISC_CleaningTeir_IV_MarketValue>
+	<MISC_CleaningTeir_V_MarketValue>Cleaner V Market Value {0}. Recomended 1000$</MISC_CleaningTeir_V_MarketValue>
+	
 	<MISC_CleaningTeir_I_Speed>Cleaner I speed {0} %, Recomended 100%</MISC_CleaningTeir_I_Speed> 
 	<MISC_CleaningTeir_II_Speed>Cleaner II speed {0} %, Recomended 150%</MISC_CleaningTeir_II_Speed> 
 	<MISC_CleaningTeir_III_Speed>Cleaner III speed {0} %, Recomended 200%</MISC_CleaningTeir_III_Speed> 
@@ -13,6 +20,13 @@
 	<MISC_CleaningTeir_V_Speed>Cleaner V speed {0} %, Recomended 400%</MISC_CleaningTeir_V_Speed> 
 	
 	<MISC_Crafters_Settings>Crafter I-V Settngs</MISC_Crafters_Settings> 
+	
+	<MISC_Crafter_I_MarketValue>Crafter I Market Value {0}. Recomended 1000$</MISC_Crafter_I_MarketValue>
+	<MISC_Crafter_II_MarketValue>Crafter II Market Value {0}. Recomended 5000$</MISC_Crafter_II_MarketValue>
+	<MISC_Crafter_III_MarketValue>Crafter III Market Value {0}. Recomended 15000$</MISC_Crafter_III_MarketValue>
+	<MISC_Crafter_IV_MarketValue>Crafter IV Market Value {0}. Recomended 35000$</MISC_Crafter_IV_MarketValue>
+	<MISC_Crafter_V_MarketValue>Crafter V Market Value {0}. Recomended 50000$</MISC_Crafter_V_MarketValue>
+	
 	<MISC_CrafterLaborTeir_I_Speed>Crafter I Crafting speed {0} %, Recomended 100%</MISC_CrafterLaborTeir_I_Speed> 
 	<MISC_CrafterLaborTeir_II_Speed>Crafter II Crafting speed {0} %, Recomended 200%</MISC_CrafterLaborTeir_II_Speed> 
 	<MISC_CrafterLaborTeir_III_Speed>Crafter III Crafting speed {0} %, Recomended 250%</MISC_CrafterLaborTeir_III_Speed> 
@@ -20,6 +34,13 @@
 	<MISC_CrafterLaborTeir_V_Speed>Crafter V Craftingspeed {0} %, Recomended 400%</MISC_CrafterLaborTeir_V_Speed> 
 	
 	<MISC_ER_Settings>ER I-V Settngs</MISC_ER_Settings> 
+	
+	<MISC_ER_I_MarketValue>ER I Market Value {0}. Recomended 1000$ </MISC_ER_I_MarketValue>
+	<MISC_ER_II_MarketValue>ER II Market Value {0}. Recomended 5000$ </MISC_ER_II_MarketValue>
+	<MISC_ER_III_MarketValue>ER III Market Value {0}. Recomended 15000$ </MISC_ER_III_MarketValue>
+	<MISC_ER_IV_MarketValue>ER IV Market Value {0}. Recomended 35000$ </MISC_ER_IV_MarketValue>
+	<MISC_ER_V_MarketValue>ER V Market Value {0}. Recomended 50000$ </MISC_ER_V_MarketValue>
+	
 	<MISC_ER_TendSpeed_I>ER I Tending speed {0} %, Recomended 100%</MISC_ER_TendSpeed_I> 
 	<MISC_ER_TendSpeed_II>ER II Tending speed {0} %, Recomended 200%</MISC_ER_TendSpeed_II> 
 	<MISC_ER_TendSpeed_III>ER III Tending speed {0} %, Recomended 250%</MISC_ER_TendSpeed_III> 
@@ -33,6 +54,13 @@
 	<MISC_ER_SurgerySucces_V>ER V Extra Surgery Sucsess {0} %, Recomended 200%</MISC_ER_SurgerySucces_V> 
 
 	<MISC_Kitchen_Settings>Kitchen I-V Settngs</MISC_Kitchen_Settings> 
+	
+	<MISC_Kitchen_I_MarketValue>ER I Market Value {0}. Recomended 1000$ </MISC_Kitchen_I_MarketValue>
+	<MISC_Kitchen_II_MarketValue>ER II Market Value {0}. Recomended 5000$ </MISC_Kitchen_II_MarketValue>
+	<MISC_Kitchen_III_MarketValue>ER III Market Value {0}. Recomended 15000$ </MISC_Kitchen_III_MarketValue>
+	<MISC_Kitchen_IV_MarketValue>ER IV Market Value {0}. Recomended 35000$ </MISC_Kitchen_IV_MarketValue>
+	<MISC_Kitchen_V_MarketValue>ER V Market Value {0}. Recomended 50000$ </MISC_Kitchen_V_MarketValue>
+	
 	<MISC_Kitchen_GeneralLabor_I>Kitchen I Cooking Speed {0} %, Recomended 100%</MISC_Kitchen_GeneralLabor_I>
 	<MISC_Kitchen_GeneralLabor_II>Kitchen II Cooking Speed {0} %, Recomended 200%</MISC_Kitchen_GeneralLabor_II>
 	<MISC_Kitchen_GeneralLabor_III>Kitchen III Cooking Speed {0} %, Recomended 250%</MISC_Kitchen_GeneralLabor_III>
@@ -59,6 +87,13 @@
 
 
 	<MISC_Builder_Settings>Builder I-V Settngs</MISC_Builder_Settings> 
+	
+	<MISC_Builder_I_MarketValue>Builder I Market Value {0}. Recomended 1000$</MISC_Builder_I_MarketValue>
+	<MISC_Builder_II_MarketValue>Builder II Market Value {0}. Recomended 5000$</MISC_Builder_II_MarketValue>
+	<MISC_Builder_III_MarketValue>Builder III Market Value {0}. Recomended 15000$</MISC_Builder_III_MarketValue>
+	<MISC_Builder_IV_MarketValue>Builder IV Market Value {0}. Recomended 35000$</MISC_Builder_IV_MarketValue>
+	<MISC_Builder_V_MarketValue>Builder V Market Value {0}. Recomended 50000$</MISC_Builder_V_MarketValue>
+	
 	<MISC_BuilderTeir_I_ConstructionSpeed>Builder I Construction Speed {0} %, Recomended 100%</MISC_BuilderTeir_I_ConstructionSpeed>
 	<MISC_BuilderTeir_II_ConstructionSpeed>Builder II Construction Speed {0} %, Recomended 200%</MISC_BuilderTeir_II_ConstructionSpeed>
 	<MISC_BuilderTeir_III_ConstructionSpeed>Builder III Construction Speed {0} %, Recomended 250%</MISC_BuilderTeir_III_ConstructionSpeed>
@@ -84,6 +119,13 @@
 	<MISC_BuilderTeir_V_SmoothingSpeed>Builder V Smoothing Speed  {0} %, Recomended 400% </MISC_BuilderTeir_V_SmoothingSpeed>
 	
 	<MISC_Omni_Settings>Omni IV Settings</MISC_Omni_Settings>
+	
+	<MISC_Omni_I_MarketValue>Omni I Market Value {0}. Recomended 4000$</MISC_Omni_I_MarketValue>
+	<MISC_Omni_II_MarketValue>Omni II Market Value {0}. Recomended 8000$</MISC_Omni_II_MarketValue>
+	<MISC_Omni_III_MarketValue>Omni III Market Value {0}. Recomended 24000$</MISC_Omni_III_MarketValue>
+	<MISC_Omni_IV_MarketValue>Omni IV Market Value {0}. Recomended 36000$</MISC_Omni_IV_MarketValue>
+	<MISC_Omni_V_MarketValue>Omni V Market Value {0}. Recomended 92000$</MISC_Omni_V_MarketValue>
+	
 	<MISC_OmniTeir_I_WorkTableSpeed>Omni I Crafting Table Speed {0} %, Recomended 100%</MISC_OmniTeir_I_WorkTableSpeed>
 	<MISC_OmniTeir_II_WorkTableSpeed>Omni II Crafting Table Speed {0} %, Recomended 200%</MISC_OmniTeir_II_WorkTableSpeed>
 	<MISC_OmniTeir_III_WorkTableSpeed>Omni III Crafting Table Speed {0} %, Recomended 250%</MISC_OmniTeir_III_WorkTableSpeed>
@@ -155,5 +197,7 @@
 	<MISC_OmniTeir_III_SurgeryChance>Omni III Increased Surgery Chance {0} %, Recomended 150%</MISC_OmniTeir_III_SurgeryChance>
 	<MISC_OmniTeir_IV_SurgeryChance>Omni IV Increased Surgery Chance {0} %, Recomended 175%</MISC_OmniTeir_IV_SurgeryChance>
 	<MISC_OmniTeir_V_SurgeryChance>Omni V Increased Surgery Chance {0} %, Recomended 200%</MISC_OmniTeir_V_SurgeryChance>
+	
+
 </LanguageData>
 
