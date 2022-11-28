@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Rimatomics</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef
+                        [
+                            defName="AIRobot_Hauler" or
+                            defName="AIRobot_Hauler_II" or
+                            defName="AIRobot_Hauler_III" or
+                            defName="AIRobot_Hauler_IV" or
+                            defName="AIRobot_Hauler_V" or 
+							defName="RPP_Bot_Omni_V"
+                        ]
+                        /robotWorkTypes
+                    </xpath>
+					<value>
+                        <li><workTypeDef>NuclearWork</workTypeDef><priority>1</priority></li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef
+                        [
+                            defName="AIRobot_Hauler" or
+                            defName="AIRobot_Hauler_II" or
+                            defName="AIRobot_Hauler_III" or
+                            defName="AIRobot_Hauler_IV" or
+                            defName="AIRobot_Hauler_V" or 
+							defName="RPP_Bot_Omni_V"
+                        ]
+                        /race/mechEnabledWorkTypes</xpath>
+					<value>
+                        <li>NuclearWork</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
