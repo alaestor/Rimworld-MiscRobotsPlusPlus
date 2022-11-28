@@ -920,7 +920,7 @@
 			<li><workTypeDef>Growing</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
-	<!--Omi Bots -->
+
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Omni_I</defName>
 		<label>OmniBot</label>
