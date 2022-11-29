@@ -93,13 +93,13 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_2_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_2_CrafterMarket);
 
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_CrafterLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_5_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_3_CrafterMarket);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_3_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_3_CrafterMarket);
 
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_CrafterLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_5_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_4_CrafterMarket);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_4_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_4_CrafterMarket);
 
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_CrafterLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_5_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_5_CrafterMarket); 
+            SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_5_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_5_CrafterMarket);
             //ER
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_ERTendingLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_1_ERMarket);
@@ -114,7 +114,7 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_4_ERMarket);
 
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_ERTendingLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_5_ERMarket); ;
+            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_5_ERMarket);
             //Kitchen
             SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_1_Def, StatDefOf.MarketValue, MiscModsSettings.tier_1_Kitcen_MarketValue);
             SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Kitchen_GeneralLaborSpeed);
