@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>Misc. Robots++ (Adopted)</name>
-<author>Alaestor,VeteranXT)</author>
+<name>Misc. Robots++</name>
+<author>Alaestor, Hultis, VeteranXT</author>
 <packageId>Alaestor.MiscRobots.PlusPlus</packageId>
 <url>https://ludeon.com/forums/index.php?topic=26151.0</url>
 <supportedVersions><li>1.0</li><li>1.1</li><li>1.2</li><li>1.3</li><li>1.4</li></supportedVersions>
@@ -39,9 +39,9 @@ Robots++ Contains The Following Bots:
   An Emergency Response unit capable of treating patients and fighting fires.
 
 --- Omni Bot
-  The OmniBots is at the end of the techtree
+  OmniBots can do the jobs of all the other robots.
+  The OmniBot research is at the end of the techtree
   and requires you to research all of the other robots first.
-  The OmniBot can do the jobs of all the other robots.
 
 There are five tiers of robots:
   Tier 1 Simple robots have Amateur skills (4),
