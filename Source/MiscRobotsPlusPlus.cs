@@ -12,6 +12,9 @@ namespace MiscRobotsPlusPlus
     [StaticConstructorOnStartup]
     public class MiscRobotsPlusPlus : Mod
     {
+        /// <summary>
+        /// Note to  updater: Market Values wont save, figure it out.
+        /// </summary>
         static MiscRobotsPlusPlus()
         {
             var harmony = new Harmony("MiscRobotsPlusPlus");
@@ -37,82 +40,107 @@ namespace MiscRobotsPlusPlus
 
             //Cleaners
             SaveSettingForStatModifer(ThingDefRobotsOf.Cleaner_1_Def, StatDefOf.CleaningSpeed, MiscModsSettings.tier_1_CleaningSpeed);
-            SaveSettingForMarketValue(ThingDefRobotsOf.Cleaner_1_Def, MiscModsSettings.Tier_1_CleanerMarket, MiscModsSettings.Tier_1_CleanerMarket);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Cleaner_1_Def, MiscModsSettings.Tier_1_CleanerMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.Cleaner_2_Def, StatDefOf.CleaningSpeed, MiscModsSettings.tier_2_CleaningSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Cleaner_1_Def, MiscModsSettings.Tier_2_CleanerMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.Cleaner_3_Def, StatDefOf.CleaningSpeed, MiscModsSettings.tier_3_CleaningSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Cleaner_1_Def, MiscModsSettings.Tier_3_CleanerMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.Cleaner_4_Def, StatDefOf.CleaningSpeed, MiscModsSettings.tier_4_CleaningSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Cleaner_1_Def, MiscModsSettings.Tier_4_CleanerMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.Cleaner_5_Def, StatDefOf.CleaningSpeed, MiscModsSettings.tier_5_CleaningSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Cleaner_1_Def, MiscModsSettings.Tier_5_CleanerMarket);
 
             //Builders
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_1_Def, StatDefOf.ConstructionSpeed, MiscModsSettings.tier_1_Builder_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_1_Def, StatDefOf.DeepDrillingSpeed, MiscModsSettings.tier_1_Builder_DeepDrillingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Builder_GeneralLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_1_Def, StatDefOf.SmoothingSpeed, MiscModsSettings.tier_1_Builder_SmoothingSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_1_Def,  MiscModsSettings.tier_1_Builder_MarketValue);
 
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_2_Def, StatDefOf.ConstructionSpeed, MiscModsSettings.tier_2_Builder_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_2_Def, StatDefOf.DeepDrillingSpeed, MiscModsSettings.tier_2_Builder_DeepDrillingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_Builder_GeneralLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_2_Def, StatDefOf.SmoothingSpeed, MiscModsSettings.tier_2_Builder_SmoothingSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_2_Def, MiscModsSettings.tier_2_Builder_MarketValue);
 
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_3_Def, StatDefOf.ConstructionSpeed, MiscModsSettings.tier_3_Builder_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_3_Def, StatDefOf.DeepDrillingSpeed, MiscModsSettings.tier_3_Builder_DeepDrillingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_Builder_GeneralLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_3_Def, StatDefOf.SmoothingSpeed, MiscModsSettings.tier_3_Builder_SmoothingSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_3_Def, MiscModsSettings.tier_3_Builder_MarketValue);
 
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_4_Def, StatDefOf.ConstructionSpeed, MiscModsSettings.tier_4_Builder_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_4_Def, StatDefOf.DeepDrillingSpeed, MiscModsSettings.tier_4_Builder_DeepDrillingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_Builder_GeneralLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_4_Def, StatDefOf.SmoothingSpeed, MiscModsSettings.tier_4_Builder_SmoothingSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_4_Def, MiscModsSettings.tier_4_Builder_MarketValue);
 
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_5_Def, StatDefOf.ConstructionSpeed, MiscModsSettings.tier_5_Builder_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_5_Def, StatDefOf.DeepDrillingSpeed, MiscModsSettings.tier_5_Builder_DeepDrillingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_Builder_GeneralLaborSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Builder_5_Def, StatDefOf.SmoothingSpeed, MiscModsSettings.tier_5_Builder_SmoothingSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_5_Def, MiscModsSettings.tier_5_Builder_MarketValue);
 
             //Crafter
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_CrafterLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_1_Def, MiscModsSettings.Tier_1_CrafterMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_CrafterLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_2_Def, MiscModsSettings.Tier_2_CrafterMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_CrafterLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_3_Def, MiscModsSettings.Tier_3_CrafterMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_CrafterLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_4_Def, MiscModsSettings.Tier_4_CrafterMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.Crafter_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_CrafterLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Builder_5_Def, MiscModsSettings.Tier_5_CrafterMarket);
             //ER
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_ERTendingLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.ER_1_Def, MiscModsSettings.Tier_1_ERMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_ERTendingLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.ER_2_Def, MiscModsSettings.Tier_2_ERMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_ERTendingLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.ER_3_Def, MiscModsSettings.Tier_3_ERMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_ERTendingLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.ER_4_Def, MiscModsSettings.Tier_4_ERMarket);
             SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_ERTendingLaborSpeed);
+            SaveSettingForMarketValue(ThingDefRobotsOf.ER_5_Def, MiscModsSettings.Tier_5_ERMarket);
             //Kitchen
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Kitchen_GeneralLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantWorkSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenDrugHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantHarvestYield);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Kitchen_1_Def, MiscModsSettings.tier_1_Kitcen_MarketValue);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Kitchen_GeneralLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantWorkSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenDrugHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_KitchenPlantHarvestYield);
 
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenGeneralLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenPlantHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenPlantWorkSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenDrugHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenPlantHarvestYield);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Kitchen_2_Def, MiscModsSettings.tier_2_Kitcen_MarketValue);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenGeneralLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenPlantHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenPlantWorkSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenDrugHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_KitchenPlantHarvestYield);
 
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenGeneralLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenPlantHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenPlantWorkSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenDrugHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenPlantHarvestYield);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Kitchen_3_Def, MiscModsSettings.tier_3_Kitcen_MarketValue);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenGeneralLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenPlantHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenPlantWorkSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenDrugHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_KitchenPlantHarvestYield);
 
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenGeneralLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenPlantHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenPlantWorkSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenDrugHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenPlantHarvestYield);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Kitchen_4_Def, MiscModsSettings.tier_4_Kitcen_MarketValue);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenGeneralLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenPlantHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenPlantWorkSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenDrugHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_KitchenPlantHarvestYield);
 
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenGeneralLaborSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenPlantHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenPlantWorkSpeed);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenDrugHarvestYield);
-            SaveSettingForStatModifer(ThingDefRobotsOf.ER_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenPlantHarvestYield);
+            SaveSettingForMarketValue(ThingDefRobotsOf.Kitchen_5_Def, MiscModsSettings.tier_5_Kitcen_MarketValue);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenGeneralLaborSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenPlantHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenPlantWorkSpeed);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenDrugHarvestYield);
+            SaveSettingForStatModifer(ThingDefRobotsOf.Kitchen_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_KitchenPlantHarvestYield);
 
             //Omni
+            SaveSettingForMarketValue(ThingDefRobotsOf.Omni_1_Def,  MiscModsSettings.tier_1_Omni_MarketValue);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Omni_CleaningSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Omni_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Omni_ConstructSuccessChance);
@@ -126,6 +154,7 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Omni_SmoothingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_1_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_1_Omni_WorkTableWorkSpeedFactor);
 
+            SaveSettingForMarketValue(ThingDefRobotsOf.Omni_2_Def, MiscModsSettings.tier_2_Omni_MarketValue);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_Omni_CleaningSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_Omni_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_Omni_ConstructSuccessChance);
@@ -139,6 +168,7 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_Omni_SmoothingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_2_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_2_Omni_WorkTableWorkSpeedFactor);
 
+            SaveSettingForMarketValue(ThingDefRobotsOf.Omni_3_Def,MiscModsSettings.tier_3_Omni_MarketValue);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_Omni_CleaningSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_Omni_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_Omni_ConstructSuccessChance);
@@ -152,6 +182,7 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_Omni_SmoothingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_3_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_3_Omni_WorkTableWorkSpeedFactor);
 
+            SaveSettingForMarketValue(ThingDefRobotsOf.Omni_4_Def,  MiscModsSettings.tier_4_Omni_MarketValue);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_Omni_CleaningSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_Omni_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_Omni_ConstructSuccessChance);
@@ -165,6 +196,7 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_Omni_SmoothingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_4_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_4_Omni_WorkTableWorkSpeedFactor);
 
+            SaveSettingForMarketValue(ThingDefRobotsOf.Omni_5_Def, MiscModsSettings.tier_5_Omni_MarketValue);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_Omni_CleaningSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_Omni_ConstructionSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_Omni_ConstructSuccessChance);
@@ -217,7 +249,6 @@ namespace MiscRobotsPlusPlus
         string ERMarket_3_buffer = "15000";
         string ERMarket_4_buffer = "35000";
         string ERMarket_5_buffer = "50000";
-
 
         string KitchenMarket_1_buffer = "1000";
         string KitchenMarket_2_buffer = "5000";
@@ -748,32 +779,36 @@ namespace MiscRobotsPlusPlus
             StatModifier statModifier = null;
             foreach (StatModifier statBasis in DefDatabase<ThingDef>.GetNamed(def).statBases)
             {
+                //We found stat we are looking for
                 if (statBasis.stat == stat)
                 {
+                    //We save that stat
                     statModifier = statBasis;
                     break;
                 }
             }
             if (statModifier != null)
             {
+                //We get stat form settings.
                 statModifier.value = settings;
             }
         }
-        private void SaveSettingForMarketValue(string defname, float stat,  float settings)
+        private void SaveSettingForMarketValue(string defname, float settings)
         {
+            ThingDef def = null;
             foreach (ThingDef thingDef in DefDatabase<ThingDef>.AllDefs)
             {
                 if(thingDef.defName == defname)
                 {
-                    thingDef.BaseMarketValue = stat;
+                    def = thingDef; 
                     break;
                 }
             }
-            if(stat >= 0)
+            if(def != null)
             {
-                stat = settings;
+                def.BaseMarketValue = settings;
             }
-           
+         
         }
     }
 }
