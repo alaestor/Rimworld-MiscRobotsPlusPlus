@@ -626,7 +626,7 @@
 
 	<ThingDef ParentName="RPP_RechargeStation_I" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Omni_I</defName>
-		<label>Omni(IV) Base Station</label>
+		<label>Omni(I) Base Station</label>
 		<description>This station comes equipped a specialized Simple OmniBot. (NP=P)\nIt also has an over-unity internal powersupply.</description>
 		<graphicData>
 			<!-- Update Graphics -->
@@ -683,7 +683,7 @@
 	</ThingDef>
 	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Omni_IV</defName>
-		<label>Omni(V) Base Station</label>
+		<label>Omni(IV) Base Station</label>
 		<description>This station comes equipped a specialized Advanced OmniBot. (NP=P)\nIt also has an over-unity internal powersupply.</description>
 		<graphicData>
 			<!-- Update Graphics -->

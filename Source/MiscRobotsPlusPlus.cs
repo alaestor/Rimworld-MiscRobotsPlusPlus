@@ -376,7 +376,7 @@ namespace MiscRobotsPlusPlus
                             guiStandard.TextFieldNumeric<int>(ref MiscModsSettings.Tier_1_ERMarket, ref ERMarket_1_buffer);
                             guiStandard.Label("MISC_ER_TendSpeed_I".Translate(MiscModsSettings.tier_1_ERTendingLaborSpeed * 100));
                             MiscModsSettings.tier_1_ERTendingLaborSpeed = guiStandard.Slider(MiscModsSettings.tier_1_ERTendingLaborSpeed, 0.1f, 15f);
-                            guiStandard.Label("MISC_ER_SurgerySucces_I".Translate(MiscModsSettings.tier_2_ERMedicalSurgerySuccessChance * 100));
+                            guiStandard.Label("MISC_ER_SurgerySucces_I".Translate(MiscModsSettings.tier_1_ERMedicalSurgerySuccessChance * 100));
                             MiscModsSettings.tier_1_ERMedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_1_ERMedicalSurgerySuccessChance, 0.1f, 15f);
 
                             guiStandard.Gap();
