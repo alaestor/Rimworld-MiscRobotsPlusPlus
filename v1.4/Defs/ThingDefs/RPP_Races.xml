@@ -669,13 +669,13 @@
 			</mechEnabledWorkTypes>
 			<mechWorkTypePriorities>
 				<Doctor>1</Doctor>
-				<Firefighter>3</Firefighter>
+				<Firefighter>2</Firefighter>
 			</mechWorkTypePriorities>
 		</race>
 
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
-			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -693,13 +693,13 @@
 			</mechEnabledWorkTypes>
 			<mechWorkTypePriorities>
 				<Doctor>1</Doctor>
-				<Firefighter>3</Firefighter>
-        </mechWorkTypePriorities>
+				<Firefighter>2</Firefighter>
+			</mechWorkTypePriorities>
 		</race>
 		
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
-			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -717,13 +717,13 @@
 			</mechEnabledWorkTypes>
 			<mechWorkTypePriorities>
 				<Doctor>1</Doctor>
-				<Firefighter>3</Firefighter>
+				<Firefighter>2</Firefighter>
 			</mechWorkTypePriorities>
 		</race>
 		
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
-			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -741,13 +741,13 @@
 			</mechEnabledWorkTypes>
 			<mechWorkTypePriorities>
 				<Doctor>1</Doctor>
-			<Firefighter>3</Firefighter>
-        </mechWorkTypePriorities>
+				<Firefighter>2</Firefighter>
+			</mechWorkTypePriorities>
 		</race>
 		
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
-			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
@@ -765,13 +765,13 @@
 			</mechEnabledWorkTypes>
 			<mechWorkTypePriorities>
 				<Doctor>1</Doctor>
-				<Firefighter>3</Firefighter>
-        </mechWorkTypePriorities>
+				<Firefighter>2</Firefighter>
+			</mechWorkTypePriorities>
 		</race>
 		
 		<robotWorkTypes>
 			<li><workTypeDef>Doctor</workTypeDef><priority>1</priority></li>
-			<li><workTypeDef>Firefighter</workTypeDef><priority>3</priority></li>
+			<li><workTypeDef>Firefighter</workTypeDef><priority>2</priority></li>
 		</robotWorkTypes>
 	</ThingDef>
 
@@ -1035,23 +1035,23 @@
 				<li>Mining</li>
 				<li>Firefighter</li>
 				<li>Research</li>
-		</mechEnabledWorkTypes>
-		<mechWorkTypePriorities>
-			<Hauling>2</Hauling>
-			<BasicWorker>2</BasicWorker>
-			<Cleaning>3</Cleaning>
-			<PlantCutting>2</PlantCutting>
-			<Growing>2</Growing>
-			<Doctor>1</Doctor>
-			<Firefighter>1</Firefighter>
-			<Smithing>2</Smithing>
-			<Tailoring>2</Tailoring>
-			<Crafting>2</Crafting>
-			<Construction>2</Construction>
-			<Mining>2</Mining>
-			<Hunting>3</Hunting>
-			<Research>2</Research>
-        </mechWorkTypePriorities>
+			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Hauling>2</Hauling>
+				<BasicWorker>2</BasicWorker>
+				<Cleaning>3</Cleaning>
+				<PlantCutting>2</PlantCutting>
+				<Growing>2</Growing>
+				<Doctor>1</Doctor>
+				<Firefighter>1</Firefighter>
+				<Smithing>2</Smithing>
+				<Tailoring>2</Tailoring>
+				<Crafting>2</Crafting>
+				<Construction>2</Construction>
+				<Mining>2</Mining>
+				<Hunting>3</Hunting>
+				<Research>2</Research>
+			</mechWorkTypePriorities>
 		</race>
 		<robotWorkTypes>
 			<li><workTypeDef>Hunting</workTypeDef><priority>3</priority></li>
