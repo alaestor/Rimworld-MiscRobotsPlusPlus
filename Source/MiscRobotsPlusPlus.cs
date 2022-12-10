@@ -1,10 +1,12 @@
 ﻿using HarmonyLib;
 using MiscRobotsPlusPlus.Patches;
 using RimWorld;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Runtime;
 using UnityEngine;
+using UnityEngine.Rendering;
 using Verse;
 
 namespace MiscRobotsPlusPlus
@@ -14,9 +16,7 @@ namespace MiscRobotsPlusPlus
     {
         static MiscRobotsPlusPlus()
         {
-            var harmony = new Harmony("MiscRobotsPlusPlus");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
-            PatchGeneratePawnRestrictionOptions.Patch(harmony);
+            MiscHarmonyPatches.Patch("MiscHarmonyPatches");
         }
 
         public MiscRobotsPlusPlus(ModContentPack content) : base(content)
@@ -30,11 +30,12 @@ namespace MiscRobotsPlusPlus
         }
 
         #region Writing Settings
-        //This fucker would take ages to write. Hopefully i was smart.
         public override void WriteSettings()
         {
             base.WriteSettings();
 
+
+#if true
             //Cleaners
             SaveSettingForStatModifer(ThingDefRobotsOf.Cleaner_1_Def, StatDefOf.CleaningSpeed, MiscModsSettings.tier_1_CleaningSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Cleaner_1_Def, StatDefOf.MarketValue, MiscModsSettings.Tier_1_CleanerMarket);
@@ -218,8 +219,7 @@ namespace MiscRobotsPlusPlus
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_Omni_PlantWorkSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_Omni_SmoothingSpeed);
             SaveSettingForStatModifer(ThingDefRobotsOf.Omni_5_Def, StatDefOf.GeneralLaborSpeed, MiscModsSettings.tier_5_Omni_WorkTableWorkSpeedFactor);
-
-
+#endif
         }
         #endregion
 
@@ -233,6 +233,9 @@ namespace MiscRobotsPlusPlus
         private bool kitchenSettings = false;
         private bool builderSettings = false;
         private bool omniSettings = false;
+        //Cleaning Settings Dev Only Mode
+        private bool DevOnly = false;
+
 
         #region  Int Buffers
         string CleanMarket_1_buffer = "1000";
@@ -271,7 +274,7 @@ namespace MiscRobotsPlusPlus
         string OmniMarket_3_buffer = "24000";
         string OmniMarket_4_buffer = "36000";
         string OmniMarket_5_buffer = "92000";
-        #endregion
+#endregion
         Vector2 scrollPos;
         public override void DoSettingsWindowContents(Rect inRect)
         {
@@ -294,6 +297,11 @@ namespace MiscRobotsPlusPlus
 
                     guiStandard.Begin(viewRect);
                     {
+                        if (DevOnly)
+                        {
+                            DrawingSettings(guiStandard, MiscModsSettings.buildersData, 1f, 999f);
+                        }
+#if true
                         guiStandard.CheckboxLabeled("MISC_Cleaning_Settings".Translate(), ref cleanerSettings);
                         if (cleanerSettings)
                         {
@@ -769,7 +777,9 @@ namespace MiscRobotsPlusPlus
 
                             guiStandard.Label("MISC_OmniTeir_V_SurgeryChance".Translate(), MiscModsSettings.tier_5_Omni_MedicalSurgerySuccessChance * 100);
                             MiscModsSettings.tier_5_Omni_MedicalSurgerySuccessChance = guiStandard.Slider(MiscModsSettings.tier_5_Omni_MedicalSurgerySuccessChance, 0.1f, 15f);
-                        }
+
+                            }
+#endif
                     }
                     guiStandard.End();
                 }
@@ -777,7 +787,17 @@ namespace MiscRobotsPlusPlus
             }
             guiStandard.End();
         }
-
+        private void DrawingSettings(Listing_Standard listing, RobotsData data, float min, float max)
+        {
+            for (int i = 0; i < data.defThing.Length; i++)
+            {
+                listing.Label(data.defThing[i].Translate());
+                for (int x = 0; x < data.statsData.Length; x++)
+                {
+                    listing.TextFieldNumericLabeled(data.statsData[x].ToString(), ref data.settingsValue[i,x], ref data.buffers[i,x], min, max);
+                }
+            }
+        }
         void GetSettings()
         {
             GetSettings<MiscModsSettings>();
@@ -800,21 +820,30 @@ namespace MiscRobotsPlusPlus
                 statModifier.value = settings;
             }
         }
-        private void SaveSettingForMarketValue(string defname, float stat,  float settings)
+
+        private void WriteSettings(List<string> thingDefs, List<StatDef> stat,float setting)
         {
-            foreach (ThingDef thingDef in DefDatabase<ThingDef>.AllDefs)
+            StatModifier statModifier = null;
+            for (int i = 0; i < thingDefs.Count; i++)
             {
-                if(thingDef.defName == defname)
+                for (int x = 0; x < stat.Count; x++)
                 {
-                    thingDef.BaseMarketValue = stat;
-                    break;
+                    foreach (var statBasic in DefDatabase<ThingDef>.GetNamed(thingDefs[i]).statBases)
+                    {
+                        if (statBasic.stat == stat[x])
+                        {
+                            statModifier = statBasic;
+                            break;
+                        }
+                    }
                 }
+                
+                if (statModifier != null)
+                {
+                    statModifier.value = setting;
+                }
+
             }
-            if(stat >= 0)
-            {
-                stat = settings;
-            }
-           
         }
     }
 }

@@ -672,7 +672,7 @@
 	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Omni_III</defName>
 		<label>Omni(III) Base Station</label>
-		<description>This station comes equipped an specialized Intermediate OmniBot. </description>
+		<description>This station comes equipped an specialized Intermediate OmniBot.</description>
 		<graphicData>
 			<!-- Update Graphics -->
 			<texPath>Things/AIRobot/RPP/Omni/V/RPP_Station</texPath>

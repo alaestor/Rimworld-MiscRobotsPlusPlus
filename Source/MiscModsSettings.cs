@@ -6,11 +6,39 @@ using UnityEngine.Rendering;
 using UnityEngine.UI;
 using static UnityEngine.GUILayout;
 using Verse;
+using RimWorld;
+using System.Linq;
+using Verse.Noise;
 
 namespace MiscRobotsPlusPlus
 {
     public class MiscModsSettings : ModSettings
     {
+
+        #region New Settings
+        static string[] buildersList = new string[5] { "RPP_Bot_Builder_I", "RPP_Bot_Builder_II", "RPP_Bot_Builder_III", "RPP_Bot_Builder_IV", "RPP_Bot_Builder_V" };
+        static StatDef[] builderStats = new StatDef[5] { StatDefOf.ConstructionSpeed, StatDefOf.DeepDrillingSpeed, StatDefOf.SmoothingSpeed, StatDefOf.MiningYield, StatDefOf.MarketValue, };
+        internal static RobotsData buildersData = new RobotsData(buildersList, builderStats);
+
+        /// <summary>
+        /// Must be saved in same order as List of Stats in float Values;
+        /// </summary>
+        static float[,] builderDefaultSettings = new float[5, 5] {
+
+                { tier_1_Builder_ConstructionSpeed, tier_1_Builder_DeepDrillingSpeed, tier_1_Builder_SmoothingSpeed , tier_1_Builder_MiningYield,tier_1_Builder_MarketValue },
+                { tier_2_Builder_ConstructionSpeed, tier_2_Builder_DeepDrillingSpeed, tier_2_Builder_SmoothingSpeed , tier_1_Builder_MiningYield, tier_2_Builder_MarketValue },
+                { tier_3_Builder_ConstructionSpeed, tier_3_Builder_DeepDrillingSpeed, tier_3_Builder_SmoothingSpeed , tier_1_Builder_MiningYield, tier_3_Builder_MarketValue },
+                { tier_4_Builder_ConstructionSpeed, tier_4_Builder_DeepDrillingSpeed, tier_4_Builder_SmoothingSpeed , tier_1_Builder_MiningYield, tier_4_Builder_MarketValue },
+                { tier_5_Builder_ConstructionSpeed, tier_5_Builder_DeepDrillingSpeed, tier_5_Builder_SmoothingSpeed , tier_1_Builder_MiningYield, tier_5_Builder_MarketValue }
+        };
+        #endregion
+
+
+        public void SetDefaultValue(float[,] defaultsStats ,int a, int b, float defaultSettings)
+        {
+            defaultsStats = new float[,] { { a, defaultSettings } };
+        }
+
         #region Robots Settings
 
         #region Cleaner Settings
@@ -215,14 +243,30 @@ namespace MiscRobotsPlusPlus
 
         #endregion
         #endregion
+
+
         internal static List<ThingDef> database;
         #region Expose Data
+
+        public void ExposeValues()
+        {
+            for (int i = 0; i < buildersData.defThing.Length; i++)
+            {
+                for (int x = 0; x < buildersData.statsData.Length; x++)
+                {
+                    Scribe_Values.Look(ref buildersData.settingsValue[i,x], buildersData.defThing[i] + "_" + buildersData.statsData[x].defName, builderDefaultSettings[i,x]);
+                }
+            }
+        }
         public override void ExposeData()
         {
+            //Stored in XML config file
             base.ExposeData();
+            ExposeValues();
+#if true
 
             //Cleaner
-            Scribe_Values.Look(ref Tier_1_CleanerMarket, "Cleaner_I_Market_Value",1000);
+            Scribe_Values.Look(ref Tier_1_CleanerMarket, "Cleaner_I_Market_Value", 1000);
             Scribe_Values.Look(ref Tier_2_CleanerMarket, "Cleaner_II_Market_Value", 5000);
             Scribe_Values.Look(ref Tier_3_CleanerMarket, "Cleaner_III_Market_Value", 15000);
             Scribe_Values.Look(ref Tier_4_CleanerMarket, "Cleaner_IV_Market_Value", 35000);
@@ -343,10 +387,10 @@ namespace MiscRobotsPlusPlus
 
     
             Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_I_MarketValue", 4000);
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_II_MarketValue", 8000);
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_III_MarketValue", 24000);
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_IV_MarketValue", 36000);
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_V_MarketValue", 92000);
+            Scribe_Values.Look(ref tier_2_Omni_MarketValue, "Omni_II_MarketValue", 8000);
+            Scribe_Values.Look(ref tier_3_Omni_MarketValue, "Omni_III_MarketValue", 24000);
+            Scribe_Values.Look(ref tier_4_Omni_MarketValue, "Omni_IV_MarketValue", 36000);
+            Scribe_Values.Look(ref tier_5_Omni_MarketValue, "Omni_V_MarketValue", 92000);
 
             Scribe_Values.Look(ref tier_1_Omni_WorkTableWorkSpeedFactor, "Omni_I_WorkSpeedFactor", 1f);
             Scribe_Values.Look(ref tier_1_Omni_GeneralLaborSpeed, "Omni_I_GeneralLaborSpeed", 1f);
@@ -413,10 +457,10 @@ namespace MiscRobotsPlusPlus
             Scribe_Values.Look(ref tier_5_Omni_ConstructSuccessChance, "Omni_V_MiningYield", 1.6f);
             Scribe_Values.Look(ref tier_5_Omni_MedicalSurgerySuccessChance, "Omni_V_ConstructSuccessChance", 1.9f);
             Scribe_Values.Look(ref tier_5_Omni_MedicalSurgerySuccessChance, "Omni_V_SurgerySuccess", 1.9f);
-
+#endif
         }
 
-        #endregion
+#endregion
 
     }
 }
