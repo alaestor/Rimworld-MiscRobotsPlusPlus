@@ -33,6 +33,7 @@
 		<recipeMaker><skillRequirements><Crafting>4</Crafting></skillRequirements></recipeMaker>
 		<rechargeEfficiency>0.8</rechargeEfficiency>
 	</ThingDef>
+
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_II" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>1</Beauty>
@@ -50,6 +51,7 @@
 		<recipeMaker><skillRequirements><Crafting>8</Crafting></skillRequirements></recipeMaker>
 		<rechargeEfficiency>1.2</rechargeEfficiency>
 	</ThingDef>
+
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_III" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>2</Beauty>
@@ -67,6 +69,7 @@
 		<recipeMaker><skillRequirements><Crafting>13</Crafting></skillRequirements></recipeMaker>
 		<rechargeEfficiency>1.6</rechargeEfficiency>
 	</ThingDef>
+
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_IV" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>5</Beauty>
@@ -84,6 +87,7 @@
 		<recipeMaker><skillRequirements><Crafting>16</Crafting></skillRequirements></recipeMaker>
 		<rechargeEfficiency>2.0</rechargeEfficiency>
 	</ThingDef>
+
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_V" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>20</Beauty>
@@ -123,6 +127,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>AIRobot_Hauler</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>AIRobot_RechargeStation_Hauler_II</defName>
 		<label>Hauler(II) Base Station</label>
@@ -140,6 +145,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>AIRobot_Hauler_II</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>AIRobot_RechargeStation_Hauler_III</defName>
 		<label>Hauler(III) Base Station</label>
@@ -157,6 +163,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>AIRobot_Hauler_III</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>AIRobot_RechargeStation_Hauler_IV</defName>
 		<label>Hauler(IV) Base Station</label>
@@ -174,6 +181,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Hauler_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>AIRobot_Hauler_IV</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>AIRobot_RechargeStation_Hauler_V</defName>
 		<label>Hauler(V) Base Station</label>
@@ -209,6 +217,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>AIRobot_Cleaner</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>AIRobot_RechargeStation_Cleaner_II</defName>
 		<label>Cleaner(II) Base Station</label>
@@ -226,6 +235,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>AIRobot_Cleaner_II</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>AIRobot_RechargeStation_Cleaner_III</defName>
 		<label>Cleaner(III) Base Station</label>
@@ -243,6 +253,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>AIRobot_Cleaner_III</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>AIRobot_RechargeStation_Cleaner_IV</defName>
 		<label>Cleaner(IV) Base Station</label>
@@ -260,6 +271,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Cleaner_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>AIRobot_Cleaner_IV</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>AIRobot_RechargeStation_Cleaner_V</defName>
 		<label>Cleaner(V) Base Station</label>
@@ -298,6 +310,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Builder_I</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Builder_II</defName>
 		<label>Builder(II) Base Station</label>
@@ -315,6 +328,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Builder_II</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Builder_III</defName>
 		<label>Builder(III) Base Station</label>
@@ -332,6 +346,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Builder_III</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Builder_IV</defName>
 		<label>Builder(IV) Base Station</label>
@@ -349,6 +364,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Builder_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Builder_IV</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Builder_V</defName>
 		<label>Builder(V) Base Station</label>
@@ -386,6 +402,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Crafter_I</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Crafter_II</defName>
 		<label>Crafter(II) Base Station</label>
@@ -403,6 +420,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Crafter_II</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Crafter_III</defName>
 		<label>Crafter(III) Base Station</label>
@@ -420,6 +438,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Crafter_III</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Crafter_IV</defName>
 		<label>Crafter(IV) Base Station</label>
@@ -437,6 +456,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Crafter_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Crafter_IV</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Crafter_V</defName>
 		<label>Crafter(V) Base Station</label>
@@ -473,6 +493,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_ER_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_ER_I</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_ER_II</defName>
 		<label>ER(II) Base Station</label>
@@ -490,6 +511,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_ER_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_ER_II</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_ER_III</defName>
 		<label>ER(III) Base Station</label>
@@ -507,6 +529,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_ER_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_ER_III</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_ER_IV</defName>
 		<label>ER(IV) Base Station</label>
@@ -524,6 +547,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_ER_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_ER_IV</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_ER_V</defName>
 		<label>ER(V) Base Station</label>
@@ -560,6 +584,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Kitchen_I</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Kitchen_II</defName>
 		<label>Kitchen(II) Base Station</label>
@@ -577,6 +602,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Kitchen_II</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Kitchen_III</defName>
 		<label>Kitchen(III) Base Station</label>
@@ -594,6 +620,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Kitchen_III</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Kitchen_IV</defName>
 		<label>Kitchen(IV) Base Station</label>
@@ -611,6 +638,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Kitchen_IV</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Kitchen_V</defName>
 		<label>Kitchen(V) Base Station</label>
@@ -628,8 +656,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Kitchen_All</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Kitchen_V</spawnThingDef>
 	</ThingDef>
-	
-	
+
 	<!-- Omni Stations -->
 	<ThingDef ParentName="RPP_RechargeStation_I" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Omni_I</defName>
@@ -650,6 +677,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Omni_I</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Omni_I</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_II" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Omni_II</defName>
 		<label>Omni(II) Base Station</label>
@@ -669,6 +697,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Omni_II</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Omni_II</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_III" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Omni_III</defName>
 		<label>Omni(III) Base Station</label>
@@ -688,6 +717,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Omni_III</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Omni_III</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_IV" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Omni_IV</defName>
 		<label>Omni(IV) Base Station</label>
@@ -707,6 +737,7 @@
 		<recipeMaker><researchPrerequisite>RPP_Research_Omni_IV</researchPrerequisite></recipeMaker>
 		<spawnThingDef>RPP_Bot_Omni_IV</spawnThingDef>
 	</ThingDef>
+
 	<ThingDef ParentName="RPP_RechargeStation_V" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<defName>RPP_RechargeStation_Omni_V</defName>
 		<label>Omni(V) Base Station</label>
