@@ -131,7 +131,7 @@ namespace MiscRobotsPlusPlus
                     listing.Slider(data.settingsValue[i, x], min, max);
                 }
             }
-            //RobotsData.SetBuffers(data);
+            //RobotsData.SetBuffers(data); 
         }
         void GetSettings()
         {
