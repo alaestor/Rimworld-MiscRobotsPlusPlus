@@ -76,6 +76,7 @@
     <Compile Include="Patches\PatchJobDriver.cs" />
     <Compile Include="MiscRobotsPlusPlus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RobotsData.cs" />
     <Compile Include="ThingDefRobotsOf.cs" />
   </ItemGroup>
   <ItemGroup>
