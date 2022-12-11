@@ -16,7 +16,9 @@ namespace MiscRobotsPlusPlus
     {
         static MiscRobotsPlusPlus()
         {
-            MiscHarmonyPatches.Patch("MiscHarmonyPatches");
+            var har = new Harmony("MiscRobotsPlusPlus");
+            har.PatchAll(Assembly.GetExecutingAssembly());
+
         }
 
         public MiscRobotsPlusPlus(ModContentPack content) : base(content)
