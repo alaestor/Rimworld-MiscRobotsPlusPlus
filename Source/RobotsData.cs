@@ -23,6 +23,20 @@ namespace MiscRobotsPlusPlus
             buffers = new string[defThing.Length, statsData.Length];
         }
 
+        public static void SetBuffers(RobotsData data)
+        {
+            for (int i = 0; i < data.defThing.Length; i++)
+            {
+                for (int x = 0; x < data.statsData.Length; x++)
+                {
+                    data.buffers[i, x] = data.defaultValues[i, x].ToString();
+                }
+            }
+        }
+
+       
+
+
 
     }
 }
