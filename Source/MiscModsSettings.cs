@@ -6,419 +6,354 @@ using UnityEngine.Rendering;
 using UnityEngine.UI;
 using static UnityEngine.GUILayout;
 using Verse;
+using RimWorld;
+using System.Linq;
+using Verse.Noise;
 
 namespace MiscRobotsPlusPlus
 {
     public class MiscModsSettings : ModSettings
     {
-        #region Robots Settings
+
+        //Contains list of all bots by DefName
+        //Remember to keep same names as in XML files
+        //It throws error if it does not match
+        #region Bots Def Names
+        internal static readonly string[] cleanerList = new string[5] { "AIRobot_Cleaner", "AIRobot_Cleaner_II", "AIRobot_Cleaner_III", "AIRobot_Cleaner_IV", "AIRobot_Cleaner_V" };
+        internal static readonly string[] crafterList = new string[5] { "RPP_Bot_Crafter_I", "RPP_Bot_Crafter_II", "RPP_Bot_Crafter_III", "RPP_Bot_Crafter_IV", "RPP_Bot_Crafter_V" };
+        internal static readonly string[] kitchenList = new string[5] { "RPP_Bot_Kitchen_I", "RPP_Bot_Kitchen_II", "RPP_Bot_Kitchen_III", "RPP_Bot_Kitchen_IV", "RPP_Bot_Kitchen_V" };
+        internal static readonly string[] buildersList = new string[5] { "RPP_Bot_Builder_I", "RPP_Bot_Builder_II", "RPP_Bot_Builder_III", "RPP_Bot_Builder_IV", "RPP_Bot_Builder_V" };
+        internal static readonly string[] ERList = new string[5] { "RPP_Bot_ER_I", "RPP_Bot_ER_II", "RPP_Bot_ER_III", "RPP_Bot_ER_IV", "RPP_Bot_ER_V" };
+        internal static readonly string[] omniList = new string[5] { "RPP_Bot_Omni_I", "RPP_Bot_Omni_II", "RPP_Bot_Omni_III", "RPP_Bot_Omni_IV", "RPP_Bot_Omni_V" };
+        #endregion
+
+        // Must be saved in same order as List of Stats in float table;
+        #region Non Readable Settings
+
+        #region Cleaner Compleated Settings
+        internal static StatDef[] cleanerStats = new StatDef[2] { StatDefOf.CleaningSpeed, StatDefOf.MarketValue };
+
+        internal static float[,] cleanerDefaultSettings = new float[5, 2] {
+
+                { tier_1_CleaningSpeed, Tier_1_CleanerMarket  },
+                { tier_2_CleaningSpeed, Tier_2_CleanerMarket  },
+                { tier_3_CleaningSpeed, Tier_3_CleanerMarket  },
+                { tier_4_CleaningSpeed, Tier_4_CleanerMarket  },
+                { tier_5_CleaningSpeed, Tier_5_CleanerMarket  }
+
+        };
+        #endregion
+
+        #region Crafter Compleated Match
+        internal static StatDef[] crafterStats = new StatDef[2] { StatDefOf.GeneralLaborSpeed, StatDefOf.MarketValue };
+        // Must be saved in same order as List of Stats in float table;
+        internal static float[,] crafterDefaultSettings = new float[5, 2] {
+
+                { tier_1_CrafterLaborSpeed,  Tier_1_CrafterMarket  },
+                { tier_2_CrafterLaborSpeed,  Tier_2_CrafterMarket  },
+                { tier_3_CrafterLaborSpeed,  Tier_3_CrafterMarket  },
+                { tier_4_CrafterLaborSpeed,  Tier_4_CrafterMarket  },
+                { tier_5_CrafterLaborSpeed,  Tier_5_CrafterMarket  }
+
+        };
+        #endregion
+
+        #region Kitchen Compleated Match
+
+        internal static StatDef[] kitchenStats = new StatDef[5] { StatDefOf.GeneralLaborSpeed, StatDefOf.PlantWorkSpeed, StatDefOf.PlantHarvestYield, StatDefOf.DrugHarvestYield, StatDefOf.MarketValue, };
+        // Must be saved in same order as List of Stats in float table;
+        internal static float[,] kitchenDefaultSettings = new float[5, 5] {
+
+                { tier_1_KitchenGeneralLaborSpeed, tier_1_KitchenPlantWorkSpeed, tier_1_KitchenPlantHarvestYield , tier_1_KitchenDrugHarvestYield, tier_1_Kitcen_MarketValue },
+                { tier_2_KitchenGeneralLaborSpeed, tier_2_KitchenPlantWorkSpeed, tier_2_KitchenPlantHarvestYield , tier_2_KitchenDrugHarvestYield, tier_2_Kitcen_MarketValue },
+                { tier_3_KitchenGeneralLaborSpeed, tier_3_KitchenPlantWorkSpeed, tier_3_KitchenPlantHarvestYield , tier_3_KitchenDrugHarvestYield, tier_3_Kitcen_MarketValue },
+                { tier_4_KitchenGeneralLaborSpeed, tier_4_KitchenPlantWorkSpeed, tier_4_KitchenPlantHarvestYield , tier_4_KitchenDrugHarvestYield, tier_4_Kitcen_MarketValue },
+                { tier_5_KitchenGeneralLaborSpeed, tier_5_KitchenPlantWorkSpeed, tier_5_KitchenPlantHarvestYield , tier_5_KitchenDrugHarvestYield, tier_5_Kitcen_MarketValue }
+        };
+        #endregion
+
+        #region Builder Compleated Match
+
+        internal static StatDef[] builderStats = new StatDef[5] { StatDefOf.ConstructionSpeed, StatDefOf.DeepDrillingSpeed, StatDefOf.SmoothingSpeed, StatDefOf.MiningYield, StatDefOf.MarketValue, };
+        // Must be saved in same order as List of Stats in float table;
+        internal static float[,] builderDefaultSettings = new float[5, 5] {
+
+                { tier_1_Builder_ConstructionSpeed, tier_1_Builder_DeepDrillingSpeed, tier_1_Builder_SmoothingSpeed , tier_1_Builder_MiningYield, tier_1_Builder_MarketValue },
+                { tier_2_Builder_ConstructionSpeed, tier_2_Builder_DeepDrillingSpeed, tier_2_Builder_SmoothingSpeed , tier_2_Builder_MiningYield, tier_2_Builder_MarketValue },
+                { tier_3_Builder_ConstructionSpeed, tier_3_Builder_DeepDrillingSpeed, tier_3_Builder_SmoothingSpeed , tier_3_Builder_MiningYield, tier_3_Builder_MarketValue },
+                { tier_4_Builder_ConstructionSpeed, tier_4_Builder_DeepDrillingSpeed, tier_4_Builder_SmoothingSpeed , tier_4_Builder_MiningYield, tier_4_Builder_MarketValue },
+                { tier_5_Builder_ConstructionSpeed, tier_5_Builder_DeepDrillingSpeed, tier_5_Builder_SmoothingSpeed , tier_5_Builder_MiningYield, tier_5_Builder_MarketValue }
+        };
+        #endregion
+
+        #region ER Compleated Match
+        internal static StatDef[] ERStats = new StatDef[3] { StatDefOf.MedicalTendSpeed, StatDefOf.MedicalSurgerySuccessChance, StatDefOf.MarketValue, };
+
+        internal static float[,] ERDefaultSettings = new float[5, 3] {
+
+                { tier_1_ERTendingLaborSpeed, tier_1_ERMedicalSurgerySuccessChance, Tier_1_ERMarket  },
+                { tier_2_ERTendingLaborSpeed, tier_2_ERMedicalSurgerySuccessChance, Tier_2_ERMarket  },
+                { tier_3_ERTendingLaborSpeed, tier_3_ERMedicalSurgerySuccessChance, Tier_3_ERMarket  },
+                { tier_4_ERTendingLaborSpeed, tier_4_ERMedicalSurgerySuccessChance, Tier_4_ERMarket  },
+                { tier_5_ERTendingLaborSpeed, tier_5_ERMedicalSurgerySuccessChance, Tier_5_ERMarket  }
+
+        };
+        #endregion
+
+        #region Omni Compleated Match
+
+        internal static StatDef[] OmniStats = new StatDef[12] { StatDefOf.MedicalTendSpeed, StatDefOf.MedicalSurgerySuccessChance, StatDefOf.ConstructionSpeed, StatDefOf.DeepDrillingSpeed, StatDefOf.SmoothingSpeed, StatDefOf.MiningYield, StatDefOf.PlantHarvestYield, StatDefOf.DrugHarvestYield, StatDefOf.CleaningSpeed,StatDefOf.WorkTableWorkSpeedFactor,StatDefOf.PlantWorkSpeed,StatDefOf.MarketValue, };
+        internal static float[,] OmniDefaultSettings = new float[5, 12] {
+
+             {tier_1_Omni_TendingSpeed, tier_1_Omni_MedicalSurgerySuccessChance, tier_1_Omni_ConstructionSpeed, tier_1_Omni_DeepDrillingSpeed, tier_1_Omni_SmoothingSpeed, tier_1_Omni_MiningYield, tier_1_Omni_PlantHarvestYield, tier_1_Omni_DrugHarvestYield, tier_1_Omni_CleaningSpeed,tier_1_Omni_WorkTableWorkSpeedFactor, tier_1_Omni_PlantWorkSpeed, tier_1_Omni_MarketValue },
+             {tier_2_Omni_TendingSpeed, tier_2_Omni_MedicalSurgerySuccessChance, tier_2_Omni_ConstructionSpeed, tier_2_Omni_DeepDrillingSpeed, tier_2_Omni_SmoothingSpeed, tier_2_Omni_MiningYield, tier_2_Omni_PlantHarvestYield, tier_2_Omni_DrugHarvestYield, tier_2_Omni_CleaningSpeed,tier_2_Omni_WorkTableWorkSpeedFactor, tier_2_Omni_PlantWorkSpeed, tier_2_Omni_MarketValue },
+             {tier_3_Omni_TendingSpeed, tier_3_Omni_MedicalSurgerySuccessChance, tier_3_Omni_ConstructionSpeed, tier_3_Omni_DeepDrillingSpeed, tier_3_Omni_SmoothingSpeed, tier_3_Omni_MiningYield, tier_3_Omni_PlantHarvestYield, tier_3_Omni_DrugHarvestYield, tier_3_Omni_CleaningSpeed,tier_3_Omni_WorkTableWorkSpeedFactor, tier_3_Omni_PlantWorkSpeed, tier_3_Omni_MarketValue },
+             {tier_4_Omni_TendingSpeed, tier_4_Omni_MedicalSurgerySuccessChance, tier_4_Omni_ConstructionSpeed, tier_4_Omni_DeepDrillingSpeed, tier_4_Omni_SmoothingSpeed, tier_4_Omni_MiningYield, tier_4_Omni_PlantHarvestYield, tier_4_Omni_DrugHarvestYield, tier_4_Omni_CleaningSpeed,tier_4_Omni_WorkTableWorkSpeedFactor, tier_4_Omni_PlantWorkSpeed, tier_4_Omni_MarketValue },
+             {tier_5_Omni_TendingSpeed, tier_5_Omni_MedicalSurgerySuccessChance, tier_5_Omni_ConstructionSpeed, tier_5_Omni_DeepDrillingSpeed, tier_5_Omni_SmoothingSpeed, tier_5_Omni_MiningYield, tier_5_Omni_PlantHarvestYield, tier_5_Omni_DrugHarvestYield, tier_5_Omni_CleaningSpeed,tier_5_Omni_WorkTableWorkSpeedFactor, tier_5_Omni_PlantWorkSpeed, tier_5_Omni_MarketValue }
+
+        };
+        #endregion
+
+        #endregion
+
+        internal static RobotsData cleanerData = new RobotsData(cleanerList, cleanerStats);
+        internal static RobotsData crafterData = new RobotsData(crafterList, crafterStats);
+        internal static RobotsData kitchensData = new RobotsData(kitchenList, kitchenStats);
+        internal static RobotsData buildersData = new RobotsData(buildersList, builderStats);
+        internal static RobotsData eRData = new RobotsData(ERList, ERStats);
+        internal static RobotsData omniData = new RobotsData(omniList, OmniStats);
+
+        #region Robots Readable Default Settings
 
         #region Cleaner Settings
-        internal static int Tier_1_CleanerMarket = 1000;
-        internal static float tier_1_CleaningSpeed = 1f;
-        internal static int Tier_2_CleanerMarket = 5000;
-        internal static float tier_2_CleaningSpeed = 1.5f;
-        internal static int Tier_3_CleanerMarket = 15000;
-        internal static float tier_3_CleaningSpeed = 2f;
-        internal static int Tier_4_CleanerMarket = 35000;
-        internal static float tier_4_CleaningSpeed = 3f; 
-        internal static int Tier_5_CleanerMarket = 50000;
-        internal static float tier_5_CleaningSpeed = 4f;
+        static float tier_1_CleaningSpeed = 1f;
+        static float tier_2_CleaningSpeed = 1.5f;
+        static float tier_3_CleaningSpeed = 2f;
+        static float tier_4_CleaningSpeed = 3f; 
+        static float tier_5_CleaningSpeed = 4f;
+
+        static int Tier_1_CleanerMarket = 1000;
+        static int Tier_2_CleanerMarket = 5000;
+        static int Tier_3_CleanerMarket = 15000;
+        static int Tier_4_CleanerMarket = 35000;
+        static int Tier_5_CleanerMarket = 50000;
         #endregion
 
         #region Crafter
-        internal static int Tier_1_CrafterMarket = 1000;
-        internal static float tier_1_CrafterLaborSpeed = 1f;
-        internal static float Tier_1_Crafter_WorkTableWorkSpeed = 1f;
-        internal static int Tier_2_CrafterMarket = 1000;
-        internal static float tier_2_CrafterLaborSpeed = 2f;
-        internal static float Tier_2_Crafter_WorkTableWorkSpeed = 2f;
-        internal static int Tier_3_CrafterMarket = 1000;
-        internal static float tier_3_CrafterLaborSpeed = 2.5f;
-        internal static float Tier_3_Crafter_WorkTableWorkSpeed = 2.5f;
-        internal static int Tier_4_CrafterMarket = 1000;
-        internal static float tier_4_CrafterLaborSpeed = 3f;
-        internal static float Tier_4_Crafter_WorkTableWorkSpeed = 3f;
-        internal static int Tier_5_CrafterMarket = 1000;
-        internal static float tier_5_CrafterLaborSpeed = 4f;
-        internal static float Tier_5_Crafter_WorkTableWorkSpeed = 4f;
+        static int Tier_1_CrafterMarket = 1000;
+        static int Tier_2_CrafterMarket = 5000;
+        static int Tier_3_CrafterMarket = 15000;
+        static int Tier_4_CrafterMarket = 35000;
+        static int Tier_5_CrafterMarket = 50000;
+
+        static float tier_1_CrafterLaborSpeed = 1f;
+        static float tier_2_CrafterLaborSpeed = 2f;
+        static float tier_3_CrafterLaborSpeed = 2.5f;
+        static float tier_4_CrafterLaborSpeed = 3f;
+        static float tier_5_CrafterLaborSpeed = 4f;
         #endregion
 
         #region ER
-        internal static int Tier_1_ERMarket = 1000;
-        internal static int Tier_2_ERMarket = 5000;
-        internal static int Tier_3_ERMarket = 15000;
-        internal static int Tier_4_ERMarket = 35000;
-        internal static int Tier_5_ERMarket = 50000;
+ 
 
-        internal static float tier_1_ERMedicalSurgerySuccessChance = 1f;
-        internal static float tier_2_ERMedicalSurgerySuccessChance = 1.25f;
-        internal static float tier_3_ERMedicalSurgerySuccessChance = 1.5f;
-        internal static float tier_4_ERMedicalSurgerySuccessChance = 1.75f;
-        internal static float tier_5_ERMedicalSurgerySuccessChance = 2f;
+        static float tier_1_ERMedicalSurgerySuccessChance = 1f;
+        static float tier_2_ERMedicalSurgerySuccessChance = 1.25f;
+        static float tier_3_ERMedicalSurgerySuccessChance = 1.5f;
+        static float tier_4_ERMedicalSurgerySuccessChance = 1.75f;
+        static float tier_5_ERMedicalSurgerySuccessChance = 2f;
 
-        internal static float tier_1_ERTendingLaborSpeed = 1f;
-        internal static float tier_2_ERTendingLaborSpeed = 2f;
-        internal static float tier_3_ERTendingLaborSpeed = 2.5f;
-        internal static float tier_4_ERTendingLaborSpeed = 3f;
-        internal static float tier_5_ERTendingLaborSpeed = 4f;
+        static float tier_1_ERTendingLaborSpeed = 1f;
+        static float tier_2_ERTendingLaborSpeed = 2f;
+        static float tier_3_ERTendingLaborSpeed = 2.5f;
+        static float tier_4_ERTendingLaborSpeed = 3f;
+        static float tier_5_ERTendingLaborSpeed = 4f;
+
+        static int Tier_1_ERMarket = 1000;
+        static int Tier_2_ERMarket = 5000;
+        static int Tier_3_ERMarket = 15000;
+        static int Tier_4_ERMarket = 35000;
+        static int Tier_5_ERMarket = 50000;
         #endregion
 
         #region Kitchen
-        internal static int tier_1_Kitcen_MarketValue = 1000;
-        internal static int tier_2_Kitcen_MarketValue = 5000;
-        internal static int tier_3_Kitcen_MarketValue = 15000;
-        internal static int tier_4_Kitcen_MarketValue = 35000;
-        internal static int tier_5_Kitcen_MarketValue = 50000;
 
-        internal static float tier_1_Kitchen_GeneralLaborSpeed = 1f;
-        internal static float tier_1_KitchenPlantWorkSpeed = 1f;
-        internal static float tier_1_KitchenPlantHarvestYield = 1f;
-        internal static float tier_1_KitchenDrugHarvestYield = 1f;
+        static float tier_1_KitchenGeneralLaborSpeed = 1f;
+        static float tier_2_KitchenGeneralLaborSpeed = 2f;
+        static float tier_3_KitchenGeneralLaborSpeed = 2.5f;
+        static float tier_4_KitchenGeneralLaborSpeed = 3f;
+        static float tier_5_KitchenGeneralLaborSpeed = 4f;
 
-        internal static float tier_2_KitchenGeneralLaborSpeed = 2f;
-        internal static float tier_2_KitchenPlantWorkSpeed = 2f;
-        internal static float tier_2_KitchenPlantHarvestYield = 1.25f;
-        internal static float tier_2_KitchenDrugHarvestYield = 1.25f;
+        static float tier_1_KitchenPlantWorkSpeed = 1f;
+        static float tier_2_KitchenPlantWorkSpeed = 2f;
+        static float tier_3_KitchenPlantWorkSpeed = 2.5f;
+        static float tier_4_KitchenPlantWorkSpeed = 3f;
+        static float tier_5_KitchenPlantWorkSpeed = 4f;
 
-        internal static float tier_3_KitchenGeneralLaborSpeed = 2.5f;
-        internal static float tier_3_KitchenPlantWorkSpeed = 2.5f;
-        internal static float tier_3_KitchenPlantHarvestYield = 1.5f;
-        internal static float tier_3_KitchenDrugHarvestYield = 1.5f;
+        static float tier_1_KitchenPlantHarvestYield = 1f;
+        static float tier_2_KitchenPlantHarvestYield = 1.25f;
+        static float tier_3_KitchenPlantHarvestYield = 1.5f;
+        static float tier_4_KitchenPlantHarvestYield = 1.75f;
+        static float tier_5_KitchenDrugHarvestYield = 2f;
 
-        internal static float tier_4_KitchenGeneralLaborSpeed = 3f;
-        internal static float tier_4_KitchenPlantWorkSpeed = 3f;
-        internal static float tier_4_KitchenPlantHarvestYield = 1.75f;
-        internal static float tier_4_KitchenDrugHarvestYield = 1.75f;
+        static float tier_1_KitchenDrugHarvestYield = 1f;
+        static float tier_2_KitchenDrugHarvestYield = 1.25f;
+        static float tier_3_KitchenDrugHarvestYield = 1.5f;
+        static float tier_4_KitchenDrugHarvestYield = 1.75f;
+        static float tier_5_KitchenPlantHarvestYield = 2f;
 
-        internal static float tier_5_KitchenGeneralLaborSpeed = 4f;
-        internal static float tier_5_KitchenPlantWorkSpeed = 4f;
-        internal static float tier_5_KitchenPlantHarvestYield = 2f;
-        internal static float tier_5_KitchenDrugHarvestYield = 2f;
+        static int tier_1_Kitcen_MarketValue = 1000;
+        static int tier_2_Kitcen_MarketValue = 5000;
+        static int tier_3_Kitcen_MarketValue = 15000;
+        static int tier_4_Kitcen_MarketValue = 35000;
+        static int tier_5_Kitcen_MarketValue = 50000;
         #endregion
 
         #region Builder
         //Used in Builder anywhere?
-        internal static float tier_5_Builder_GeneralLaborSpeed = 1f;
-        internal static float tier_1_Builder_GeneralLaborSpeed = 1.5f;
-        internal static float tier_2_Builder_GeneralLaborSpeed = 2f;
-        internal static float tier_3_Builder_GeneralLaborSpeed = 3f;
-        internal static float tier_4_Builder_GeneralLaborSpeed = 4f;
+        //static float tier_5_Builder_GeneralLaborSpeed = 1f;
+        //static float tier_1_Builder_GeneralLaborSpeed = 1.5f;
+        //static float tier_2_Builder_GeneralLaborSpeed = 2f;
+        //static float tier_3_Builder_GeneralLaborSpeed = 3f;
+        //static float tier_4_Builder_GeneralLaborSpeed = 4f;
 
 
-        internal static int tier_1_Builder_MarketValue = 1000;
-        internal static int tier_2_Builder_MarketValue = 5000;
-        internal static int tier_3_Builder_MarketValue = 15000;
-        internal static int tier_4_Builder_MarketValue = 35000;
-        internal static int tier_5_Builder_MarketValue = 50000;
+        static int tier_1_Builder_MarketValue = 1000;
+        static int tier_2_Builder_MarketValue = 5000;
+        static int tier_3_Builder_MarketValue = 15000;
+        static int tier_4_Builder_MarketValue = 35000;
+        static int tier_5_Builder_MarketValue = 50000;
 
-        internal static float tier_1_Builder_ConstructionSpeed = 1f;
-        internal static float tier_2_Builder_ConstructionSpeed = 1.5f;
-        internal static float tier_3_Builder_ConstructionSpeed = 2f;
-        internal static float tier_4_Builder_ConstructionSpeed = 3f;
-        internal static float tier_5_Builder_ConstructionSpeed = 4f;
+        static float tier_1_Builder_ConstructionSpeed = 1f;
+        static float tier_2_Builder_ConstructionSpeed = 1.5f;
+        static float tier_3_Builder_ConstructionSpeed = 2f;
+        static float tier_4_Builder_ConstructionSpeed = 3f;
+        static float tier_5_Builder_ConstructionSpeed = 4f;
         
-        internal static float tier_1_Builder_DeepDrillingSpeed = 1f;
-        internal static float tier_2_Builder_DeepDrillingSpeed = 1.5f;
-        internal static float tier_3_Builder_DeepDrillingSpeed = 2f;
-        internal static float tier_4_Builder_DeepDrillingSpeed = 3f;
-        internal static float tier_5_Builder_DeepDrillingSpeed = 4f;
+        static float tier_1_Builder_DeepDrillingSpeed = 1f;
+        static float tier_2_Builder_DeepDrillingSpeed = 1.5f;
+        static float tier_3_Builder_DeepDrillingSpeed = 2f;
+        static float tier_4_Builder_DeepDrillingSpeed = 3f;
+        static float tier_5_Builder_DeepDrillingSpeed = 4f;
 
-        internal static float tier_1_Builder_SmoothingSpeed = 1f;
-        internal static float tier_2_Builder_SmoothingSpeed = 1.5f;
-        internal static float tier_3_Builder_SmoothingSpeed = 2f;
-        internal static float tier_4_Builder_SmoothingSpeed = 3f;
-        internal static float tier_5_Builder_SmoothingSpeed = 4f;
+        static float tier_1_Builder_SmoothingSpeed = 1f;
+        static float tier_2_Builder_SmoothingSpeed = 1.5f;
+        static float tier_3_Builder_SmoothingSpeed = 2f;
+        static float tier_4_Builder_SmoothingSpeed = 3f;
+        static float tier_5_Builder_SmoothingSpeed = 4f;
 
-        internal static float tier_1_Builder_MiningYield = 1f;
-        internal static float tier_2_Builder_MiningYield = 1.25f;
-        internal static float tier_3_Builder_MiningYield = 1.5f;
-        internal static float tier_4_Builder_MiningYield = 1.75f;
-        internal static float tier_5_Builder_MiningYield = 2.00f;
+        static float tier_1_Builder_MiningYield = 1f;
+        static float tier_2_Builder_MiningYield = 1.25f;
+        static float tier_3_Builder_MiningYield = 1.5f;
+        static float tier_4_Builder_MiningYield = 1.75f;
+        static float tier_5_Builder_MiningYield = 2.00f;
         #endregion
 
         #region Omni
 
+        static float tier_1_Omni_TendingSpeed = 1f;
+        static float tier_2_Omni_TendingSpeed = 2f;
+        static float tier_3_Omni_TendingSpeed = 2.5f;
+        static float tier_4_Omni_TendingSpeed = 3f;
+        static float tier_5_Omni_TendingSpeed = 4f;
 
-        internal static int tier_1_Omni_MarketValue = 4000;
-        internal static int tier_2_Omni_MarketValue = 8000;
-        internal static int tier_3_Omni_MarketValue = 24000;
-        internal static int tier_4_Omni_MarketValue = 36000;
-        internal static int tier_5_Omni_MarketValue = 92000; 
+        static float tier_1_Omni_WorkTableWorkSpeedFactor = 1f;
+        static float tier_2_Omni_WorkTableWorkSpeedFactor = 2f;
+        static float tier_3_Omni_WorkTableWorkSpeedFactor = 2.5f;
+        static float tier_4_Omni_WorkTableWorkSpeedFactor = 3f;
+        static float tier_5_Omni_WorkTableWorkSpeedFactor = 4f;
 
-        internal static float tier_1_Omni_WorkTableWorkSpeedFactor = 1f;
-        internal static float tier_1_Omni_GeneralLaborSpeed = 1f;
-        internal static float tier_1_Omni_CleaningSpeed = 1f;
-        internal static float tier_1_Omni_ConstructionSpeed = 1f;
-        internal static float tier_1_Omni_DeepDrillingSpeed = 1f;
-        internal static float tier_1_Omni_SmoothingSpeed = 1f;
-        internal static float tier_1_Omni_PlantWorkSpeed = 1f;
-        internal static float tier_1_Omni_MiningYield = 1f;
-        internal static float tier_1_Omni_PlantHarvestYield = 1f;
-        internal static float tier_1_Omni_DrugHarvestYield = 1f;
-        internal static float tier_1_Omni_ConstructSuccessChance = 1f;
-        internal static float tier_1_Omni_MedicalSurgerySuccessChance = 1f;
+        static float tier_1_Omni_CleaningSpeed = 1f;
+        static float tier_2_Omni_CleaningSpeed = 2f;
+        static float tier_3_Omni_CleaningSpeed = 2.5f;
+        static float tier_4_Omni_CleaningSpeed = 3f;
+        static float tier_5_Omni_CleaningSpeed = 4f;
 
+        static float tier_1_Omni_ConstructionSpeed = 1f;
+        static float tier_2_Omni_ConstructionSpeed = 2f;
+        static float tier_3_Omni_ConstructionSpeed = 2.5f;
+        static float tier_4_Omni_ConstructionSpeed = 3f;
+        static float tier_5_Omni_ConstructionSpeed = 4f;
 
-        internal static float tier_2_Omni_WorkTableWorkSpeedFactor = 2f;
-        internal static float tier_2_Omni_GeneralLaborSpeed = 2f;
-        internal static float tier_2_Omni_CleaningSpeed = 2f;
-        internal static float tier_2_Omni_ConstructionSpeed = 2f;
-        internal static float tier_2_Omni_DeepDrillingSpeed = 2f;
-        internal static float tier_2_Omni_SmoothingSpeed = 2f;
-        internal static float tier_2_Omni_PlantWorkSpeed = 2f;
-        internal static float tier_2_Omni_MiningYield = 1.3f;
-        internal static float tier_2_Omni_PlantHarvestYield = 1.3f;
-        internal static float tier_2_Omni_DrugHarvestYield = 1.3f;
-        internal static float tier_2_Omni_ConstructSuccessChance = 1.3f;
-        internal static float tier_2_Omni_MedicalSurgerySuccessChance = 1.3f;
+        static float tier_1_Omni_DeepDrillingSpeed = 1f;
+        static float tier_2_Omni_DeepDrillingSpeed = 2f;
+        static float tier_3_Omni_DeepDrillingSpeed = 2.5f;
+        static float tier_4_Omni_DeepDrillingSpeed = 3f;
+        static float tier_5_Omni_DeepDrillingSpeed = 4f;
 
-        internal static float tier_3_Omni_WorkTableWorkSpeedFactor = 2.5f;
-        internal static float tier_3_Omni_GeneralLaborSpeed = 2.5f;
-        internal static float tier_3_Omni_CleaningSpeed = 2.5f;
-        internal static float tier_3_Omni_ConstructionSpeed = 2.5f;
-        internal static float tier_3_Omni_DeepDrillingSpeed = 2.5f;
-        internal static float tier_3_Omni_SmoothingSpeed = 2.5f;
-        internal static float tier_3_Omni_PlantWorkSpeed = 2.5f;
-        internal static float tier_3_Omni_MiningYield = 1.6f;
-        internal static float tier_3_Omni_PlantHarvestYield = 1.6f;
-        internal static float tier_3_Omni_DrugHarvestYield = 1.6f;
-        internal static float tier_3_Omni_ConstructSuccessChance = 1.6f;
-        internal static float tier_3_Omni_MedicalSurgerySuccessChance = 1.6f;
+        static float tier_1_Omni_SmoothingSpeed = 1f;
+        static float tier_2_Omni_SmoothingSpeed = 2f;
+        static float tier_3_Omni_SmoothingSpeed = 2.5f;
+        static float tier_4_Omni_SmoothingSpeed = 3f;
+        static float tier_5_Omni_SmoothingSpeed = 4f;
 
-        internal static float tier_4_Omni_WorkTableWorkSpeedFactor = 3f;
-        internal static float tier_4_Omni_GeneralLaborSpeed = 3f;
-        internal static float tier_4_Omni_CleaningSpeed = 3f;
-        internal static float tier_4_Omni_ConstructionSpeed = 3f;
-        internal static float tier_4_Omni_DeepDrillingSpeed = 3f;
-        internal static float tier_4_Omni_SmoothingSpeed = 3f;
-        internal static float tier_4_Omni_PlantWorkSpeed = 3f;
-        internal static float tier_4_Omni_MiningYield = 1.9f;
-        internal static float tier_4_Omni_PlantHarvestYield = 1.9f;
-        internal static float tier_4_Omni_DrugHarvestYield = 1.9f;
-        internal static float tier_4_Omni_ConstructSuccessChance = 1.6f;
-        internal static float tier_4_Omni_MedicalSurgerySuccessChance = 1.9f;
+        static float tier_1_Omni_PlantWorkSpeed = 1f;
+        static float tier_2_Omni_PlantWorkSpeed = 2f;
+        static float tier_3_Omni_PlantWorkSpeed = 2.5f;
+        static float tier_4_Omni_PlantWorkSpeed = 3f;
+        static float tier_5_Omni_PlantWorkSpeed = 4f;
+  
+        static float tier_1_Omni_MiningYield = 1f;
+        static float tier_2_Omni_MiningYield = 1.25f;
+        static float tier_3_Omni_MiningYield = 1.5f;
+        static float tier_4_Omni_MiningYield = 1.75f;
+        static float tier_5_Omni_MiningYield = 2f;
 
+        static float tier_1_Omni_PlantHarvestYield = 1f;
+        static float tier_2_Omni_PlantHarvestYield = 1.25f;
+        static float tier_3_Omni_PlantHarvestYield = 1.5f;
+        static float tier_4_Omni_PlantHarvestYield = 1.75f;
+        static float tier_5_Omni_PlantHarvestYield = 2f;
 
-        internal static float tier_5_Omni_WorkTableWorkSpeedFactor = 3f;
-        internal static float tier_5_Omni_GeneralLaborSpeed = 3f;
-        internal static float tier_5_Omni_CleaningSpeed = 3f;
-        internal static float tier_5_Omni_ConstructionSpeed = 3f;
-        internal static float tier_5_Omni_DeepDrillingSpeed = 3f;
-        internal static float tier_5_Omni_SmoothingSpeed = 3f;
-        internal static float tier_5_Omni_PlantWorkSpeed = 3f;
-        internal static float tier_5_Omni_MiningYield = 1.9f;
-        internal static float tier_5_Omni_PlantHarvestYield = 1.9f;
-        internal static float tier_5_Omni_DrugHarvestYield = 1.9f;
-        internal static float tier_5_Omni_ConstructSuccessChance = 1.6f;
-        internal static float tier_5_Omni_MedicalSurgerySuccessChance = 1.9f;
+        static float tier_1_Omni_DrugHarvestYield = 1f;
+        static float tier_2_Omni_DrugHarvestYield = 1.25f;
+        static float tier_3_Omni_DrugHarvestYield = 1.5f;
+        static float tier_4_Omni_DrugHarvestYield = 1.75f;
+        static float tier_5_Omni_DrugHarvestYield = 2f;
+
+        static float tier_1_Omni_MedicalSurgerySuccessChance = 1f;
+        static float tier_2_Omni_MedicalSurgerySuccessChance = 1.25f;
+        static float tier_3_Omni_MedicalSurgerySuccessChance = 1.5f;
+        static float tier_4_Omni_MedicalSurgerySuccessChance = 1.75f;
+        static float tier_5_Omni_MedicalSurgerySuccessChance = 2f;
+
+        static int tier_1_Omni_MarketValue = 4000;
+        static int tier_2_Omni_MarketValue = 8000;
+        static int tier_3_Omni_MarketValue = 24000;
+        static int tier_4_Omni_MarketValue = 36000;
+        static int tier_5_Omni_MarketValue = 92000;
 
         #endregion
 
         #endregion
+
 
         internal static List<ThingDef> database;
+
         #region Expose Data
+
+        public void ExposeValues(RobotsData data, float[,] defaultSettings)
+        {
+            for (int i = 0; i < data.defThing.Length; i++)
+            {
+                for (int x = 0; x < data.statsData.Length; x++)
+                {
+                    Scribe_Values.Look(ref data.settingsValue[i,x], data.defThing[i] + "_" + data.statsData[x].defName, defaultSettings[i,x]);
+                }
+            }
+        }
         public override void ExposeData()
         {
+            //Stored in XML config file
             base.ExposeData();
-
-            //Cleaner
-            Scribe_Values.Look(ref Tier_1_CleanerMarket, "Cleaner_I_Market_Value",1000);
-            Scribe_Values.Look(ref Tier_2_CleanerMarket, "Cleaner_II_Market_Value", 5000);
-            Scribe_Values.Look(ref Tier_3_CleanerMarket, "Cleaner_III_Market_Value", 15000);
-            Scribe_Values.Look(ref Tier_4_CleanerMarket, "Cleaner_IV_Market_Value", 35000);
-            Scribe_Values.Look(ref Tier_5_CleanerMarket, "Cleaner_V_Market_Value", 50000);
-
-            Scribe_Values.Look(ref tier_1_CleaningSpeed, "Cleaner_I_Cleaning_Speed", 1f);
-            Scribe_Values.Look(ref tier_2_CleaningSpeed, "Cleaner_II_Cleaning_Speed", 1.5f);
-            Scribe_Values.Look(ref tier_3_CleaningSpeed, "Cleaner_III_Cleaning_Speed", 2f);
-            Scribe_Values.Look(ref tier_4_CleaningSpeed, "Cleaner_IV_Cleaning_Speed", 3f);
-            Scribe_Values.Look(ref tier_5_CleaningSpeed, "Cleaner_V_Cleaning_Speed", 4f);
-
-
-            //Crafter
-            Scribe_Values.Look(ref Tier_1_CrafterMarket, "Crafter_I_Market_Value", 1000);
-            Scribe_Values.Look(ref Tier_1_CrafterMarket, "Crafter_II_Market_Value", 5000);
-            Scribe_Values.Look(ref Tier_1_CrafterMarket, "Crafter_III_Market_Value", 15000);
-            Scribe_Values.Look(ref Tier_1_CrafterMarket, "Crafter_IV_Market_Value", 35000); 
-            Scribe_Values.Look(ref Tier_1_CrafterMarket, "Crafter_V_Market_Value", 50000);
-
-            Scribe_Values.Look(ref tier_1_CrafterLaborSpeed, "Crafter_I_Crafting_Speed", 1f);
-            Scribe_Values.Look(ref tier_2_CrafterLaborSpeed, "Crafter_II_Crafting_Speed", 2f);
-            Scribe_Values.Look(ref tier_3_CrafterLaborSpeed, "Crafter_III_Crafting_Speed", 2.5f);
-            Scribe_Values.Look(ref tier_4_CrafterLaborSpeed, "Crafter_IV_Crafting_Speed", 3f);
-            Scribe_Values.Look(ref tier_5_CrafterLaborSpeed, "Crafter_V_Crafting_Speed", 4f);
-
-
-            //ER
-            Scribe_Values.Look(ref Tier_1_ERMarket, "ER_I_Market_Value", 1000);
-            Scribe_Values.Look(ref Tier_2_ERMarket, "ER_II_Market_Value", 5000);
-            Scribe_Values.Look(ref Tier_3_ERMarket, "ER_III_Market_Value", 15000);
-            Scribe_Values.Look(ref Tier_4_ERMarket, "ER_IV_Market_Value", 35000);
-            Scribe_Values.Look(ref Tier_5_ERMarket, "ER_V_Market_Value", 50000);
-
-            Scribe_Values.Look(ref tier_1_ERTendingLaborSpeed, "ER_I_Tending_Speed", 1f);
-            Scribe_Values.Look(ref tier_2_ERTendingLaborSpeed, "ER_II_Tending_Speed", 2f);
-            Scribe_Values.Look(ref tier_3_ERTendingLaborSpeed, "ER_III_Tending_Speed", 2.5f);
-            Scribe_Values.Look(ref tier_4_ERTendingLaborSpeed, "ER_IV_Tending_Speed", 3f);
-            Scribe_Values.Look(ref tier_5_ERTendingLaborSpeed, "ER_V_Tending_Speed", 4f);
-
-            Scribe_Values.Look(ref tier_1_ERMedicalSurgerySuccessChance, "ER_I_Surgery_Chance", 1f);
-            Scribe_Values.Look(ref tier_2_ERMedicalSurgerySuccessChance, "ER_II_Surgery_Chance", 1.25f);
-            Scribe_Values.Look(ref tier_3_ERMedicalSurgerySuccessChance, "ER_III_Surgery_Chance", 1.5f);
-            Scribe_Values.Look(ref tier_4_ERMedicalSurgerySuccessChance, "ER_IV_Surgery_Chance", 1.75f);
-            Scribe_Values.Look(ref tier_5_ERMedicalSurgerySuccessChance, "ER_V_Surgery_Chance", 2f);
-
-
-            //Kitchen
-            Scribe_Values.Look(ref tier_1_Kitcen_MarketValue, "Kitchen_I_MarketValue", 1000);
-            Scribe_Values.Look(ref tier_2_Kitcen_MarketValue, "Kitchen_II_MarketValue", 5000);
-            Scribe_Values.Look(ref tier_3_Kitcen_MarketValue, "Kitchen_III_MarketValue", 15000);
-            Scribe_Values.Look(ref tier_4_Kitcen_MarketValue, "Kitchen_IV_MarketValue", 35000);
-            Scribe_Values.Look(ref tier_5_Kitcen_MarketValue, "Kitchen_V_MarketValue", 50000);
-
-            Scribe_Values.Look(ref tier_1_Kitchen_GeneralLaborSpeed, "Kitchen_I_GeneralLaborSpeed", 1f);
-            Scribe_Values.Look(ref tier_2_KitchenGeneralLaborSpeed, "Kitchen_II_GeneralLaborSpeed", 2f);
-            Scribe_Values.Look(ref tier_3_KitchenGeneralLaborSpeed, "Kitchen_III_GeneralLaborSpeed", 2.5f);
-            Scribe_Values.Look(ref tier_4_KitchenGeneralLaborSpeed, "Kitchen_IV_GeneralLaborSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_KitchenGeneralLaborSpeed, "Kitchen_V_GeneralLaborSpeed", 4f);
-
-            Scribe_Values.Look(ref tier_1_KitchenPlantWorkSpeed, "Kitchen_I_PlantWorkSpeed", 1f);
-            Scribe_Values.Look(ref tier_2_KitchenPlantWorkSpeed, "Kitchen_II_PlantWorkSpeed", 2f);
-            Scribe_Values.Look(ref tier_3_KitchenPlantWorkSpeed, "Kitchen_III_PlantWorkSpeed", 2.5f);
-            Scribe_Values.Look(ref tier_4_KitchenPlantWorkSpeed, "Kitchen_IV_PlantWorkSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_KitchenPlantWorkSpeed, "Kitchen_V_PlantWorkSpeed", 4f);
-
-            Scribe_Values.Look(ref tier_1_KitchenPlantHarvestYield, "Kitchen_I_PlantHarvestYield", 1f);
-            Scribe_Values.Look(ref tier_2_KitchenPlantHarvestYield, "Kitchen_II_PlantHarvestYield", 1.25f);
-            Scribe_Values.Look(ref tier_3_KitchenPlantHarvestYield, "Kitchen_III_PlantHarvestYield", 1.5f);
-            Scribe_Values.Look(ref tier_4_KitchenPlantHarvestYield, "Kitchen_IV_PlantHarvestYield", 1.75f);
-            Scribe_Values.Look(ref tier_5_KitchenPlantHarvestYield, "Kitchen_V_PlantHarvestYield", 2f);
-
-            Scribe_Values.Look(ref tier_1_KitchenDrugHarvestYield, "Kitchen_I_DrugHarvestYield", 1f);
-            Scribe_Values.Look(ref tier_2_KitchenDrugHarvestYield, "Kitchen_II_DrugHarvestYield", 1.25f);
-            Scribe_Values.Look(ref tier_3_KitchenDrugHarvestYield, "Kitchen_III_DrugHarvestYield", 1.5f);
-            Scribe_Values.Look(ref tier_4_KitchenDrugHarvestYield, "Kitchen_IV_DrugHarvestYield", 1.75f);
-            Scribe_Values.Look(ref tier_5_KitchenDrugHarvestYield, "Kitchen_V_DrugHarvestYield", 2f);
-
-
-            //Builder
-            Scribe_Values.Look(ref tier_1_Builder_MarketValue, "Builder_I_MarketValue", 1000);
-            Scribe_Values.Look(ref tier_2_Builder_MarketValue, "Builder_II_MarketValue", 5000);
-            Scribe_Values.Look(ref tier_3_Builder_MarketValue, "Builder_III_MarketValue", 15000);
-            Scribe_Values.Look(ref tier_4_Builder_MarketValue, "Builder_IV_MarketValue", 35000);
-            Scribe_Values.Look(ref tier_5_Builder_MarketValue, "Builder_V_MarketValue", 50000);
-
-            Scribe_Values.Look(ref tier_1_Builder_ConstructionSpeed, "Builder_I_ConstructionSpeed", 1f);
-            Scribe_Values.Look(ref tier_2_Builder_ConstructionSpeed, "Builder_II_ConstructionSpeed", 1.5f);
-            Scribe_Values.Look(ref tier_3_Builder_ConstructionSpeed, "Builder_III_ConstructionSpeed", 2f);
-            Scribe_Values.Look(ref tier_4_Builder_ConstructionSpeed, "Builder_IV_ConstructionSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Builder_ConstructionSpeed, "Builder_V_ConstructionSpeed", 4f);
-
-            Scribe_Values.Look(ref tier_1_Builder_DeepDrillingSpeed, "Builder_I_DeepDrillingSpeed", 1f);
-            Scribe_Values.Look(ref tier_2_Builder_DeepDrillingSpeed, "Builder_II_DeepDrillingSpeed", 1.5f);
-            Scribe_Values.Look(ref tier_3_Builder_DeepDrillingSpeed, "Builder_III_DeepDrillingSpeed", 2f);
-            Scribe_Values.Look(ref tier_4_Builder_DeepDrillingSpeed, "Builder_IV_DeepDrillingSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Builder_DeepDrillingSpeed, "Builder_V_DeepDrillingSpeed", 4f);
-
-            Scribe_Values.Look(ref tier_5_Builder_GeneralLaborSpeed, "Builder_I_GeneralLaborSpeed", 1f);
-            Scribe_Values.Look(ref tier_1_Builder_GeneralLaborSpeed, "Builder_II_GeneralLaborSpeed", 1.5f);
-            Scribe_Values.Look(ref tier_2_Builder_GeneralLaborSpeed, "Builder_III_GeneralLaborSpeed", 2f);
-            Scribe_Values.Look(ref tier_3_Builder_GeneralLaborSpeed, "Builder_IV_GeneralLaborSpeed", 3f);
-            Scribe_Values.Look(ref tier_4_Builder_GeneralLaborSpeed, "Builder_V_GeneralLaborSpeed", 4f);
-
-            Scribe_Values.Look(ref tier_1_Builder_SmoothingSpeed, "Builder_I_SmoothingSpeed", 1f);
-            Scribe_Values.Look(ref tier_2_Builder_SmoothingSpeed, "Builder_II_SmoothingSpeed", 1.5f);
-            Scribe_Values.Look(ref tier_3_Builder_SmoothingSpeed, "Builder_III_SmoothingSpeed", 2f);
-            Scribe_Values.Look(ref tier_4_Builder_SmoothingSpeed, "Builder_IV_SmoothingSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Builder_SmoothingSpeed, "Builder_V_SmoothingSpeed", 4f);
-
-            Scribe_Values.Look(ref tier_1_Builder_MiningYield, "Builder_I_MiningYield", 1f);
-            Scribe_Values.Look(ref tier_2_Builder_MiningYield, "Builder_II_MiningYield", 1.2f);
-            Scribe_Values.Look(ref tier_3_Builder_MiningYield, "Builder_III_MiningYield", 1.4f);
-            Scribe_Values.Look(ref tier_4_Builder_MiningYield, "Builder_IV_MiningYield", 1.6f);
-            Scribe_Values.Look(ref tier_5_Builder_MiningYield, "Builder_V_MiningYield", 1.8f);
-
-            //Omni
-
-
-    
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_I_MarketValue", 4000);
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_II_MarketValue", 8000);
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_III_MarketValue", 24000);
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_IV_MarketValue", 36000);
-            Scribe_Values.Look(ref tier_1_Omni_MarketValue, "Omni_V_MarketValue", 92000);
-
-            Scribe_Values.Look(ref tier_1_Omni_WorkTableWorkSpeedFactor, "Omni_I_WorkSpeedFactor", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_GeneralLaborSpeed, "Omni_I_GeneralLaborSpeed", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_CleaningSpeed, "Omni_I_CleaningSpeed", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_ConstructionSpeed, "Omni_I_ConstructionSpeed", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_DeepDrillingSpeed, "Omni_I_DeepDrillingSpeed", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_SmoothingSpeed, "Omni_I_SmoothingSpeed", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_PlantWorkSpeed, "Omni_I_PlantWorkSpeed", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_MiningYield, "Omni_I_MiningYield", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_PlantHarvestYield, "Omni_I_PlantHarvestYield", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_DrugHarvestYield, "Omni_I_DrugHarvestYield", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_ConstructSuccessChance, "Omni_I_ConstructSuccessChance", 1f);
-            Scribe_Values.Look(ref tier_1_Omni_MedicalSurgerySuccessChance, "Omni_I_SurgerySuccess", 1f);
-
-            Scribe_Values.Look(ref tier_2_Omni_WorkTableWorkSpeedFactor, "Omni_II_WorkSpeedFactor", 2f);
-            Scribe_Values.Look(ref tier_2_Omni_GeneralLaborSpeed, "Omni_II_GeneralLaborSpeed", 2f);
-            Scribe_Values.Look(ref tier_2_Omni_CleaningSpeed, "Omni_II_CleaningSpeed", 2f);
-            Scribe_Values.Look(ref tier_2_Omni_ConstructionSpeed, "Omni_II_ConstructionSpeed", 2f);
-            Scribe_Values.Look(ref tier_2_Omni_DeepDrillingSpeed, "Omni_II_DeepDrillingSpeed", 2f);
-            Scribe_Values.Look(ref tier_2_Omni_SmoothingSpeed, "Omni_II_SmoothingSpeed", 2f);
-            Scribe_Values.Look(ref tier_2_Omni_PlantWorkSpeed, "Omni_II_PlantWorkSpeed", 2f);
-            Scribe_Values.Look(ref tier_2_Omni_MiningYield, "Omni_II_MiningYield", 1.3f);
-            Scribe_Values.Look(ref tier_2_Omni_PlantHarvestYield, "Omni_II_PlantHarvestYield", 1.3f);
-            Scribe_Values.Look(ref tier_2_Omni_DrugHarvestYield, "Omni_II_DrugHarvestYield", 1.3f);
-            Scribe_Values.Look(ref tier_2_Omni_ConstructSuccessChance, "Omni_II_ConstructSuccessChance", 1.3f);
-            Scribe_Values.Look(ref tier_2_Omni_MedicalSurgerySuccessChance, "Omni_II_SurgerySuccess", 1.3f);
-
-            Scribe_Values.Look(ref tier_3_Omni_WorkTableWorkSpeedFactor, "Omni_III_WorkSpeedFactor", 2.5f);
-            Scribe_Values.Look(ref tier_3_Omni_GeneralLaborSpeed, "Omni_III_GeneralLaborSpeed", 2.5f);
-            Scribe_Values.Look(ref tier_3_Omni_CleaningSpeed, "Omni_III_CleaningSpeed", 2.5f);
-            Scribe_Values.Look(ref tier_3_Omni_ConstructionSpeed, "Omni_III_ConstructionSpeed", 2.5f);
-            Scribe_Values.Look(ref tier_3_Omni_DeepDrillingSpeed, "Omni_III_DeepDrillingSpeed", 2.5f);
-            Scribe_Values.Look(ref tier_3_Omni_SmoothingSpeed, "Omni_III_SmoothingSpeed", 2.5f);
-            Scribe_Values.Look(ref tier_3_Omni_PlantWorkSpeed, "Omni_III_PlantWorkSpeed", 2.5f);
-            Scribe_Values.Look(ref tier_3_Omni_MiningYield, "Omni_III_MiningYield", 1.6f);
-            Scribe_Values.Look(ref tier_3_Omni_PlantHarvestYield, "Omni_III_PlantHarvestYield", 1.6f);
-            Scribe_Values.Look(ref tier_3_Omni_DrugHarvestYield, "Omni_III_DrugHarvestYield", 1.6f);
-            Scribe_Values.Look(ref tier_3_Omni_ConstructSuccessChance, "Omni_III_ConstructSuccessChance", 1.6f);
-            Scribe_Values.Look(ref tier_3_Omni_MedicalSurgerySuccessChance, "Omni_III_SurgerySuccess", 1.6f);
-
-            Scribe_Values.Look(ref tier_4_Omni_WorkTableWorkSpeedFactor, "Omni_IV_WorkSpeedFactor", 3f);
-            Scribe_Values.Look(ref tier_4_Omni_GeneralLaborSpeed, "Omni_IV_GeneralLaborSpeed", 3f);
-            Scribe_Values.Look(ref tier_4_Omni_CleaningSpeed, "Omni_IV_CleaningSpeed", 3f);
-            Scribe_Values.Look(ref tier_4_Omni_ConstructionSpeed, "Omni_IV_ConstructionSpeed", 3f);
-            Scribe_Values.Look(ref tier_4_Omni_DeepDrillingSpeed, "Omni_IV_DeepDrillingSpeed", 3f);
-            Scribe_Values.Look(ref tier_4_Omni_SmoothingSpeed, "Omni_IV_SmoothingSpeed", 3f);
-            Scribe_Values.Look(ref tier_4_Omni_PlantWorkSpeed, "Omni_IV_PlantWorkSpeed", 3f);
-            Scribe_Values.Look(ref tier_4_Omni_MiningYield, "Omni_IV_MiningYield", 1.9f);
-            Scribe_Values.Look(ref tier_4_Omni_PlantHarvestYield, "Omni_IV_PlantHarvestYield", 1.9f);
-            Scribe_Values.Look(ref tier_4_Omni_DrugHarvestYield, "Omni_IV_DrugHarvestYield", 1.9f);
-            Scribe_Values.Look(ref tier_4_Omni_ConstructSuccessChance, "Omni_IV_ConstructSuccessChance", 1.6f);
-            Scribe_Values.Look(ref tier_4_Omni_MedicalSurgerySuccessChance, "Omni_IV_SurgerySuccess", 1.9f);
-
-            Scribe_Values.Look(ref tier_5_Omni_WorkTableWorkSpeedFactor, "Omni_V_WorkSpeedFactor", 3f);
-            Scribe_Values.Look(ref tier_5_Omni_GeneralLaborSpeed, "Omni_V_GeneralLaborSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Omni_CleaningSpeed, "Omni_V_CleaningSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Omni_ConstructionSpeed, "Omni_V_ConstructionSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Omni_DeepDrillingSpeed, "Omni_V_DeepDrillingSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Omni_SmoothingSpeed, "Omni_V_SmoothingSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Omni_PlantWorkSpeed, "Omni_V_PlantWorkSpeed", 3f);
-            Scribe_Values.Look(ref tier_5_Omni_MiningYield, "Omni_V_MiningYield", 1.9f);
-            Scribe_Values.Look(ref tier_5_Omni_PlantHarvestYield, "Omni_V_PlantHarvestYield", 1.9f);
-            Scribe_Values.Look(ref tier_5_Omni_DrugHarvestYield, "Omni_V_DrugHarvestYield", 1.9f);
-            Scribe_Values.Look(ref tier_5_Omni_ConstructSuccessChance, "Omni_V_MiningYield", 1.6f);
-            Scribe_Values.Look(ref tier_5_Omni_MedicalSurgerySuccessChance, "Omni_V_ConstructSuccessChance", 1.9f);
-            Scribe_Values.Look(ref tier_5_Omni_MedicalSurgerySuccessChance, "Omni_V_SurgerySuccess", 1.9f);
-
+            ExposeValues(buildersData,builderDefaultSettings);
+            ExposeValues(crafterData, crafterDefaultSettings);
+            ExposeValues(cleanerData, cleanerDefaultSettings);
+            ExposeValues(kitchensData, kitchenDefaultSettings);
+            ExposeValues(eRData, ERDefaultSettings);
+            ExposeValues(omniData, OmniDefaultSettings);
         }
 
-        #endregion
+#endregion
 
     }
 }
