@@ -189,7 +189,7 @@ namespace MiscRobotsPlusPlus
                 }
                 //TO DO: Apply Buffers if TEXT field is present
             }
-            //RobotsData.SetBuffers(data);
+            //RobotsData.SetBuffers(data); 
         }
         void GetSettings()
         {
