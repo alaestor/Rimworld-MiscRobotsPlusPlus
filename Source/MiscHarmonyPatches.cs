@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
@@ -13,11 +14,11 @@ using Verse.AI;
 
 namespace MiscRobotsPlusPlus
 {
-    [HarmonyPatch]
+    [HarmonyPatch(typeof(WorkGiver_PatientGoToBedTreatment), nameof(WorkGiver_PatientGoToBedTreatment.AnyAvailableDoctorFor))]
     static class MiscHarmonyPatches
     {
 
-        [HarmonyPatch(typeof(WorkGiver_PatientGoToBedTreatment), nameof(WorkGiver_PatientGoToBedTreatment.AnyAvailableDoctorFor))]
+        
         [HarmonyPrefix]
         static bool Prefix(Pawn pawn, ref bool __result) //pass the __result by ref to alter it.
         {
@@ -38,8 +39,8 @@ namespace MiscRobotsPlusPlus
             } 
             return false; //return false to skip execution of the original.
         }
-     
-
     }
-   
+
+    
+
 }
