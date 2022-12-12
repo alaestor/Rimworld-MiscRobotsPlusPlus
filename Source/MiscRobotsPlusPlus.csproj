@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MiscModsSettings.cs" />
+    <Compile Include="MiscHarmonyPatches.cs" />
     <Compile Include="Patches\PatchGeneratePawnRestrictionOptions.cs" />
     <Compile Include="Patches\PatchJobDriver.cs" />
     <Compile Include="MiscRobotsPlusPlus.cs" />
