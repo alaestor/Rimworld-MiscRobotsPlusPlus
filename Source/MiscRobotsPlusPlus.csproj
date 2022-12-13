@@ -65,20 +65,29 @@
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MiscModsSettings.cs" />
-    <Compile Include="MiscHarmonyPatches.cs" />
+    <Compile Include="HelperClasses\ListingExtentions\ListingExtensions.cs" />
+    <Compile Include="Mod\ModSettings\MiscPlusPlusSettings.cs" />
+    <Compile Include="Patches\MiscPatchAnyAvailableDoctorFor.cs" />
     <Compile Include="Patches\PatchGeneratePawnRestrictionOptions.cs" />
     <Compile Include="Patches\PatchJobDriver.cs" />
-    <Compile Include="MiscRobotsPlusPlus.cs" />
+    <Compile Include="Mod\MiscRobotsPlusPlusMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RobotsData.cs" />
-    <Compile Include="ThingDefRobotsOf.cs" />
+    <Compile Include="HelperClasses\RobotData\RobotsData.cs" />
+    <Compile Include="Mod\StaticDef\ThingDefRobotsOf.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

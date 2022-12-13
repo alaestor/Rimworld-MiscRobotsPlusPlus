@@ -15,7 +15,7 @@ using Verse.AI;
 namespace MiscRobotsPlusPlus
 {
     [HarmonyPatch(typeof(WorkGiver_PatientGoToBedTreatment), nameof(WorkGiver_PatientGoToBedTreatment.AnyAvailableDoctorFor))]
-    static class MiscHarmonyPatches
+    static class MiscPatchAnyAvailableDoctorFor
     {
 
         
