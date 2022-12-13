@@ -26,7 +26,7 @@ namespace MiscRobotsPlusPlus
                 {
                     floatMenus.Add(new FloatMenuOption(item.ToString().Replace("_", " "), delegate
                     {
-                        MiscModsSettings.currentPage = item;
+                        MiscPlusPlusSettings.currentPage = item;
                     }));
                 }
                 Find.WindowStack.Add(new FloatMenu(floatMenus));

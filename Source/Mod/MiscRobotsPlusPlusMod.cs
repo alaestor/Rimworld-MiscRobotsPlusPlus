@@ -22,14 +22,14 @@ namespace MiscRobotsPlusPlus
         }
         private void PushDatabase()
         {
-            MiscModsSettings.database = DefDatabase<ThingDef>.AllDefsListForReading;
+            MiscPlusPlusSettings.database = DefDatabase<ThingDef>.AllDefsListForReading;
         }
 
         #region Writing Settings
         public override void WriteSettings()
         {
             base.WriteSettings();
-            MiscModsSettings.WriteSettings();
+            MiscPlusPlusSettings.WriteSettings();
 
         }
         #endregion
@@ -48,17 +48,14 @@ namespace MiscRobotsPlusPlus
             Listing_Standard listing_Standard = new Listing_Standard();
             Rect rect = new Rect(viewRect.x, viewRect.y, viewRect.width, 999999f);
             listing_Standard.Begin(rect);
-            MiscModsSettings.DoOptionsCategoryContents(listing_Standard);
+            MiscPlusPlusSettings.DoOptionsCategoryContents(listing_Standard);
             optionsViewRectHeight = listing_Standard.CurHeight;
             listing_Standard.End();
             Widgets.EndScrollView();
         }
-
-        
-
         void GetSettings()
         {
-            GetSettings<MiscModsSettings>();
+            GetSettings<MiscPlusPlusSettings>();
         }
        
     }

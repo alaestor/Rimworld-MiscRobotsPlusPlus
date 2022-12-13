@@ -79,9 +79,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HelperClasses\ListingExtensions.cs" />
-    <Compile Include="Mod\ModSettings\MiscModsSettings.cs" />
-    <Compile Include="Patches\MiscHarmonyPatches.cs" />
+    <Compile Include="HelperClasses\ListingExtentions\ListingExtensions.cs" />
+    <Compile Include="Mod\ModSettings\MiscPlusPlusSettings.cs" />
+    <Compile Include="Patches\MiscPatchAnyAvailableDoctorFor.cs" />
     <Compile Include="Patches\PatchGeneratePawnRestrictionOptions.cs" />
     <Compile Include="Patches\PatchJobDriver.cs" />
     <Compile Include="Mod\MiscRobotsPlusPlusMod.cs" />

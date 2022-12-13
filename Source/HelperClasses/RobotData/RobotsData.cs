@@ -36,7 +36,8 @@ namespace MiscRobotsPlusPlus
         {
             for (int i = 0; i < data.defThing.Length; i++)
             {
-                listing.Label(data.defThing[i].Translate());
+                string tier = "Teir_" + i;
+                listing.Label(tier.Translate());
                 for (int x = 0; x < data.statsData.Length; x++)
                 {
                     if (data.isPrecent != null)
@@ -55,7 +56,6 @@ namespace MiscRobotsPlusPlus
                     else
                     {
                         listing.TextFieldNumeric(ref data.settingsValue[i, x], ref data.buffers[i, x]);
-
                     }
                 }
                 listing.GapLine();
