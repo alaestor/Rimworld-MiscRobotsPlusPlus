@@ -4,8 +4,29 @@
 	<MISC_Robots_Category>MiscRobots++ Settings</MISC_Robots_Category>
 	<MISC_WIP>Work In Progress!! DO NOT USE!! IF You open Delete This mod config...</MISC_WIP>
 
+	<Cleaner_Settings>Cleaner Settings</Cleaner_Settings>
 	
+	<AIRobot_Cleaner>Teir I Settings</AIRobot_Cleaner>
+	<AIRobot_Cleaner_II>Teir II Settings</AIRobot_Cleaner_II>
+	<AIRobot_Cleaner_III>Teir III Settings</AIRobot_Cleaner_III>
+	<AIRobot_Cleaner_IV>Teir VI Settings</AIRobot_Cleaner_IV>
+	<AIRobot_Cleaner_V>Teir V Settings</AIRobot_Cleaner_V>
+	<AIRobot_Cleaner_CleaningSpeed> Clening Speed {0}%, Recommended 100%</AIRobot_Cleaner_CleaningSpeed>
+	<AIRobot_Cleaner_II_CleaningSpeed>Clening Speed {0}%, Recommended 200%</AIRobot_Cleaner_II_CleaningSpeed>
+	<AIRobot_Cleaner_III_CleaningSpeed>Clening Speed {0}%, Recommended 250%</AIRobot_Cleaner_III_CleaningSpeed>
+	<AIRobot_Cleaner_IV_CleaningSpeed>Clening Speed {0}%, Recommended 300%</AIRobot_Cleaner_IV_CleaningSpeed>
+	<AIRobot_Cleaner_V_CleaningSpeed>Clening Speed {0}%, Recommended 400%</AIRobot_Cleaner_V_CleaningSpeed>
+	<AIRobot_Cleaner_MarketValue>Recommended 1000$</AIRobot_Cleaner_MarketValue>
+	<AIRobot_Cleaner_II_MarketValue>Recommended 2000$</AIRobot_Cleaner_II_MarketValue>
+	<AIRobot_Cleaner_III_MarketValue>Recommended 3500$</AIRobot_Cleaner_III_MarketValue>
+	<AIRobot_Cleaner_VI_MarketValue>Recommended 7000$</AIRobot_Cleaner_VI_MarketValue>
+	<AIRobot_Cleaner_V_MarketValue>Recommended 9000$</AIRobot_Cleaner_V_MarketValue>
 	
+	<RPP_Bot_Builder_I>Teir I Settings</RPP_Bot_Builder_I>
+	<RPP_Bot_Builder_II>Teir II Settings</RPP_Bot_Builder_II>
+	<RPP_Bot_Builder_III>Teir III Settings</RPP_Bot_Builder_III>
+	<RPP_Bot_Builder_IV>Teir VI Settings</RPP_Bot_Builder_IV>
+	<RPP_Bot_Builder_V>Teir V Settings</RPP_Bot_Builder_V>
 
 </LanguageData>
 
