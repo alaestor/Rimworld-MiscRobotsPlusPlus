@@ -72,19 +72,19 @@
 	<RPP_Bot_Kitchen_V.description>A Tier 5 Godlike-class (20) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_V.description>
 
 	<RPP_Bot_Omni_I.abel>OmniBot</RPP_Bot_Omni_I.label>
-	<RPP_Bot_Omni_I.description>A Tier  Amateur-class capable of almost anything. (NP=P)</RPP_Bot_Omni_I.description>
+	<RPP_Bot_Omni_I.description>A Tier Amateur-class (4) capable of almost anything. (NP=P)</RPP_Bot_Omni_I.description>
 
 	<RPP_Bot_Omni_II.label>OmniBot</RPP_Bot_Omni_II.label>
-	<RPP_Bot_Omni_II.description>A Tier 2 Professional-class unit capable of almost anything. (NP=P)</RPP_Bot_Omni_II.description>
+	<RPP_Bot_Omni_II.description>A Tier 2 Professional-class (8) unit capable of almost anything. (NP=P)</RPP_Bot_Omni_II.description>
 	
 	<RPP_Bot_Omni_III.label>OmniBot</RPP_Bot_Omni_III.label>
-	<RPP_Bot_Omni_III.description>A Tier 3 Master-class capable of almost anything. (NP=P)</RPP_Bot_Omni_III.description>
+	<RPP_Bot_Omni_III.description>A Tier 3 Master-class (13) capable of almost anything. (NP=P)</RPP_Bot_Omni_III.description>
 	
 	<RPP_Bot_Omni_IV.label>OmniBot</RPP_Bot_Omni_IV.label>
-	<RPP_Bot_Omni_IV.description>A Tier 4 System-Master-class unit capable of almost anything. (NP=P)</RPP_Bot_Omni_IV.description>
+	<RPP_Bot_Omni_IV.description>A Tier 4 System-Master-class (16) unit capable of almost anything. (NP=P)</RPP_Bot_Omni_IV.description>
 	
 	<RPP_Bot_Omni_V.label>OmniBot</RPP_Bot_Omni_V.label>
-	<RPP_Bot_Omni_V.description>A Tier 5 Godlike unit capable of almost anything. (NP=P)</RPP_Bot_Omni_V.description>
+	<RPP_Bot_Omni_V.description>A Tier 5 Godlike unit (20) capable of almost anything. (NP=P)</RPP_Bot_Omni_V.description>
 	
 </LanguageData>
 
