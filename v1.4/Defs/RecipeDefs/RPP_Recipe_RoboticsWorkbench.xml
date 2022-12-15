@@ -407,7 +407,7 @@
 		<label>make Omni-bot (Tier 3)</label>
 		<description>Produce an OmniBot.</description>
 		<products><RPP_RechargeStation_Omni_III>1</RPP_RechargeStation_Omni_III></products>
-		<researchPrerequisite>RPP_Research_Omni_III/researchPrerequisite>
+		<researchPrerequisite>RPP_Research_Omni_III</researchPrerequisite>
 	</RecipeDef>
 	<RecipeDef ParentName="RPP_Recipe_Bot_IV">
 		<defName>RPP_Production_Omni_IV</defName>
