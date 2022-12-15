@@ -393,28 +393,28 @@
 		<label>make Omni-bot (Tier 1)</label>
 		<description>Produce an OmniBot.</description>
 		<products><RPP_RechargeStation_Omni_I>1</RPP_RechargeStation_Omni_I></products>
-		<researchPrerequisite>RPP_Research_Omni_V</researchPrerequisite>
+		<researchPrerequisite>RPP_Research_Omni_I</researchPrerequisite>
 	</RecipeDef>
 	<RecipeDef ParentName="RPP_Recipe_Bot_II">
 		<defName>RPP_Production_Omni_II</defName>
 		<label>make Omni-bot (Tier 2)</label>
 		<description>Produce an OmniBot.</description>
 		<products><RPP_RechargeStation_Omni_II>1</RPP_RechargeStation_Omni_II></products>
-		<researchPrerequisite>RPP_Research_Omni_V</researchPrerequisite>
+		<researchPrerequisite>RPP_Research_Omni_II</researchPrerequisite>
 	</RecipeDef>
 	<RecipeDef ParentName="RPP_Recipe_Bot_III">
 		<defName>RPP_Production_Omni_III</defName>
 		<label>make Omni-bot (Tier 3)</label>
 		<description>Produce an OmniBot.</description>
 		<products><RPP_RechargeStation_Omni_III>1</RPP_RechargeStation_Omni_III></products>
-		<researchPrerequisite>RPP_Research_Omni_V</researchPrerequisite>
+		<researchPrerequisite>RPP_Research_Omni_III/researchPrerequisite>
 	</RecipeDef>
 	<RecipeDef ParentName="RPP_Recipe_Bot_IV">
 		<defName>RPP_Production_Omni_IV</defName>
 		<label>make Omni-bot (Tier 4)</label>
 		<description>Produce an OmniBot.</description>
 		<products><RPP_RechargeStation_Omni_IV>1</RPP_RechargeStation_Omni_IV></products>
-		<researchPrerequisite>RPP_Research_Omni_V</researchPrerequisite>
+		<researchPrerequisite>RPP_Research_Omni_IV</researchPrerequisite>
 	</RecipeDef>
 	<RecipeDef ParentName="RPP_Recipe_Bot_V">
 		<defName>RPP_Production_Omni_V</defName>
