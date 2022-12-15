@@ -37,6 +37,11 @@
 	<RPP_Bot_Kitchen_IV.label>Kitchen Bot (Tier 4)</RPP_Bot_Kitchen_IV.label>
 	<RPP_Bot_Kitchen_V.label>Kitchen Bot (Tier 5)</RPP_Bot_Kitchen_V.label>
 
+	<RPP_Bot_Omni_I.label>Omni Bot (Tier 1)</RPP_Bot_Omni_I.label>
+	<RPP_Bot_Omni_II.label>Omni Bot (Tier 2)</RPP_Bot_Omni_II.label>
+	<RPP_Bot_Omni_III.label>Omni Bot (Tier 3)</RPP_Bot_Omni_III.label>
+	<RPP_Bot_Omni_IV.label>Omni Bot (Tier 4)</RPP_Bot_Omni_IV.label>
 	<RPP_Bot_Omni_V.label>Omni Bot (Tier 5)</RPP_Bot_Omni_V.label>
+
 
 </LanguageData>
