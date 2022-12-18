@@ -72,7 +72,15 @@
 	<RPP_Bot_Kitchen_V_disabled.label>Kitchen Bot (disabled)</RPP_Bot_Kitchen_V_disabled.label>
 	<RPP_Bot_Kitchen_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Kitchen_V_disabled.description>
 
-	<RPP_Bot_Omni_V_disabled.label>OmniBot (disabled)</RPP_Bot_Omni_V_disabled.label>
+	<RPP_Bot_Omni_I_disabled.label>Omni Bot (disabled)</RPP_Bot_Omni_I_disabled.label>
+	<RPP_Bot_Omni_I_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Omni_I_disabled.description>
+	<RPP_Bot_Omni_II_disabled.label>Omni Bot (disabled)</RPP_Bot_Omni_II_disabled.label>
+	<RPP_Bot_Omni_II_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Omni_II_disabled.description>
+	<RPP_Bot_Omni_III_disabled.label>Omni Bot (disabled)</RPP_Bot_Omni_III_disabled.label>
+	<RPP_Bot_Omni_III_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Omni_III_disabled.description>
+	<RPP_Bot_Omni_IV_disabled.label>Omni Bot (disabled)</RPP_Bot_Omni_IV_disabled.label>
+	<RPP_Bot_Omni_IV_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Omni_IV_disabled.description>
+	<RPP_Bot_Omni_V_disabled.label>Omni Bot (disabled)</RPP_Bot_Omni_V_disabled.label>
 	<RPP_Bot_Omni_V_disabled.description>This is the sad end of a home bot. It's no longer useful and needs heavy repairs or dismantling.</RPP_Bot_Omni_V_disabled.description>
 
 </LanguageData>

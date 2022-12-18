@@ -4,19 +4,16 @@
 	<RPP_Production_Component.label>make robotic component</RPP_Production_Component.label>
 	<RPP_Production_Component.description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</RPP_Production_Component.description>
 
-	<RPP_Production_Component_Bulk.label>make robotic component x4</RPP_Production_Component_Bulk.label>
-	<RPP_Production_Component_Bulk.description>Produce Robotic Components which are used as logic circuits within a Robotic Matrix.</RPP_Production_Component_Bulk.description>
-
 	<RPP_Production_Matrix_I.label>make robotic matrix (Simple)</RPP_Production_Matrix_I.label>
-	<RPP_Production_Matrix_I.description>Produce a robotic logical matrix for crafting a robot with Amateur-class skills (Tier 1).</RPP_Production_Matrix_I.description>
+	<RPP_Production_Matrix_I.description>Produce a tier-1 robotic logical matrix for crafting a robot that has a workskill of 4.</RPP_Production_Matrix_I.description>
 	<RPP_Production_Matrix_II.label>make robotic matrix (Basic)</RPP_Production_Matrix_II.label>
-	<RPP_Production_Matrix_II.description>Produce a robotic logical matrix for crafting a robot with Professional-class skills (Tier 2).</RPP_Production_Matrix_II.description>
+	<RPP_Production_Matrix_II.description>Produce a tier-2 robotic logical matrix for crafting a robot that has a workskill of 8.</RPP_Production_Matrix_II.description>
 	<RPP_Production_Matrix_III.label>make robotic matrix (Intermediate)</RPP_Production_Matrix_III.label>
-	<RPP_Production_Matrix_III.description>Produce a robotic logical matrix for crafting a robot with Master-class skills (Tier 3).</RPP_Production_Matrix_III.description>
+	<RPP_Production_Matrix_III.description>Produce a tier-3 robotic logical matrix for crafting a robot that has a workskill of 13.</RPP_Production_Matrix_III.description>
 	<RPP_Production_Matrix_IV.label>make robotic matrix (Advanced)</RPP_Production_Matrix_IV.label>
-	<RPP_Production_Matrix_IV.description>Produce a robotic logical matrix for crafting a robot with System-Master-class skills (Tier 4).</RPP_Production_Matrix_IV.description>
+	<RPP_Production_Matrix_IV.description>Produce a tier-4 robotic logical matrix for crafting a robot that has a workskill of 16.</RPP_Production_Matrix_IV.description>
 	<RPP_Production_Matrix_V.label>make robotic matrix (Anti-Logic)</RPP_Production_Matrix_V.label>
-	<RPP_Production_Matrix_V.description>Produce an Anti-Logic Matrix for crafting a robot with Godlike skills (Tier 5).\nNP=P</RPP_Production_Matrix_V.description>
+	<RPP_Production_Matrix_V.description>Produce a tier-5 Anti-Logic Matrix for crafting a robot that has a workskill of 20.\nNP=P</RPP_Production_Matrix_V.description>
 
 	<RPP_Production_Cleaner_I.label>make cleaner bot (Tier 1)</RPP_Production_Cleaner_I.label>
 	<RPP_Production_Cleaner_I.description>Produce a unit capable of Cleaning.</RPP_Production_Cleaner_I.description>
@@ -41,52 +38,60 @@
 	<RPP_Production_Hauler_V.description>Produce a unit capable of Hauling.</RPP_Production_Hauler_V.description>
 
 	<RPP_Production_Builder_I.label>make builder bot (Tier 1)</RPP_Production_Builder_I.label>
-	<RPP_Production_Builder_I.description>Produce a unit capable of construction, deconstruction, mining, and repairing with amateur-class ability.</RPP_Production_Builder_I.description>
+	<RPP_Production_Builder_I.description>Produce a unit capable of construction, deconstruction, mining, and repairing with a workskill of 4.</RPP_Production_Builder_I.description>
 	<RPP_Production_Builder_II.label>make builder bot (Tier 2)</RPP_Production_Builder_II.label>
-	<RPP_Production_Builder_II.description>Produce a unit capable of construction, deconstruction, mining, and repairing with professional-class ability.</RPP_Production_Builder_II.description>
+	<RPP_Production_Builder_II.description>Produce a unit capable of construction, deconstruction, mining, and repairing with a workskill of 8.</RPP_Production_Builder_II.description>
 	<RPP_Production_Builder_III.label>make builder bot (Tier 3)</RPP_Production_Builder_III.label>
-	<RPP_Production_Builder_III.description>Produce a unit capable of construction, deconstruction, mining, and repairing with master-class ability.</RPP_Production_Builder_III.description>
+	<RPP_Production_Builder_III.description>Produce a unit capable of construction, deconstruction, mining, and repairing with a workskill of 13.</RPP_Production_Builder_III.description>
 	<RPP_Production_Builder_IV.label>make builder bot (Tier 4)</RPP_Production_Builder_IV.label>
-	<RPP_Production_Builder_IV.description>Produce a unit capable of construction, deconstruction, mining, and repairing with system-master-class ability.</RPP_Production_Builder_IV.description>
+	<RPP_Production_Builder_IV.description>Produce a unit capable of construction, deconstruction, mining, and repairing with a workskill of 16.</RPP_Production_Builder_IV.description>
 	<RPP_Production_Builder_V.label>make builder bot (Tier 5)</RPP_Production_Builder_V.label>
-	<RPP_Production_Builder_V.description>Produce a unit capable of construction, deconstruction, mining, and repairing with system-master-class ability.</RPP_Production_Builder_V.description>
+	<RPP_Production_Builder_V.description>Produce a unit capable of construction, deconstruction, mining, and repairing with a workskill of 20.</RPP_Production_Builder_V.description>
 
 	<RPP_Production_Crafter_I.label>make crafter bot (Tier 1)</RPP_Production_Crafter_I.label>
-	<RPP_Production_Crafter_I.description>Produce a unit capable of crafting, smithing, and tailoring with amateur-class ability.</RPP_Production_Crafter_I.description>
+	<RPP_Production_Crafter_I.description>Produce a unit capable of crafting, smithing, and tailoring with a workskill of 4.</RPP_Production_Crafter_I.description>
 	<RPP_Production_Crafter_II.label>make crafter bot (Tier 2)</RPP_Production_Crafter_II.label>
-	<RPP_Production_Crafter_II.description>Produce a unit capable of crafting, smithing, and tailoring with professional-class ability.</RPP_Production_Crafter_II.description>
+	<RPP_Production_Crafter_II.description>Produce a unit capable of crafting, smithing, and tailoring with a workskill of 8.</RPP_Production_Crafter_II.description>
 	<RPP_Production_Crafter_III.label>make crafter bot (Tier 3)</RPP_Production_Crafter_III.label>
-	<RPP_Production_Crafter_III.description>Produce a unit capable of crafting, smithing, and tailoring with master-class ability.</RPP_Production_Crafter_III.description>
+	<RPP_Production_Crafter_III.description>Produce a unit capable of crafting, smithing, and tailoring with a workskill of 13.</RPP_Production_Crafter_III.description>
 	<RPP_Production_Crafter_IV.label>make Crafter bot (Tier 4)</RPP_Production_Crafter_IV.label>
-	<RPP_Production_Crafter_IV.description>Produce a unit capable of crafting, smithing, and tailoring with system-master-class ability.</RPP_Production_Crafter_IV.description>
+	<RPP_Production_Crafter_IV.description>Produce a unit capable of crafting, smithing, and tailoring with a workskill of 16.</RPP_Production_Crafter_IV.description>
 	<RPP_Production_Crafter_V.label>make Crafter bot (Tier 5)</RPP_Production_Crafter_V.label>
-	<RPP_Production_Crafter_V.description>Produce a unit capable of crafting, smithing, and tailoring with system-master-class ability.</RPP_Production_Crafter_V.description>
+	<RPP_Production_Crafter_V.description>Produce a unit capable of crafting, smithing, and tailoring with a workskill of 20.</RPP_Production_Crafter_V.description>
 
 
 	<RPP_Production_ER_I.label>make ER bot (Tier 1)</RPP_Production_ER_I.label>
-	<RPP_Production_ER_I.description>Produce a unit capable of treating patients and fighting fires with amateur-class ability.</RPP_Production_ER_I.description>
+	<RPP_Production_ER_I.description>Produce a unit capable of treating patients and fighting fires with a workskill of 4.</RPP_Production_ER_I.description>
 	<RPP_Production_ER_II.label>make ER bot (Tier 2)</RPP_Production_ER_II.label>
-	<RPP_Production_ER_II.description>Produce a unit capable of treating patients and fighting fires with professional-class ability.</RPP_Production_ER_II.description>
+	<RPP_Production_ER_II.description>Produce a unit capable of treating patients and fighting fires with a workskill of 8.</RPP_Production_ER_II.description>
 	<RPP_Production_ER_III.label>make ER bot (Tier 3)</RPP_Production_ER_III.label>
-	<RPP_Production_ER_III.description>Produce a unit capable of treating patients and fighting fires with master-class ability.</RPP_Production_ER_III.description>
+	<RPP_Production_ER_III.description>Produce a unit capable of treating patients and fighting fires with a workskill of 13.</RPP_Production_ER_III.description>
 	<RPP_Production_ER_IV.label>make ER bot (Tier 4)</RPP_Production_ER_IV.label>
-	<RPP_Production_ER_IV.description>Produce a unit capable of treating patients and fighting fires with system-master-class ability.</RPP_Production_ER_IV.description>
+	<RPP_Production_ER_IV.description>Produce a unit capable of treating patients and fighting fires with a workskill of 16.</RPP_Production_ER_IV.description>
 	<RPP_Production_ER_V.label>make ER bot (Tier 5)</RPP_Production_ER_V.label>
-	<RPP_Production_ER_V.description>Produce a unit capable of treating patients and fighting fires with system-master-class ability.</RPP_Production_ER_V.description>
+	<RPP_Production_ER_V.description>Produce a unit capable of treating patients and fighting fires with a workskill of 20.</RPP_Production_ER_V.description>
 
 	<RPP_Production_Kitchen_I.label>make Kitchen bot (Tier 1)</RPP_Production_Kitchen_I.label>
-	<RPP_Production_Kitchen_I.description>Produce a unit capable of cooking and tending to plants with amateur-class ability.</RPP_Production_Kitchen_I.description>
+	<RPP_Production_Kitchen_I.description>Produce a unit capable of cooking and tending to plants with a workskill of 4.</RPP_Production_Kitchen_I.description>
 	<RPP_Production_Kitchen_II.label>make Kitchen bot (Tier 2)</RPP_Production_Kitchen_II.label>
-	<RPP_Production_Kitchen_II.description>Produce a unit capable of cooking and tending to plants with professional-class ability.</RPP_Production_Kitchen_II.description>
+	<RPP_Production_Kitchen_II.description>Produce a unit capable of cooking and tending to plants with a workskill of 8.</RPP_Production_Kitchen_II.description>
 	<RPP_Production_Kitchen_III.label>make Kitchen bot (Tier 3)</RPP_Production_Kitchen_III.label>
-	<RPP_Production_Kitchen_III.description>Produce a unit capable of cooking and tending to plants with master-class ability.</RPP_Production_Kitchen_III.description>
+	<RPP_Production_Kitchen_III.description>Produce a unit capable of cooking and tending to plants with a workskill of 13.</RPP_Production_Kitchen_III.description>
 	<RPP_Production_Kitchen_IV.label>make Kitchen bot (Tier 4)</RPP_Production_Kitchen_IV.label>
-	<RPP_Production_Kitchen_IV.description>Produce a unit capable of cooking and tending to plants with system-master-class ability.</RPP_Production_Kitchen_IV.description>
+	<RPP_Production_Kitchen_IV.description>Produce a unit capable of cooking and tending to plants with a workskill of 16.</RPP_Production_Kitchen_IV.description>
 	<RPP_Production_Kitchen_V.label>make Kitchen bot (Tier 5)</RPP_Production_Kitchen_V.label>
-	<RPP_Production_Kitchen_V.description>Produce a unit capable of cooking and tending to plants with system-master-class ability.</RPP_Production_Kitchen_V.description>
+	<RPP_Production_Kitchen_V.description>Produce a unit capable of cooking and tending to plants with a workskill of 20.</RPP_Production_Kitchen_V.description>
 
 
+	<RPP_Production_Omni_I.label>make Omni-bot (Tier 1)</RPP_Production_Omni_I.label>
+	<RPP_Production_Omni_I.description>Produce a unit capable of doing the jobs of all the other robots with a workskill of 4.</RPP_Production_Omni_I.description>
+	<RPP_Production_Omni_II.label>make Omni-bot (Tier 2)</RPP_Production_Omni_II.label>
+	<RPP_Production_Omni_II.description>Produce a unit capable of doing the jobs of all the other robots with a workskill of 8.</RPP_Production_Omni_II.description>
+	<RPP_Production_Omni_III.label>make Omni-bot (Tier 3)</RPP_Production_Omni_III.label>
+	<RPP_Production_Omni_III.description>Produce a unit capable of doing the jobs of all the other robots with a workskill of 13.</RPP_Production_Omni_III.description>
+	<RPP_Production_Omni_IV.label>make Omni-bot (Tier 4)</RPP_Production_Omni_IV.label>
+	<RPP_Production_Omni_IV.description>Produce a unit capable of doing the jobs of all the other robots with a workskill of 16.</RPP_Production_Omni_IV.description>
 	<RPP_Production_Omni_V.label>make Omni-bot (Tier 5)</RPP_Production_Omni_V.label>
-	<RPP_Production_Omni_V.description>Produce an OmniBot.</RPP_Production_Omni_V.description>
+	<RPP_Production_Omni_V.description>Produce a unit capable of doing the jobs of all the other robots with a workskill of 20.</RPP_Production_Omni_V.description>
 
 </LanguageData>

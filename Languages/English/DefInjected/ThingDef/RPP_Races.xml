@@ -28,64 +28,60 @@
 	<AIRobot_Cleaner_V.description>An Anti-Logic cleaning robot.</AIRobot_Cleaner_V.description>
 
 	<RPP_Bot_Builder_I.label>Builder Bot</RPP_Bot_Builder_I.label>
-	<RPP_Bot_Builder_I.description>A Tier 1 Amateur-class (4) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_I.description>
+	<RPP_Bot_Builder_I.description>A Tier 1 (workskill 4) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_I.description>
 	<RPP_Bot_Builder_II.label>Builder Bot</RPP_Bot_Builder_II.label>
-	<RPP_Bot_Builder_II.description>A Tier 2 Professional-class (8) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_II.description>
+	<RPP_Bot_Builder_II.description>A Tier 2 (workskill 8) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_II.description>
 	<RPP_Bot_Builder_III.label>Builder Bot</RPP_Bot_Builder_III.label>
-	<RPP_Bot_Builder_III.description>A Tier 3 Master-class (13) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_III.description>
+	<RPP_Bot_Builder_III.description>A Tier 3 (workskill 13) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_III.description>
 	<RPP_Bot_Builder_IV.label>Builder Bot</RPP_Bot_Builder_IV.label>
-	<RPP_Bot_Builder_IV.description>A Tier 4 System-Master-class (16) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_IV.description>
+	<RPP_Bot_Builder_IV.description>A Tier 4 (workskill 16) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_IV.description>
 	<RPP_Bot_Builder_V.label>Builder Bot</RPP_Bot_Builder_V.label>
-	<RPP_Bot_Builder_V.description>A Tier 5 Godlike-class (20) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_V.description>
+	<RPP_Bot_Builder_V.description>A Tier 5 (workskill 20) unit capable of constructing, deconstructing, repairing, and mining.</RPP_Bot_Builder_V.description>
 
 	<RPP_Bot_Crafter_I.label>Crafter Bot</RPP_Bot_Crafter_I.label>
-	<RPP_Bot_Crafter_I.description>A Tier 1 Amateur-class (4) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_I.description>
+	<RPP_Bot_Crafter_I.description>A Tier 1 (workskill 4) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_I.description>
 	<RPP_Bot_Crafter_II.label>Crafter Bot</RPP_Bot_Crafter_II.label>
-	<RPP_Bot_Crafter_II.description>A Tier 2 Professional-class (8) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_II.description>
+	<RPP_Bot_Crafter_II.description>A Tier 2 (workskill 8) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_II.description>
 	<RPP_Bot_Crafter_III.label>Crafter Bot</RPP_Bot_Crafter_III.label>
-	<RPP_Bot_Crafter_III.description>A Tier 3 Master-class (13) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_III.description>
+	<RPP_Bot_Crafter_III.description>A Tier 3 (workskill 13) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_III.description>
 	<RPP_Bot_Crafter_IV.label>Crafter Bot</RPP_Bot_Crafter_IV.label>
-	<RPP_Bot_Crafter_IV.description>A Tier 4 System-Master-class (16) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_IV.description>
+	<RPP_Bot_Crafter_IV.description>A Tier 4 (workskill 16) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_IV.description>
 	<RPP_Bot_Crafter_V.label>Crafter Bot</RPP_Bot_Crafter_V.label>
-	<RPP_Bot_Crafter_V.description>A Tier 5 Godlike-class (20) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_V.description>
+	<RPP_Bot_Crafter_V.description>A Tier 5 (workskill 20) unit capable of smithing, tailoring, and crafting.</RPP_Bot_Crafter_V.description>
 
 	<RPP_Bot_ER_I.label>ER Bot</RPP_Bot_ER_I.label>
-	<RPP_Bot_ER_I.description>A Tier 1 Amateur-class (4) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_I.description>
+	<RPP_Bot_ER_I.description>A Tier 1 (workskill 4) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_I.description>
 	<RPP_Bot_ER_II.label>ER Bot</RPP_Bot_ER_II.label>
-	<RPP_Bot_ER_II.description>A Tier 2 Professional-class (8) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_II.description>
+	<RPP_Bot_ER_II.description>A Tier 2 (workskill 8) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_II.description>
 	<RPP_Bot_ER_III.label>ER Bot</RPP_Bot_ER_III.label>
-	<RPP_Bot_ER_III.description>A Tier 3 Master-class (13) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_III.description>
+	<RPP_Bot_ER_III.description>A Tier 3 (workskill 13) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_III.description>
 	<RPP_Bot_ER_IV.label>ER Bot</RPP_Bot_ER_IV.label>
-	<RPP_Bot_ER_IV.description>A Tier 4 System-Master-class (16) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_IV.description>
+	<RPP_Bot_ER_IV.description>A Tier 4 (workskill 16) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_IV.description>
 	<RPP_Bot_ER_V.label>ER Bot</RPP_Bot_ER_V.label>
-	<RPP_Bot_ER_V.description>A Tier 5 Godlike-class (20) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_V.description>
+	<RPP_Bot_ER_V.description>A Tier 5 (workskill 20) Emergency Response unit capable of treating patients and fighting fires.</RPP_Bot_ER_V.description>
 
 	<RPP_Bot_Kitchen_I.label>Kitchen Bot</RPP_Bot_Kitchen_I.label>
-	<RPP_Bot_Kitchen_I.description>A Tier 1 Amateur-class (4) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_I.description>
+	<RPP_Bot_Kitchen_I.description>A Tier 1 (workskill 4) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_I.description>
 	<RPP_Bot_Kitchen_II.label>Kitchen Bot</RPP_Bot_Kitchen_II.label>
-	<RPP_Bot_Kitchen_II.description>A Tier 2 Professional-class (8) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_II.description>
+	<RPP_Bot_Kitchen_II.description>A Tier 2 (workskill 8) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_II.description>
 	<RPP_Bot_Kitchen_III.label>Kitchen Bot</RPP_Bot_Kitchen_III.label>
-	<RPP_Bot_Kitchen_III.description>A Tier 3 Master-class (13) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_III.description>
+	<RPP_Bot_Kitchen_III.description>A Tier 3 (workskill 13) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_III.description>
 	<RPP_Bot_Kitchen_IV.label>Kitchen Bot</RPP_Bot_Kitchen_IV.label>
-	<RPP_Bot_Kitchen_IV.description>A Tier 4 System-Master-class (16) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_IV.description>
+	<RPP_Bot_Kitchen_IV.description>A Tier 4 (workskill 16) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_IV.description>
 	<RPP_Bot_Kitchen_V.label>Kitchen Bot</RPP_Bot_Kitchen_V.label>
-	<RPP_Bot_Kitchen_V.description>A Tier 5 Godlike-class (20) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_V.description>
+	<RPP_Bot_Kitchen_V.description>A Tier 5 (workskill 20) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_V.description>
 
 	<RPP_Bot_Omni_I.abel>OmniBot</RPP_Bot_Omni_I.label>
-	<RPP_Bot_Omni_I.description>A Tier Amateur-class (4) capable of almost anything. (NP=P)</RPP_Bot_Omni_I.description>
-
+	<RPP_Bot_Omni_I.description>A Tier (workskill 4) unit capable of doing the jobs of all the other robots. (NP=P)</RPP_Bot_Omni_I.description>
 	<RPP_Bot_Omni_II.label>OmniBot</RPP_Bot_Omni_II.label>
-	<RPP_Bot_Omni_II.description>A Tier 2 Professional-class (8) unit capable of almost anything. (NP=P)</RPP_Bot_Omni_II.description>
-	
+	<RPP_Bot_Omni_II.description>A Tier 2 (workskill 8) unit capable of doing the jobs of all the other robots. (NP=P)</RPP_Bot_Omni_II.description>
 	<RPP_Bot_Omni_III.label>OmniBot</RPP_Bot_Omni_III.label>
-	<RPP_Bot_Omni_III.description>A Tier 3 Master-class (13) capable of almost anything. (NP=P)</RPP_Bot_Omni_III.description>
-	
+	<RPP_Bot_Omni_III.description>A Tier 3 (workskill 13) unit capable of doing the jobs of all the other robots. (NP=P)</RPP_Bot_Omni_III.description>
 	<RPP_Bot_Omni_IV.label>OmniBot</RPP_Bot_Omni_IV.label>
-	<RPP_Bot_Omni_IV.description>A Tier 4 System-Master-class (16) unit capable of almost anything. (NP=P)</RPP_Bot_Omni_IV.description>
-	
+	<RPP_Bot_Omni_IV.description>A Tier 4 (workskill 16) unit capable of doing the jobs of all the other robots. (NP=P)</RPP_Bot_Omni_IV.description>
 	<RPP_Bot_Omni_V.label>OmniBot</RPP_Bot_Omni_V.label>
-	<RPP_Bot_Omni_V.description>A Tier 5 Godlike unit (20) capable of almost anything. (NP=P)</RPP_Bot_Omni_V.description>
-	
+	<RPP_Bot_Omni_V.description>A Tier 5 (workskill 20) unit capable of doing the jobs of all the other robots. (NP=P)</RPP_Bot_Omni_V.description>
+
 </LanguageData>
 
 

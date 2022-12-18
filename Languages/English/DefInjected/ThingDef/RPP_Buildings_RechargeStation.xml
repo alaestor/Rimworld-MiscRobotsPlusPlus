@@ -71,7 +71,15 @@
 	<RPP_RechargeStation_Kitchen_V.label>Kitchen(V) Base Station</RPP_RechargeStation_Kitchen_V.label>
 	<RPP_RechargeStation_Kitchen_V.description>This station comes equipped with a specialized Anti-Logic robot.</RPP_RechargeStation_Kitchen_V.description>
 
+	<RPP_RechargeStation_Omni_I.label>Omni(I) Base Station</RPP_RechargeStation_Omni_I.label>
+	<RPP_RechargeStation_Omni_I.description>This station comes equipped with a specialized Simple robot.</RPP_RechargeStation_Omni_I.description>
+	<RPP_RechargeStation_Omni_II.label>Omni(II) Base Station</RPP_RechargeStation_Omni_II.label>
+	<RPP_RechargeStation_Omni_II.description>This station comes equipped with a specialized Basic robot.</RPP_RechargeStation_Omni_II.description>
+	<RPP_RechargeStation_Omni_III.label>Omni(III) Base Station</RPP_RechargeStation_Omni_III.label>
+	<RPP_RechargeStation_Omni_III.description>This station comes equipped with a specialized Intermediate robot.</RPP_RechargeStation_Omni_III.description>
+	<RPP_RechargeStation_Omni_IV.label>Omni(IV) Base Station</RPP_RechargeStation_Omni_IV.label>
+	<RPP_RechargeStation_Omni_IV.description>This station comes equipped with a specialized Advanced robot.</RPP_RechargeStation_Omni_IV.description>
 	<RPP_RechargeStation_Omni_V.label>Omni(V) Base Station</RPP_RechargeStation_Omni_V.label>
-	<RPP_RechargeStation_Omni_V.description>This station comes equipped an Anti-Logic OmniBot. (NP=P)\nIt also has an over-unity internal powersupply.</RPP_RechargeStation_Omni_V.description>
+	<RPP_RechargeStation_Omni_V.description>This station comes equipped with a specialized Anti-Logic robot.</RPP_RechargeStation_Omni_V.description>
 
 </LanguageData>

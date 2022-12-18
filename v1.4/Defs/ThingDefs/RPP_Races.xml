@@ -391,7 +391,7 @@
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_I</defName>
 		<label>Builder Bot</label>
-		<description>A Tier 1 amateur-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<description>A Tier 1 (workskill 4) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
 			<ConstructionSpeed>1</ConstructionSpeed>
 			<DeepDrillingSpeed>1</DeepDrillingSpeed>
@@ -420,7 +420,7 @@
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_II</defName>
 		<label>Builder Bot</label>
-		<description>A Tier 2 professional-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<description>A Tier 2 (workskill 8) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
 			<ConstructionSpeed>1.5</ConstructionSpeed>
 			<DeepDrillingSpeed>1.5</DeepDrillingSpeed>
@@ -449,7 +449,7 @@
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_III</defName>
 		<label>Builder Bot</label>
-		<description>A Tier 3 Master-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<description>A Tier 3 (workskill 13) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
 			<ConstructionSpeed>2</ConstructionSpeed>
 			<DeepDrillingSpeed>2</DeepDrillingSpeed>
@@ -479,7 +479,7 @@
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_IV</defName>
 		<label>Builder Bot</label>
-		<description>A Tier 4 System-Master-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<description>A Tier 4 (workskill 16) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
 			<ConstructionSpeed>3</ConstructionSpeed>
 			<DeepDrillingSpeed>3</DeepDrillingSpeed>
@@ -508,7 +508,7 @@
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Builder_V</defName>
 		<label>Builder Bot</label>
-		<description>A Tier 5 Godlike-class unit capable of constructing, deconstructing, repairing, and mining.</description>
+		<description>A Tier 5 (workskill 20) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
 			<ConstructionSpeed>4</ConstructionSpeed>
 			<DeepDrillingSpeed>4</DeepDrillingSpeed>
@@ -537,7 +537,7 @@
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_I</defName>
 		<label>Crafter Bot</label>
-		<description>A Tier 1 amateur-class unit capable of smithing, tailoring, and crafting.</description>
+		<description>A Tier 1 (workskill 4) unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>1</GeneralLaborSpeed>
 		</statBases>
@@ -563,7 +563,7 @@
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_II</defName>
 		<label>Crafter Bot</label>
-		<description>A Tier 2 professional-class unit capable of smithing, tailoring, and crafting.</description>
+		<description>A Tier 2 (workskill 8) unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>2</GeneralLaborSpeed>
 		</statBases>
@@ -589,7 +589,7 @@
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_III</defName>
 		<label>Crafter Bot</label>
-		<description>A Tier 3 Master-class unit capable of smithing, tailoring, and crafting.</description>
+		<description>A Tier 3 (workskill 13) unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>2.5</GeneralLaborSpeed>
 		</statBases>
@@ -615,7 +615,7 @@
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_IV</defName>
 		<label>Crafter Bot</label>
-		<description>A Tier 4 System-Master-class unit capable of smithing, tailoring, and crafting.</description>
+		<description>A Tier 4 (workskill 16) unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>3</GeneralLaborSpeed>
 		</statBases>
@@ -641,7 +641,7 @@
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Crafter_V</defName>
 		<label>Crafter Bot</label>
-		<description>A Tier 5 Godlike-class unit capable of smithing, tailoring, and crafting.</description>
+		<description>A Tier 5 (workskill 20) unit capable of smithing, tailoring, and crafting.</description>
 		<statBases>
 			<GeneralLaborSpeed>4</GeneralLaborSpeed>
 		</statBases>
@@ -668,7 +668,7 @@
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_I</defName>
 		<label>ER Bot</label>
-		<description>A Tier 1 amateur-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<description>A Tier 1 (workskill 4) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
 			<MedicalTendSpeed>1</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
@@ -692,7 +692,7 @@
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_II</defName>
 		<label>ER Bot</label>
-		<description>A Tier 2 professional-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<description>A Tier 2 (workskill 8) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
 			<MedicalTendSpeed>2</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>1.25</MedicalSurgerySuccessChance>
@@ -716,7 +716,7 @@
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_III</defName>
 		<label>ER Bot</label>
-		<description>A Tier 3 Master-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<description>A Tier 3 (workskill 13) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
 			<MedicalTendSpeed>2.5</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>1.5</MedicalSurgerySuccessChance>
@@ -740,7 +740,7 @@
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_IV</defName>
 		<label>ER Bot</label>
-		<description>A Tier 4 System-Master-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<description>A Tier 4 (workskill 16) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
 			<MedicalTendSpeed>3</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>1.75</MedicalSurgerySuccessChance>
@@ -764,7 +764,7 @@
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_ER_V</defName>
 		<label>ER Bot</label>
-		<description>A Tier 5 Godlike-class Emergency Response unit capable of treating patients and fighting fires.</description>
+		<description>A Tier 5 (workskill 20) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
 			<MedicalTendSpeed>4</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>2</MedicalSurgerySuccessChance>
@@ -789,7 +789,7 @@
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Kitchen_I</defName>
 		<label>Kitchen Bot</label>
-		<description>A Tier 1 amateur-class unit capable of cooking, and tending to plants.</description>
+		<description>A Tier 1 (workskill 4) unit capable of cooking, and tending to plants.</description>
 		<statBases>
 			<PlantWorkSpeed>1</PlantWorkSpeed>
 			<PlantHarvestYield>1</PlantHarvestYield>
@@ -818,7 +818,7 @@
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Kitchen_II</defName>
 		<label>Kitchen Bot</label>
-		<description>A Tier 2 professional-class unit capable of cooking, and tending to plants.</description>
+		<description>A Tier 2 (workskill 8) unit capable of cooking, and tending to plants.</description>
 		<statBases>
 			<GeneralLaborSpeed>2</GeneralLaborSpeed>
 			<PlantWorkSpeed>2</PlantWorkSpeed>
@@ -847,7 +847,7 @@
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Kitchen_III</defName>
 		<label>Kitchen Bot</label>
-		<description>A Tier 3 Master-class unit capable of cooking, and tending to plants.</description>
+		<description>A Tier 3 (workskill 13) unit capable of cooking, and tending to plants.</description>
 		<statBases>
 			<GeneralLaborSpeed>2.5</GeneralLaborSpeed>
 			<PlantWorkSpeed>2.5</PlantWorkSpeed>
@@ -876,7 +876,7 @@
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Kitchen_IV</defName>
 		<label>Kitchen Bot</label>
-		<description>A Tier 4 System-Master-class unit capable of cooking, and tending to plants.</description>
+		<description>A Tier 4 (workskill 16) unit capable of cooking, and tending to plants.</description>
 		<statBases>
 			<GeneralLaborSpeed>3</GeneralLaborSpeed>
 			<PlantWorkSpeed>3</PlantWorkSpeed>
@@ -911,7 +911,7 @@
 			<PlantHarvestYield>1.75</PlantHarvestYield>
 			<DrugHarvestYield>1.75</DrugHarvestYield>
 		</statBases>
-		<description>A Tier 5 Godlike-class unit capable of cooking, and tending to plants.</description>
+		<description>A Tier 5 (workskill 20) unit capable of cooking, and tending to plants.</description>
 			<race>
 			<mechEnabledWorkTypes>
 				<li>Cooking</li>
@@ -924,7 +924,6 @@
 				<Growing>3</Growing>
 			</mechWorkTypePriorities>
 		</race>
-
 		<robotWorkTypes>
 			<li><workTypeDef>Cooking</workTypeDef><priority>1</priority></li>
 			<li><workTypeDef>PlantCutting</workTypeDef><priority>3</priority></li>
@@ -935,7 +934,7 @@
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Omni_I</defName>
 		<label>OmniBot</label>
-		<description>A Tier 1 amateur-class unit capable of almost anything. (NP=P)</description>
+		<description>A Tier 1 (workskill 4) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
 			<WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
 			<GeneralLaborSpeed>1</GeneralLaborSpeed>
@@ -1005,7 +1004,7 @@
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Omni_II</defName>
 		<label>OmniBot</label>
-		<description>>A Tier 2 professional-class unit capable of almost anything. (NP=P)</description>
+		<description>>A Tier 2 (workskill 8) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
 			<WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
 			<GeneralLaborSpeed>2</GeneralLaborSpeed>
@@ -1078,7 +1077,7 @@
 	<ThingDef ParentName="RPP_Bot_III" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Omni_III</defName>
 		<label>OmniBot</label>
-		<description>A Tier 3 Master-class unit capable of almost anything. (NP=P)</description>
+		<description>A Tier 3 (workskill 13) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
 			<WorkTableWorkSpeedFactor>1.25</WorkTableWorkSpeedFactor>
 			<GeneralLaborSpeed>1.25</GeneralLaborSpeed>
@@ -1148,7 +1147,7 @@
 	<ThingDef ParentName="RPP_Bot_IV" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Omni_IV</defName>
 		<label>OmniBot</label>
-		<description>A Tier 4 System-Master-class unit capable of almost anything. (NP=P)</description>
+		<description>A Tier 4 (workskill 16) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
 			<WorkTableWorkSpeedFactor>3</WorkTableWorkSpeedFactor>
 			<GeneralLaborSpeed>3</GeneralLaborSpeed>
@@ -1218,7 +1217,7 @@
 	<ThingDef ParentName="RPP_Bot_V" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>RPP_Bot_Omni_V</defName>
 		<label>OmniBot</label>
-		<description>A Tier 5 Godlike unit capable of almost anything. (NP=P)</description>
+		<description>A Tier 5 (workskill 20) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
 			<WorkTableWorkSpeedFactor>4</WorkTableWorkSpeedFactor>
 			<GeneralLaborSpeed>4</GeneralLaborSpeed>

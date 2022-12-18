@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 <name>Misc. Robots++</name>
-<author>Alaestor, Hultis, VeteranXT</author>
+<authors>
+	<li>Alaestor</li>
+	<li>Hultis</li>
+	<li>VeteranXT</li>
+</authors>
 <packageId>Alaestor.MiscRobots.PlusPlus</packageId>
-<url>https://ludeon.com/forums/index.php?topic=26151.0</url>
+<url>https://github.com/alaestor/Rimworld-MiscRobotsPlusPlus</url>
 <supportedVersions><li>1.0</li><li>1.1</li><li>1.2</li><li>1.3</li><li>1.4</li></supportedVersions>
 <modDependencies>
 	<li>
@@ -18,10 +22,11 @@
         <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
 </modDependencies>
-<description>	Mod Version: 3.5.2
+<description>	Mod Version: 3.6.0
 
 *** Example Load Order ***
-- Core
+- Core and DLC
+- Libraries (such as Hugslib)
 - Misc. Robots
 - Misc. Robots++
 
@@ -39,22 +44,17 @@ Robots++ Contains The Following Bots:
   An Emergency Response unit capable of treating patients and fighting fires.
 
 --- Omni Bot
-  OmniBots can do the jobs of all the other robots.
-  The OmniBot research is at the end of the techtree
-  and requires you to research all of the other robots first.
+  OmniBots can do the jobs of all the other robots, but are quite expensive.
 
 There are five tiers of robots:
-  Tier 1 Simple robots have Amateur skills (4),
-  Tier 2 Basic robots have Professional skills (8),
-  Tier 3 Intermediate robots have Master skills (13),
-  Tier 4 Advanced robots have System-Class Master skills (16),
-  Tier 5 Anti-Logic robots like the OmniBot have GodLike skills (20).
+  Tier 1 Simple robots have a work-skill of 4,
+  Tier 2 Basic robots have a work-skill of 8,
+  Tier 3 Intermediate robots have a work-skill of 13,
+  Tier 4 Advanced robots have a work-skill of 16,
+  Tier 5 Anti-Logic robots have a work-skill of 20.
 
-Translations are included. If you would like to translate for R++, please use the /Languages/English/ folder as a template. When you've finished, message me and I'll include it in the mod.
+Community translations are included.
 
-To contact me (Alaestor) please use Discord
-( visit http://public.FutureGadgetLab.net )
-
-Misc. Robots++ was made using the "Misc. Robots Xtension" provided by Haplo.
+If you would like to contribute fixes, features, or translations to R++ then please fork the Github repo and make a pull request with your changes. Please only contribute changes for the latest game versions (i.e. the `about` and `v1.4` folders). For translations, use the latest `/v#.#/Languages/English/` folder as a template (DON'T use the top level outdated `Languages`).
 </description>
 </ModMetaData>
