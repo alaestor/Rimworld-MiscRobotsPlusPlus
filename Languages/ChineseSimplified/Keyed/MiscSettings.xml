@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<MISC_Robots_Category>MiscRobots++</MISC_Robots_Category>
+	<Teir_0>Teir I Settings</Teir_0>
+	<Teir_1>Teir II Settings</Teir_1>
+	<Teir_2>Teir III Settings</Teir_2>
+	<Teir_3>Teir IV Settings</Teir_3>
+	<Teir_4>Teir V Settings</Teir_4>
+
+	<Cleaner_Settings>Cleaner Settings</Cleaner_Settings>
+
+	<AIRobot_Cleaner_CleaningSpeed>Cleaning Speed {0}%, Recommended 100%</AIRobot_Cleaner_CleaningSpeed>
+	<AIRobot_Cleaner_II_CleaningSpeed>Cleaning Speed {0}%, Recommended 200%</AIRobot_Cleaner_II_CleaningSpeed>
+	<AIRobot_Cleaner_III_CleaningSpeed>Cleaning Speed {0}%, Recommended 250%</AIRobot_Cleaner_III_CleaningSpeed>
+	<AIRobot_Cleaner_IV_CleaningSpeed>Cleaning Speed {0}%, Recommended 300%</AIRobot_Cleaner_IV_CleaningSpeed>>
+	<AIRobot_Cleaner_V_CleaningSpeed>Cleaning Speed {0}%, Recommended 400%</AIRobot_Cleaner_V_CleaningSpeed>
+
+	<AIRobot_Cleaner_MarketValue>Recommended 1000$</AIRobot_Cleaner_MarketValue>
+	<AIRobot_Cleaner_II_MarketValue>Recommended 2000$</AIRobot_Cleaner_II_MarketValue>
+	<AIRobot_Cleaner_III_MarketValue>Recommended 3500$</AIRobot_Cleaner_III_MarketValue>
+	<AIRobot_Cleaner_IV_MarketValue>Recommended 7000$</AIRobot_Cleaner_IV_MarketValue>
+	<AIRobot_Cleaner_V_MarketValue>Recommended 9000$</AIRobot_Cleaner_V_MarketValue>
+
+	<Builder_Settings>Builder Settings</Builder_Settings>
+
+	<RPP_Bot_Builder_I_MarketValue>Recommended 4000$</RPP_Bot_Builder_I_MarketValue>
+	<RPP_Bot_Builder_II_MarketValue>Recommended 8000$</RPP_Bot_Builder_II_MarketValue>
+	<RPP_Bot_Builder_III_MarketValue>Recommended 12000$</RPP_Bot_Builder_III_MarketValue>
+	<RPP_Bot_Builder_IV_MarketValue>Recommended 19000$</RPP_Bot_Builder_IV_MarketValue>
+	<RPP_Bot_Builder_V_MarketValue>Recommended 30000$</RPP_Bot_Builder_V_MarketValue>
+
+	<RPP_Bot_Builder_I_ConstructionSpeed>Construction Speed {0}%, Recommended 100%</RPP_Bot_Builder_I_ConstructionSpeed>
+	<RPP_Bot_Builder_II_ConstructionSpeed>Construction Speed {0}%, Recommended 200%</RPP_Bot_Builder_II_ConstructionSpeed>
+	<RPP_Bot_Builder_III_ConstructionSpeed>Construction Speed {0}%, Recommended 250%</RPP_Bot_Builder_III_ConstructionSpeed>
+	<RPP_Bot_Builder_IV_ConstructionSpeed>Construction Speed {0}%, Recommended 300%</RPP_Bot_Builder_IV_ConstructionSpeed>
+	<RPP_Bot_Builder_V_ConstructionSpeed>Construction Speed {0}%, Recommended 400%</RPP_Bot_Builder_V_ConstructionSpeed>
+
+	<RPP_Bot_Builder_I_DeepDrillingSpeed>DeepDrillingSpeed {0}%, Recommended 100%</RPP_Bot_Builder_I_DeepDrillingSpeed>
+	<RPP_Bot_Builder_II_DeepDrillingSpeed>DeepDrillingSpeed {0}%, Recommended 200%</RPP_Bot_Builder_II_DeepDrillingSpeed>
+	<RPP_Bot_Builder_III_DeepDrillingSpeed>DeepDrillingSpeed {0}%, Recommended 250%</RPP_Bot_Builder_III_DeepDrillingSpeed>
+	<RPP_Bot_Builder_IV_DeepDrillingSpeed>DeepDrillingSpeed {0}%, Recommended 300%</RPP_Bot_Builder_IV_DeepDrillingSpeed>
+	<RPP_Bot_Builder_V_DeepDrillingSpeed>DeepDrillingSpeed {0}%, Recommended 400%</RPP_Bot_Builder_V_DeepDrillingSpeed>
+
+	<RPP_Bot_Builder_I_SmoothingSpeed>SmoothingSpeed {0}%, Recommended 100%</RPP_Bot_Builder_I_SmoothingSpeed>
+	<RPP_Bot_Builder_II_SmoothingSpeed>SmoothingSpeed {0}%, Recommended 200%</RPP_Bot_Builder_II_SmoothingSpeed>
+	<RPP_Bot_Builder_III_SmoothingSpeed>SmoothingSpeed {0}%, Recommended 250%</RPP_Bot_Builder_III_SmoothingSpeed>
+	<RPP_Bot_Builder_IV_SmoothingSpeed>SmoothingSpeed {0}%, Recommended 300%</RPP_Bot_Builder_IV_SmoothingSpeed>
+	<RPP_Bot_Builder_V_SmoothingSpeed>SmoothingSpeed {0}%, Recommended 400%</RPP_Bot_Builder_V_SmoothingSpeed>
+
+	<RPP_Bot_Builder_I_MiningYield>MiningYield {0}%, Recommended 100%</RPP_Bot_Builder_I_MiningYield>
+	<RPP_Bot_Builder_II_MiningYield>MiningYield {0}%, Recommended 125%</RPP_Bot_Builder_II_MiningYield>
+	<RPP_Bot_Builder_III_MiningYield>MiningYield {0}%, Recommended 150%</RPP_Bot_Builder_III_MiningYield>
+	<RPP_Bot_Builder_IV_MiningYield>MiningYield {0}%, Recommended 175%</RPP_Bot_Builder_IV_MiningYield>
+	<RPP_Bot_Builder_V_MiningYield>MiningYield {0}%, Recommended 200%</RPP_Bot_Builder_V_MiningYield>
+
+	<RPP_Bot_Builder_I_MarketValue>Recommended 4000$</RPP_Bot_Builder_I_MarketValue>
+	<RPP_Bot_Builder_II_MarketValue>Recommended 8000$</RPP_Bot_Builder_II_MarketValue>
+	<RPP_Bot_Builder_III_MarketValue>Recommended 12000$</RPP_Bot_Builder_III_MarketValue>
+	<RPP_Bot_Builder_IV_MarketValue>Recommended 19000$</RPP_Bot_Builder_IV_MarketValue>
+	<RPP_Bot_Builder_V_MarketValue>Recommended 30000$</RPP_Bot_Builder_V_MarketValue>
+
+	<RPP_Bot_Builder_I>Teir I Settings</RPP_Bot_Builder_I>
+	<RPP_Bot_Builder_II>Teir II Settings</RPP_Bot_Builder_II>
+	<RPP_Bot_Builder_III>Teir III Settings</RPP_Bot_Builder_III>
+	<RPP_Bot_Builder_IV>Teir IV Settings</RPP_Bot_Builder_IV>
+	<RPP_Bot_Builder_V>Teir V Settings</RPP_Bot_Builder_V>
+
+	<Crafter_Settings>Crafter Settings</Crafter_Settings>
+
+	<RPP_Bot_Crafter_I_WorkSpeedGlobal>Crafting Speed {0}%, Recommended 100%</RPP_Bot_Crafter_I_WorkSpeedGlobal>
+	<RPP_Bot_Crafter_II_WorkSpeedGlobal>Crafting Speed {0}%, Recommended 125%</RPP_Bot_Crafter_II_WorkSpeedGlobal>
+	<RPP_Bot_Crafter_III_WorkSpeedGlobal>Crafting Speed {0}%, Recommended 150%</RPP_Bot_Crafter_III_WorkSpeedGlobal>
+	<RPP_Bot_Crafter_IV_WorkSpeedGlobal>Crafting Speed {0}%, Recommended 175%</RPP_Bot_Crafter_IV_WorkSpeedGlobal>
+	<RPP_Bot_Crafter_V_WorkSpeedGlobal>Crafting Speed {0}%, Recommended 200%</RPP_Bot_Crafter_V_WorkSpeedGlobal>
+
+	<RPP_Bot_Crafter_I_MarketValue>Recommended 1000$</RPP_Bot_Crafter_I_MarketValue>
+	<RPP_Bot_Crafter_II_MarketValue>Recommended 2000$</RPP_Bot_Crafter_II_MarketValue>
+	<RPP_Bot_Crafter_III_MarketValue>Recommended 3500$</RPP_Bot_Crafter_III_MarketValue>
+	<RPP_Bot_Crafter_IV_MarketValue>Recommended 7000$</RPP_Bot_Crafter_IV_MarketValue>
+	<RPP_Bot_Crafter_V_MarketValue>Recommended 14000$</RPP_Bot_Crafter_V_MarketValue>
+
+
+	<Kitchen_Settings>Kitchen Settings</Kitchen_Settings>
+
+	<RPP_Bot_Kitchen_I_MarketValue>Recommended 4000$</RPP_Bot_Kitchen_I_MarketValue>
+	<RPP_Bot_Kitchen_II_MarketValue>Recommended 8000$</RPP_Bot_Kitchen_II_MarketValue>
+	<RPP_Bot_Kitchen_III_MarketValue>Recommended 12000$</RPP_Bot_Kitchen_III_MarketValue>
+	<RPP_Bot_Kitchen_IV_MarketValue>Recommended 18000$</RPP_Bot_Kitchen_IV_MarketValue>
+	<RPP_Bot_Kitchen_V_MarketValue>Recommended 30000$</RPP_Bot_Kitchen_V_MarketValue>
+
+	<RPP_Bot_Kitchen_I_GeneralLaborSpeed>Cooking Speed {0}%, Recommended 100%</RPP_Bot_Kitchen_I_GeneralLaborSpeed>
+	<RPP_Bot_Kitchen_II_GeneralLaborSpeed>Cooking Speed {0}%, Recommended 200%</RPP_Bot_Kitchen_II_GeneralLaborSpeed>
+	<RPP_Bot_Kitchen_III_GeneralLaborSpeed>Cooking Speed {0}%, Recommended 250%</RPP_Bot_Kitchen_III_GeneralLaborSpeed>
+	<RPP_Bot_Kitchen_IV_GeneralLaborSpeed>Cooking Speed {0}%, Recommended 300%</RPP_Bot_Kitchen_IV_GeneralLaborSpeed>
+	<RPP_Bot_Kitchen_V_GeneralLaborSpeed>Cooking Speed {0}%, Recommended 400%</RPP_Bot_Kitchen_V_GeneralLaborSpeed>
+
+	<RPP_Bot_Kitchen_I_PlantWorkSpeed>Growing and Harvesting Plants Speed {0}%, Recommended 100%</RPP_Bot_Kitchen_I_PlantWorkSpeed>
+	<RPP_Bot_Kitchen_II_PlantWorkSpeed>Growing and Harvesting Plants Speed {0}%, Recommended 200%</RPP_Bot_Kitchen_II_PlantWorkSpeed>
+	<RPP_Bot_Kitchen_III_PlantWorkSpeed>Growing and Harvesting Plants Speed {0}%, Recommended 250%</RPP_Bot_Kitchen_III_PlantWorkSpeed>
+	<RPP_Bot_Kitchen_IV_PlantWorkSpeed>Growing and Harvesting Plants Speed {0}%, Recommended 300%</RPP_Bot_Kitchen_IV_PlantWorkSpeed>
+	<RPP_Bot_Kitchen_V_PlantWorkSpeed>Growing Pand Harvesting lants Speed {0}%, Recommended 400%</RPP_Bot_Kitchen_V_PlantWorkSpeed>
+
+	<RPP_Bot_Kitchen_I_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 100%</RPP_Bot_Kitchen_I_PlantHarvestYield>
+	<RPP_Bot_Kitchen_II_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 125%</RPP_Bot_Kitchen_II_PlantHarvestYield>
+	<RPP_Bot_Kitchen_III_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 150%</RPP_Bot_Kitchen_III_PlantHarvestYield>
+	<RPP_Bot_Kitchen_IV_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 175%</RPP_Bot_Kitchen_IV_PlantHarvestYield>
+	<RPP_Bot_Kitchen_V_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 200%</RPP_Bot_Kitchen_V_PlantHarvestYield>
+
+	<RPP_Bot_Kitchen_I_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 100%</RPP_Bot_Kitchen_I_DrugHarvestYield>
+	<RPP_Bot_Kitchen_II_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 125%</RPP_Bot_Kitchen_II_DrugHarvestYield>
+	<RPP_Bot_Kitchen_III_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 150%</RPP_Bot_Kitchen_III_DrugHarvestYield>
+	<RPP_Bot_Kitchen_IV_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 175%</RPP_Bot_Kitchen_IV_DrugHarvestYield>
+	<RPP_Bot_Kitchen_V_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 200%</RPP_Bot_Kitchen_V_DrugHarvestYield>
+
+	<ER_Settings>ER Settings</ER_Settings>
+
+	<RPP_Bot_ER_I_MedicalTendSpeed>Tending Speed {0}%, Recommended 100%</RPP_Bot_ER_I_MedicalTendSpeed>
+	<RPP_Bot_ER_II_MedicalTendSpeed>Tending Speed {0}%, Recommended 200%</RPP_Bot_ER_II_MedicalTendSpeed>
+	<RPP_Bot_ER_III_MedicalTendSpeed>Tending Speed {0}%, Recommended 250%</RPP_Bot_ER_III_MedicalTendSpeed>
+	<RPP_Bot_ER_IV_MedicalTendSpeed>Tending Speed {0}%, Recommended 300%</RPP_Bot_ER_IV_MedicalTendSpeed>
+	<RPP_Bot_ER_V_MedicalTendSpeed>Tending Speed {0}%, Recommended 400%</RPP_Bot_ER_V_MedicalTendSpeed>
+
+	<RPP_Bot_ER_I_MedicalSurgerySuccessChance>Surgery Chance Incressed {0}%, Recommended 100%</RPP_Bot_ER_I_MedicalSurgerySuccessChance>
+	<RPP_Bot_ER_II_MedicalSurgerySuccessChance>Surgery Chance Incressed {0}%, Recommended 125%</RPP_Bot_ER_II_MedicalSurgerySuccessChance>
+	<RPP_Bot_ER_III_MedicalSurgerySuccessChance>Surgery Chance Incressedd {0}%, Recommended 150%</RPP_Bot_ER_III_MedicalSurgerySuccessChance>
+	<RPP_Bot_ER_IV_MedicalSurgerySuccessChance>Surgery Chance Incressed {0}%, Recommended 175%</RPP_Bot_ER_IV_MedicalSurgerySuccessChance>
+	<RPP_Bot_ER_V_MedicalSurgerySuccessChance>Surgery Chance Incressed {0}%, Recommended 200%</RPP_Bot_ER_V_MedicalSurgerySuccessChance>
+
+	<RPP_Bot_ER_I_MarketValue>Recommended 2000$</RPP_Bot_ER_I_MarketValue>
+	<RPP_Bot_ER_II_MarketValue>Recommended 4000$</RPP_Bot_ER_II_MarketValue>
+	<RPP_Bot_ER_III_MarketValue>Recommended 8000$</RPP_Bot_ER_III_MarketValue>
+	<RPP_Bot_ER_IV_MarketValue>Recommended 16000$</RPP_Bot_ER_IV_MarketValue>
+	<RPP_Bot_ER_V_MarketValue>Recommended 24000$</RPP_Bot_ER_V_MarketValue>
+
+	<Omni_Settings>Omni Settings</Omni_Settings>
+
+	<RPP_Bot_Omni_I_WorkSpeedGlobal>Work Speed {0}%, Recommended 200%</RPP_Bot_Omni_I_WorkSpeedGlobal>
+	<RPP_Bot_Omni_II_WorkSpeedGlobal>Work Speed {0}%, Recommended 125%</RPP_Bot_Omni_II_WorkSpeedGlobal>
+	<RPP_Bot_Omni_III_WorkSpeedGlobal>Work Speed {0}%, Recommended 400%</RPP_Bot_Omni_III_WorkSpeedGlobal>
+	<RPP_Bot_Omni_IV_WorkSpeedGlobal>Work Speed {0}%, Recommended 500%</RPP_Bot_Omni_IV_WorkSpeedGlobal>
+	<RPP_Bot_Omni_V_WorkSpeedGlobal>Work Speed {0}%, Recommended 550%</RPP_Bot_Omni_V_WorkSpeedGlobal>
+
+	<RPP_Bot_Omni_I_MedicalSurgerySuccessChance>Surgery Chance Incressed {0}%, Recommended 100%</RPP_Bot_Omni_I_MedicalSurgerySuccessChance>
+	<RPP_Bot_Omni_II_MedicalSurgerySuccessChance>Surgery Chance Incressed {0}%, Recommended 110%</RPP_Bot_Omni_II_MedicalSurgerySuccessChance>
+	<RPP_Bot_Omni_III_MedicalSurgerySuccessChance>Surgery Chance Incressedd {0}%, Recommended 120%</RPP_Bot_Omni_III_MedicalSurgerySuccessChance>
+	<RPP_Bot_Omni_IV_MedicalSurgerySuccessChance>Surgery Chance Incressed {0}%, Recommended 130%</RPP_Bot_Omni_IV_MedicalSurgerySuccessChance>
+	<RPP_Bot_Omni_V_MedicalSurgerySuccessChance>Surgery Chance Incressed {0}%, Recommended 140%</RPP_Bot_Omni_V_MedicalSurgerySuccessChance>
+
+	<RPP_Bot_Omni_I_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 100%</RPP_Bot_Omni_I_PlantHarvestYield>
+	<RPP_Bot_Omni_II_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 110%</RPP_Bot_Omni_II_PlantHarvestYield>
+	<RPP_Bot_Omni_III_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 120%</RPP_Bot_Omni_III_PlantHarvestYield>
+	<RPP_Bot_Omni_IV_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 130%</RPP_Bot_Omni_IV_PlantHarvestYield>
+	<RPP_Bot_Omni_V_PlantHarvestYield>Plant Harvest Yield {0}%, Recommended 140%</RPP_Bot_Omni_V_PlantHarvestYield>
+
+	<RPP_Bot_Omni_I_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 100%</RPP_Bot_Omni_I_DrugHarvestYield>
+	<RPP_Bot_Omni_II_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 120%</RPP_Bot_Omni_II_DrugHarvestYield>
+	<RPP_Bot_Omni_III_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 110%</RPP_Bot_Omni_III_DrugHarvestYield>
+	<RPP_Bot_Omni_IV_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 130%</RPP_Bot_Omni_IV_DrugHarvestYield>
+	<RPP_Bot_Omni_V_DrugHarvestYield>Drug Harvest Yield {0}%, Recommended 140%</RPP_Bot_Omni_V_DrugHarvestYield>
+
+	<RPP_Bot_Omni_I_MiningYield>MiningYield {0}%, Recommended 100%</RPP_Bot_Omni_I_MiningYield>
+	<RPP_Bot_Omni_II_MiningYield>MiningYield {0}%, Recommended 110%</RPP_Bot_Omni_II_MiningYield>
+	<RPP_Bot_Omni_III_MiningYield>MiningYield {0}%, Recommended 120%</RPP_Bot_Omni_III_MiningYield>
+	<RPP_Bot_Omni_IV_MiningYield>MiningYield {0}%, Recommended 130%</RPP_Bot_Omni_IV_MiningYield>
+	<RPP_Bot_Omni_V_MiningYield>MiningYield {0}%, Recommended 140%</RPP_Bot_Omni_V_MiningYield>
+
+
+	<RPP_Bot_Omni_I_MarketValue>Recommended 8000$</RPP_Bot_Omni_I_MarketValue>
+	<RPP_Bot_Omni_II_MarketValue>Recommended 15000$</RPP_Bot_Omni_II_MarketValue>
+	<RPP_Bot_Omni_III_MarketValue>Recommended 35000$</RPP_Bot_Omni_III_MarketValue>
+	<RPP_Bot_Omni_IV_MarketValue>Recommended 80000$</RPP_Bot_Omni_IV_MarketValue>
+	<RPP_Bot_Omni_V_MarketValue>Recommended 100000$</RPP_Bot_Omni_V_MarketValue>
+
+</LanguageData>
+

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
 <!--[Duplicate]
@@ -18,7 +18,7 @@
 	<AIRobot_RechargeStation_Cleaner.label>清洁机(I)基站</AIRobot_RechargeStation_Cleaner.label>
 	<AIRobot_RechargeStation_Cleaner.description>这个基站配置了一个专用的简易机器人。</AIRobot_RechargeStation_Cleaner.description>
 -->
-	<AIRobot_RechargeStation_Cleaner_II.label>清洁机(II)基站</AIRobot_RechargeStation_Cleaner_II.label>
+		<AIRobot_RechargeStation_Cleaner_II.label>清洁机(II)基站</AIRobot_RechargeStation_Cleaner_II.label>
 	<AIRobot_RechargeStation_Cleaner_II.description>这个基站配置了一个专用的初阶机器人。</AIRobot_RechargeStation_Cleaner_II.description>
 	<AIRobot_RechargeStation_Cleaner_III.label>清洁机(III)基站</AIRobot_RechargeStation_Cleaner_III.label>
 	<AIRobot_RechargeStation_Cleaner_III.description>这个基站配置了一个专用的中阶机器人。</AIRobot_RechargeStation_Cleaner_III.description>
@@ -71,7 +71,15 @@
 	<RPP_RechargeStation_Kitchen_V.label>厨艺机(V)基站</RPP_RechargeStation_Kitchen_V.label>
 	<RPP_RechargeStation_Kitchen_V.description>这个基站配置了一个专用的反逻辑机器人。</RPP_RechargeStation_Kitchen_V.description>
 
-	<RPP_RechargeStation_Omni_V.label>万能机(V)基站</RPP_RechargeStation_Omni_V.label>
-	<RPP_RechargeStation_Omni_V.description>这个基站配置了一个专用的万能机器人(NP=P)。\n并有着自由能源的内藏电源供应</RPP_RechargeStation_Omni_V.description>
+	<RPP_RechargeStation_Omni_I.label>万能机(I) 基站</RPP_RechargeStation_Omni_I.label>
+	<RPP_RechargeStation_Omni_I.description>这个基站配置了一个专用的简易机器人。</RPP_RechargeStation_Omni_I.description>
+	<RPP_RechargeStation_Omni_II.label>万能机(II) 基站</RPP_RechargeStation_Omni_II.label>
+	<RPP_RechargeStation_Omni_II.description>这个基站配置了一个专用的初阶机器人。</RPP_RechargeStation_Omni_II.description>
+	<RPP_RechargeStation_Omni_III.label>万能机(III) 基站</RPP_RechargeStation_Omni_III.label>
+	<RPP_RechargeStation_Omni_III.description>这个基站配置了一个专用的中阶机器人。</RPP_RechargeStation_Omni_III.description>
+	<RPP_RechargeStation_Omni_IV.label>万能机(IV) 基站</RPP_RechargeStation_Omni_IV.label>
+	<RPP_RechargeStation_Omni_IV.description>这个基站配置了一个专用的高阶机器人。</RPP_RechargeStation_Omni_IV.description>
+	<RPP_RechargeStation_Omni_V.label>万能机(V) 基站</RPP_RechargeStation_Omni_V.label>
+	<RPP_RechargeStation_Omni_V.description>这个基站配置了一个专用的反逻辑机器人。</RPP_RechargeStation_Omni_V.description>
 
 </LanguageData>

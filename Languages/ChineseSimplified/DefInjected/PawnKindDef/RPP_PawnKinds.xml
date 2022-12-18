@@ -37,6 +37,10 @@
 	<RPP_Bot_Kitchen_IV.label>厨艺机（四阶）</RPP_Bot_Kitchen_IV.label>
 	<RPP_Bot_Kitchen_V.label>厨艺机（五阶）</RPP_Bot_Kitchen_V.label>
 
-	<RPP_Bot_Omni_V.label>万能机（五阶）</RPP_Bot_Omni_V.label>
+	<RPP_Bot_Omni_I.label>万能机 (一阶)</RPP_Bot_Omni_I.label>
+	<RPP_Bot_Omni_II.label>万能机 (二阶)</RPP_Bot_Omni_II.label>
+	<RPP_Bot_Omni_III.label>万能机 (三阶)</RPP_Bot_Omni_III.label>
+	<RPP_Bot_Omni_IV.label>万能机 (四阶)</RPP_Bot_Omni_IV.label>
+	<RPP_Bot_Omni_V.label>万能机 (五阶)</RPP_Bot_Omni_V.label>
 
 </LanguageData>

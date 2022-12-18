@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
 <!--[Duplicate]
@@ -72,6 +72,14 @@
 	<RPP_Bot_Kitchen_V_disabled.label>厨艺机（无法运转）</RPP_Bot_Kitchen_V_disabled.label>
 	<RPP_Bot_Kitchen_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Kitchen_V_disabled.description>
 
+	<RPP_Bot_Omni_I_disabled.label>万能机（无法运转）</RPP_Bot_Omni_I_disabled.label>
+	<RPP_Bot_Omni_I_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Omni_I_disabled.description>
+	<RPP_Bot_Omni_II_disabled.label>万能机（无法运转）</RPP_Bot_Omni_II_disabled.label>
+	<RPP_Bot_Omni_II_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Omni_II_disabled.description>
+	<RPP_Bot_Omni_III_disabled.label>万能机（无法运转）</RPP_Bot_Omni_III_disabled.label>
+	<RPP_Bot_Omni_III_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Omni_III_disabled.description>
+	<RPP_Bot_Omni_IV_disabled.label>万能机（无法运转）</RPP_Bot_Omni_IV_disabled.label>
+	<RPP_Bot_Omni_IV_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Omni_IV_disabled.description>
 	<RPP_Bot_Omni_V_disabled.label>万能机（无法运转）</RPP_Bot_Omni_V_disabled.label>
 	<RPP_Bot_Omni_V_disabled.description>家用机器人的悲伤结局。已经无法使用，需要全面维修或拆解。</RPP_Bot_Omni_V_disabled.description>
 
