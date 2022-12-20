@@ -7,7 +7,10 @@ namespace MiscRobotsPlusPlus
 {
     public class MiscPlusPlusSettings : ModSettings
     {
+        #region Settings For display
 
+        public static List<ThingDef> database;
+ 
         public static SettingsPages currentPage;
 
         private static bool cleanerTweaks = false;
@@ -25,23 +28,18 @@ namespace MiscRobotsPlusPlus
         private static bool eRStationweaks = false;
         private static bool omniStationTweaks = false;
 
-       // private static bool DevTweaks = false;
-      
-        //Contains list of all bots by DefName
-        //Remember to keep same names as in XML files
-        //It throws error if it does not match
-        #region Def Names
-        private static readonly string[] cleanerList = new string[5] { "AIRobot_Cleaner", "AIRobot_Cleaner_II", "AIRobot_Cleaner_III", "AIRobot_Cleaner_IV", "AIRobot_Cleaner_V" };
-        private static readonly string[] crafterList = new string[5] { "RPP_Bot_Crafter_I", "RPP_Bot_Crafter_II", "RPP_Bot_Crafter_III", "RPP_Bot_Crafter_IV", "RPP_Bot_Crafter_V" };
-        private static readonly string[] kitchenList = new string[5] { "RPP_Bot_Kitchen_I", "RPP_Bot_Kitchen_II", "RPP_Bot_Kitchen_III", "RPP_Bot_Kitchen_IV", "RPP_Bot_Kitchen_V" };
-        private static readonly string[] buildersList = new string[5] { "RPP_Bot_Builder_I", "RPP_Bot_Builder_II", "RPP_Bot_Builder_III", "RPP_Bot_Builder_IV", "RPP_Bot_Builder_V" };
-        private static readonly string[] ERList = new string[5] { "RPP_Bot_ER_I", "RPP_Bot_ER_II", "RPP_Bot_ER_III", "RPP_Bot_ER_IV", "RPP_Bot_ER_V" };
-        private static readonly string[] omniList = new string[5] { "RPP_Bot_Omni_I", "RPP_Bot_Omni_II", "RPP_Bot_Omni_III", "RPP_Bot_Omni_IV", "RPP_Bot_Omni_V" };
         #endregion
 
         /// <summary>
         /// Settings are saved in same order as stats
         /// </summary>
+        private static RobotsData cleanerData = new RobotsData(new string[5] { "AIRobot_Cleaner", "AIRobot_Cleaner_II", "AIRobot_Cleaner_III", "AIRobot_Cleaner_IV", "AIRobot_Cleaner_V" }, cleanerStats, cleanerSettings, CleanerisPrecent);
+        private static RobotsData crafterData = new RobotsData(new string[5] { "RPP_Bot_Crafter_I", "RPP_Bot_Crafter_II", "RPP_Bot_Crafter_III", "RPP_Bot_Crafter_IV", "RPP_Bot_Crafter_V" }, crafterStats, crafterSettings,crafterIsPrecent);
+        private static RobotsData kitchensData = new RobotsData(new string[5] { "RPP_Bot_Kitchen_I", "RPP_Bot_Kitchen_II", "RPP_Bot_Kitchen_III", "RPP_Bot_Kitchen_IV", "RPP_Bot_Kitchen_V" }, kitchenStats, kitchenDefaultSettings,kitchenIsPrecent);
+        private static RobotsData buildersData = new RobotsData(new string[5] { "RPP_Bot_Builder_I", "RPP_Bot_Builder_II", "RPP_Bot_Builder_III", "RPP_Bot_Builder_IV", "RPP_Bot_Builder_V" }, builderStats, builderSettings,builderIsPrecent);
+        private static RobotsData eRData = new RobotsData(new string[5] { "RPP_Bot_ER_I", "RPP_Bot_ER_II", "RPP_Bot_ER_III", "RPP_Bot_ER_IV", "RPP_Bot_ER_V" }, ERStats, ERSettings,eRIsPrecent);
+        private static RobotsData omniData = new RobotsData(new string[5] { "RPP_Bot_Omni_I", "RPP_Bot_Omni_II", "RPP_Bot_Omni_III", "RPP_Bot_Omni_IV", "RPP_Bot_Omni_V" }, OmniStats, OmniSettings, OmniPrecent);
+
         #region Robots  Settings
 
         #region Cleaner Compleated Settings
@@ -79,6 +77,9 @@ namespace MiscRobotsPlusPlus
         #region Crafter Compleated Match
         private static StatDef[] crafterStats = new StatDef[2] { StatDefOf.WorkSpeedGlobal, StatDefOf.MarketValue };
         // Must be saved in same order as List of Stats in float table;
+        /// <summary>
+        /// WorkTableSpeed, Market Value
+        /// </summary>
         private readonly static float[,] crafterDefaultSettings = new float[5, 2] {
 
                 { 1f,  1000  },
@@ -234,14 +235,10 @@ namespace MiscRobotsPlusPlus
 
         #endregion
 
-        private static RobotsData cleanerData = new RobotsData(cleanerList, cleanerStats, cleanerSettings, CleanerisPrecent);
-        private static RobotsData crafterData = new RobotsData(crafterList, crafterStats, crafterSettings,crafterIsPrecent);
-        private static RobotsData kitchensData = new RobotsData(kitchenList, kitchenStats, kitchenDefaultSettings,kitchenIsPrecent);
-        private static RobotsData buildersData = new RobotsData(buildersList, builderStats, builderSettings,builderIsPrecent);
-        private static RobotsData eRData = new RobotsData(ERList, ERStats, ERSettings,eRIsPrecent);
-        private static RobotsData omniData = new RobotsData(omniList, OmniStats, OmniSettings, OmniPrecent);
-
-        private static RobotsData cleanerStationData = new RobotsData(new string[5] { "AIRobot_RechargeStation_Cleaner", "AIRobot_RechargeStation_Cleaner_II", "AIRobot_RechargeStation_Cleaner_III", "AIRobot_RechargeStation_Cleaner_IV", "AIRobot_RechargeStation_Cleaner_V" }, new StatDef[2] { StatDefOf.MaxHitPoints, StatDefOf.MarketValue }, cleanerStationSettings, new bool[,] { { false, false} });
+        /// <summary>
+        /// Settings are saved in same order as stats
+        /// </summary>
+        private static RobotsData cleanerStationData =  new RobotsData(new string[5] { "AIRobot_RechargeStation_Cleaner", "AIRobot_RechargeStation_Cleaner_II", "AIRobot_RechargeStation_Cleaner_III", "AIRobot_RechargeStation_Cleaner_IV", "AIRobot_RechargeStation_Cleaner_V" } , new StatDef[2] { StatDefOf.MaxHitPoints, StatDefOf.MarketValue }, cleanerStationSettings, GeneralStationIsPrecent);
         private static RobotsData haulerStationData = new RobotsData(new string[5] { "AIRobot_RechargeStation_Hauler", "AIRobot_RechargeStation_Hauler_II", "AIRobot_RechargeStation_Hauler_III", "AIRobot_RechargeStation_Hauler_IV", "AIRobot_RechargeStation_Hauler_V" }, new StatDef[2] { StatDefOf.MaxHitPoints, StatDefOf.MarketValue }, haulerStationSettings,GeneralStationIsPrecent);
         private static RobotsData crafterStationData = new RobotsData(new string[5] { "RPP_RechargeStation_Crafter_I", "RPP_RechargeStation_Crafter_II", "RPP_RechargeStation_Crafter_III", "RPP_RechargeStation_Crafter_VI", "RPP_RechargeStation_Crafter_V" }, new StatDef[2] { StatDefOf.MaxHitPoints, StatDefOf.MarketValue }, CrafterStationSettings, GeneralStationIsPrecent);
         private static RobotsData builderStationData = new RobotsData(new string[5] { "RPP_RechargeStation_Builder_I", "RPP_RechargeStation_Builder_II", "RPP_RechargeStation_Builder_III", "RPP_RechargeStation_Builder_VI", "RPP_RechargeStation_Builder_V" }, new StatDef[2] { StatDefOf.MaxHitPoints, StatDefOf.MarketValue }, builderStationSettings, GeneralStationIsPrecent);
@@ -249,7 +246,190 @@ namespace MiscRobotsPlusPlus
         private static RobotsData kitchenStationData = new RobotsData(new string[5] { "RPP_RechargeStation_Kitchen_I", "RPP_RechargeStation_Kitchen_II", "RPP_RechargeStation_Kitchen_III", "RPP_RechargeStation_Kitchen_VI", "RPP_RechargeStation_Kitchen_V" }, new StatDef[2] { StatDefOf.MaxHitPoints, StatDefOf.MarketValue }, kitchenStationSettings, GeneralStationIsPrecent);
         private static RobotsData omniStationData = new RobotsData(new string[5] { "RPP_RechargeStation_Omni_I", "RPP_RechargeStation_Omni_II", "RPP_RechargeStation_Omni_III", "RPP_RechargeStation_Omni_VI", "RPP_RechargeStation_Omni_V" }, new StatDef[2] { StatDefOf.MaxHitPoints, StatDefOf.MarketValue }, OmniStationSettings, GeneralStationIsPrecent);
 
+        #region Stations Settings
 
+        private static bool[,] GeneralStationIsPrecent = new bool[5, 2]
+{
+            {false,false },
+            {false,false },
+            {false,false },
+            {false,false },
+            {false,false },
+ };
+
+        #region cleaner Stations
+
+        private static float[,] cleanerStationSettings = new float[5, 2]
+       {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+       };
+
+
+        private static float[,] cleanerStationDefaultSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+        #endregion
+
+        #region hauler Stations
+        private static float[,] haulerStationSettings = new float[5, 2]
+       {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+       };
+
+
+        private static float[,] haulerStationDefaultSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+        #endregion
+
+        #region Crafter Stations
+        private static float[,] CrafterStationSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+
+
+        private static float[,] CrafterStationDefaultSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+        #endregion
+
+        #region Kitchen Stations
+        private static float[,] kitchenStationSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+
+
+        private static float[,] kitchenStationDefaultSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+        #endregion
+
+        #region builder Stations
+        private static float[,] builderStationSettings = new float[5, 2]
+       {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+       };
+
+
+        private static float[,] builderStationDefaultSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+        #endregion
+
+        #region ER Stations
+        private static float[,] erStationSettings = new float[5, 2]
+       {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+       };
+        private static bool[,] erStationPrecent = new bool[5, 2]
+        {
+            {false,false },
+            {false,false },
+            {false,false },
+            {false,false },
+            {false,false },
+         };
+
+        private static float[,] erStationDefaultSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+        #endregion
+
+        #region Omni Stations
+        private static float[,] OmniStationSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+
+
+        private static float[,] OmniStationDefaultSettings = new float[5, 2]
+        {
+            {100, 1000 },
+            {150f, 1000 },
+            {200f, 1000 },
+            {300f, 1000 },
+            {400f, 1000 }
+
+        };
+        #endregion
+
+        #endregion
+
+
+        #region Exposing Data
         public override void ExposeData()
         {
             //Stored in XML config file
@@ -264,12 +444,12 @@ namespace MiscRobotsPlusPlus
 
 
             // Robots Stations Settings
-            //ExposeValues(cleanerStationData);
-            //ExposeValues(haulerStationData);
-            //ExposeValues(erStationData);
-            //ExposeValues(crafterStationData);
-            //ExposeValues(builderStationData);
-            //ExposeValues(omniStationData);
+            ExposeValues(cleanerStationData);
+            ExposeValues(haulerStationData);
+            ExposeValues(erStationData);
+            ExposeValues(crafterStationData);
+            ExposeValues(builderStationData);
+            ExposeValues(omniStationData);
         }
         public static void WriteSettings()
         {
@@ -283,197 +463,15 @@ namespace MiscRobotsPlusPlus
 
 
             // Robots Stations Settings
-            //WriteStatSettings(cleanerStationData);
-            //WriteStatSettings(haulerStationData);
-            //WriteStatSettings(erStationData);
-            //WriteStatSettings(crafterStationData);
-            //WriteStatSettings(builderStationData);
-            //WriteStatSettings(omniStationData);
+            WriteStatSettings(cleanerStationData);
+            WriteStatSettings(haulerStationData);
+            WriteStatSettings(erStationData);
+            WriteStatSettings(crafterStationData);
+            WriteStatSettings(builderStationData);
+            WriteStatSettings(omniStationData);
         }
 
-        #region Stations Data
-
-        #region cleaner Stations
-        private static float[,] cleanerStationSettings = new float[5, 2]
-       {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-       };
-        private static bool[,] GeneralStationIsPrecent = new bool[5, 2]
-        {
-            {false,false },
-            {false,false },
-            {false,false },
-            {false,false },
-            {false,false },
-         };
-
-        private static float[,] cleanerStationDefaultSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-        #endregion
-
-        #region hauler Stations
-        private static float[,] haulerStationSettings = new float[5, 2]
-       {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-       };
-
-
-        private static float[,] haulerStationDefaultSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-        #endregion
-
-        #region Crafter Stations
-        private static float[,] CrafterStationSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-
-
-        private static float[,] CrafterStationDefaultSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-        #endregion
-
-        #region Kitchen Stations
-        private static float[,] kitchenStationSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-
-
-        private static float[,] kitchenStationDefaultSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-        #endregion
-
-        #region builder Stations
-        private static float[,] builderStationSettings = new float[5, 2]
-       {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-       };
-
-
-        private static float[,] builderStationDefaultSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-        #endregion
-
-        #region ER Stations
-        private static float[,] erStationSettings = new float[5, 2]
-       {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-       };
-        private static bool[,] erStationPrecent = new bool[5, 2]
-        {
-            {false,false },
-            {false,false },
-            {false,false },
-            {false,false },
-            {false,false },
-         };
-
-        private static float[,] erStationDefaultSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-        #endregion
-
-        #region Omni Stations
-        private static float[,] OmniStationSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-
-
-        private static float[,] OmniStationDefaultSettings = new float[5, 2]
-        {
-            {100, 9000 },
-            {150f, 9000 },
-            {200f, 9000 },
-            {300f, 9000 },
-            {400f, 9000 }
-
-        };
-        #endregion
-
-        #endregion
-
-
-        public static List<ThingDef> database;
-
-
+    
         public static void ExposeValues(RobotsData data)
         {
             for (int i = 0; i < data.defThing.Length; i++)
@@ -507,6 +505,7 @@ namespace MiscRobotsPlusPlus
                 }
             }
         }
+        #endregion
 
         /// <summary>
         /// Drawing SettingsGUI
@@ -516,26 +515,21 @@ namespace MiscRobotsPlusPlus
             listing_Standard.DropDownSettings("Current Page", "", currentPage, listing_Standard.ColumnWidth);
             listing_Standard.GapLine();
 
-            if(currentPage == SettingsPages.Robots_Tweaks)
+
+            switch (currentPage)
             {
-                RobotsSettings(listing_Standard);
+                case SettingsPages.Robots_Tweaks:
+                    RobotsSettings(listing_Standard);
+                    break;
+                case SettingsPages.Station_Tweaks:
+                    RobotsStationSettings(listing_Standard);
+                    break;
+                default:
+                    break;
             }
-            else if(currentPage == SettingsPages.Station_Tweaks)
-            {
-                RobotsStationSettings(listing_Standard);
-            }
-            //switch (currentPage)
-            //{
-            //    case SettingsPages.Robots_Tweaks:
-            //        RobotsSettings(listing_Standard);
-            //        break;
-            //    case SettingsPages.Station_Tweaks:
-            //        RobotsStationSettings(listing_Standard);
-            //        break;
-            //    default: 
-            //        break;
-            //}
         }
+
+        //Invidual Robots Settings UI
         private static void RobotsSettings(Listing_Standard listing_Standard)
         {
             listing_Standard.Label("These settings apply runtime");
@@ -577,59 +571,67 @@ namespace MiscRobotsPlusPlus
 
         }
 
+        //Invidual Robots Stations Settings UI
         private static void RobotsStationSettings(Listing_Standard listing_Standard)
         {
-            //listing_Standard.Label("These settings apply After Reset");
+            listing_Standard.Label("These settings apply After Reset");
 
-            //listing_Standard.CheckboxLabeled("Cleaner_Station_Settings".Translate(), ref cleanerStationTweaks);
-            //if (cleanerStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, cleanerStationData);
+            listing_Standard.CheckboxLabeled("Cleaner_Station_Settings".Translate(), ref cleanerStationTweaks);
+            if (cleanerStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, cleanerStationData);
 
-            //}
-            //listing_Standard.CheckboxLabeled("Hauler_Station_Settings".Translate(), ref haulerStationTweaks);
-            //if (haulerStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, haulerStationData);
+            }
+            listing_Standard.CheckboxLabeled("Hauler_Station_Settings".Translate(), ref haulerStationTweaks);
+            if (haulerStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, haulerStationData);
 
-            //}
-            //listing_Standard.CheckboxLabeled("Crafter_Station_Settings".Translate(), ref crafterStationTweaks);
-            //if (crafterStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, crafterStationData);
-            //}
-            //listing_Standard.CheckboxLabeled("Builder_Station_Settings".Translate(), ref builderStationTweaks);
-            //if (builderStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, builderStationData);
-            //}
+            }
+            listing_Standard.CheckboxLabeled("Crafter_Station_Settings".Translate(), ref crafterStationTweaks);
+            if (crafterStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, crafterStationData);
+            }
+            listing_Standard.CheckboxLabeled("Builder_Station_Settings".Translate(), ref builderStationTweaks);
+            if (builderStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, builderStationData);
+            }
 
-            //listing_Standard.CheckboxLabeled("Kitchen_Station_Settings".Translate(), ref kitchenStationTweaks);
-            //if (kitchenStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, kitchenStationData);
-            //}
+            listing_Standard.CheckboxLabeled("Kitchen_Station_Settings".Translate(), ref kitchenStationTweaks);
+            if (kitchenStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, kitchenStationData);
+            }
 
-            //listing_Standard.CheckboxLabeled("ER_Station_Settings".Translate(), ref eRStationweaks);
-            //if (eRStationweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, erStationData);
-            //}
+            listing_Standard.CheckboxLabeled("ER_Station_Settings".Translate(), ref eRStationweaks);
+            if (eRStationweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, erStationData);
+            }
 
-            //listing_Standard.CheckboxLabeled("Omni_Station_Settings".Translate(), ref omniStationTweaks);
-            //if (omniStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, omniStationData);
-            //}
+            listing_Standard.CheckboxLabeled("Omni_Station_Settings".Translate(), ref omniStationTweaks);
+            if (omniStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, omniStationData);
+            }
 
 
         }
     }
-}
 
+}
+///<summary>
+///<param name="Robots_Tweaks">Defines each robotics stats</param>
+///<param name="Station_Tweaks">Defines each robotic Station stats</param>
+///<param name="Others_Tweaks">Unused</param>
+///</summary>
 public enum SettingsPages
 {
     Robots_Tweaks,
     Station_Tweaks,
     Others_Tweaks
 }
+
+
