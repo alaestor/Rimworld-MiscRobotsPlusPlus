@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<AIRobot_Hauler.label>Грузчик</AIRobot_Hauler.label>
+	<AIRobot_Hauler.description>Простой бот-грузчик.</AIRobot_Hauler.description>
+
+	<AIRobot_Hauler_II.label>Грузчик</AIRobot_Hauler_II.label>
+	<AIRobot_Hauler_II.description>Базовый бот-грузчик.</AIRobot_Hauler_II.description>
+	<AIRobot_Hauler_III.label>Грузчик</AIRobot_Hauler_III.label>
+	<AIRobot_Hauler_III.description>Сложный бот-грузчик.</AIRobot_Hauler_III.description>
+	<AIRobot_Hauler_IV.label>Грузчик</AIRobot_Hauler_IV.label>
+	<AIRobot_Hauler_IV.description>Продвинутый бот-грузчик.</AIRobot_Hauler_IV.description>
+	<AIRobot_Hauler_V.label>Грузчик</AIRobot_Hauler_V.label>
+	<AIRobot_Hauler_V.description>Нуль-логичный бот-грузчик.</AIRobot_Hauler_V.description>
+
+	<AIRobot_Cleaner.label>Уборщик</AIRobot_Cleaner.label>
+	<AIRobot_Cleaner.description>Простой бот-уборщик.</AIRobot_Cleaner.description>
+
+	<AIRobot_Cleaner_II.label>Уборщик</AIRobot_Cleaner_II.label>
+	<AIRobot_Cleaner_II.description>Базовый бот-уборщик.</AIRobot_Cleaner_II.description>
+	<AIRobot_Cleaner_III.label>Уборщик</AIRobot_Cleaner_III.label>
+	<AIRobot_Cleaner_III.description>Сложный бот-уборщик.</AIRobot_Cleaner_III.description>
+	<AIRobot_Cleaner_IV.label>Уборщик</AIRobot_Cleaner_IV.label>
+	<AIRobot_Cleaner_IV.description>Продвинутый бот-уборщик.</AIRobot_Cleaner_IV.description>
+	<AIRobot_Cleaner_V.label>Уборщик</AIRobot_Cleaner_V.label>
+	<AIRobot_Cleaner_V.description>Нуль-логичный бот-уборщик.</AIRobot_Cleaner_V.description>
+
+	<RPP_Bot_Builder_I.label>Строитель</RPP_Bot_Builder_I.label>
+	<RPP_Bot_Builder_I.description>Бот-строитель 1 поколения. Способен выполнять следующие работы на уровне навыка "4": строительство, демонтаж, ремонт, горное дело.</RPP_Bot_Builder_I.description>
+	<RPP_Bot_Builder_II.label>Строитель</RPP_Bot_Builder_II.label>
+	<RPP_Bot_Builder_II.description>Бот-строитель 2 поколения. Способен выполнять следующие работы на уровне навыка "8": строительство, демонтаж, ремонт, горное дело.</RPP_Bot_Builder_II.description>
+	<RPP_Bot_Builder_III.label>Строитель</RPP_Bot_Builder_III.label>
+	<RPP_Bot_Builder_III.description>Бот-строитель 3 поколения. Способен выполнять следующие работы на уровне навыка "13": строительство, демонтаж, ремонт, горное дело.</RPP_Bot_Builder_III.description>
+	<RPP_Bot_Builder_IV.label>Строитель</RPP_Bot_Builder_IV.label>
+	<RPP_Bot_Builder_IV.description>Бот-строитель 4 поколения. Способен выполнять следующие работы на уровне навыка "16": строительство, демонтаж, ремонт, горное дело.</RPP_Bot_Builder_IV.description>
+	<RPP_Bot_Builder_V.label>Строитель</RPP_Bot_Builder_V.label>
+	<RPP_Bot_Builder_V.description>Бот-строитель 5 поколения. Способен выполнять следующие работы на уровне навыка "20": строительство, демонтаж, ремонт, горное дело.</RPP_Bot_Builder_V.description>
+
+	<RPP_Bot_Crafter_I.label>Сборщик</RPP_Bot_Crafter_I.label>
+	<RPP_Bot_Crafter_I.description>Бот-сборщик 1 поколения. Способен выполнять следующие работы на уровне навыка "4": кузнец, портной, ремесло.</RPP_Bot_Crafter_I.description>
+	<RPP_Bot_Crafter_II.label>Сборщик</RPP_Bot_Crafter_II.label>
+	<RPP_Bot_Crafter_II.description>Бот-сборщик 2 поколения. Способен выполнять следующие работы на уровне навыка "8": кузнец, портной, ремесло.</RPP_Bot_Crafter_II.description>
+	<RPP_Bot_Crafter_III.label>Сборщик</RPP_Bot_Crafter_III.label>
+	<RPP_Bot_Crafter_III.description>Бот-сборщик 3 поколения. Способен выполнять следующие работы на уровне навыка "13": кузнец, портной, ремесло.</RPP_Bot_Crafter_III.description>
+	<RPP_Bot_Crafter_IV.label>Сборщик</RPP_Bot_Crafter_IV.label>
+	<RPP_Bot_Crafter_IV.description>Бот-сборщик 4 поколения. Способен выполнять следующие работы на уровне навыка "16": кузнец, портной, ремесло.</RPP_Bot_Crafter_IV.description>
+	<RPP_Bot_Crafter_V.label>Сборщик</RPP_Bot_Crafter_V.label>
+	<RPP_Bot_Crafter_V.description>Бот-сборщик 5 поколения. Способен выполнять следующие работы на уровне навыка "20": кузнец, портной, ремесло.</RPP_Bot_Crafter_V.description>
+
+	<RPP_Bot_ER_I.label>БЭР</RPP_Bot_ER_I.label>
+	<RPP_Bot_ER_I.description>БЭР 1 поколения. Способен выполнять следующие работы на уровне навыка "4": медицина. Помимо этого тушит возгорания.</RPP_Bot_ER_I.description>
+	<RPP_Bot_ER_II.label>БЭР</RPP_Bot_ER_II.label>
+	<RPP_Bot_ER_II.description>БЭР 2 поколения. Способен выполнять следующие работы на уровне навыка "8": медицина. Помимо этого тушит возгорания.</RPP_Bot_ER_II.description>
+	<RPP_Bot_ER_III.label>БЭР</RPP_Bot_ER_III.label>
+	<RPP_Bot_ER_III.description>БЭР 3 поколения. Способен выполнять следующие работы на уровне навыка "13": медицина. Помимо этого тушит возгорания.</RPP_Bot_ER_III.description>
+	<RPP_Bot_ER_IV.label>БЭР</RPP_Bot_ER_IV.label>
+	<RPP_Bot_ER_IV.description>БЭР 4 поколения. Способен выполнять следующие работы на уровне навыка "16": медицина. Помимо этого тушит возгорания.</RPP_Bot_ER_IV.description>
+	<RPP_Bot_ER_V.label>БЭР</RPP_Bot_ER_V.label>
+	<RPP_Bot_ER_V.description>БЭР 5 поколения. Способен выполнять следующие работы на уровне навыка "20": медицина. Помимо этого тушит возгорания.</RPP_Bot_ER_V.description>
+
+	<RPP_Bot_Kitchen_I.label>Завхоз</RPP_Bot_Kitchen_I.label>
+	<RPP_Bot_Kitchen_I.description>Бот-завхоз 1 поколения. Способен выполнять следующие работы на уровне навыка "4": готовка, фермерство и садоводство.</RPP_Bot_Kitchen_I.description>
+	<RPP_Bot_Kitchen_II.label>Завхоз</RPP_Bot_Kitchen_II.label>
+	<RPP_Bot_Kitchen_II.description>Бот-завхоз 2 поколения. Способен выполнять следующие работы на уровне навыка "8": готовка, фермерство и садоводство.</RPP_Bot_Kitchen_II.description>
+	<RPP_Bot_Kitchen_III.label>Завхоз</RPP_Bot_Kitchen_III.label>
+	<RPP_Bot_Kitchen_III.description>Бот-завхоз 3 поколения. Способен выполнять следующие работы на уровне навыка "13": готовка, фермерство и садоводство.</RPP_Bot_Kitchen_III.description>
+	<RPP_Bot_Kitchen_IV.label>Завхоз</RPP_Bot_Kitchen_IV.label>
+	<RPP_Bot_Kitchen_IV.description>Бот-завхоз 4 поколения. Способен выполнять следующие работы на уровне навыка "16": готовка, фермерство и садоводство.</RPP_Bot_Kitchen_IV.description>
+	<RPP_Bot_Kitchen_V.label>Завхоз</RPP_Bot_Kitchen_V.label>
+	<RPP_Bot_Kitchen_V.description>Бот-завхоз 5 поколения. Способен выполнять следующие работы на уровне навыка "20": готовка, фермерство и садоводство.</RPP_Bot_Kitchen_V.description>
+
+	<RPP_Bot_Omni_I.abel>Мастер-бот</RPP_Bot_Omni_I.label>
+	<RPP_Bot_Omni_I.description>Мастер-бот. Способен выполнять любые работы на уровне навыка "4".</RPP_Bot_Omni_I.description>
+	<RPP_Bot_Omni_II.label>Мастер-бот</RPP_Bot_Omni_II.label>
+	<RPP_Bot_Omni_II.description>Мастер-бот. Способен выполнять любые работы на уровне навыка "8".</RPP_Bot_Omni_II.description>
+	<RPP_Bot_Omni_III.label>Мастер-бот</RPP_Bot_Omni_III.label>
+	<RPP_Bot_Omni_III.description>Мастер-бот. Способен выполнять любые работы на уровне навыка "13".</RPP_Bot_Omni_III.description>
+	<RPP_Bot_Omni_IV.label>Мастер-бот</RPP_Bot_Omni_IV.label>
+	<RPP_Bot_Omni_IV.description>Мастер-бот. Способен выполнять любые работы на уровне навыка "16".</RPP_Bot_Omni_IV.description>
+	<RPP_Bot_Omni_V.label>Мастер-бот</RPP_Bot_Omni_V.label>
+	<RPP_Bot_Omni_V.description>Мастер-бот. Способен выполнять любые работы на уровне навыка "20".</RPP_Bot_Omni_V.description>
+
+</LanguageData>
+
+

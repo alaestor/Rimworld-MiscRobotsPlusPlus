@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+
+	<RPP_Component.label>Микрокомпоненты</RPP_Component.label>
+	<RPP_Component.description>Нужны для создания вычислительных матриц.</RPP_Component.description>
+	
+	<RPP_Matrix_I.label>Простая вычислительная матрица</RPP_Matrix_I.label>
+	<RPP_Matrix_I.description>Нужна для создания ботов 1 поколения.</RPP_Matrix_I.description>
+	
+	<RPP_Matrix_II.label>Базовая вычислительная матрица</RPP_Matrix_II.label>
+	<RPP_Matrix_II.description>Нужна для создания ботов 2 поколения.</RPP_Matrix_II.description>
+	
+	<RPP_Matrix_III.label>Сложная вычислительная матрица</RPP_Matrix_III.label>
+	<RPP_Matrix_III.description>Нужна для создания ботов 3 поколения.</RPP_Matrix_III.description>
+	
+	<RPP_Matrix_IV.label>Продвинутая вычислительная матрица</RPP_Matrix_IV.label>
+	<RPP_Matrix_IV.description>Нужна для создания ботов 4 поколения.</RPP_Matrix_IV.description>
+	
+	<RPP_Matrix_V.label>Нуль-логичная матрица</RPP_Matrix_V.label>
+	<RPP_Matrix_V.description>Нужна для создания ботов 5 поколения.</RPP_Matrix_V.description>
+
+</LanguageData>

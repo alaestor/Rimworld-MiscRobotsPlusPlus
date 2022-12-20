@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<AIRobot_RechargeStation_Hauler.label>Док-станция грузчика 1 поколения</AIRobot_RechargeStation_Hauler.label>
+	<AIRobot_RechargeStation_Hauler.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Hauler.description>
+
+	<AIRobot_RechargeStation_Hauler_II.label>Док-станция грузчика 2 поколения</AIRobot_RechargeStation_Hauler_II.label>
+	<AIRobot_RechargeStation_Hauler_II.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Hauler_II.description>
+	<AIRobot_RechargeStation_Hauler_III.label>Док-станция грузчика 3 поколения</AIRobot_RechargeStation_Hauler_III.label>
+	<AIRobot_RechargeStation_Hauler_III.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Hauler_III.description>
+	<AIRobot_RechargeStation_Hauler_IV.label>Док-станция грузчика 4 поколения</AIRobot_RechargeStation_Hauler_IV.label>
+	<AIRobot_RechargeStation_Hauler_IV.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Hauler_IV.description>
+	<AIRobot_RechargeStation_Hauler_V.label>Док-станция грузчика 5 поколения</AIRobot_RechargeStation_Hauler_V.label>
+	<AIRobot_RechargeStation_Hauler_V.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Hauler_V.description>
+
+	<AIRobot_RechargeStation_Cleaner.label>Док-станция уборщика 1 поколения</AIRobot_RechargeStation_Cleaner.label>
+	<AIRobot_RechargeStation_Cleaner.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Cleaner.description>
+
+	<AIRobot_RechargeStation_Cleaner_II.label>Док-станция уборщика 2 поколения</AIRobot_RechargeStation_Cleaner_II.label>
+	<AIRobot_RechargeStation_Cleaner_II.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Cleaner_II.description>
+	<AIRobot_RechargeStation_Cleaner_III.label>Док-станция уборщика 3 поколения</AIRobot_RechargeStation_Cleaner_III.label>
+	<AIRobot_RechargeStation_Cleaner_III.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Cleaner_III.description>
+	<AIRobot_RechargeStation_Cleaner_IV.label>Док-станция уборщика 4 поколения</AIRobot_RechargeStation_Cleaner_IV.label>
+	<AIRobot_RechargeStation_Cleaner_IV.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Cleaner_IV.description>
+	<AIRobot_RechargeStation_Cleaner_V.label>Док-станция уборщика 5 поколения</AIRobot_RechargeStation_Cleaner_V.label>
+	<AIRobot_RechargeStation_Cleaner_V.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</AIRobot_RechargeStation_Cleaner_V.description>
+
+	<RPP_RechargeStation_Builder_I.label>Док-станция строителя 1 поколения</RPP_RechargeStation_Builder_I.label>
+	<RPP_RechargeStation_Builder_I.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Builder_I.description>
+	<RPP_RechargeStation_Builder_II.label>Док-станция строителя 2 поколения</RPP_RechargeStation_Builder_II.label>
+	<RPP_RechargeStation_Builder_II.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Builder_II.description>
+	<RPP_RechargeStation_Builder_III.label>Док-станция строителя 3 поколения</RPP_RechargeStation_Builder_III.label>
+	<RPP_RechargeStation_Builder_III.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Builder_III.description>
+	<RPP_RechargeStation_Builder_IV.label>Док-станция строителя 4 поколения</RPP_RechargeStation_Builder_IV.label>
+	<RPP_RechargeStation_Builder_IV.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Builder_IV.description>
+	<RPP_RechargeStation_Builder_V.label>Док-станция строителя 5 поколения</RPP_RechargeStation_Builder_V.label>
+	<RPP_RechargeStation_Builder_V.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Builder_V.description>
+
+	<RPP_RechargeStation_Crafter_I.label>Док-станция сборщика 1 поколения</RPP_RechargeStation_Crafter_I.label>
+	<RPP_RechargeStation_Crafter_I.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Crafter_I.description>
+	<RPP_RechargeStation_Crafter_II.label>Док-станция сборщика 2 поколения</RPP_RechargeStation_Crafter_II.label>
+	<RPP_RechargeStation_Crafter_II.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Crafter_II.description>
+	<RPP_RechargeStation_Crafter_III.label>Док-станция сборщика 3 поколения</RPP_RechargeStation_Crafter_III.label>
+	<RPP_RechargeStation_Crafter_III.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Crafter_III.description>
+	<RPP_RechargeStation_Crafter_IV.label>Док-станция сборщика 4 поколения</RPP_RechargeStation_Crafter_IV.label>
+	<RPP_RechargeStation_Crafter_IV.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Crafter_IV.description>
+	<RPP_RechargeStation_Crafter_V.label>Док-станция сборщика 5 поколения</RPP_RechargeStation_Crafter_V.label>
+	<RPP_RechargeStation_Crafter_V.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Crafter_V.description>
+
+	<RPP_RechargeStation_ER_I.label>Док-станция БЭРа 1 поколения</RPP_RechargeStation_ER_I.label>
+	<RPP_RechargeStation_ER_I.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_ER_I.description>
+	<RPP_RechargeStation_ER_II.label>Док-станция БЭРа 2 поколения</RPP_RechargeStation_ER_II.label>
+	<RPP_RechargeStation_ER_II.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_ER_II.description>
+	<RPP_RechargeStation_ER_III.label>Док-станция БЭРа 3 поколения</RPP_RechargeStation_ER_III.label>
+	<RPP_RechargeStation_ER_III.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_ER_III.description>
+	<RPP_RechargeStation_ER_IV.label>Док-станция БЭРа 4 поколения</RPP_RechargeStation_ER_IV.label>
+	<RPP_RechargeStation_ER_IV.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_ER_IV.description>
+	<RPP_RechargeStation_ER_V.label>Док-станция БЭРа 5 поколения</RPP_RechargeStation_ER_V.label>
+	<RPP_RechargeStation_ER_V.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_ER_V.description>
+
+	<RPP_RechargeStation_Kitchen_I.label>Док-станция завхоза 1 поколения</RPP_RechargeStation_Kitchen_I.label>
+	<RPP_RechargeStation_Kitchen_I.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Kitchen_I.description>
+	<RPP_RechargeStation_Kitchen_II.label>Док-станция завхоза 2 поколения</RPP_RechargeStation_Kitchen_II.label>
+	<RPP_RechargeStation_Kitchen_II.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Kitchen_II.description>
+	<RPP_RechargeStation_Kitchen_III.label>Док-станция завхоза 3 поколения</RPP_RechargeStation_Kitchen_III.label>
+	<RPP_RechargeStation_Kitchen_III.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Kitchen_III.description>
+	<RPP_RechargeStation_Kitchen_IV.label>Док-станция завхоза 4 поколения</RPP_RechargeStation_Kitchen_IV.label>
+	<RPP_RechargeStation_Kitchen_IV.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Kitchen_IV.description>
+	<RPP_RechargeStation_Kitchen_V.label>Док-станция завхоза 5 поколения</RPP_RechargeStation_Kitchen_V.label>
+	<RPP_RechargeStation_Kitchen_V.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Kitchen_V.description>
+
+	<RPP_RechargeStation_Omni_I.label>Док-станция мастер-бота 1 поколения</RPP_RechargeStation_Omni_I.label>
+	<RPP_RechargeStation_Omni_I.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Omni_I.description>
+	<RPP_RechargeStation_Omni_II.label>Док-станция мастер-бота 2 поколения</RPP_RechargeStation_Omni_II.label>
+	<RPP_RechargeStation_Omni_II.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Omni_II.description>
+	<RPP_RechargeStation_Omni_III.label>Док-станция мастер-бота 3 поколения</RPP_RechargeStation_Omni_III.label>
+	<RPP_RechargeStation_Omni_III.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Omni_III.description>
+	<RPP_RechargeStation_Omni_IV.label>Док-станция мастер-бота 4 поколения</RPP_RechargeStation_Omni_IV.label>
+	<RPP_RechargeStation_Omni_IV.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Omni_IV.description>
+	<RPP_RechargeStation_Omni_V.label>Док-станция мастер-бота 5 поколения</RPP_RechargeStation_Omni_V.label>
+	<RPP_RechargeStation_Omni_V.description>Эта станция служит для обслуживания и зарядки бота. Сам бот идет в комплекте.</RPP_RechargeStation_Omni_V.description>
+
+</LanguageData>

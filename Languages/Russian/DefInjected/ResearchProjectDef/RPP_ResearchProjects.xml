@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<RPP_Research_Matrix_I.label>Простые логические вычисления</RPP_Research_Matrix_I.label>
+	<RPP_Research_Matrix_I.description>Открывает возможность изготовления простых вычислительных матриц, которые используются для создания ботов 1 поколения.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Research_Matrix_I.description>
+	
+	<RPP_Research_Matrix_II.label>Базовые логические вычисления</RPP_Research_Matrix_II.label>
+	<RPP_Research_Matrix_II.description>Открывает возможность изготовления базовых вычислительных матриц, которые используются для создания ботов 2 поколения.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Research_Matrix_II.description>
+	
+	<RPP_Research_Matrix_III.label>Сложные логические вычисления</RPP_Research_Matrix_III.label>
+	<RPP_Research_Matrix_III.description>Открывает возможность изготовления сложных вычислительных матриц, которые используются для создания ботов 3 поколения.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Research_Matrix_III.description>
+	
+	<RPP_Research_Matrix_IV.label>Продвинутые логические вычисления</RPP_Research_Matrix_IV.label>
+	<RPP_Research_Matrix_IV.description>Открывает возможность изготовления продвинутых вычислительных матриц, которые используются для создания ботов 4 поколения.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Research_Matrix_IV.description>
+	
+	<RPP_Research_Matrix_V.label>Нуль-логичные вычисления</RPP_Research_Matrix_V.label>
+	<RPP_Research_Matrix_V.description>Открывает возможность изготовления вычислительных матриц, основанных на нуль-логичных вычислительных блоках и используемых для создания ботов 5 поколения.\n\nНуль-логичные вычислительные блоки стали настоящим прорывом в робототехнической отрасли, что позволило роботизированным устройствам разорвать шаблоны типичного машинного поведения.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Research_Matrix_V.description>
+
+	<RPP_Research_Fundamentals.label>Фундаментальная робототехника</RPP_Research_Fundamentals.label>
+	<RPP_Research_Fundamentals.description>Исследование, нацеленное на освоение простейших принципов робототехники и ее автоматизации.\n\nОткрывает возможность создания микрокомпонентов, используемых в изготовлении вычислительных матриц, а также рабочего места для производства ботов.</RPP_Research_Fundamentals.description>
+
+	<RPP_Research_Cleaner_All.label>Уборщик</RPP_Research_Cleaner_All.label>
+	<RPP_Research_Cleaner_All.description>Открывает возможность для создания бота-уборщика.\n\nРоботы-уборщики и роботы-грузчики выполняют свою работу и передвигаются быстрее, нежели другие модели.</RPP_Research_Cleaner_All.description>
+
+	<RPP_Research_Hauler_All.label>Грузчик</RPP_Research_Hauler_All.label>
+	<RPP_Research_Hauler_All.description>Открывает возможность для создания бота-грузчика.\n\nРоботы-уборщики и роботы-грузчики выполняют свою работу и передвигаются быстрее, нежели другие модели.</RPP_Research_Hauler_All.description>
+
+	<RPP_Research_Builder_All.label>Строитель</RPP_Research_Builder_All.label>
+	<RPP_Research_Builder_All.description>Открывает возможность для создания бота-строителя, способного ремонтировать, строить и разрушать объекты, а также добывать полезные ископаемые.</RPP_Research_Builder_All.description>
+
+	<RPP_Research_Crafter_All.label>Сборщик</RPP_Research_Crafter_All.label>
+	<RPP_Research_Crafter_All.description>Открывает возможность для создания бота-сборщика, способного изготавливать любые предметы, используя верстаки и другие производственные станки.</RPP_Research_Crafter_All.description>
+
+	<RPP_Research_ER_All.label>БЭР</RPP_Research_ER_All.label>
+	<RPP_Research_ER_All.description>Открывает возможность для создания "Бота Экстренного Реагирования" (БЭР), способного моментально оказать медицинскую помощь любому живому существу, проводить операции и тушить возгорания.</RPP_Research_ER_All.description>
+
+	<RPP_Research_Kitchen_All.label>Завхоз</RPP_Research_Kitchen_All.label>
+	<RPP_Research_Kitchen_All.description>Открывает возможность для создания ботов, заведующих домашним хозяйством. Они способны возделывать поля, собирать урожай и готовить пищу.</RPP_Research_Kitchen_All.description>
+	
+	<RPP_Research_Omni_All.label>Мастер-боты</RPP_Research_Omni_All.label>
+	<RPP_Research_Omni_All.description>Открывает возможность для создания мастер-ботов - величайшего достижения робототехники! Настоящие мастера на все руки, способные выполнять любые виды работ.</RPP_Research_Omni_All.description>
+
+	<RPP_Research_Omni_I.label>Мастер-бот 1 поколения</RPP_Research_Omni_I.label>
+	<RPP_Research_Omni_I.description>Мастер-бот первого поколения, спроектированный на основе простой вычислительной матрицы.</RPP_Research_Omni_I.description>
+	<RPP_Research_Omni_II.label>Мастер-бот 2 поколения</RPP_Research_Omni_II.label>
+	<RPP_Research_Omni_II.description>Мастер-бот второго поколения, спроектированный на основе базовой вычислительной матрицы.</RPP_Research_Omni_II.description>
+	<RPP_Research_Omni_III.label>Мастер-бот 3 поколения</RPP_Research_Omni_III.label>
+	<RPP_Research_Omni_III.description>Мастер-бот третьего поколения, спроектированный на основе сложной вычислительной матрицы.</RPP_Research_Omni_III.description>
+	<RPP_Research_Omni_IV.label>Мастер-бот 4 поколения</RPP_Research_Omni_IV.label>
+	<RPP_Research_Omni_IV.description>Мастер-бот четвертого поколения, спроектированный на основе продвинутой вычислительной матрицы.</RPP_Research_Omni_IV.description>
+	<RPP_Research_Omni_V.label>Мастер-бот 5 поколения</RPP_Research_Omni_V.label>
+	<RPP_Research_Omni_V.description>Мастер-бот пятого поколения, спроектированный на основе нуль-логичной вычислительной матрицы.\n\nЛучший помощник в любом поселении!</RPP_Research_Omni_V.description>
+
+</LanguageData>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<RPP_Production_Component.label>Создать микрокомпоненты</RPP_Production_Component.label>
+	<RPP_Production_Component.description>Нужны для создания вычислительных матриц.</RPP_Production_Component.description>
+
+	<RPP_Production_Matrix_I.label>Создать простую вычислительную матрицу</RPP_Production_Matrix_I.label>
+	<RPP_Production_Matrix_I.description>Нужна для создания ботов 1 поколения.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Production_Matrix_I.description>
+	<RPP_Production_Matrix_II.label>Создать базовую вычислительную матрицу</RPP_Production_Matrix_II.label>
+	<RPP_Production_Matrix_II.description>Нужна для создания ботов 2 поколения.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Production_Matrix_II.description>
+	<RPP_Production_Matrix_III.label>Создать сложную вычислительную матрицу</RPP_Production_Matrix_III.label>
+	<RPP_Production_Matrix_III.description>Нужна для создания ботов 3 поколения.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Production_Matrix_III.description>
+	<RPP_Production_Matrix_IV.label>Создать продвинутую вычислительную матрицу</RPP_Production_Matrix_IV.label>
+	<RPP_Production_Matrix_IV.description>Нужна для создания ботов 4 поколения.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Production_Matrix_IV.description>
+	<RPP_Production_Matrix_V.label>Создать нуль-логичную матрицу</RPP_Production_Matrix_V.label>
+	<RPP_Production_Matrix_V.description>Нужна для создания ботов 5 поколения.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Production_Matrix_V.description>
+
+	<RPP_Production_Cleaner_I.label>Создать уборщика 1 поколения</RPP_Production_Cleaner_I.label>
+	<RPP_Production_Cleaner_I.description>Бот-уборщик 1 поколения.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Production_Cleaner_I.description>
+	<RPP_Production_Cleaner_II.label>Создать уборщика 2 поколения</RPP_Production_Cleaner_II.label>
+	<RPP_Production_Cleaner_II.description>Бот-уборщик 2 поколения.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Production_Cleaner_II.description>
+	<RPP_Production_Cleaner_III.label>Создать уборщика 3 поколения</RPP_Production_Cleaner_III.label>
+	<RPP_Production_Cleaner_III.description>Бот-уборщик 3 поколения.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Production_Cleaner_III.description>
+	<RPP_Production_Cleaner_IV.label>Создать уборщика 4 поколения</RPP_Production_Cleaner_IV.label>
+	<RPP_Production_Cleaner_IV.description>Бот-уборщик 4 поколения.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Production_Cleaner_IV.description>
+	<RPP_Production_Cleaner_V.label>Создать уборщика 5 поколения</RPP_Production_Cleaner_V.label>
+	<RPP_Production_Cleaner_V.description>Бот-уборщик 5 поколения.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Production_Cleaner_V.description>
+
+	<RPP_Production_Hauler_I.label>Создать грузчика 1 поколения</RPP_Production_Hauler_I.label>
+	<RPP_Production_Hauler_I.description>Бот-грузчик 1 поколения.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Production_Hauler_I.description>
+	<RPP_Production_Hauler_II.label>Создать грузчика 2 поколения</RPP_Production_Hauler_II.label>
+	<RPP_Production_Hauler_II.description>Бот-грузчик 2 поколения.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Production_Hauler_II.description>
+	<RPP_Production_Hauler_III.label>Создать грузчика 3 поколения</RPP_Production_Hauler_III.label>
+	<RPP_Production_Hauler_III.description>Бот-грузчик 3 поколения.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Production_Hauler_III.description>
+	<RPP_Production_Hauler_IV.label>Создать грузчика 4 поколения</RPP_Production_Hauler_IV.label>
+	<RPP_Production_Hauler_IV.description>Бот-грузчик 4 поколения.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Production_Hauler_IV.description>
+	<RPP_Production_Hauler_V.label>Создать грузчика 5 поколения</RPP_Production_Hauler_V.label>
+	<RPP_Production_Hauler_V.description>Бот-грузчик 5 поколения.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Production_Hauler_V.description>
+
+	<RPP_Production_Builder_I.label>Создать строителя 1 поколения</RPP_Production_Builder_I.label>
+	<RPP_Production_Builder_I.description>Бот-строитель 1 поколения.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Production_Builder_I.description>
+	<RPP_Production_Builder_II.label>Создать строителя 2 поколения</RPP_Production_Builder_II.label>
+	<RPP_Production_Builder_II.description>Бот-строитель 2 поколения.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Production_Builder_II.description>
+	<RPP_Production_Builder_III.label>Создать строителя 3 поколения</RPP_Production_Builder_III.label>
+	<RPP_Production_Builder_III.description>Бот-строитель 3 поколения.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Production_Builder_III.description>
+	<RPP_Production_Builder_IV.label>Создать строителя 4 поколения</RPP_Production_Builder_IV.label>
+	<RPP_Production_Builder_IV.description>Бот-строитель 4 поколения.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Production_Builder_IV.description>
+	<RPP_Production_Builder_V.label>Создать строителя 5 поколения</RPP_Production_Builder_V.label>
+	<RPP_Production_Builder_V.description>Бот-строитель 5 поколения.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Production_Builder_V.description>
+
+	<RPP_Production_Crafter_I.label>Создать сборщика 1 поколения</RPP_Production_Crafter_I.label>
+	<RPP_Production_Crafter_I.description>Бот-сборщик 1 поколения.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Production_Crafter_I.description>
+	<RPP_Production_Crafter_II.label>Создать сборщика 2 поколения</RPP_Production_Crafter_II.label>
+	<RPP_Production_Crafter_II.description>Бот-сборщик 2 поколения.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Production_Crafter_II.description>
+	<RPP_Production_Crafter_III.label>Создать сборщика 3 поколения</RPP_Production_Crafter_III.label>
+	<RPP_Production_Crafter_III.description>Бот-сборщик 3 поколения.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Production_Crafter_III.description>
+	<RPP_Production_Crafter_IV.label>Создать сборщика 4 поколения</RPP_Production_Crafter_IV.label>
+	<RPP_Production_Crafter_IV.description>Бот-сборщик 4 поколения.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Production_Crafter_IV.description>
+	<RPP_Production_Crafter_V.label>Создать сборщика 5 поколения</RPP_Production_Crafter_V.label>
+	<RPP_Production_Crafter_V.description>Бот-сборщик 5 поколения.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Production_Crafter_V.description>
+
+	<RPP_Production_ER_I.label>Создать БЭРa 1 поколения</RPP_Production_ER_I.label>
+	<RPP_Production_ER_I.description>БЭР 1 поколения.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Production_ER_I.description>
+	<RPP_Production_ER_II.label>Создать БЭРa 2 поколения</RPP_Production_ER_II.label>
+	<RPP_Production_ER_II.description>БЭР 2 поколения.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Production_ER_II.description>
+	<RPP_Production_ER_III.label>Создать БЭРa 3 поколения</RPP_Production_ER_III.label>
+	<RPP_Production_ER_III.description>БЭР 3 поколения.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Production_ER_III.description>
+	<RPP_Production_ER_IV.label>Создать БЭРa 4 поколения</RPP_Production_ER_IV.label>
+	<RPP_Production_ER_IV.description>БЭР 4 поколения.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Production_ER_IV.description>
+	<RPP_Production_ER_V.label>Создать БЭРa 5 поколения</RPP_Production_ER_V.label>
+	<RPP_Production_ER_V.description>БЭР 5 поколения.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Production_ER_V.description>
+
+	<RPP_Production_Kitchen_I.label>Создать завхоза 1 поколения</RPP_Production_Kitchen_I.label>
+	<RPP_Production_Kitchen_I.description>Бот-завхоз 1 поколения.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Production_Kitchen_I.description>
+	<RPP_Production_Kitchen_II.label>Создать завхоза 2 поколения</RPP_Production_Kitchen_II.label>
+	<RPP_Production_Kitchen_II.description>Бот-завхоз 2 поколения.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Production_Kitchen_II.description>
+	<RPP_Production_Kitchen_III.label>Создать завхоза 3 поколения</RPP_Production_Kitchen_III.label>
+	<RPP_Production_Kitchen_III.description>Бот-завхоз 3 поколения.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Production_Kitchen_III.description>
+	<RPP_Production_Kitchen_IV.label>Создать завхоза 4 поколения</RPP_Production_Kitchen_IV.label>
+	<RPP_Production_Kitchen_IV.description>Бот-завхоз 4 поколения.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Production_Kitchen_IV.description>
+	<RPP_Production_Kitchen_V.label>Создать завхоза 5 поколения</RPP_Production_Kitchen_V.label>
+	<RPP_Production_Kitchen_V.description>Бот-завхоз 5 поколения.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Production_Kitchen_V.description>
+	
+	<RPP_Production_Omni_I.label>Создать мастер-бота 1 поколения</RPP_Production_Omni_I.label>
+	<RPP_Production_Omni_I.description>Мастер-бот 1 поколения. Способен выполнять любые виды работ.\n\nДля создания требуется 4-й уровень ремесла.</RPP_Production_Omni_I.description>
+	<RPP_Production_Omni_II.label>Создать мастер-бота 2 поколения</RPP_Production_Omni_II.label>
+	<RPP_Production_Omni_II.description>Мастер-бот 2 поколения. Способен выполнять любые виды работ.\n\nДля создания требуется 8-й уровень ремесла.</RPP_Production_Omni_II.description>
+	<RPP_Production_Omni_III.label>Создать мастер-бота 3 поколения</RPP_Production_Omni_III.label>
+	<RPP_Production_Omni_III.description>Мастер-бот 3 поколения. Способен выполнять любые виды работ.\n\nДля создания требуется 13-й уровень ремесла.</RPP_Production_Omni_III.description>
+	<RPP_Production_Omni_IV.label>Создать мастер-бота 4 поколения</RPP_Production_Omni_IV.label>
+	<RPP_Production_Omni_IV.description>Мастер-бот 4 поколения. Способен выполнять любые виды работ.\n\nДля создания требуется 16-й уровень ремесла.</RPP_Production_Omni_IV.description>
+	<RPP_Production_Omni_V.label>Создать мастер-бота 5 поколения</RPP_Production_Omni_V.label>
+	<RPP_Production_Omni_V.description>Мастер-бот 5 поколения. Способен выполнять любые виды работ.\n\nДля создания требуется 20-й уровень ремесла.</RPP_Production_Omni_V.description>
+
+</LanguageData>

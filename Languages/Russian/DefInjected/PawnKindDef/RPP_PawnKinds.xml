@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<AIRobot_Hauler.label>Грузчик 1 поколения</AIRobot_Hauler.label>
+	<AIRobot_Hauler_II.label>Грузчик 2 поколения</AIRobot_Hauler_II.label>
+	<AIRobot_Hauler_III.label>Грузчик 3 поколения</AIRobot_Hauler_III.label>
+	<AIRobot_Hauler_IV.label>Грузчик 4 поколения</AIRobot_Hauler_IV.label>
+	<AIRobot_Hauler_V.label>Грузчик 5 поколения</AIRobot_Hauler_V.label>
+
+	<AIRobot_Cleaner.label>Уборщик 1 поколения</AIRobot_Cleaner.label>
+	<AIRobot_Cleaner_II.label>Уборщик 2 поколения</AIRobot_Cleaner_II.label>
+	<AIRobot_Cleaner_III.label>Уборщик 3 поколения</AIRobot_Cleaner_III.label>
+	<AIRobot_Cleaner_IV.label>Уборщик 4 поколения</AIRobot_Cleaner_IV.label>
+	<AIRobot_Cleaner_V.label>Уборщик 5 поколения</AIRobot_Cleaner_V.label>
+
+	<RPP_Bot_Builder_I.label>Строитель 1 поколения</RPP_Bot_Builder_I.label>
+	<RPP_Bot_Builder_II.label>Строитель 2 поколения</RPP_Bot_Builder_II.label>
+	<RPP_Bot_Builder_III.label>Строитель 3 поколения</RPP_Bot_Builder_III.label>
+	<RPP_Bot_Builder_IV.label>Строитель 4 поколения</RPP_Bot_Builder_IV.label>
+	<RPP_Bot_Builder_V.label>Строитель 5 поколения</RPP_Bot_Builder_V.label>
+
+	<RPP_Bot_Crafter_I.label>Сборщик 1 поколения</RPP_Bot_Crafter_I.label>
+	<RPP_Bot_Crafter_II.label>Сборщик 2 поколения</RPP_Bot_Crafter_II.label>
+	<RPP_Bot_Crafter_III.label>Сборщик 3 поколения</RPP_Bot_Crafter_III.label>
+	<RPP_Bot_Crafter_IV.label>Сборщик 4 поколения</RPP_Bot_Crafter_IV.label>
+	<RPP_Bot_Crafter_V.label>Сборщик 5 поколения</RPP_Bot_Crafter_V.label>
+
+	<RPP_Bot_ER_I.label>БЭР 1 поколения</RPP_Bot_ER_I.label>
+	<RPP_Bot_ER_II.label>БЭР 2 поколения</RPP_Bot_ER_II.label>
+	<RPP_Bot_ER_III.label>БЭР 3 поколения</RPP_Bot_ER_III.label>
+	<RPP_Bot_ER_IV.label>БЭР 4 поколения</RPP_Bot_ER_IV.label>
+	<RPP_Bot_ER_V.label>БЭР 5 поколения</RPP_Bot_ER_V.label>
+
+	<RPP_Bot_Kitchen_I.label>Завхоз 1 поколения</RPP_Bot_Kitchen_I.label>
+	<RPP_Bot_Kitchen_II.label>Завхоз 2 поколения</RPP_Bot_Kitchen_II.label>
+	<RPP_Bot_Kitchen_III.label>Завхоз 3 поколения</RPP_Bot_Kitchen_III.label>
+	<RPP_Bot_Kitchen_IV.label>Завхоз 4 поколения</RPP_Bot_Kitchen_IV.label>
+	<RPP_Bot_Kitchen_V.label>Завхоз 5 поколения</RPP_Bot_Kitchen_V.label>
+	
+	<RPP_Bot_Omni_I.label>Мастер-бот 1 поколения</RPP_Bot_Omni_I.label>
+	<RPP_Bot_Omni_II.label>Мастер-бот 2 поколения</RPP_Bot_Omni_II.label>
+	<RPP_Bot_Omni_III.label>Мастер-бот 3 поколения</RPP_Bot_Omni_III.label>
+	<RPP_Bot_Omni_IV.label>Мастер-бот 4 поколения</RPP_Bot_Omni_IV.label>
+	<RPP_Bot_Omni_V.label>Мастер-бот 5 поколения</RPP_Bot_Omni_V.label>
+
+</LanguageData>

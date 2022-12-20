@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<AIRobot_Hauler_disabled.label>Грузчик вышел из строя!</AIRobot_Hauler_disabled.label>
+	<AIRobot_Hauler_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Hauler_disabled.description>
+
+	<AIRobot_Hauler_II_disabled.label>Грузчик вышел из строя!</AIRobot_Hauler_II_disabled.label>
+	<AIRobot_Hauler_II_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Hauler_II_disabled.description>
+	<AIRobot_Hauler_III_disabled.label>Грузчик вышел из строя!</AIRobot_Hauler_III_disabled.label>
+	<AIRobot_Hauler_III_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Hauler_III_disabled.description>
+	<AIRobot_Hauler_IV_disabled.label>Грузчик вышел из строя!</AIRobot_Hauler_IV_disabled.label>
+	<AIRobot_Hauler_IV_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Hauler_IV_disabled.description>
+	<AIRobot_Hauler_V_disabled.label>Грузчик вышел из строя!</AIRobot_Hauler_V_disabled.label>
+	<AIRobot_Hauler_V_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Hauler_V_disabled.description>
+
+	<AIRobot_Cleaner_disabled.label>Уборщик вышел из строя!</AIRobot_Cleaner_disabled.label>
+	<AIRobot_Cleaner_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Cleaner_disabled.description>
+
+	<AIRobot_Cleaner_II_disabled.label>Уборщик вышел из строя!</AIRobot_Cleaner_II_disabled.label>
+	<AIRobot_Cleaner_II_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Cleaner_II_disabled.description>
+	<AIRobot_Cleaner_III_disabled.label>Уборщик вышел из строя!</AIRobot_Cleaner_III_disabled.label>
+	<AIRobot_Cleaner_III_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Cleaner_III_disabled.description>
+	<AIRobot_Cleaner_IV_disabled.label>Уборщик вышел из строя!</AIRobot_Cleaner_IV_disabled.label>
+	<AIRobot_Cleaner_IV_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Cleaner_IV_disabled.description>
+	<AIRobot_Cleaner_V_disabled.label>Уборщик вышел из строя!</AIRobot_Cleaner_V_disabled.label>
+	<AIRobot_Cleaner_V_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</AIRobot_Cleaner_V_disabled.description>
+
+	<RPP_Bot_Builder_I_disabled.label>Строитель вышел из строя!</RPP_Bot_Builder_I_disabled.label>
+	<RPP_Bot_Builder_I_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Builder_I_disabled.description>
+	<RPP_Bot_Builder_II_disabled.label>Строитель вышел из строя!</RPP_Bot_Builder_II_disabled.label>
+	<RPP_Bot_Builder_II_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Builder_II_disabled.description>
+	<RPP_Bot_Builder_III_disabled.label>Строитель вышел из строя!</RPP_Bot_Builder_III_disabled.label>
+	<RPP_Bot_Builder_III_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Builder_III_disabled.description>
+	<RPP_Bot_Builder_IV_disabled.label>Строитель вышел из строя!</RPP_Bot_Builder_IV_disabled.label>
+	<RPP_Bot_Builder_IV_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Builder_IV_disabled.description>
+	<RPP_Bot_Builder_V_disabled.label>Строитель вышел из строя!</RPP_Bot_Builder_V_disabled.label>
+	<RPP_Bot_Builder_V_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Builder_V_disabled.description>
+
+	<RPP_Bot_Crafter_I_disabled.label>Сборщик вышел из строя!</RPP_Bot_Crafter_I_disabled.label>
+	<RPP_Bot_Crafter_I_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Crafter_I_disabled.description>
+	<RPP_Bot_Crafter_II_disabled.label>Сборщик вышел из строя!</RPP_Bot_Crafter_II_disabled.label>
+	<RPP_Bot_Crafter_II_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Crafter_II_disabled.description>
+	<RPP_Bot_Crafter_III_disabled.label>Сборщик вышел из строя!</RPP_Bot_Crafter_III_disabled.label>
+	<RPP_Bot_Crafter_III_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Crafter_III_disabled.description>
+	<RPP_Bot_Crafter_IV_disabled.label>Сборщик вышел из строя!</RPP_Bot_Crafter_IV_disabled.label>
+	<RPP_Bot_Crafter_IV_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Crafter_IV_disabled.description>
+	<RPP_Bot_Crafter_V_disabled.label>Сборщик вышел из строя!</RPP_Bot_Crafter_V_disabled.label>
+	<RPP_Bot_Crafter_V_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Crafter_V_disabled.description>
+
+	<RPP_Bot_ER_I_disabled.label>БЭР вышел из строя!</RPP_Bot_ER_I_disabled.label>
+	<RPP_Bot_ER_I_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_ER_I_disabled.description>
+	<RPP_Bot_ER_II_disabled.label>БЭР вышел из строя!</RPP_Bot_ER_II_disabled.label>
+	<RPP_Bot_ER_II_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_ER_II_disabled.description>
+	<RPP_Bot_ER_III_disabled.label>БЭР вышел из строя!</RPP_Bot_ER_III_disabled.label>
+	<RPP_Bot_ER_III_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_ER_III_disabled.description>
+	<RPP_Bot_ER_IV_disabled.label>БЭР вышел из строя!</RPP_Bot_ER_IV_disabled.label>
+	<RPP_Bot_ER_IV_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_ER_IV_disabled.description>
+	<RPP_Bot_ER_V_disabled.label>БЭР вышел из строя!</RPP_Bot_ER_V_disabled.label>
+	<RPP_Bot_ER_V_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_ER_V_disabled.description>
+
+	<RPP_Bot_Kitchen_I_disabled.label>Завхоз вышел из строя!</RPP_Bot_Kitchen_I_disabled.label>
+	<RPP_Bot_Kitchen_I_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Kitchen_I_disabled.description>
+	<RPP_Bot_Kitchen_II_disabled.label>Завхоз вышел из строя!</RPP_Bot_Kitchen_II_disabled.label>
+	<RPP_Bot_Kitchen_II_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Kitchen_II_disabled.description>
+	<RPP_Bot_Kitchen_III_disabled.label>Завхоз вышел из строя!</RPP_Bot_Kitchen_III_disabled.label>
+	<RPP_Bot_Kitchen_III_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Kitchen_III_disabled.description>
+	<RPP_Bot_Kitchen_IV_disabled.label>Завхоз вышел из строя!</RPP_Bot_Kitchen_IV_disabled.label>
+	<RPP_Bot_Kitchen_IV_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Kitchen_IV_disabled.description>
+	<RPP_Bot_Kitchen_V_disabled.label>Завхоз вышел из строя!</RPP_Bot_Kitchen_V_disabled.label>
+	<RPP_Bot_Kitchen_V_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Kitchen_V_disabled.description>
+
+	<RPP_Bot_Omni_I_disabled.label>Мастер-бот вышел из строя!</RPP_Bot_Omni_I_disabled.label>
+	<RPP_Bot_Omni_I_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Omni_I_disabled.description>
+	<RPP_Bot_Omni_II_disabled.label>Мастер-бот вышел из строя!</RPP_Bot_Omni_II_disabled.label>
+	<RPP_Bot_Omni_II_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Omni_II_disabled.description>
+	<RPP_Bot_Omni_III_disabled.label>Мастер-бот вышел из строя!</RPP_Bot_Omni_III_disabled.label>
+	<RPP_Bot_Omni_III_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Omni_III_disabled.description>
+	<RPP_Bot_Omni_IV_disabled.label>Мастер-бот вышел из строя!</RPP_Bot_Omni_IV_disabled.label>
+	<RPP_Bot_Omni_IV_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Omni_IV_disabled.description>
+	<RPP_Bot_Omni_V_disabled.label>Мастер-бот вышел из строя!</RPP_Bot_Omni_V_disabled.label>
+	<RPP_Bot_Omni_V_disabled.description>Бот вышел из строя. Требуется починка или разбор на компоненты.</RPP_Bot_Omni_V_disabled.description>
+
+</LanguageData>
