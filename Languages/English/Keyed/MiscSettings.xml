@@ -181,5 +181,127 @@
 	<RPP_Bot_Omni_IV_MarketValue>Recommended 80000$</RPP_Bot_Omni_IV_MarketValue>
 	<RPP_Bot_Omni_V_MarketValue>Recommended 100000$</RPP_Bot_Omni_V_MarketValue>
 	
+	
+	<!--Robot Stations Settings Transltions-->
+	<AIRobot_RechargeStation_Cleaner_MaxHitPoints>Recommended 100 Max HP</AIRobot_RechargeStation_Cleaner_MaxHitPoints>
+	<AIRobot_RechargeStation_Cleaner_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Cleaner_MarketValue>
+	
+	<AIRobot_RechargeStation_Cleaner_II_MaxHitPoints>Recommended 150 Max HP</AIRobot_RechargeStation_Cleaner_II_MaxHitPoints>
+	<AIRobot_RechargeStation_Cleaner_II_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Cleaner_II_MarketValue>
+	
+	<AIRobot_RechargeStation_Cleaner_III_MaxHitPoints>Recommended 200 Max HP</AIRobot_RechargeStation_Cleaner_III_MaxHitPoints>
+	<AIRobot_RechargeStation_Cleaner_III_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Cleaner_III_MarketValue>
+	
+	<AIRobot_RechargeStation_Cleaner_IV_MaxHitPoints>Recommended 250 Max HP</AIRobot_RechargeStation_Cleaner_IV_MaxHitPoints>
+	<AIRobot_RechargeStation_Cleaner_IV_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Cleaner_IV_MarketValue>
+	
+	<AIRobot_RechargeStation_Cleaner_V_MaxHitPoints>Recommended 300 Max HP</AIRobot_RechargeStation_Cleaner_V_MaxHitPoints>
+	<AIRobot_RechargeStation_Cleaner_V_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Cleaner_V_MarketValue>
+	
+	
+	
+	<AIRobot_RechargeStation_Hauler_MaxHitPoints>Recommended 100 Max HP</AIRobot_RechargeStation_Hauler_MaxHitPoints>
+	<AIRobot_RechargeStation_Hauler_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Hauler_MarketValue>
+	
+	<AIRobot_RechargeStation_Hauler_II_MaxHitPoints>Recommended 150 Max HP</AIRobot_RechargeStation_Hauler_II_MaxHitPoints>
+	<AIRobot_RechargeStation_Hauler_II_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Hauler_II_MarketValue>
+	
+	<AIRobot_RechargeStation_Hauler_III_MaxHitPoints>Recommended 200 Max HP</AIRobot_RechargeStation_Hauler_III_MaxHitPoints>
+	<AIRobot_RechargeStation_Hauler_III_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Hauler_III_MarketValue>
+	
+	<AIRobot_RechargeStation_Hauler_IV_MaxHitPoints>Recommended 250 Max HP</AIRobot_RechargeStation_Hauler_IV_MaxHitPoints>
+	<AIRobot_RechargeStation_Hauler_IV_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Hauler_IV_MarketValue>
+	
+	<AIRobot_RechargeStation_Hauler_V_MaxHitPoints>Recommended 300 Max HP</AIRobot_RechargeStation_Hauler_V_MaxHitPoints>
+	<AIRobot_RechargeStation_Hauler_V_MarketValue>Recommended 1000$</AIRobot_RechargeStation_Hauler_V_MarketValue>
+	
+	
+	
+	<RPP_RechargeStation_Builder_I_MaxHitPoints>Recommended 100 Max HP</RPP_RechargeStation_Builder_I_MaxHitPoints>
+	<RPP_RechargeStation_Builder_I_MarketValue>Recommended 1000$</RPP_RechargeStation_Builder_I_MarketValue>
+	
+	<RPP_RechargeStation_Builder_II_MaxHitPoints>Recommended 150 Max HP</RPP_RechargeStation_Builder_II_MaxHitPoints>
+	<RPP_RechargeStation_Builder_II_MarketValue>Recommended 1000$</RPP_RechargeStation_Builder_II_MarketValue>
+	
+	<RPP_RechargeStation_Builder_III_MaxHitPoints>Recommended 200 Max HP</RPP_RechargeStation_Builder_III_MaxHitPoints>
+	<RPP_RechargeStation_Builder_III_MarketValue>Recommended 1000$</RPP_RechargeStation_Builder_III_MarketValue>
+	
+	<RPP_RechargeStation_Builder_IV_MaxHitPoints>Recommended 250 Max HP</RPP_RechargeStation_Builder_IV_MaxHitPoints>
+	<RPP_RechargeStation_Builder_IV_MarketValue>Recommended 1000$</RPP_RechargeStation_Builder_IV_MarketValue>
+	
+	<RPP_RechargeStation_Builder_V_MaxHitPoints>Recommended 300 Max HP</RPP_RechargeStation_Builder_V_MaxHitPoints>
+	<RPP_RechargeStation_Builder_V_MarketValue>Recommended 1000$</RPP_RechargeStation_Builder_V_MarketValue>
+	
+		
+	<RPP_RechargeStation_Crafter_I_MaxHitPoints>Recommended 100 Max HP</RPP_RechargeStation_Crafter_I_MaxHitPoints>
+	<RPP_RechargeStation_Crafter_I_MarketValue>Recommended 1000$</RPP_RechargeStation_Crafter_I_MarketValue>
+	
+	<RPP_RechargeStation_Crafter_II_MaxHitPoints>Recommended 150 Max HP</RPP_RechargeStation_Crafter_II_MaxHitPoints>
+	<RPP_RechargeStation_Crafter_II_MarketValue>Recommended 1000$</RPP_RechargeStation_Crafter_II_MarketValue>
+	
+	<RPP_RechargeStation_Crafter_III_MaxHitPoints>Recommended 200 Max HP</RPP_RechargeStation_Crafter_III_MaxHitPoints>
+	<RPP_RechargeStation_Crafter_III_MarketValue>Recommended 1000$</RPP_RechargeStation_Crafter_III_MarketValue>
+	
+	<RPP_RechargeStation_Crafter_IV_MaxHitPoints>Recommended 250 Max HP</RPP_RechargeStation_Crafter_IV_MaxHitPoints>
+	<RPP_RechargeStation_Crafter_IV_MarketValue>Recommended 1000$</RPP_RechargeStation_Crafter_IV_MarketValue>
+	
+	<RPP_RechargeStation_Crafter_V_MaxHitPoints>Recommended 300 Max HP</RPP_RechargeStation_Crafter_V_MaxHitPoints>
+	<RPP_RechargeStation_Crafter_V_MarketValue>Recommended 1000$</RPP_RechargeStation_Crafter_V_MarketValue>
+	
+	<RPP_RechargeStation_Kitchen_I_MaxHitPoints>Recommended 100 Max HP</RPP_RechargeStation_Kitchen_I_MaxHitPoints>
+	<RPP_RechargeStation_Kitchen_I_MarketValue>Recommended 1000$</RPP_RechargeStation_Kitchen_I_MarketValue>
+	
+	<RPP_RechargeStation_Kitchen_II_MaxHitPoints>Recommended 150 Max HP</RPP_RechargeStation_Kitchen_II_MaxHitPoints>
+	<RPP_RechargeStation_Kitchen_II_MarketValue>Recommended 1000$</RPP_RechargeStation_Kitchen_II_MarketValue>
+	
+	<RPP_RechargeStation_Kitchen_III_MaxHitPoints>Recommended 200 Max HP</RPP_RechargeStation_Kitchen_III_MaxHitPoints>
+	<RPP_RechargeStation_Kitchen_III_MarketValue>Recommended 1000$</RPP_RechargeStation_Kitchen_III_MarketValue>
+	
+	<RPP_RechargeStation_Kitchen_IV_MaxHitPoints>Recommended 250 Max HP</RPP_RechargeStation_Kitchen_IV_MaxHitPoints>
+	<RPP_RechargeStation_Kitchen_IV_MarketValue>Recommended 1000$</RPP_RechargeStation_Kitchen_IV_MarketValue>
+	
+	<RPP_RechargeStation_Kitchen_V_MaxHitPoints>Recommended 300 Max HP</RPP_RechargeStation_Kitchen_V_MaxHitPoints>
+	<RPP_RechargeStation_Kitchen_V_MarketValue>Recommended 1000$</RPP_RechargeStation_Kitchen_V_MarketValue>
+	
+	
+	<RPP_RechargeStation_ER_I_MaxHitPoints>Recommended 100 Max HP</RPP_RechargeStation_ER_I_MaxHitPoints>
+	<RPP_RechargeStation_ER_I_MarketValue>Recommended 1000$</RPP_RechargeStation_ER_I_MarketValue>
+	
+	<RPP_RechargeStation_ER_II_MaxHitPoints>Recommended 150 Max HP</RPP_RechargeStation_ER_II_MaxHitPoints>
+	<RPP_RechargeStation_ER_II_MarketValue>Recommended 1000$</RPP_RechargeStation_ER_II_MarketValue>
+	
+	<RPP_RechargeStation_ER_III_MaxHitPoints>Recommended 200 Max HP</RPP_RechargeStation_ER_III_MaxHitPoints>
+	<RPP_RechargeStation_ER_III_MarketValue>Recommended 1000$</RPP_RechargeStation_ER_III_MarketValue>
+	
+	<RPP_RechargeStation_ER_IV_MaxHitPoints>Recommended 250 Max HP</RPP_RechargeStation_ER_IV_MaxHitPoints>
+	<RPP_RechargeStation_ER_IV_MarketValue>Recommended 1000$</RPP_RechargeStation_ER_IV_MarketValue>
+	
+	<RPP_RechargeStation_ER_V_MaxHitPoints>Recommended 300 Max HP</RPP_RechargeStation_ER_V_MaxHitPoints>
+	<RPP_RechargeStation_ER_V_MarketValue>Recommended 1000$</RPP_RechargeStation_ER_V_MarketValue>
+	
+	
+	<RPP_RechargeStation_Omni_I_MaxHitPoints>Recommended 100 Max HP</RPP_RechargeStation_Omni_I_MaxHitPoints>
+	<RPP_RechargeStation_Omni_I_MarketValue>Recommended 1000$</RPP_RechargeStation_Omni_I_MarketValue>
+	
+	<RPP_RechargeStation_Omni_II_MaxHitPoints>Recommended 200 Max HP</RPP_RechargeStation_Omni_II_MaxHitPoints>
+	<RPP_RechargeStation_Omni_II_MarketValue>Recommended 1000$</RPP_RechargeStation_Omni_II_MarketValue>
+	
+	<RPP_RechargeStation_Omni_III_MaxHitPoints>Recommended 300 Max HP</RPP_RechargeStation_Omni_III_MaxHitPoints>
+	<RPP_RechargeStation_Omni_III_MarketValue>Recommended 1000$</RPP_RechargeStation_Omni_III_MarketValue>
+	
+	<RPP_RechargeStation_Omni_IV_MaxHitPoints>Recommended 400 Max HP</RPP_RechargeStation_Omni_IV_MaxHitPoints>
+	<RPP_RechargeStation_Omni_IV_MarketValue>Recommended 1000$</RPP_RechargeStation_Omni_IV_MarketValue>
+	
+	<RPP_RechargeStation_Omni_V_MaxHitPoints>Recommended 500 Max HP</RPP_RechargeStation_Omni_V_MaxHitPoints>
+	<RPP_RechargeStation_Omni_V_MarketValue>Recommended 1000$</RPP_RechargeStation_Omni_V_MarketValue>
+	
+	<Cleaner_Station_Settings>Cleaner Station</Cleaner_Station_Settings>
+	<Hauler_Station_Settings>Hauler Station</Hauler_Station_Settings>
+	<Crafter_Station_Settings>Crafter Station</Crafter_Station_Settings>
+	<Builder_Station_Settings>Builder Station</Builder_Station_Settings>
+	<Kitchen_Station_Settings>Kitchen Station</Kitchen_Station_Settings>
+	<ER_Station_Settings>ER Station</ER_Station_Settings>
+	<Omni_Station_Settings>Omni Station</Omni_Station_Settings>
+	
 </LanguageData>
 

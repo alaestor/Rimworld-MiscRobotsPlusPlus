@@ -257,8 +257,8 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
 
@@ -267,8 +267,8 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
         #endregion
@@ -279,8 +279,8 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
        };
 
@@ -290,8 +290,8 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
         #endregion
@@ -302,19 +302,19 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
 
 
         private static float[,] CrafterStationDefaultSettings = new float[5, 2]
-        {
+        {   
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
         #endregion
@@ -325,8 +325,8 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
 
@@ -336,8 +336,8 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
         #endregion
@@ -348,8 +348,8 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
        };
 
@@ -359,8 +359,8 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
         #endregion
@@ -371,26 +371,19 @@ namespace MiscRobotsPlusPlus
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
        };
-        private static bool[,] erStationPrecent = new bool[5, 2]
-        {
-            {false,false },
-            {false,false },
-            {false,false },
-            {false,false },
-            {false,false },
-         };
+
 
         private static float[,] erStationDefaultSettings = new float[5, 2]
         {
             {100, 1000 },
             {150f, 1000 },
             {200f, 1000 },
-            {300f, 1000 },
-            {400f, 1000 }
+            {250f, 1000 },
+            {300f, 1000 }
 
         };
         #endregion
@@ -399,10 +392,10 @@ namespace MiscRobotsPlusPlus
         private static float[,] OmniStationSettings = new float[5, 2]
         {
             {100, 1000 },
-            {150f, 1000 },
             {200f, 1000 },
             {300f, 1000 },
-            {400f, 1000 }
+            {400f, 1000 },
+            {500f, 1000 }
 
         };
 
@@ -410,10 +403,10 @@ namespace MiscRobotsPlusPlus
         private static float[,] OmniStationDefaultSettings = new float[5, 2]
         {
             {100, 1000 },
-            {150f, 1000 },
             {200f, 1000 },
             {300f, 1000 },
-            {400f, 1000 }
+            {400f, 1000 },
+            {500f, 1000 }
 
         };
         #endregion
@@ -579,7 +572,7 @@ namespace MiscRobotsPlusPlus
                 RobotsData.DrawingSettings(listing_Standard, cleanerStationData);
 
             }
-            //listing_Standard.CheckboxLabeled("Hauler_Station_Settings".Translate(), ref haulerStationTweaks);
+            listing_Standard.CheckboxLabeled("Hauler_Station_Settings".Translate(), ref haulerStationTweaks);
             if (haulerStationTweaks == true)
             {
                 RobotsData.DrawingSettings(listing_Standard, haulerStationData);
