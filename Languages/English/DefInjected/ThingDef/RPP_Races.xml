@@ -71,7 +71,7 @@
 	<RPP_Bot_Kitchen_V.label>Kitchen Bot</RPP_Bot_Kitchen_V.label>
 	<RPP_Bot_Kitchen_V.description>A Tier 5 (workskill 20) unit capable of cooking, and tending to plants.</RPP_Bot_Kitchen_V.description>
 
-	<RPP_Bot_Omni_I.abel>OmniBot</RPP_Bot_Omni_I.label>
+	<RPP_Bot_Omni_I.label>OmniBot</RPP_Bot_Omni_I.label>
 	<RPP_Bot_Omni_I.description>A Tier (workskill 4) unit capable of doing the jobs of all the other robots. (NP=P)</RPP_Bot_Omni_I.description>
 	<RPP_Bot_Omni_II.label>OmniBot</RPP_Bot_Omni_II.label>
 	<RPP_Bot_Omni_II.description>A Tier 2 (workskill 8) unit capable of doing the jobs of all the other robots. (NP=P)</RPP_Bot_Omni_II.description>

@@ -69,7 +69,7 @@
 	<RPP_Bot_Kitchen_V.label>Завхоз</RPP_Bot_Kitchen_V.label>
 	<RPP_Bot_Kitchen_V.description>Бот-завхоз 5 поколения. Способен выполнять следующие работы на уровне навыка "20": готовка, фермерство и садоводство.</RPP_Bot_Kitchen_V.description>
 
-	<RPP_Bot_Omni_I.abel>Мастер-бот</RPP_Bot_Omni_I.label>
+	<RPP_Bot_Omni_I.label>Мастер-бот</RPP_Bot_Omni_I.label>
 	<RPP_Bot_Omni_I.description>Мастер-бот. Способен выполнять любые работы на уровне навыка "4".</RPP_Bot_Omni_I.description>
 	<RPP_Bot_Omni_II.label>Мастер-бот</RPP_Bot_Omni_II.label>
 	<RPP_Bot_Omni_II.description>Мастер-бот. Способен выполнять любые работы на уровне навыка "8".</RPP_Bot_Omni_II.description>
