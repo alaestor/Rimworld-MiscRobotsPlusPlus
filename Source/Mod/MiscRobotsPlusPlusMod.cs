@@ -24,15 +24,12 @@ namespace MiscRobotsPlusPlus
         {
             MiscPlusPlusSettings.database = DefDatabase<ThingDef>.AllDefsListForReading;
         }
-
-        #region Writing Settings
         public override void WriteSettings()
         {
             base.WriteSettings();
             MiscPlusPlusSettings.WriteSettings();
 
         }
-        #endregion
         public override string SettingsCategory()
         {
             return "MISC_Robots_Category".Translate();
