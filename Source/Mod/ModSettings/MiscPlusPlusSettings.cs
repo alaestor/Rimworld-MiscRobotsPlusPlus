@@ -433,12 +433,12 @@ namespace MiscRobotsPlusPlus
 
 
             // Robots Stations Settings
-            //ExposeValues(cleanerStationData);
-            //ExposeValues(haulerStationData);
-            //ExposeValues(erStationData);
-            //ExposeValues(crafterStationData);
-            //ExposeValues(builderStationData);
-            //ExposeValues(omniStationData);
+            ExposeValues(cleanerStationData);
+            ExposeValues(haulerStationData);
+            ExposeValues(erStationData);
+            ExposeValues(crafterStationData);
+            ExposeValues(builderStationData);
+            ExposeValues(omniStationData);
         }
         public static void WriteSettings()
         {
@@ -452,12 +452,12 @@ namespace MiscRobotsPlusPlus
 
 
             // Robots Stations Settings
-            //WriteStatSettings(cleanerStationData);
-            //WriteStatSettings(haulerStationData);
-            //WriteStatSettings(erStationData);
-            //WriteStatSettings(crafterStationData);
-            //WriteStatSettings(builderStationData);
-            //WriteStatSettings(omniStationData);
+            WriteStatSettings(cleanerStationData);
+            WriteStatSettings(haulerStationData);
+            WriteStatSettings(erStationData);
+            WriteStatSettings(crafterStationData);
+            WriteStatSettings(builderStationData);
+            WriteStatSettings(omniStationData);
         }
 
 
@@ -561,48 +561,48 @@ namespace MiscRobotsPlusPlus
         {
             listing_Standard.Label("These settings apply After Reset");
 
-            listing_Standard.Label("Pending for approval by orginal mod");
-            
-            //listing_Standard.CheckboxLabeled("Cleaner_Station_Settings".Translate(), ref cleanerStationTweaks);
-            //if (cleanerStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, cleanerStationData);
 
-            //}
-            //listing_Standard.CheckboxLabeled("Hauler_Station_Settings".Translate(), ref haulerStationTweaks);
-            //if (haulerStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, haulerStationData);
 
-            //}
-            //listing_Standard.CheckboxLabeled("Crafter_Station_Settings".Translate(), ref crafterStationTweaks);
-            //if (crafterStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, crafterStationData);
-            //}
-            //listing_Standard.CheckboxLabeled("Builder_Station_Settings".Translate(), ref builderStationTweaks);
-            //if (builderStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, builderStationData);
-            //}
+            listing_Standard.CheckboxLabeled("Cleaner_Station_Settings".Translate(), ref cleanerStationTweaks);
+            if (cleanerStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, cleanerStationData);
 
-            //listing_Standard.CheckboxLabeled("Kitchen_Station_Settings".Translate(), ref kitchenStationTweaks);
-            //if (kitchenStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, kitchenStationData);
-            //}
+            }
+            listing_Standard.CheckboxLabeled("Hauler_Station_Settings".Translate(), ref haulerStationTweaks);
+            if (haulerStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, haulerStationData);
 
-            //listing_Standard.CheckboxLabeled("ER_Station_Settings".Translate(), ref eRStationweaks);
-            //if (eRStationweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, erStationData);
-            //}
+            }
+            listing_Standard.CheckboxLabeled("Crafter_Station_Settings".Translate(), ref crafterStationTweaks);
+            if (crafterStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, crafterStationData);
+            }
+            listing_Standard.CheckboxLabeled("Builder_Station_Settings".Translate(), ref builderStationTweaks);
+            if (builderStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, builderStationData);
+            }
 
-            //listing_Standard.CheckboxLabeled("Omni_Station_Settings".Translate(), ref omniStationTweaks);
-            //if (omniStationTweaks == true)
-            //{
-            //    RobotsData.DrawingSettings(listing_Standard, omniStationData);
-            //}
+            listing_Standard.CheckboxLabeled("Kitchen_Station_Settings".Translate(), ref kitchenStationTweaks);
+            if (kitchenStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, kitchenStationData);
+            }
+
+            listing_Standard.CheckboxLabeled("ER_Station_Settings".Translate(), ref eRStationweaks);
+            if (eRStationweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, erStationData);
+            }
+
+            listing_Standard.CheckboxLabeled("Omni_Station_Settings".Translate(), ref omniStationTweaks);
+            if (omniStationTweaks == true)
+            {
+                RobotsData.DrawingSettings(listing_Standard, omniStationData);
+            }
         }
     }
 }
