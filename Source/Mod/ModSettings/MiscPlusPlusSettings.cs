@@ -389,22 +389,23 @@ namespace MiscRobotsPlusPlus
         #region Omni Stations
         private static float[,] OmniStationSettings = new float[5, 2]
         {
-            {100, 1050 },
-            {150f, 1900 },
-            {200f, 5000 },
-            {250f, 11250 },
-            {300f, 26250 }
+            {100, 9000 },
+            {200f, 9000 },
+            {300f, 9000 },
+            {400f, 9000 },
+            {500f, 9000 }
 
         };
 
 
         private static float[,] OmniStationDefaultSettings = new float[5, 2]
         {
-            {100, 1050 },
-            {150f, 1900 },
-            {200f, 5000 },
-            {250f, 11250 },
-            {300f, 26250 }
+            {100, 9000 },
+            {200f, 9000 },
+            {300f, 9000 },
+            {400f, 9000 },
+            {500f, 9000 }
+
         };
         #endregion
 
