@@ -18,21 +18,21 @@
 	<AIRobot_Cleaner_IV_CleaningSpeed>Текущая скорость уборки {0}% (рекомендуемая: 300%):</AIRobot_Cleaner_IV_CleaningSpeed>>
 	<AIRobot_Cleaner_V_CleaningSpeed>Текущая скорость уборки {0}% (рекомендуемая: 400%):</AIRobot_Cleaner_V_CleaningSpeed>
 
-	<AIRobot_Cleaner_MarketValue>Цена бота (рекомендуемая цена: 1,000$):</AIRobot_Cleaner_MarketValue>
-	<AIRobot_Cleaner_II_MarketValue>Цена бота (рекомендуемая цена: 2,000$):</AIRobot_Cleaner_II_MarketValue>
-	<AIRobot_Cleaner_III_MarketValue>Цена бота (рекомендуемая цена: 3,500$):</AIRobot_Cleaner_III_MarketValue>
-	<AIRobot_Cleaner_IV_MarketValue>Цена бота (рекомендуемая цена: 7,000$):</AIRobot_Cleaner_IV_MarketValue>
-	<AIRobot_Cleaner_V_MarketValue>Цена бота (рекомендуемая цена: 9,000$):</AIRobot_Cleaner_V_MarketValue>
+	<AIRobot_Cleaner_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</AIRobot_Cleaner_MarketValue>
+	<AIRobot_Cleaner_II_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</AIRobot_Cleaner_II_MarketValue>
+	<AIRobot_Cleaner_III_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</AIRobot_Cleaner_III_MarketValue>
+	<AIRobot_Cleaner_IV_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</AIRobot_Cleaner_IV_MarketValue>
+	<AIRobot_Cleaner_V_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</AIRobot_Cleaner_V_MarketValue>
 
 
 	<Builder_Settings>Настройки для строителей</Builder_Settings>
 
 
-	<RPP_Bot_Builder_I_MarketValue>Цена бота (рекомендуемая цена: 4000$):</RPP_Bot_Builder_I_MarketValue>
-	<RPP_Bot_Builder_II_MarketValue>Цена бота (рекомендуемая цена: 8000$):</RPP_Bot_Builder_II_MarketValue>
-	<RPP_Bot_Builder_III_MarketValue>Цена бота (рекомендуемая цена: 12000$):</RPP_Bot_Builder_III_MarketValue>
-	<RPP_Bot_Builder_IV_MarketValue>Цена бота (рекомендуемая цена: 19000$):</RPP_Bot_Builder_IV_MarketValue>
-	<RPP_Bot_Builder_V_MarketValue>Цена бота (рекомендуемая цена: 30000$):</RPP_Bot_Builder_V_MarketValue>
+	<RPP_Bot_Builder_I_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_I_MarketValue>
+	<RPP_Bot_Builder_II_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_II_MarketValue>
+	<RPP_Bot_Builder_III_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_III_MarketValue>
+	<RPP_Bot_Builder_IV_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_IV_MarketValue>
+	<RPP_Bot_Builder_V_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_V_MarketValue>
 
 	<RPP_Bot_Builder_I_ConstructionSpeed>Текущая скорость строительства {0}% (рекомендуемая: 100%):</RPP_Bot_Builder_I_ConstructionSpeed>
 	<RPP_Bot_Builder_II_ConstructionSpeed>Текущая скорость строительства {0}% (рекомендуемая: 200%):</RPP_Bot_Builder_II_ConstructionSpeed>
@@ -58,11 +58,11 @@
 	<RPP_Bot_Builder_IV_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 175%):</RPP_Bot_Builder_IV_MiningYield>
 	<RPP_Bot_Builder_V_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 200%):</RPP_Bot_Builder_V_MiningYield>
 
-	<RPP_Bot_Builder_I_MarketValue>Цена бота (рекомендуемая цена: 4,000$):</RPP_Bot_Builder_I_MarketValue>
-	<RPP_Bot_Builder_II_MarketValue>Цена бота (рекомендуемая цена: 8,000$):</RPP_Bot_Builder_II_MarketValue>
-	<RPP_Bot_Builder_III_MarketValue>Цена бота (рекомендуемая цена: 12,000$):</RPP_Bot_Builder_III_MarketValue>
-	<RPP_Bot_Builder_IV_MarketValue>Цена бота (рекомендуемая цена: 19,000$):</RPP_Bot_Builder_IV_MarketValue>
-	<RPP_Bot_Builder_V_MarketValue>Цена бота (рекомендуемая цена: 30,000$):</RPP_Bot_Builder_V_MarketValue>
+	<RPP_Bot_Builder_I_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_I_MarketValue>
+	<RPP_Bot_Builder_II_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_II_MarketValue>
+	<RPP_Bot_Builder_III_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_III_MarketValue>
+	<RPP_Bot_Builder_IV_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_IV_MarketValue>
+	<RPP_Bot_Builder_V_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Builder_V_MarketValue>
 
 	<RPP_Bot_Builder_I>Настройки для ботов 1 поколения:</RPP_Bot_Builder_I>
 	<RPP_Bot_Builder_II>Настройки для ботов 2 поколения:</RPP_Bot_Builder_II>
@@ -80,21 +80,21 @@
 	<RPP_Bot_Crafter_IV_WorkSpeedGlobal>Текущая скорость работ {0}% (рекомендуемая: 175%):</RPP_Bot_Crafter_IV_WorkSpeedGlobal>
 	<RPP_Bot_Crafter_V_WorkSpeedGlobal>Текущая скорость работ {0}% (рекомендуемая: 200%):</RPP_Bot_Crafter_V_WorkSpeedGlobal>
 
-	<RPP_Bot_Crafter_I_MarketValue>Цена бота (рекомендуемая цена: 1,000$):</RPP_Bot_Crafter_I_MarketValue>
-	<RPP_Bot_Crafter_II_MarketValue>Цена бота (рекомендуемая цена: 2,000$):</RPP_Bot_Crafter_II_MarketValue>
-	<RPP_Bot_Crafter_III_MarketValue>Цена бота (рекомендуемая цена: 3,500$):</RPP_Bot_Crafter_III_MarketValue>
-	<RPP_Bot_Crafter_IV_MarketValue>Цена бота (рекомендуемая цена: 7,000$):</RPP_Bot_Crafter_IV_MarketValue>
-	<RPP_Bot_Crafter_V_MarketValue>Цена бота (рекомендуемая цена: 14,000$):</RPP_Bot_Crafter_V_MarketValue>
+	<RPP_Bot_Crafter_I_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Crafter_I_MarketValue>
+	<RPP_Bot_Crafter_II_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Crafter_II_MarketValue>
+	<RPP_Bot_Crafter_III_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Crafter_III_MarketValue>
+	<RPP_Bot_Crafter_IV_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Crafter_IV_MarketValue>
+	<RPP_Bot_Crafter_V_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Crafter_V_MarketValue>
 
 
 	<Kitchen_Settings>Настройки для завхозов</Kitchen_Settings>
 
 
-	<RPP_Bot_Kitchen_I_MarketValue>Цена бота (рекомендуемая цена: 4,000$):</RPP_Bot_Kitchen_I_MarketValue>
-	<RPP_Bot_Kitchen_II_MarketValue>Цена бота (рекомендуемая цена: 8,000$):</RPP_Bot_Kitchen_II_MarketValue>
-	<RPP_Bot_Kitchen_III_MarketValue>Цена бота (рекомендуемая цена: 12,000$):</RPP_Bot_Kitchen_III_MarketValue>
-	<RPP_Bot_Kitchen_IV_MarketValue>Цена бота (рекомендуемая цена: 18,000$):</RPP_Bot_Kitchen_IV_MarketValue>
-	<RPP_Bot_Kitchen_V_MarketValue>Цена бота (рекомендуемая цена: 30,000$):</RPP_Bot_Kitchen_V_MarketValue>
+	<RPP_Bot_Kitchen_I_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Kitchen_I_MarketValue>
+	<RPP_Bot_Kitchen_II_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Kitchen_II_MarketValue>
+	<RPP_Bot_Kitchen_III_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Kitchen_III_MarketValue>
+	<RPP_Bot_Kitchen_IV_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Kitchen_IV_MarketValue>
+	<RPP_Bot_Kitchen_V_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Kitchen_V_MarketValue>
 
 	<RPP_Bot_Kitchen_I_GeneralLaborSpeed>Текущая скорость готовки {0}% (рекомендуемая: 100%):</RPP_Bot_Kitchen_I_GeneralLaborSpeed>
 	<RPP_Bot_Kitchen_II_GeneralLaborSpeed>Текущая скорость готовки {0}% (рекомендуемая: 200%):</RPP_Bot_Kitchen_II_GeneralLaborSpeed>
@@ -136,51 +136,51 @@
 	<RPP_Bot_ER_IV_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуется: 175%):</RPP_Bot_ER_IV_MedicalSurgerySuccessChance>
 	<RPP_Bot_ER_V_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуется: 200%):</RPP_Bot_ER_V_MedicalSurgerySuccessChance>
 
-	<RPP_Bot_ER_I_MarketValue>Цена бота (рекомендуемая цена: 2,000$):</RPP_Bot_ER_I_MarketValue>
-	<RPP_Bot_ER_II_MarketValue>Цена бота (рекомендуемая цена: 4,000$):</RPP_Bot_ER_II_MarketValue>
-	<RPP_Bot_ER_III_MarketValue>Цена бота (рекомендуемая цена: 8,000$):</RPP_Bot_ER_III_MarketValue>
-	<RPP_Bot_ER_IV_MarketValue>Цена бота (рекомендуемая цена: 16,000$):</RPP_Bot_ER_IV_MarketValue>
-	<RPP_Bot_ER_V_MarketValue>Цена бота (рекомендуемая цена: 24,000$):</RPP_Bot_ER_V_MarketValue>
+	<RPP_Bot_ER_I_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_ER_I_MarketValue>
+	<RPP_Bot_ER_II_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_ER_II_MarketValue>
+	<RPP_Bot_ER_III_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_ER_III_MarketValue>
+	<RPP_Bot_ER_IV_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_ER_IV_MarketValue>
+	<RPP_Bot_ER_V_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_ER_V_MarketValue>
 
 
 	<Omni_Settings>Настройки для мастер-ботов</Omni_Settings>
 
 
-	<RPP_Bot_Omni_I_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 200%):</RPP_Bot_Omni_I_WorkSpeedGlobal>
+	<RPP_Bot_Omni_I_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 50%):</RPP_Bot_Omni_I_WorkSpeedGlobal>
 	<RPP_Bot_Omni_II_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 125%):</RPP_Bot_Omni_II_WorkSpeedGlobal>
-	<RPP_Bot_Omni_III_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 400%):</RPP_Bot_Omni_III_WorkSpeedGlobal>
-	<RPP_Bot_Omni_IV_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 500%):</RPP_Bot_Omni_IV_WorkSpeedGlobal>
-	<RPP_Bot_Omni_V_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 550%):</RPP_Bot_Omni_V_WorkSpeedGlobal>
+	<RPP_Bot_Omni_III_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 150%):</RPP_Bot_Omni_III_WorkSpeedGlobal>
+	<RPP_Bot_Omni_IV_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 175%):</RPP_Bot_Omni_IV_WorkSpeedGlobal>
+	<RPP_Bot_Omni_V_WorkSpeedGlobal>Текущая скорость работы {0}% (рекомендуемая: 200%):</RPP_Bot_Omni_V_WorkSpeedGlobal>
 
 	<RPP_Bot_Omni_I_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 100%):</RPP_Bot_Omni_I_MedicalSurgerySuccessChance>
-	<RPP_Bot_Omni_II_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 110%):</RPP_Bot_Omni_II_MedicalSurgerySuccessChance>
-	<RPP_Bot_Omni_III_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 120%):</RPP_Bot_Omni_III_MedicalSurgerySuccessChance>
-	<RPP_Bot_Omni_IV_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 130%):</RPP_Bot_Omni_IV_MedicalSurgerySuccessChance>
-	<RPP_Bot_Omni_V_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 140%):</RPP_Bot_Omni_V_MedicalSurgerySuccessChance>
+	<RPP_Bot_Omni_II_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 125%):</RPP_Bot_Omni_II_MedicalSurgerySuccessChance>
+	<RPP_Bot_Omni_III_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 150%):</RPP_Bot_Omni_III_MedicalSurgerySuccessChance>
+	<RPP_Bot_Omni_IV_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 175%):</RPP_Bot_Omni_IV_MedicalSurgerySuccessChance>
+	<RPP_Bot_Omni_V_MedicalSurgerySuccessChance>Увеличение шанса на успешное проведение операции {0}% (рекомендуемая: 200%):</RPP_Bot_Omni_V_MedicalSurgerySuccessChance>
 
 	<RPP_Bot_Omni_I_PlantHarvestYield>Урожайность растений {0}% (рекомендуемая: 100%):</RPP_Bot_Omni_I_PlantHarvestYield>
 	<RPP_Bot_Omni_II_PlantHarvestYield>Урожайность растений {0}% (рекомендуемая: 110%):</RPP_Bot_Omni_II_PlantHarvestYield>
-	<RPP_Bot_Omni_III_PlantHarvestYield>Урожайность растений {0}% (рекомендуемая: 120%):</RPP_Bot_Omni_III_PlantHarvestYield>
-	<RPP_Bot_Omni_IV_PlantHarvestYield>Урожайность растений {0}% (рекомендуемая: 130%):</RPP_Bot_Omni_IV_PlantHarvestYield>
-	<RPP_Bot_Omni_V_PlantHarvestYield>Урожайность растений {0}% (рекомендуемая: 140%):</RPP_Bot_Omni_V_PlantHarvestYield>
+	<RPP_Bot_Omni_III_PlantHarvestYield>Урожайность растений {0}% (рекомендуемая: 150%):</RPP_Bot_Omni_III_PlantHarvestYield>
+	<RPP_Bot_Omni_IV_PlantHarvestYield>Урожайность растений {0}% (рекомендуемая: 175%):</RPP_Bot_Omni_IV_PlantHarvestYield>
+	<RPP_Bot_Omni_V_PlantHarvestYield>Урожайность растений {0}% (рекомендуемая: 200%):</RPP_Bot_Omni_V_PlantHarvestYield>
 
 	<RPP_Bot_Omni_I_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 100%):</RPP_Bot_Omni_I_DrugHarvestYield>
-	<RPP_Bot_Omni_II_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 120%):</RPP_Bot_Omni_II_DrugHarvestYield>
-	<RPP_Bot_Omni_III_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 110%):</RPP_Bot_Omni_III_DrugHarvestYield>
-	<RPP_Bot_Omni_IV_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 130%):</RPP_Bot_Omni_IV_DrugHarvestYield>
-	<RPP_Bot_Omni_V_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 140%):</RPP_Bot_Omni_V_DrugHarvestYield>
+	<RPP_Bot_Omni_II_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 125%):</RPP_Bot_Omni_II_DrugHarvestYield>
+	<RPP_Bot_Omni_III_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 150%):</RPP_Bot_Omni_III_DrugHarvestYield>
+	<RPP_Bot_Omni_IV_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 175%):</RPP_Bot_Omni_IV_DrugHarvestYield>
+	<RPP_Bot_Omni_V_DrugHarvestYield>Урожайность лекарственных растений {0}% (рекомендуемая: 200%):</RPP_Bot_Omni_V_DrugHarvestYield>
 
 	<RPP_Bot_Omni_I_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 100%):</RPP_Bot_Omni_I_MiningYield>
-	<RPP_Bot_Omni_II_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 110%):</RPP_Bot_Omni_II_MiningYield>
-	<RPP_Bot_Omni_III_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 120%):</RPP_Bot_Omni_III_MiningYield>
-	<RPP_Bot_Omni_IV_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 130%):</RPP_Bot_Omni_IV_MiningYield>
-	<RPP_Bot_Omni_V_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 140%):</RPP_Bot_Omni_V_MiningYield>
+	<RPP_Bot_Omni_II_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 125%):</RPP_Bot_Omni_II_MiningYield>
+	<RPP_Bot_Omni_III_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 150%):</RPP_Bot_Omni_III_MiningYield>
+	<RPP_Bot_Omni_IV_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 175%):</RPP_Bot_Omni_IV_MiningYield>
+	<RPP_Bot_Omni_V_MiningYield>Текущая скорость копания {0}% (рекомендуемая: 200%):</RPP_Bot_Omni_V_MiningYield>
 
-	<RPP_Bot_Omni_I_MarketValue>Цена бота (рекомендуемая цена: 8,000$):</RPP_Bot_Omni_I_MarketValue>
-	<RPP_Bot_Omni_II_MarketValue>Цена бота (рекомендуемая цена: 15,000$):</RPP_Bot_Omni_II_MarketValue>
-	<RPP_Bot_Omni_III_MarketValue>Цена бота (рекомендуемая цена: 35,000$):</RPP_Bot_Omni_III_MarketValue>
-	<RPP_Bot_Omni_IV_MarketValue>Цена бота (рекомендуемая цена: 80,000$):</RPP_Bot_Omni_IV_MarketValue>
-	<RPP_Bot_Omni_V_MarketValue>Цена бота (рекомендуемая цена: 100,000$):</RPP_Bot_Omni_V_MarketValue>
+	<RPP_Bot_Omni_I_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Omni_I_MarketValue>
+	<RPP_Bot_Omni_II_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Omni_II_MarketValue>
+	<RPP_Bot_Omni_III_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Omni_III_MarketValue>
+	<RPP_Bot_Omni_IV_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Omni_IV_MarketValue>
+	<RPP_Bot_Omni_V_MarketValue>Цена бота (рекомендуемая цена: 1,500$):</RPP_Bot_Omni_V_MarketValue>
 
 </LanguageData>
 
