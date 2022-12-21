@@ -49,20 +49,20 @@ namespace MiscRobotsPlusPlus
 
         private readonly static float[,] cleanerDefaultSettings = new float[5, 2] {
 
-                { 1f, 1000  },
-                { 2f, 2000  },
-                { 2.5f, 3500  },
-                { 3f, 7000  },
-                { 4f, 9000  }
+                { 1f, 1500  },
+                { 2f, 1500  },
+                { 2.5f, 1500  },
+                { 3f, 1500  },
+                { 4f, 1500  }
 
         };
         private static float[,] cleanerSettings = new float[5, 2] {
 
-                { 1f, 1000  },
-                { 2f, 2000  },
-                { 2.5f, 3500  },
-                { 3f, 7000  },
-                { 4f, 9000  }
+                { 1f, 1500  },
+                { 2f, 1500  },
+                { 2.5f, 1500  },
+                { 3f, 1500  },
+                { 4f, 1500  }
 
         };
 
@@ -81,20 +81,20 @@ namespace MiscRobotsPlusPlus
         // Must be saved in same order as List of Stats in float table;
         private readonly static float[,] crafterDefaultSettings = new float[5, 2] {
 
-                { 1f,  1000  },
-                { 2f,  2000  },
-                { 2.5f,3500  },
-                { 3f,  7000  },
-                { 4f, 14000  }
+                { 1f,  1500  },
+                { 2f,  1500  },
+                { 2.5f,1500  },
+                { 3f,  1500  },
+                { 4f, 1500  }
 
         };
         private static float[,] crafterSettings = new float[5, 3] {
 
-                { 1f,1f,  1000  },
-                { 2f, 2f, 2000  },
-                { 2.5f, 2.5f ,3500  },
-                { 3f,  3f, 7000  },
-                { 4f, 4f, 14000  }
+                { 1f,1f,  1500  },
+                { 2f, 2f, 1500  },
+                { 2.5f, 2.5f ,1500  },
+                { 3f,  3f, 1500  },
+                { 4f, 4f, 1500  }
 
         };
         private static bool[,] crafterIsPrecent = new bool[5, 3]
@@ -113,19 +113,19 @@ namespace MiscRobotsPlusPlus
         // Must be saved in same order as List of Stats in float table;
         private readonly static float[,] kitchenDefaultSettings = new float[5, 5] {
 
-                { 1f, 1f, 1f , 1f, 4000 },
-                { 2f, 2f, 1.25f , 1.25f, 8000 },
-                { 2.5f, 1.5f, 1.5f , 1.5f, 12000 },
-                { 3f, 3f, 1.75f , 1.75f, 18000 },
-                { 4f, 4f, 2f , 2f, 30000 }
+                { 1f, 1f, 1f , 1f, 1500 },
+                { 2f, 2f, 1.25f , 1.25f, 1500 },
+                { 2.5f, 1.5f, 1.5f , 1.5f, 1500 },
+                { 3f, 3f, 1.75f , 1.75f, 1500 },
+                { 4f, 4f, 2f , 2f, 1500 }
         };
         private static float[,] kitchenSettings = new float[5, 5] {
 
-                { 1f, 1f, 1f , 1f, 4000 },
-                { 2f, 2f, 1.25f , 1.25f, 8000 },
-                { 2.5f, 1.5f, 1.5f , 1.5f, 12000 },
-                { 3f, 3f, 1.75f , 1.75f, 18000 },
-                { 4f, 4f, 2f , 2f, 30000 }
+                { 1f, 1f, 1f , 1f, 1500 },
+                { 2f, 2f, 1.25f , 1.25f, 1500 },
+                { 2.5f, 1.5f, 1.5f , 1.5f, 1500 },
+                { 3f, 3f, 1.75f , 1.75f, 1500 },
+                { 4f, 4f, 2f , 2f, 1500 }
         };
         private static bool[,] kitchenIsPrecent = new bool[5, 5]
     {
@@ -143,19 +143,27 @@ namespace MiscRobotsPlusPlus
         // Must be saved in same order as List of Stats in float table;
         private readonly static float[,] builderDefaultSettings = new float[5, 5] {
 
+<<<<<<< Updated upstream
                 { 1f, 1f, 1f , 1f, 4000 },
                 { 2f, 2f, 2f , 1.25f, 8000 },
                 { 2.5f, 2.5f, 1.5f , 1.5f, 12000 },
                 { 3f, 3f, 3f , 1.75f, 19000 },
                 { 4f, 4f, 4f , 2f, 30000 }
+=======
+                { 1f, 1f, 1f , 1f, 1500 },
+                { 2f, 2f, 2f , 1.25f, 1500 },
+                { 2.5f, 2.5f, 1.5f , 1.5f, 1500 },
+                { 3f, 3f, 3f , 1.75f, 1500 },
+                { 4f, 4f, 4f , 2f, 1500 }
+>>>>>>> Stashed changes
         };
         private static float[,] builderSettings = new float[5, 5] {
 
-                { 1f, 1f, 1f , 1f, 4000 },
-                { 2f, 2f, 2f , 1.25f, 8000 },
-                { 2.5f, 2.5f, 1.5f , 1.5f, 4000 },
-                { 3f, 3f, 3f , 1.75f, 12000 },
-                { 4f, 4f, 4f , 2f, 30000 }
+                { 1f, 1f, 1f , 1f, 1500 },
+                { 2f, 2f, 2f , 1.25f, 1500 },
+                { 2.5f, 2.5f, 1.5f , 1.5f, 1500 },
+                { 3f, 3f, 3f , 1.75f, 1500 },
+                { 4f, 4f, 4f , 2f, 1500 }
         };
         private static bool[,] builderIsPrecent = new bool[5, 5]
         {
@@ -172,20 +180,20 @@ namespace MiscRobotsPlusPlus
 
         private readonly static float[,] ERDefaultSettings = new float[5, 3] {
 
-                { 1f, 1f, 2000  },
-                { 2f, 1.25f, 4000  },
-                { 2.5f, 1.5f, 8000  },
-                { 3f, 1.75f, 16000  },
-                { 4f, 2f, 24000  }
+                { 1f, 1f, 1500  },
+                { 2f, 1.25f, 1500  },
+                { 2.5f, 1.5f, 1500  },
+                { 3f, 1.75f, 1500  },
+                { 4f, 2f, 1500  }
 
         };
         private  static float[,] ERSettings = new float[5, 3] {
 
-                { 1f, 1f, 2000  },
-                { 2f, 1.25f, 4000  },
-                { 2.5f, 1.5f, 8000  },
-                { 3f, 1.75f, 16000  },
-                { 4f, 2f, 24000  }
+                { 1f, 1f, 1500  },
+                { 2f, 1.25f, 1500  },
+                { 2.5f, 1.5f, 1500  },
+                { 3f, 1.75f, 1500  },
+                { 4f, 2f, 1500  }
 
         };
 
@@ -202,32 +210,35 @@ namespace MiscRobotsPlusPlus
 
         #region Omni Compleated Match
 
-        private static StatDef[] OmniStats = new StatDef[6] { StatDefOf.WorkSpeedGlobal,  StatDefOf.MiningYield, StatDefOf.PlantHarvestYield,  StatDefOf.MedicalSurgerySuccessChance, StatDefOf.DrugHarvestYield,  StatDefOf.MarketValue, };
-        private readonly static float[,] OmniDefaultSettings = new float[5, 6] {
+        private static StatDef[] OmniStats = new StatDef[13] { StatDefOf.GeneralLaborSpeed, StatDefOf.PlantWorkSpeed, StatDefOf.ConstructionSpeed, StatDefOf.WorkSpeedGlobal, StatDefOf.ConstructionSpeed, StatDefOf.DeepDrillingSpeed, StatDefOf.SmoothingSpeed, StatDefOf.PlantWorkSpeed,  StatDefOf.MiningYield, StatDefOf.PlantHarvestYield,  StatDefOf.MedicalSurgerySuccessChance, StatDefOf.DrugHarvestYield,  StatDefOf.MarketValue, };
+   
+        private static float[,] OmniSettings = new float[5,13] {
 
-             {2f,  1f, 1f, 1f, 1f, 8000 },
-             {3f, 1.1f, 1.1f, 1.1f, 1.1f, 15000 },
-             {4f, 1.2f, 1.2f, 1.2f, .2f, 35000 },
-             {5f, 1.3f, 1.3f, 1.3f,1.3f, 80000 },
-             {6f, 1.4f, 1.4f, 1.4f, 1.4f, 100000 }
-
-        };
-        private static float[,] OmniSettings = new float[5, 6] {
-
-             {2f,  1f, 1f, 1f, 1f, 8000 },
-             {3f, 1.1f, 1.1f, 1.1f, 1.1f, 15000 },
-             {4f, 1.2f, 1.2f, 1.2f, .2f, 35000 },
-             {5f, 1.3f, 1.3f, 1.3f,1.3f, 80000 },
-             {6f, 1.4f, 1.4f, 1.4f, 1.4f, 100000 }
+             {0.5f, 0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f, 1f, 1f, 1f, 1f, 1500 },
+             {1f,1f,1f,1f,1f,1f,1f,1f, 1.25f, 1.25f, 1.25f, 1.25f, 1500 },
+             {1.25f,1.25f,1.25f,1.25f,1.25f,1.25f,1.25f,1.25f, 1.5f, 1.5f, 1.5f, 1.5f, 1500 },
+             {1.5f, 1.5f,1.5f,1.5f,1.5f,1.5f,1.5f,1.5f,1.75f, 1.75f, 1.75f,1.75f, 1500 },
+             {2f,2f,2f,2f,2f,2f,2f,2f, 2f, 2f, 2f, 2f, 1500 }
 
         };
-        private static bool[,] OmniPrecent = new bool[5, 6]
+
+        private readonly static float[,] OmniDefaultSettings = new float[5,13] {
+
+
+             {0.5f, 0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f, 1f, 1f, 1f, 1f, 1500 },
+             {1f,1f,1f,1f,1f,1f,1f,1f, 1.25f, 1.25f, 1.25f, 1.25f, 1500 },
+             {1.25f,1.25f,1.25f,1.25f,1.25f,1.25f,1.25f,1.25f, 1.5f, 1.5f, 1.5f, 1.5f, 1500 },
+             {1.5f, 1.5f,1.5f,1.5f,1.5f,1.5f,1.5f,1.5f,1.75f, 1.75f, 1.75f,1.75f, 1500 },
+             {2f,2f,2f,2f,2f,2f,2f,2f, 2f, 2f, 2f, 2f, 1500 }
+
+        };
+        private static bool[,] OmniPrecent = new bool[5, 13]
         {
-            {true,true,true,true,true,false },
-            {true,true,true,true,true,false },
-            {true,true,true,true,true,false },
-            {true,true,true,true,true,false },
-            {true,true,true,true,true,false },
+            {true,true,true,true,true,true,true,true,true,true,true,true,false },
+            {true,true,true,true,true,true,true,true,true,true,true,true,false },
+            {true,true,true,true,true,true,true,true,true,true,true,true,false },
+            {true,true,true,true,true,true,true,true,true,true,true,true,false },
+            {true,true,true,true,true,true,true,true,true,true,true,true,false },
         };
 
         #endregion
@@ -310,6 +321,7 @@ namespace MiscRobotsPlusPlus
             {false,false },
             {false,false },
             {false,false },
+<<<<<<< Updated upstream
          };
 
         private static float[,] cleanerStationDefaultSettings = new float[5, 2]
@@ -319,6 +331,28 @@ namespace MiscRobotsPlusPlus
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+        };
+
+        #region cleaner Stations
+        private static float[,] cleanerStationSettings = new float[5, 2]
+        {
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+
+        };
+
+        private static float[,] cleanerStationDefaultSettings = new float[5, 2]
+        {
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
         #endregion
@@ -326,22 +360,38 @@ namespace MiscRobotsPlusPlus
         #region hauler Stations
         private static float[,] haulerStationSettings = new float[5, 2]
        {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+             {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
        };
 
 
         private static float[,] haulerStationDefaultSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
         #endregion
@@ -349,22 +399,38 @@ namespace MiscRobotsPlusPlus
         #region Crafter Stations
         private static float[,] CrafterStationSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
 
 
         private static float[,] CrafterStationDefaultSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
         #endregion
@@ -372,22 +438,38 @@ namespace MiscRobotsPlusPlus
         #region Kitchen Stations
         private static float[,] kitchenStationSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
 
 
         private static float[,] kitchenStationDefaultSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
         #endregion
@@ -395,22 +477,38 @@ namespace MiscRobotsPlusPlus
         #region builder Stations
         private static float[,] builderStationSettings = new float[5, 2]
        {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
        };
 
 
         private static float[,] builderStationDefaultSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
         #endregion
@@ -418,11 +516,19 @@ namespace MiscRobotsPlusPlus
         #region ER Stations
         private static float[,] erStationSettings = new float[5, 2]
        {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
        };
         private static bool[,] erStationPrecent = new bool[5, 2]
@@ -436,11 +542,19 @@ namespace MiscRobotsPlusPlus
 
         private static float[,] erStationDefaultSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
         #endregion
@@ -448,22 +562,38 @@ namespace MiscRobotsPlusPlus
         #region Omni Stations
         private static float[,] OmniStationSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+             {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
 
 
         private static float[,] OmniStationDefaultSettings = new float[5, 2]
         {
+<<<<<<< Updated upstream
             {100, 9000 },
             {150f, 9000 },
             {200f, 9000 },
             {300f, 9000 },
             {400f, 9000 }
+=======
+            {100, 1050 },
+            {150f, 1900 },
+            {200f, 5000 },
+            {250f, 11250 },
+            {300f,  26250 }
+>>>>>>> Stashed changes
 
         };
         #endregion
