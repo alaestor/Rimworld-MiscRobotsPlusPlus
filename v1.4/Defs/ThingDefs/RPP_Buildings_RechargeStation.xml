@@ -19,7 +19,7 @@
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_I" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>0</Beauty>
-			<MarketValue>501</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<costList>
@@ -37,7 +37,7 @@
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_II" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>1</Beauty>
-			<MarketValue>1236</MarketValue>
+			<MarketValue>4000</MarketValue>
 			<Flammability>0.8</Flammability>
 		</statBases>
 		<costList>
@@ -55,7 +55,7 @@
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_III" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>2</Beauty>
-			<MarketValue>2720</MarketValue>
+			<MarketValue>8000</MarketValue>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<costList>
@@ -73,7 +73,7 @@
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_IV" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>5</Beauty>
-			<MarketValue>5650</MarketValue>
+			<MarketValue>16000</MarketValue>
 			<Flammability>0.2</Flammability>
 		</statBases>
 		<costList>
@@ -91,7 +91,7 @@
 	<ThingDef Abstract="True" Name="RPP_RechargeStation_V" ParentName="RPP_RechargeStation" Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation">
 		<statBases>
 			<Beauty>20</Beauty>
-			<MarketValue>11455</MarketValue>
+			<MarketValue>32000</MarketValue>
 			<Flammability>0.0</Flammability>
 		</statBases>
 		<costList>
