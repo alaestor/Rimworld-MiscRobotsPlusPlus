@@ -30,7 +30,7 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_I" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>3500</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>4.00</MoveSpeed>
 			<Flammability>1.0</Flammability>
 			<CarryingCapacity>100</CarryingCapacity>
@@ -55,7 +55,7 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_II" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>8000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>5.00</MoveSpeed>
 			<Flammability>0.7</Flammability>
 			<CarryingCapacity>200</CarryingCapacity>
@@ -80,7 +80,7 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_III" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>16000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>7.00</MoveSpeed>
 			<CarryingCapacity>300</CarryingCapacity>
 			<Flammability>0.3</Flammability>
@@ -105,7 +105,7 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_IV" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>35000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>10.0</MoveSpeed>
 			<CarryingCapacity>400</CarryingCapacity>
 			<Flammability>0.0</Flammability>
@@ -130,7 +130,7 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_V" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>50000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>15.0</MoveSpeed>
 			<CarryingCapacity>500</CarryingCapacity>
 			<Flammability>0.0</Flammability>
