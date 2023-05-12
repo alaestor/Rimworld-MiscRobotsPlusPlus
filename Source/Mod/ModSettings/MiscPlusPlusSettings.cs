@@ -30,7 +30,7 @@ namespace MiscRobotsPlusPlus
         //Contains list of all bots by DefName
         //Remember to keep same names as in XML files
         //It throws error if it does not match
-        #region Def Names
+        #region Def Robot Names
         private static readonly string[] cleanerList = new string[5] { "AIRobot_Cleaner", "AIRobot_Cleaner_II", "AIRobot_Cleaner_III", "AIRobot_Cleaner_IV", "AIRobot_Cleaner_V" };
         private static readonly string[] crafterList = new string[5] { "RPP_Bot_Crafter_I", "RPP_Bot_Crafter_II", "RPP_Bot_Crafter_III", "RPP_Bot_Crafter_IV", "RPP_Bot_Crafter_V" };
         private static readonly string[] kitchenList = new string[5] { "RPP_Bot_Kitchen_I", "RPP_Bot_Kitchen_II", "RPP_Bot_Kitchen_III", "RPP_Bot_Kitchen_IV", "RPP_Bot_Kitchen_V" };
@@ -49,20 +49,20 @@ namespace MiscRobotsPlusPlus
 
         private readonly static float[,] cleanerDefaultSettings = new float[5, 2] {
 
-                { 1f, 1000  },
-                { 2f, 2000  },
-                { 2.5f, 3500  },
-                { 3f, 7000  },
-                { 4f, 9000  }
+                { 1f, 1500  },
+                { 2f, 1500  },
+                { 2.5f, 1500  },
+                { 3f, 1500  },
+                { 4f, 1500  }
 
         };
         private static float[,] cleanerSettings = new float[5, 2] {
 
-                { 1f, 1000  },
-                { 2f, 2000  },
-                { 2.5f, 3500  },
-                { 3f, 7000  },
-                { 4f, 9000  }
+                { 1f, 1500  },
+                { 2f, 1500  },
+                { 2.5f, 1500  },
+                { 3f, 1500  },
+                { 4f, 1500  }
 
         };
 
@@ -233,7 +233,8 @@ namespace MiscRobotsPlusPlus
 
         #endregion
 
-        #endregion
+       
+        #region Robots Data
 
         private static RobotsData cleanerData = new RobotsData(cleanerList, cleanerStats, cleanerSettings, CleanerisPrecent);
         private static RobotsData crafterData = new RobotsData(crafterList, crafterStats, crafterSettings,crafterIsPrecent);
@@ -241,6 +242,10 @@ namespace MiscRobotsPlusPlus
         private static RobotsData buildersData = new RobotsData(buildersList, builderStats, builderSettings,builderIsPrecent);
         private static RobotsData eRData = new RobotsData(ERList, ERStats, ERSettings,eRIsPrecent);
         private static RobotsData omniData = new RobotsData(omniList, OmniStats, OmniSettings, OmniPrecent);
+
+        #endregion
+
+        #endregion
 
         #region Stations Data
         private static bool[,] GeneralStationIsPrecent = new bool[5, 2]
@@ -512,7 +517,7 @@ namespace MiscRobotsPlusPlus
                     RobotsSettings(listing_Standard);
                     break;
                 case SettingsPages.Station_Tweaks:
-                    RobotsStationSettings(listing_Standard);
+                    //RobotsStationSettings(listing_Standard);
                     break;
                 default:
                     break;
@@ -556,7 +561,6 @@ namespace MiscRobotsPlusPlus
                 RobotsData.DrawingSettings(listing_Standard, omniData);
             }
         }
-
         private static void RobotsStationSettings(Listing_Standard listing_Standard)
         {
             listing_Standard.Label("These settings apply After Reset");
