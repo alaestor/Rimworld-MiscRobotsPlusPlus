@@ -30,7 +30,7 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_I" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>3500</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>4.00</MoveSpeed>
 			<Flammability>1.0</Flammability>
 			<CarryingCapacity>100</CarryingCapacity>
@@ -55,12 +55,12 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_II" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>8000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>5.00</MoveSpeed>
 			<Flammability>0.7</Flammability>
 			<CarryingCapacity>200</CarryingCapacity>
 			<!--RestRateMultiplier>1</RestRateMultiplier-->
-			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<WorkSpeedGlobal>2</WorkSpeedGlobal>
 		</statBases>
 		<robotSkills>
 			<li><skillDef>Medicine</skillDef><level>8</level><passion>Minor</passion></li>
@@ -80,12 +80,12 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_III" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>16000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>7.00</MoveSpeed>
 			<CarryingCapacity>300</CarryingCapacity>
 			<Flammability>0.3</Flammability>
 			<!--RestRateMultiplier>1.5</RestRateMultiplier-->
-			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<WorkSpeedGlobal>2.5</WorkSpeedGlobal>
 		</statBases>
 		<robotSkills>
 			<li><skillDef>Medicine</skillDef><level>13</level><passion>Minor</passion></li>
@@ -105,12 +105,12 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_IV" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>35000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>10.0</MoveSpeed>
 			<CarryingCapacity>400</CarryingCapacity>
 			<Flammability>0.0</Flammability>
 			<!--RestRateMultiplier>2.5</RestRateMultiplier-->
-			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<WorkSpeedGlobal>3</WorkSpeedGlobal>
 		</statBases>
 		<robotSkills>
 			<li><skillDef>Medicine</skillDef><level>16</level><passion>Minor</passion></li>
@@ -130,12 +130,12 @@
 
 	<ThingDef Abstract="True" Name="RPP_Bot_V" ParentName="RPP_Bot" Class="AIRobot.X2_ThingDef_AIRobot">
 		<statBases>
-			<MarketValue>50000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MoveSpeed>15.0</MoveSpeed>
 			<CarryingCapacity>500</CarryingCapacity>
 			<Flammability>0.0</Flammability>
 			<!--RestRateMultiplier>4</RestRateMultiplier-->
-			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<WorkSpeedGlobal>4</WorkSpeedGlobal>
 		</statBases>
 		<robotSkills>
 				<li><skillDef>Medicine</skillDef><level>20</level><passion>Minor</passion></li>
@@ -274,9 +274,6 @@
 	<ThingDef ParentName="RPP_Bot_I" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Cleaner</defName>
 		<label>Cleaning Bot</label>
-		<statBases>
-			<CleaningSpeed>1</CleaningSpeed>
-		</statBases>
 		<description>A Simple cleaning robot.</description>
 		<race>
 			<mechEnabledWorkTypes>
@@ -297,9 +294,6 @@
 	<ThingDef ParentName="RPP_Bot_II" Class="AIRobot.X2_ThingDef_AIRobot">
 		<defName>AIRobot_Cleaner_II</defName>
 		<label>Cleaning Bot</label>
-		<statBases>
-			<CleaningSpeed>1.5</CleaningSpeed>
-		</statBases>
 		<description>A Basic cleaning robot.</description>
 		<race>
 			<mechEnabledWorkTypes>
@@ -321,9 +315,6 @@
 		<defName>AIRobot_Cleaner_III</defName>
 		<label>Cleaning Bot</label>
 		<description>An Intermediate cleaning robot.</description>
-		<statBases>
-			<CleaningSpeed>2</CleaningSpeed>
-		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Cleaning</li>
@@ -344,9 +335,6 @@
 		<defName>AIRobot_Cleaner_IV</defName>
 		<label>Cleaning Bot</label>
 		<description>An Advanced cleaning robot.</description>
-		<statBases>
-			<CleaningSpeed>3</CleaningSpeed>
-		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Cleaning</li>
@@ -367,9 +355,6 @@
 		<defName>AIRobot_Cleaner_V</defName>
 		<label>Cleaning Bot</label>
 		<description>An Anti-Logic cleaning robot.</description>
-		<statBases>
-			<CleaningSpeed>4</CleaningSpeed>
-		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Cleaning</li>
@@ -393,13 +378,8 @@
 		<label>Builder Bot</label>
 		<description>A Tier 1 (workskill 4) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
-			<ConstructionSpeed>1</ConstructionSpeed>
-			<DeepDrillingSpeed>1</DeepDrillingSpeed>
-			<GeneralLaborSpeed>1</GeneralLaborSpeed>
-			<SmoothingSpeed>1</SmoothingSpeed>
 			<ConstructSuccessChance>1.25</ConstructSuccessChance>
 			<MiningYield>1</MiningYield>
-			<MiningSpeed>1</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -422,13 +402,8 @@
 		<label>Builder Bot</label>
 		<description>A Tier 2 (workskill 8) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
-			<ConstructionSpeed>1.5</ConstructionSpeed>
-			<DeepDrillingSpeed>1.5</DeepDrillingSpeed>
-			<GeneralLaborSpeed>1.5</GeneralLaborSpeed>
-			<SmoothingSpeed>1.5</SmoothingSpeed>
 			<ConstructSuccessChance>1.25</ConstructSuccessChance>
 			<MiningYield>1.2</MiningYield>
-			<MiningSpeed>2</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -451,13 +426,8 @@
 		<label>Builder Bot</label>
 		<description>A Tier 3 (workskill 13) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
-			<ConstructionSpeed>2</ConstructionSpeed>
-			<DeepDrillingSpeed>2</DeepDrillingSpeed>
-			<GeneralLaborSpeed>2</GeneralLaborSpeed>
-			<SmoothingSpeed>2</SmoothingSpeed>
 			<ConstructSuccessChance>1.5</ConstructSuccessChance>
 			<MiningYield>1.4</MiningYield>
-			<MiningSpeed>2.5</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -481,13 +451,8 @@
 		<label>Builder Bot</label>
 		<description>A Tier 4 (workskill 16) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
-			<ConstructionSpeed>3</ConstructionSpeed>
-			<DeepDrillingSpeed>3</DeepDrillingSpeed>
-			<GeneralLaborSpeed>3</GeneralLaborSpeed>
-			<SmoothingSpeed>3</SmoothingSpeed>
 			<ConstructSuccessChance>1.75</ConstructSuccessChance>
 			<MiningYield>1.6</MiningYield>
-			<MiningSpeed>3</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -510,13 +475,8 @@
 		<label>Builder Bot</label>
 		<description>A Tier 5 (workskill 20) unit capable of constructing, deconstructing, repairing, and mining.</description>
 		<statBases>
-			<ConstructionSpeed>4</ConstructionSpeed>
-			<DeepDrillingSpeed>4</DeepDrillingSpeed>
-			<GeneralLaborSpeed>4</GeneralLaborSpeed>
-			<SmoothingSpeed>4</SmoothingSpeed>
 			<ConstructSuccessChance>2</ConstructSuccessChance>
 			<MiningYield>1</MiningYield>
-			<MiningSpeed>4</MiningSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -538,9 +498,6 @@
 		<defName>RPP_Bot_Crafter_I</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 1 (workskill 4) unit capable of smithing, tailoring, and crafting.</description>
-		<statBases>
-			<GeneralLaborSpeed>1</GeneralLaborSpeed>
-		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Smithing</li>
@@ -564,9 +521,6 @@
 		<defName>RPP_Bot_Crafter_II</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 2 (workskill 8) unit capable of smithing, tailoring, and crafting.</description>
-		<statBases>
-			<GeneralLaborSpeed>2</GeneralLaborSpeed>
-		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Smithing</li>
@@ -590,9 +544,6 @@
 		<defName>RPP_Bot_Crafter_III</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 3 (workskill 13) unit capable of smithing, tailoring, and crafting.</description>
-		<statBases>
-			<GeneralLaborSpeed>2.5</GeneralLaborSpeed>
-		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Smithing</li>
@@ -616,9 +567,6 @@
 		<defName>RPP_Bot_Crafter_IV</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 4 (workskill 16) unit capable of smithing, tailoring, and crafting.</description>
-		<statBases>
-			<GeneralLaborSpeed>3</GeneralLaborSpeed>
-		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Smithing</li>
@@ -642,9 +590,6 @@
 		<defName>RPP_Bot_Crafter_V</defName>
 		<label>Crafter Bot</label>
 		<description>A Tier 5 (workskill 20) unit capable of smithing, tailoring, and crafting.</description>
-		<statBases>
-			<GeneralLaborSpeed>4</GeneralLaborSpeed>
-		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
 				<li>Smithing</li>
@@ -670,7 +615,6 @@
 		<label>ER Bot</label>
 		<description>A Tier 1 (workskill 4) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
-			<MedicalTendSpeed>1</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
 		</statBases>
 		<race>
@@ -694,7 +638,6 @@
 		<label>ER Bot</label>
 		<description>A Tier 2 (workskill 8) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
-			<MedicalTendSpeed>2</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>1.25</MedicalSurgerySuccessChance>
 		</statBases>
 		<race>
@@ -718,7 +661,6 @@
 		<label>ER Bot</label>
 		<description>A Tier 3 (workskill 13) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
-			<MedicalTendSpeed>2.5</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>1.5</MedicalSurgerySuccessChance>
 		</statBases>
 		<race>
@@ -742,7 +684,6 @@
 		<label>ER Bot</label>
 		<description>A Tier 4 (workskill 16) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
-			<MedicalTendSpeed>3</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>1.75</MedicalSurgerySuccessChance>
 		</statBases>
 		<race>
@@ -766,7 +707,6 @@
 		<label>ER Bot</label>
 		<description>A Tier 5 (workskill 20) Emergency Response unit capable of treating patients and fighting fires.</description>
 		<statBases>
-			<MedicalTendSpeed>4</MedicalTendSpeed>
 			<MedicalSurgerySuccessChance>2</MedicalSurgerySuccessChance>
 		</statBases>
 		<race>
@@ -791,10 +731,8 @@
 		<label>Kitchen Bot</label>
 		<description>A Tier 1 (workskill 4) unit capable of cooking, and tending to plants.</description>
 		<statBases>
-			<PlantWorkSpeed>1</PlantWorkSpeed>
 			<PlantHarvestYield>1</PlantHarvestYield>
 			<DrugHarvestYield>1</DrugHarvestYield>
-			<GeneralLaborSpeed>1</GeneralLaborSpeed>
 		</statBases>
 		<race>
 			<mechEnabledWorkTypes>
@@ -820,8 +758,6 @@
 		<label>Kitchen Bot</label>
 		<description>A Tier 2 (workskill 8) unit capable of cooking, and tending to plants.</description>
 		<statBases>
-			<GeneralLaborSpeed>2</GeneralLaborSpeed>
-			<PlantWorkSpeed>2</PlantWorkSpeed>
 			<PlantHarvestYield>1.25</PlantHarvestYield>
 			<DrugHarvestYield>1.25</DrugHarvestYield>
 		</statBases>
@@ -849,8 +785,6 @@
 		<label>Kitchen Bot</label>
 		<description>A Tier 3 (workskill 13) unit capable of cooking, and tending to plants.</description>
 		<statBases>
-			<GeneralLaborSpeed>2.5</GeneralLaborSpeed>
-			<PlantWorkSpeed>2.5</PlantWorkSpeed>
 			<PlantHarvestYield>1.5</PlantHarvestYield>
 			<DrugHarvestYield>1.5</DrugHarvestYield>
 		</statBases>
@@ -878,8 +812,6 @@
 		<label>Kitchen Bot</label>
 		<description>A Tier 4 (workskill 16) unit capable of cooking, and tending to plants.</description>
 		<statBases>
-			<GeneralLaborSpeed>3</GeneralLaborSpeed>
-			<PlantWorkSpeed>3</PlantWorkSpeed>
 			<PlantHarvestYield>1.5</PlantHarvestYield>
 			<DrugHarvestYield>1.5</DrugHarvestYield>
 		</statBases>
@@ -906,8 +838,6 @@
 		<defName>RPP_Bot_Kitchen_V</defName>
 		<label>Kitchen Bot</label>
 		<statBases>
-			<GeneralLaborSpeed>4</GeneralLaborSpeed>
-			<PlantWorkSpeed>4</PlantWorkSpeed>
 			<PlantHarvestYield>1.75</PlantHarvestYield>
 			<DrugHarvestYield>1.75</DrugHarvestYield>
 		</statBases>
@@ -936,18 +866,9 @@
 		<label>OmniBot</label>
 		<description>A Tier 1 (workskill 4) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
-			<WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
-			<GeneralLaborSpeed>1</GeneralLaborSpeed>
-			<CleaningSpeed>1</CleaningSpeed>
-			<ConstructionSpeed>1</ConstructionSpeed>
-			<DeepDrillingSpeed>1</DeepDrillingSpeed>
-			<SmoothingSpeed>1</SmoothingSpeed>
 			<ConstructSuccessChance>1.25</ConstructSuccessChance>
 			<MiningYield>1</MiningYield>
-			<MiningSpeed>1</MiningSpeed>
 			<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
-			<MedicalTendSpeed>1</MedicalTendSpeed>
-			<PlantWorkSpeed>1</PlantWorkSpeed>
 			<PlantHarvestYield>1</PlantHarvestYield>
 			<DrugHarvestYield>1</DrugHarvestYield>
 		</statBases>
@@ -1006,18 +927,9 @@
 		<label>OmniBot</label>
 		<description>>A Tier 2 (workskill 8) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
-			<WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
-			<GeneralLaborSpeed>2</GeneralLaborSpeed>
-			<CleaningSpeed>2</CleaningSpeed>
-			<ConstructionSpeed>2</ConstructionSpeed>
-			<DeepDrillingSpeed>2</DeepDrillingSpeed>
-			<SmoothingSpeed>2</SmoothingSpeed>
 			<ConstructSuccessChance>1.5</ConstructSuccessChance>
 			<MiningYield>1.30</MiningYield>
-			<MiningSpeed>2</MiningSpeed>
 			<MedicalSurgerySuccessChance>1.30</MedicalSurgerySuccessChance>
-			<MedicalTendSpeed>2</MedicalTendSpeed>
-			<PlantWorkSpeed>1.30</PlantWorkSpeed>
 			<PlantHarvestYield>1.30</PlantHarvestYield>
 			<DrugHarvestYield>1.30</DrugHarvestYield>
 		</statBases>
@@ -1079,18 +991,9 @@
 		<label>OmniBot</label>
 		<description>A Tier 3 (workskill 13) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
-			<WorkTableWorkSpeedFactor>1.25</WorkTableWorkSpeedFactor>
-			<GeneralLaborSpeed>1.25</GeneralLaborSpeed>
-			<CleaningSpeed>2.5</CleaningSpeed>
-			<ConstructionSpeed>2.5</ConstructionSpeed>
-			<DeepDrillingSpeed>2.5</DeepDrillingSpeed>
-			<SmoothingSpeed>2.5</SmoothingSpeed>
 			<ConstructSuccessChance>1.75</ConstructSuccessChance>
 			<MiningYield>1.60</MiningYield>
-			<MiningSpeed>2.5</MiningSpeed>
 			<MedicalSurgerySuccessChance>1.60</MedicalSurgerySuccessChance>
-			<MedicalTendSpeed>3</MedicalTendSpeed>
-			<PlantWorkSpeed>1.60</PlantWorkSpeed>
 			<PlantHarvestYield>1.60</PlantHarvestYield>
 			<DrugHarvestYield>1.60</DrugHarvestYield>
 		</statBases>
@@ -1149,18 +1052,9 @@
 		<label>OmniBot</label>
 		<description>A Tier 4 (workskill 16) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
-			<WorkTableWorkSpeedFactor>3</WorkTableWorkSpeedFactor>
-			<GeneralLaborSpeed>3</GeneralLaborSpeed>
-			<CleaningSpeed>3</CleaningSpeed>
-			<ConstructionSpeed>3</ConstructionSpeed>
-			<DeepDrillingSpeed>3</DeepDrillingSpeed>
-			<SmoothingSpeed>3</SmoothingSpeed>
 			<ConstructSuccessChance>2</ConstructSuccessChance>
 			<MiningYield>1.90</MiningYield>
-			<MiningSpeed>3</MiningSpeed>
 			<MedicalSurgerySuccessChance>1.90</MedicalSurgerySuccessChance>
-			<MedicalTendSpeed>3</MedicalTendSpeed>
-			<PlantWorkSpeed>1.90</PlantWorkSpeed>
 			<PlantHarvestYield>1.90</PlantHarvestYield>
 			<DrugHarvestYield>1.90</DrugHarvestYield>
 		</statBases>
@@ -1219,18 +1113,10 @@
 		<label>OmniBot</label>
 		<description>A Tier 5 (workskill 20) unit capable of doing the jobs of all the other robots. (NP=P)</description>
 		<statBases>
-			<WorkTableWorkSpeedFactor>4</WorkTableWorkSpeedFactor>
-			<GeneralLaborSpeed>4</GeneralLaborSpeed>
-			<CleaningSpeed>4</CleaningSpeed>
-			<ConstructionSpeed>4</ConstructionSpeed>
-			<DeepDrillingSpeed>4</DeepDrillingSpeed>
-			<SmoothingSpeed>4</SmoothingSpeed>
 			<ConstructSuccessChance>2.5</ConstructSuccessChance>
 			<MiningYield>2.25</MiningYield>
 			<MiningSpeed>4</MiningSpeed>
 			<MedicalSurgerySuccessChance>2.25</MedicalSurgerySuccessChance>
-			<MedicalTendSpeed>3</MedicalTendSpeed>
-			<PlantWorkSpeed>2.25</PlantWorkSpeed>
 			<PlantHarvestYield>2.25</PlantHarvestYield>
 			<DrugHarvestYield>1.25</DrugHarvestYield>
 		</statBases>
